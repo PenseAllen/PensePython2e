@@ -2,9 +2,19 @@
 
 Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey, publicado sob licença [CC BY-NC 3.0](LICENSE.md).
 
+> __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias.<br>[ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
+
 [Versão navegável em HTML](https://PenseAllen.github.io/PensePython2/)
 
-> __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias.
+
+## Créditos da edição brasileira
+
+Editor: Rubens Prates<br>
+Tradução: Sheila Gomes<br>
+Revisão Gramatical: Smirna Cavalheiro<br>
+Editoração Eletrônica: Carolina Kuwabata<br>
+Assistente Editorial: Priscila A. Yoshimatsu
+
 
 ## Proveniência
 
@@ -21,12 +31,3 @@ $ pandoc PenseEmPython.xml -f docbook -t markdown_github -o PenseEmPython.md
 Os arquivos _markdown_ separados por capítulo em [`recebido/docs/`](recebido/docs/) foram gerados a partir de `PenseEmPython.md` pelo script [`util/separar_capitulos.py`](util/separar_capitulos.py).
 
 A partir desse ponto, os ajustes nos capítulos foram feitos manualmente, com ajuda ocasional de scripts encontrados no diretório [`util/`](util/).
-
-
-## Créditos da edição brasileira
-
-Editor: Rubens Prates<br>
-Tradução: Sheila Gomes<br>
-Revisão Gramatical: Smirna Cavalheiro<br>
-Editoração Eletrônica: Carolina Kuwabata<br>
-Assistente Editorial: Priscila A. Yoshimatsu
