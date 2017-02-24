@@ -20,3 +20,12 @@ $ pandoc PenseEmPython.xml -f docbook -t markdown_github -o PenseEmPython.md
 Os arquivos _markdown_ separados por capítulo em [`docs/`](docs/) foram gerados a partir de `PenseEmPython.md` pelo script [`separar_capitulos.py`](util/separar_capitulos.py).
 
 A partir desse ponto, os ajustes nos capítulos foram feitos manualmente, com ajuda ocasional de scripts encontrados no diretório [`util/`](util/).
+
+
+## Créditos da edição brasileira
+
+Editor: Rubens Prates<br>
+Tradução: Sheila Gomes<br>
+Revisão Gramatical: Smirna Cavalheiro<br>
+Editoração Eletrônica: Carolina Kuwabata
+Assistente Editorial: Priscila A. Yoshimatsu
