@@ -1,10 +1,12 @@
 # Pense em Python
 
-Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey. Licença [CC BY-NC 3.0](LICENSE.md).
+### Pense como um cientista da computação
+
+Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de __Allen B. Downey__. Licença [CC BY-NC 3.0](LICENSE.md).
 
 Traduzido e publicado no Brasil pela [Editora Novatec](https://novatec.com.br) como [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) sob licença da O'Reilly Media.
 
-Esta versão digital de __Pense em Python__ foi criada a partir de arquivos cedidos gentilmente por Rubens Prates, da Editora Novatec, honrando o desejo do autor — Allen B. Downey — de oferecer seu trabalho através de uma licença livre.
+> Esta versão digital de __Pense em Python__ foi criada a partir de arquivos cedidos gentilmente por Rubens Prates, da Editora Novatec, atendendo ao desejo do autor — Allen B. Downey — de oferecer seu trabalho através de uma licença livre.
 
 
 ## Sumário
