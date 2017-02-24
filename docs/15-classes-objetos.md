@@ -4,7 +4,7 @@ A esta altura você já sabe como usar funções para organizar código e tipos 
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Point1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Point1\_soln.py.
 
-Tipos definidos pelos programadores
+## 15.1 - Tipos definidos pelos programadores
 
 Já usamos muitos tipos integrados do Python; agora vamos definir um tipo próprio. Como exemplo, criaremos um tipo chamado Point, que representa um ponto no espaço bidimensional.
 
@@ -52,7 +52,7 @@ Quando você exibe uma instância, o Python diz a que classe ela pertence e onde
 
 Cada objeto é uma instância de alguma classe, então “objeto” e “instância” são intercambiáveis. Porém, neste capítulo uso “instância” para indicar que estou falando sobre um tipo definido pelo programador.
 
-Atributos
+## 15.2 - Atributos
 
 Você pode atribuir valores a uma instância usando a notação de ponto:
 
@@ -112,7 +112,7 @@ Dentro da função, p é um alias para blank, então, se a função altera p, bl
 
 Como exercício, escreva uma função chamada distance\_between\_points, que toma dois pontos como argumentos e retorna a distância entre eles.
 
-Retângulos
+## 15.3 - Retângulos
 
 Às vezes, é óbvio quais deveriam ser os atributos de um objeto, mas outras é preciso decidir entre as possibilidades. Por exemplo, vamos supor que você esteja criando uma classe para representar retângulos. Que atributos usaria para especificar a posição e o tamanho de um retângulo? Você pode ignorar ângulo; para manter as coisas simples, suponha que o retângulo seja vertical ou horizontal.
 
@@ -156,7 +156,7 @@ A Figura 15.2 mostra o estado deste objeto. Um objeto que é um atributo de outr
 
 Figura 15.2 – Diagrama de objeto.
 
-Instâncias como valores de retorno
+## 15.4 - Instâncias como valores de retorno
 
 As funções podem retornar instâncias. Por exemplo, find\_center recebe Rectangle como argumento e retorna Point, que contém as coordenadas do centro de Rectangle:
 
@@ -178,7 +178,7 @@ Aqui está um exemplo que passa box como um argumento e atribui o ponto resultan
 
 (50, 100)
 
-Objetos são mutáveis
+## 15.5 - Objetos são mutáveis
 
 Você pode alterar o estado de um objeto fazendo uma atribuição a um dos seus atributos. Por exemplo, para mudar o tamanho de um retângulo sem mudar sua posição, você pode alterar os valores de width e height:
 
@@ -210,7 +210,7 @@ Dentro da função, rect é um alias de box, então quando a função altera rec
 
 Como exercício, escreva uma função chamada move\_rectangle que toma um Rectangle e dois números chamados dx e dy. Ela deve alterar a posição do retângulo, adicionando dx à coordenada x de corner e adicionando dy à coordenada y de corner.
 
-Cópia
+## 15.6 - Cópia
 
 Alias podem tornar um programa difícil de ler porque as alterações em um lugar podem ter efeitos inesperados em outro lugar. É difícil monitorar todas as variáveis que podem referir-se a um dado objeto.
 
@@ -280,7 +280,7 @@ box3 e box são objetos completamente separados.
 
 Como exercício, escreva uma versão de move\_rectangle que cria e retorne um novo retângulo em vez de alterar o antigo.
 
-Depuração
+## 15.7 - Depuração
 
 Ao começar a trabalhar com objetos, provavelmente você encontrará algumas novas exceções. Se tentar acessar um atributo que não existe, recebe um AttributeError:
 
@@ -330,7 +330,7 @@ except AttributeError:
 
 Essa abordagem pode facilitar a escrita de funções que atuam com tipos diferentes; você verá mais informações sobre isso em “Polimorfismo”, na página 248.
 
-Glossário
+## 15.8 - Glossário
 
 classe:
 
@@ -368,7 +368,7 @@ diagrama de objeto:
 
 Diagrama que mostra objetos, seus atributos e os valores dos atributos.
 
-Exercícios
+## 15.9 - Exercícios
 
 Exercício 15.1
 

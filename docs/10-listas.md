@@ -2,7 +2,7 @@
 
 Este capítulo apresenta um dos tipos integrados mais úteis do Python: listas. Você também aprenderá mais sobre objetos e o que pode acontecer quando o mesmo objeto tem mais de um nome.
 
-Uma lista é uma sequência
+## 10.1 - Uma lista é uma sequência
 
 Como uma string, uma lista é uma sequência de valores. Em uma string, os valores são caracteres; em uma lista, eles podem ser de qualquer tipo. Os valores em uma lista são chamados de elementos, ou, algumas vezes, de itens.
 
@@ -32,7 +32,7 @@ Como já se poderia esperar, podemos atribuir uma lista de valores a variáveis:
 
 \['Cheddar', 'Edam', 'Gouda'\] \[42, 123\] \[\]
 
-Listas são mutáveis
+## 10.2 - Listas são mutáveis
 
 A sintaxe para acessar os elementos de uma lista é a mesma que para acessar os caracteres de uma string: o operador de colchete. A expressão dentro dos colchetes especifica o índice. Lembre-se de que os índices começam em 0:
 
@@ -78,7 +78,7 @@ True
 
 False
 
-Atravessando uma lista
+## 10.3 - Atravessando uma lista
 
 A forma mais comum de fazer a travessia dos elementos em uma lista é com um loop for. A sintaxe é a mesma que a das strings:
 
@@ -104,7 +104,7 @@ Apesar de uma lista poder conter outra lista, a lista aninhada ainda conta como 
 
 \['spam', 1, \['Brie', 'Roquefort', 'Pol le Veq'\], \[1, 2, 3\]\]
 
-Operações com listas
+## 10.4 - Operações com listas
 
 O operador + concatena listas:
 
@@ -130,7 +130,7 @@ O operador \* repete a lista um dado número de vezes:
 
 O primeiro exemplo repete \[0\] quatro vezes. O segundo exemplo repete a lista \[1, 2, 3\] três vezes.
 
-Fatias de listas
+## 10.5 - Fatias de listas
 
 O operador de fatias também funciona com listas:
 
@@ -166,7 +166,7 @@ Um operador de fatia à esquerda de uma atribuição pode atualizar vários elem
 
 \['a', 'x', 'y', 'd', 'e', 'f'\]
 
-Métodos de listas
+## 10.6 - Métodos de listas
 
 O Python oferece métodos que operam em listas. Por exemplo, append adiciona um novo elemento ao fim de uma lista:
 
@@ -204,7 +204,7 @@ sort classifica os elementos da lista em ordem ascendente:
 
 A maior parte dos métodos de listas são nulos; eles alteram a lista e retornam None. Se você escrever t = t.sort() por acidente, ficará desapontado com o resultado.
 
-Mapeamento, filtragem e redução
+## 10.7 - Mapeamento, filtragem e redução
 
 Para adicionar o total de todos os números em uma lista, você pode usar um loop como esse:
 
@@ -274,7 +274,7 @@ Uma operação como only\_upper é chamada de filtragem porque filtra alguns dos
 
 As operações de lista mais comuns podem ser expressas como uma combinação de mapeamento, filtragem e redução.
 
-Como excluir elementos
+## 10.8 - Como excluir elementos
 
 Há várias formas de excluir elementos de uma lista. Se souber o índice do elemento que procura, você pode usar pop:
 
@@ -326,7 +326,7 @@ Para remover mais de um elemento, você pode usar del com um índice de fatia:
 
 Como sempre, a fatia seleciona todos os elementos até, mas não incluindo, o segundo índice.
 
-Listas e strings
+## 10.9 - Listas e strings
 
 Uma string é uma sequência de caracteres e uma lista é uma sequência de valores, mas uma lista de caracteres não é a mesma coisa que uma string. Para converter uma string em uma lista de caracteres, você pode usar list:
 
@@ -376,7 +376,7 @@ join é o contrário de split. Ele toma uma lista de strings e concatena os elem
 
 Nesse caso, o delimitador é um caractere de espaço, então join coloca um espaço entre as palavras. Para concatenar strings sem espaços, você pode usar a string vazia '', como delimitador.
 
-Objetos e valores
+## 10.10 - Objetos e valores
 
 Se executarmos essas instruções de atribuição:
 
@@ -418,7 +418,7 @@ Nesse caso, diríamos que as duas listas são equivalentes, porque elas têm os 
 
 Até agora, temos usado “objeto” e “valor” de forma intercambiável, mas é mais exato dizer que um objeto tem um valor. Se avaliar \[1, 2, 3\], você tem um objeto de lista cujo valor é uma sequência de números inteiros. Se outra lista tem os mesmos elementos, dizemos que tem o mesmo valor, mas não é o mesmo objeto.
 
-Alias
+## 10.11 - Alias
 
 Se a se refere a um objeto e você atribui b = a, então ambas as variáveis se referem ao mesmo objeto.
 
@@ -456,7 +456,7 @@ b = 'banana'
 
 Quase nunca faz diferença se a e b se referem à mesma string ou não.
 
-Argumentos de listas
+## 10.12 - Argumentos de listas
 
 Ao passar uma lista a uma função, a função recebe uma referência à lista. Se a função alterar a lista, quem faz a chamada vê a mudança. Por exemplo, delete\_head remove o primeiro elemento de uma lista:
 
@@ -544,7 +544,7 @@ Esta função deixa a lista original inalterada. Ela é usada assim:
 
 \['b', 'c'\]
 
-Depuração
+## 10.13 - Depuração
 
 O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas horas de depuração. Aqui estão algumas armadilhas comuns e formas de evitá-las:
 
@@ -616,7 +616,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
         \[1, 2, 3\]
 
-Glossário
+## 10.14 - Glossário
 
 lista:
 
@@ -674,7 +674,7 @@ delimitador:
 
 Um caractere ou uma string usada para indicar onde uma string deve ser dividida.
 
-Exercícios
+## 10.15 - Exercícios
 
 Você pode baixar as soluções para estes exercícios em http://thinkpython2.com/code/list\_exercises.py.
 

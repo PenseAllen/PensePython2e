@@ -4,7 +4,7 @@ Neste ponto você já aprendeu sobre as principais estruturas de dados do Python
 
 Este capítulo apresenta um estudo de caso com exercícios que fazem pensar sobre a escolha de estruturas de dados e práticas de uso delas.
 
-Análise de frequência de palavras
+## 13.1 - Análise de frequência de palavras
 
 Como de hábito, você deve pelo menos tentar fazer os exercícios antes de ler as minhas soluções.
 
@@ -40,7 +40,7 @@ Exercício 13.4
 
 Altere o programa anterior para ler uma lista de palavras (ver “Leitura de listas de palavras”, na página 133) e então exiba todas as palavras do livro que não estão na lista de palavras. Quantas delas são erros ortográficos? Quantas delas são palavras comuns que deveriam estar na lista de palavras, e quantas são muito obscuras?
 
-Números aleatórios
+## 13.2 - Números aleatórios
 
 Com as mesmas entradas, a maior parte dos programas gera as mesmas saídas a cada vez, então eles são chamados de deterministas. Determinismo normalmente é uma coisa boa, já que esperamos que o mesmo cálculo produza o mesmo resultado. Para algumas aplicações, entretanto, queremos que o computador seja imprevisível. Os jogos são um exemplo óbvio, mas há outros.
 
@@ -96,7 +96,7 @@ Escreva uma função chamada choose\_from\_hist que receba um histograma como de
 
 sua função deve retornar 'a' com a probabilidade de 2/3 e 'b' com a probabilidade 1/3.
 
-Histograma de palavras
+## 13.3 - Histograma de palavras
 
 É uma boa ideia tentar fazer os exercícios anteriores antes de continuar. Você pode baixar minha solução em http://thinkpython2.com/code/analyze\_book1.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
 
@@ -162,7 +162,7 @@ Total number of words: 161080
 
 Number of different words: 7214
 
-Palavras mais comuns
+## 13.4 - Palavras mais comuns
 
 Para encontrar as palavras mais comuns, podemos fazer uma lista de tuplas, onde cada tupla contenha uma palavra e a sua frequência, e ordenar a lista.
 
@@ -216,7 +216,7 @@ she     2364
 
 Este código pode ser simplificado usando o parâmetro key da função sort. Se tiver curiosidade, pode ler sobre ele em https://wiki.python.org/moin/HowTo/Sorting.
 
-Parâmetros opcionais
+## 13.5 - Parâmetros opcionais
 
 Vimos funções integradas e métodos que recebem argumentos opcionais. É possível escrever funções definidas pelos programadores com argumentos opcionais, também. Por exemplo, aqui está uma função que exibe as palavras mais comuns em um histograma:
 
@@ -244,7 +244,7 @@ num recebe o valor do argumento em vez disso. Em outras palavras, o argumento op
 
 Se uma função tem ambos os parâmetros obrigatório e opcional, todos os parâmetros necessários têm que vir primeiro, seguidos pelos opcionais.
 
-Subtração de dicionário
+## 13.6 - Subtração de dicionário
 
 Encontrar as palavras do livro que não estão na lista de palavras de words.txt é um problema que você pode reconhecer como subtração de conjuntos; isto é, queremos encontrar todas as palavras de um conjunto (as palavras no livro) que não estão no outro (as palavras na lista).
 
@@ -292,7 +292,7 @@ Escreva um programa que use a subtração de conjuntos para encontrar palavras n
 
 Solução: http://thinkpython2.com/code/analyze\_book2.py.
 
-Palavras aleatórias
+## 13.7 - Palavras aleatórias
 
 Para escolher uma palavra aleatória do histograma, o algoritmo mais simples é construir uma lista com várias cópias de cada palavra, segundo a frequência observada, e então escolher da lista:
 
@@ -326,7 +326,7 @@ Escreva um programa que use este algoritmo para escolher uma palavra aleatória 
 
 Solução: http://thinkpython2.com/code/analyze\_book3.py.
 
-Análise de Markov
+## 13.8 - Análise de Markov
 
 Se escolher palavras do livro aleatoriamente, você pode até captar certo sentido a partir do vocabulário, mas provavelmente não vai conseguir uma sentença completa:
 
@@ -382,7 +382,7 @@ Crédito: este estudo de caso é baseado em um exemplo de Kernighan and Pike, Th
 
 É uma boa ideia tentar fazer este exercício antes de continuar; depois você pode baixar a minha solução em http://thinkpython2.com/code/markov.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
 
-Estruturas de dados
+## 13.9 - Estruturas de dados
 
 Usar análise de Markov para gerar o texto aleatório é divertido, mas também há uma razão para este exercício: a seleção da estrutura de dados. Na sua solução para os exercícios anteriores, você teve que selecionar:
 
@@ -420,7 +420,7 @@ Outro fator a considerar é o espaço de armazenamento. Por exemplo, usar um his
 
 Um último comentário: nessa discussão, a ideia implícita é que devemos usar uma estrutura de dados tanto para análise como para geração. Entretanto, como essas fases são separadas, também seria possível usar uma estrutura para a análise e então convertê-la em outra estrutura para a geração. Isso seria uma vantagem se o tempo poupado durante a geração excedesse o tempo decorrido na conversão.
 
-Depuração
+## 13.10 - Depuração
 
 Quando estiver depurando um programa, especialmente se estiver trabalhando em um erro difícil, há cinco coisas que você pode tentar:
 
@@ -458,7 +458,7 @@ Programadores iniciantes muitas vezes relutam em voltar atrás porque não supor
 
 Encontrar um erro difícil exige leitura, execução, ruminação, e, às vezes, a retirada. Se empacar em alguma dessas atividades, tente as outras.
 
-Glossário
+## 13.11 - Glossário
 
 determinista:
 
@@ -484,7 +484,7 @@ depuração do pato de borracha:
 
 Depurar explicando o problema a um objeto inanimado como um pato de borracha. Articular o problema pode ajudar a resolvê-lo, mesmo se o pato de borracha não conhecer Python.
 
-Exercícios
+## 13.12 - Exercícios
 
 Exercício 13.9
 

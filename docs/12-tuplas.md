@@ -4,7 +4,7 @@ Este capítulo apresenta mais um tipo integrado, a tupla, e descreve como as lis
 
 Uma observação: não há consenso sobre como pronunciar “tuple” (em inglês). Algumas pessoas dizem “tuhple”, que rima com “supple”. Porém, no contexto da programação, a maioria das pessoas diz “too-ple”, que rima com “quadruple”.
 
-Tuplas são imutáveis
+## 12.1 - Tuplas são imutáveis
 
 Uma tupla é uma sequência de valores. Os valores podem ser de qualquer tipo, e podem ser indexados por números inteiros, portanto, nesse sentido, as tuplas são muito parecidas com as listas. A diferença importante é que as tuplas são imutáveis.
 
@@ -90,7 +90,7 @@ True
 
 True
 
-Atribuição de tuplas
+## 12.2 - Atribuição de tuplas
 
 Muitas vezes, é útil trocar os valores de duas variáveis. Com a atribuição convencional, é preciso usar uma variável temporária. Por exemplo, trocar a e b.
 
@@ -128,7 +128,7 @@ O valor de retorno do split é uma lista com dois elementos; o primeiro elemento
 
 'python.org'
 
-Tuplas como valores de retorno
+## 12.3 - Tuplas como valores de retorno
 
 Falando estritamente, uma função só pode retornar um valor, mas se o valor for uma tupla, o efeito é o mesmo que retornar valores múltiplos. Por exemplo, se você quiser dividir dois números inteiros e calcular o quociente e resto, não é eficiente calcular x/y e depois x%y. É melhor calcular ambos ao mesmo tempo.
 
@@ -160,7 +160,7 @@ def min\_max(t):
 
 max e min são funções integradas que encontram os maiores e menores elementos de uma sequência. min\_max calcula ambos e retorna uma tupla de dois valores.
 
-Tuplas com argumentos de comprimento variável
+## 12.4 - Tuplas com argumentos de comprimento variável
 
 As funções podem receber um número variável de argumentos. Um nome de parâmetro que comece com \* reúne (gather) argumentos em uma tupla. Por exemplo, printall recebe qualquer número de argumentos e os exibe:
 
@@ -202,7 +202,7 @@ TypeError: sum expected at most 2 arguments, got 3
 
 Como exercício, escreva uma função chamada sumall que receba qualquer número de argumentos e retorne a soma deles.
 
-Listas e tuplas
+## 12.5 - Listas e tuplas
 
 zip é uma função integrada que recebe duas ou mais sequências e devolve uma lista de tuplas onde cada tupla contém um elemento de cada sequência. O nome da função tem a ver com o zíper, que se junta e encaixa duas carreiras de dentes.
 
@@ -290,7 +290,7 @@ O resultado de enumerate é um objeto enumerate, que repete uma sequência de pa
 
 de novo.
 
-Dicionários e tuplas
+## 12.6 - Dicionários e tuplas
 
 Os dicionários têm um método chamado items que devolve uma sequência de tuplas, onde cada tupla é um par chave-valor:
 
@@ -360,7 +360,7 @@ Figura 12.2 – Diagrama de estado.
 
 Aqui as tuplas são mostradas usando a sintaxe do Python como se fosse estenografia gráfica. O número de telefone no diagrama é a linha de reclamações da BBC, então, por favor, não ligue para lá.
 
-Sequências de sequências
+## 12.7 - Sequências de sequências
 
 Eu me concentrei em listas de tuplas, mas quase todos os exemplos neste capítulo também trabalham com listas de listas, tuplas de tuplas e tuplas de listas. Para evitar enumerar as combinações possíveis, às vezes é mais fácil falar sobre sequências de sequências.
 
@@ -378,7 +378,7 @@ As listas são mais comuns que as tuplas, principalmente porque são mutáveis. 
 
 Como tuplas são imutáveis, elas não fornecem métodos como sort e reverse, que alteram listas existentes. Porém, o Python fornece a função integrada sorted, que recebe qualquer sequência e retorna uma nova lista com os mesmos elementos na ordem classificada, e reversed, que recebe uma sequência e retorna um iterador que atravessa a lista em ordem reversa.
 
-Depuração
+## 12.8 - Depuração
 
 As listas, os dicionários e as tuplas são exemplos de estruturas de dados; neste capítulo estamos começando a ver estruturas de dados compostas, como as listas de tuplas ou dicionários que contêm tuplas como chaves e listas como valores. As estruturas de dados compostas são úteis, mas são propensas ao que chamo de erros de forma; isto é, erros causados quando uma estrutura de dados tem o tipo, tamanho ou estrutura incorretos. Por exemplo, se você estiver esperando uma lista com um número inteiro e eu der apenas o número inteiro (não em uma lista), não vai funcionar.
 
@@ -430,7 +430,7 @@ E aqui está um dicionário com três itens que mapeia números inteiros a strin
 
 Se estiver com problemas para monitorar suas estruturas de dados, o structshape pode ajudar.
 
-Glossário
+## 12.9 - Glossário
 
 tupla:
 
@@ -464,7 +464,7 @@ erro de forma:
 
 Erro causado pelo fato de o valor ter a forma incorreta; isto é, tipo ou tamanho incorreto.
 
-Exercícios
+## 12.10 - Exercícios
 
 Exercício 12.1
 

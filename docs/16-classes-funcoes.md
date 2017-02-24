@@ -4,7 +4,7 @@ Agora que sabemos como criar tipos, o próximo passo deve ser escrever funções
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py. As soluções para os exercícios estão em http://thinkpython2.com/code/Time1\_soln.py.
 
-Time
+## 16.1 - Time
 
 Para ter mais um exemplo de tipo definido pelo programador, criaremos uma classe chamada Time, que registra o período do dia. A definição da classe é assim:
 
@@ -34,7 +34,7 @@ Escreva uma função booleana chamada is\_after, que receba dois objetos Time, t
 
 Figura 16.1 – Diagrama de objeto.
 
-Funções puras
+## 16.2 - Funções puras
 
 Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de protótipo e correção, que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.
 
@@ -110,7 +110,7 @@ def add\_time(t1, t2):
 
 Embora esta função esteja correta, é um pouco extensa. Veremos uma alternativa menor mais adiante.
 
-Modificadores
+## 16.3 - Modificadores
 
 Às vezes é útil uma função alterar os objetos que recebe como parâmetros. Nesse caso, as mudanças são visíveis a quem chama a função. As funções que fazem isso chamam-se modificadores.
 
@@ -144,7 +144,7 @@ De forma geral, recomendo que você escreva funções puras sempre que achar raz
 
 Como exercício, escreva uma versão “pura” de increment que cria e retorna um objeto Time em vez de alterar o parâmetro.
 
-Prototipação versus planejamento
+## 16.4 - Prototipação versus planejamento
 
 O plano de desenvolvimento que estou demonstrando chama-se “protótipo e correção”. Para cada função, escrevi um protótipo que executa o cálculo básico e então testa a função, corrigindo erros no decorrer do caminho.
 
@@ -198,7 +198,7 @@ Também é mais fácil acrescentar recursos depois. Por exemplo, imagine subtrai
 
 Ironicamente, tornar um problema mais difícil (ou mais geral) facilita (porque há menos casos especiais e menos oportunidades de erro).
 
-Depuração
+## 16.5 - Depuração
 
 Um objeto Time é bem formado se os valores de minute e second estiverem entre 0 e 60 (incluindo 0, mas não 60) e se hour for positivo. hour e minute devem ser valores integrais, mas podemos permitir que second tenha uma parte fracionária.
 
@@ -242,7 +242,7 @@ def add\_time(t1, t2):
 
 Instruções assert são úteis porque distinguem o código que lida com condições normais do código que verifica erros.
 
-Glossário
+## 16.6 - Glossário
 
 protótipo e correção:
 
@@ -272,7 +272,7 @@ instrução assert:
 
 Instrução que verifica uma condição e levanta uma exceção se esta falhar.
 
-Exercícios
+## 16.7 - Exercícios
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Time1\_soln.py.
 

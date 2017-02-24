@@ -6,7 +6,7 @@ A habilidade específica mais importante de um cientista da computação é a re
 
 Em um nível você aprenderá a programar, uma habilidade útil por si mesma. Em outro nível usará a programação como um meio para um fim. Conforme avançarmos, este fim ficará mais claro.
 
-O que é um programa?
+## 1.1 - O que é um programa?
 
 Um programa é uma sequência de instruções que especifica como executar uma operação de computação. A operação de computação pode ser algo matemático, como solucionar um sistema de equações ou encontrar as raízes de um polinômio, mas também pode ser uma operação de computação simbólica, como a busca e a substituição de textos em um documento; ou algo gráfico, como o processamento de uma imagem ou a reprodução de um vídeo.
 
@@ -34,7 +34,7 @@ Executar várias vezes alguma ação, normalmente com algumas variações.
 
 Acredite ou não, isto é basicamente tudo o que é preciso saber. Cada programa que você já usou, complicado ou não, é composto de instruções muito parecidas com essas. Podemos então chegar à conclusão de que programar é o processo de quebrar uma tarefa grande e complexa em subtarefas cada vez menores, até que estas sejam simples o suficiente para serem executadas por uma dessas instruções básicas.
 
-Execução do Python
+## 1.2 - Execução do Python
 
 Um dos desafios de começar a usar Python é ter que instalar no seu computador o próprio programa e outros relacionados. Se tiver familiaridade com o seu sistema operacional, e especialmente se não tiver problemas com a interface de linha de comando, você não terá dificuldade para instalar o Python. Mas para principiantes pode ser trabalhoso aprender sobre administração de sistemas e programação ao mesmo tempo.
 
@@ -64,7 +64,7 @@ A última linha é um prompt indicando que o interpretador está pronto para voc
 
 Agora você está pronto para começar. Daqui em diante, vou supor que você sabe como inicializar o interpretador do Python e executar o código.
 
-O primeiro programa
+## 1.3 - O primeiro programa
 
 Tradicionalmente, o primeiro programa que se escreve em uma nova linguagem chama-se “Hello, World!”, porque tudo o que faz é exibir as palavras “Hello, World!” na tela. No Python, ele se parece com isto:
 
@@ -84,7 +84,7 @@ No Python 2, a instrução print é ligeiramente diferente; ela não é uma fun�
 
 Esta distinção fará mais sentido em breve, mas isso é o suficiente para começar.
 
-Operadores aritméticos
+## 1.4 - Operadores aritméticos
 
 Depois do “Hello, World”, o próximo passo é a aritmética. O Python tem operadores, que são símbolos especiais representando operações de computação, como adição e multiplicação.
 
@@ -124,7 +124,7 @@ Em algumas outras linguagens, o ^ é usado para a exponenciação, mas no Python
 
 Não abordarei operadores bitwise neste livro, mas você pode ler sobre eles em http://wiki.python.org/moin/BitwiseOperators.
 
-Valores e tipos
+## 1.5 - Valores e tipos
 
 Um valor é uma das coisas básicas com as quais um programa trabalha, como uma letra ou um número. Alguns valores que vimos até agora foram 2, 42.0 e 'Hello, World!'.
 
@@ -168,7 +168,7 @@ Ao digitar um número inteiro grande, alguns podem usar a notação americana, c
 
 O que não é de modo algum o que esperávamos! O Python interpreta 1,000,000 como uma sequência de números inteiros separados por vírgulas. Aprenderemos mais sobre este tipo de sequência mais adiante.
 
-Linguagens formais e naturais
+## 1.6 - Linguagens formais e naturais
 
 As linguagens naturais são os idiomas que as pessoas falam, como inglês, espanhol e francês. Elas não foram criadas pelas pessoas (embora as pessoas tentem impor certa ordem a elas); desenvolveram-se naturalmente.
 
@@ -216,7 +216,7 @@ A significado de um programa de computador é inequívoco e literal e pode ser e
 
 As linguagens formais são mais densas que as naturais, então exigem mais tempo para a leitura. Além disso, a estrutura é importante, então nem sempre é melhor ler de cima para baixo e da esquerda para a direita. Em vez disso, aprenda a analisar o programa primeiro, identificando os símbolos e interpretando a estrutura. E os detalhes fazem diferença. Pequenos erros em ortografia e pontuação, que podem não importar tanto nas linguagens naturais, podem fazer uma grande diferença em uma língua formal.
 
-Depuração
+## 1.7 - Depuração
 
 Os programadores erram. Por um capricho do destino, erros de programação são chamados de bugs (insetos) e o processo de rastreá-los chama-se depuração (debugging).
 
@@ -230,7 +230,7 @@ Seu trabalho é ser um bom gerente: encontrar formas de aproveitar as vantagens 
 
 Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, útil para muitas atividades além da programação. No fim de cada capítulo há uma seção como esta, com as minhas sugestões para fazer a depuração. Espero que sejam úteis!
 
-Glossário
+## 1.8 - Glossário
 
 resolução de problemas:
 
@@ -316,7 +316,7 @@ depuração:
 
 O processo de encontrar e corrigir (depurar) bugs.
 
-Exercícios
+## 1.9 - Exercícios
 
 Exercício 1.1
 

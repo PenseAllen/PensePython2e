@@ -10,7 +10,7 @@ Durante a depuração, você deve distinguir entre tipos diferentes de erros par
 
 O primeiro passo da depuração é compreender com que tipo de erro você está lidando. Embora as próximas seções sejam organizadas pelo tipo de erro, algumas técnicas são aplicáveis em mais de uma situação.
 
-Erros de sintaxe
+## A.1 - Erros de sintaxe
 
 Os erros de sintaxe normalmente são fáceis de corrigir, uma vez que você descubra quais são. Infelizmente, as mensagens de erro muitas vezes não são úteis. As mensagens mais comuns são SyntaxError: invalid syntax e SyntaxError: invalid token, e nenhuma das duas é muito informativa.
 
@@ -40,7 +40,7 @@ Aqui estão algumas formas de evitar os erros de sintaxe mais comuns:
 
 Se nada funcionar, vá para a próxima seção...
 
-Continuo fazendo alterações e não faz nenhuma diferença
+### A.1.1 - Continuo fazendo alterações e não faz nenhuma diferença
 
 Se o interpretador disser que há um erro e você não o encontra, pode ser que você e o interpretador não estejam olhando para o mesmo código. Verifique o seu ambiente de programação para ter certeza de que o programa que está editando é o mesmo que o Python está tentando executar.
 
@@ -60,17 +60,17 @@ Há alguns culpados prováveis:
 
 Se já esgotou as possibilidades e não conseguiu descobrir o que está acontecendo, uma abordagem é começar novamente com um programa como “Hello, World!”, para ter certeza de que consegue executar um programa conhecido. Então, gradualmente acrescente as partes do programa original ao novo.
 
-Erros de tempo de execução
+## A.2 - Erros de tempo de execução
 
 Uma vez que o seu programa esteja sintaticamente correto, o Python pode lê-lo e, pelo menos, começar a executá-lo. O que poderia dar errado?
 
-Meu programa não faz nada
+### A.2.1 - Meu programa não faz nada
 
 Este problema é mais comum quando o seu arquivo é composto de funções e classes, mas na verdade não invoca uma função para começar a execução. Isso pode ser intencional se você só planeja importar este módulo para fornecer classes e funções.
 
 Se não for intencional, tenha certeza de que há uma chamada de função no programa, e que o fluxo de execução o alcança (veja “Fluxo da execução” a seguir).
 
-Meu programa fica suspenso
+### A.2.2 - Meu programa fica suspenso
 
 Se um programa parar e parecer que não está fazendo nada, ele está “suspenso”. Muitas vezes isso significa que está preso em um loop ou recursividade infinita.
 
@@ -120,7 +120,7 @@ Se não tiver certeza de como o fluxo de execução está se movendo pelo seu pr
 
 Agora, quando executar o programa, ele exibirá cada função que for invocada.
 
-Quando executo o programa recebo uma exceção
+### A.2.3 - Quando executo o programa recebo uma exceção
 
 Se algo der errado durante o tempo de execução, o Python exibe uma mensagem que inclui o nome da exceção, a linha do programa onde o problema ocorreu, e um traceback.
 
@@ -160,7 +160,7 @@ O índice que você está usando para acessar uma lista, string ou tupla é maio
 
 O depurador do Python (pdb) é útil para rastrear exceções porque permite examinar o estado do programa imediatamente antes do erro. Você pode ler sobre o pdb em https://docs.python.org/3/library/pdb.html.
 
-Acrescentei tantas instruções print que fui inundado pelos resultados
+### A.2.4 - Acrescentei tantas instruções print que fui inundado pelos resultados
 
 Um dos problemas com a utilização de instruções print para a depuração é que você pode terminar enterrado pelos resultados. Há duas formas de prosseguir: simplifique a saída ou simplifique o programa.
 
@@ -174,7 +174,7 @@ Muitas vezes, o próprio processo de encontrar o caso de teste mínimo leva voc�
 
 De forma similar, reescrever uma parte do código pode ajudar a encontrar erros sutis. Se fizer uma alteração que você ache que não vai afetar o programa, mas que acabe afetando, isso pode ajudá-lo.
 
-Erros semânticos
+## A.3 - Erros semânticos
 
 De algumas formas, os erros semânticos são os mais difíceis de depurar, porque o interpretador não fornece nenhuma informação sobre qual é o problema. Só você sabe o que o programa deve fazer.
 
@@ -182,7 +182,7 @@ O primeiro passo é fazer uma conexão entre o texto do programa e o comportamen
 
 Pode ser que você queira diminuir a velocidade do programa para ser equivalente à humana; com alguns depuradores é possível fazer isso. No entanto, o tempo que leva para inserir instruções print bem colocadas muitas vezes é curto em comparação ao da configuração do depurador, inserção e remoção de marcações e colocação do “compasso” do programa onde o erro está ocorrendo.
 
-Meu programa não funciona
+### A.3.1 - Meu programa não funciona
 
 Você deve se perguntar o seguinte:
 
@@ -198,7 +198,7 @@ A melhor forma de corrigir o seu modelo mental é quebrar o programa nos seus co
 
 Naturalmente, você deveria construir e testar componentes conforme desenvolva o programa. Assim, se encontrar um problema, deve haver só uma pequena quantidade de código novo que não sabe se está correto.
 
-Tenho uma baita expressão cabeluda e ela não faz o que espero
+### A.3.2 - Tenho uma baita expressão cabeluda e ela não faz o que espero
 
 Escrever expressões complexas é ótimo enquanto são legíveis, mas elas podem ser difíceis de depurar. Muitas vezes é uma boa ideia quebrar uma expressão complexa em uma série de atribuições a variáveis temporárias.
 
@@ -228,7 +228,7 @@ y = x / (2 \* math.pi)
 
 Sempre que não tiver certeza sobre a ordem da avaliação, use parênteses. Além de o programa ficar correto (quanto à execução do que era pretendido), ele também será mais legível para outras pessoas que não memorizaram a ordem de operações.
 
-Tenho uma função que não retorna o que espero
+### A.3.3 - Tenho uma função que não retorna o que espero
 
 Se tiver uma instrução return com uma expressão complexa, não há possibilidade de exibir o resultado antes do retorno. Novamente, você pode usar uma variável temporária. Por exemplo, em vez de:
 
@@ -242,7 +242,7 @@ return count
 
 Agora você tem a oportunidade de exibir o valor de count antes do retorno.
 
-Estou perdido e preciso de ajuda
+### A.3.4 - Estou perdido e preciso de ajuda
 
 Em primeiro lugar, afaste-se do computador por alguns minutos. Computadores emitem ondas que afetam o cérebro, causando estes sintomas:
 
@@ -256,7 +256,7 @@ Se estiver sofrendo algum desses sintomas, levante-se e dê uma volta. Quando se
 
 Às vezes leva tempo para encontrar um erro. Com frequência encontro erros quando estou longe do computador e deixo a minha mente vagar. Os melhores lugares para encontrar erros são os trens, o chuveiro e a cama, logo antes de adormecer.
 
-Sério, preciso mesmo de ajuda
+### A.3.5 - Sério, preciso mesmo de ajuda
 
 Acontece. Mesmo os melhores programadores ocasionalmente empacam. Pode ocorrer de você trabalhar tanto em um programa que não consegue enxergar o erro. Precisa de outro par de olhos.
 

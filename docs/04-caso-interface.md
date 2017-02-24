@@ -8,7 +8,7 @@ Se já tiver instalado o Python no seu computador, você poderá executar os exe
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/polygon.py.
 
-Módulo turtle
+## 4.1 - Módulo turtle
 
 Para conferir se você tem o módulo turtle, abra o interpretador do Python e digite:
 
@@ -60,7 +60,7 @@ Ao executar este programa, você deveria ver bob mover-se para o leste e depois 
 
 Agora altere o programa para desenhar um quadrado. Só siga adiante neste capítulo se ele funcionar adequadamente!
 
-Repetição simples
+## 4.2 - Repetição simples
 
 Provavelmente você escreveu algo assim:
 
@@ -110,7 +110,7 @@ Uma instrução for também é chamada de loop porque o fluxo da execução pass
 
 Esta versão, na verdade, é um pouco diferente do código anterior que desenha quadrados porque faz outra volta depois de desenhar o último lado do quadrado. A volta extra leva mais tempo, mas simplifica o código se fizermos a mesma coisa a cada vez pelo loop. Esta versão também tem o efeito de trazer o turtle de volta à posição inicial, de frente para a mesma direção em que estava.
 
-Exercícios
+## 4.3 - Exercícios
 
 A seguir, uma série de exercícios usando TurtleWorld. Eles servem para divertir, mas também têm outro objetivo. Enquanto trabalha neles, pense que objetivo pode ser.
 
@@ -132,7 +132,7 @@ As seções seguintes têm as soluções para os exercícios, mas não olhe até
 
 5.        Faça uma versão mais geral do circle chamada arc, que receba um parâmetro adicional de angle, para determinar qual fração do círculo deve ser desenhada. angle está em unidades de graus, então quando angle=360, o arc deve desenhar um círculo completo.
 
-Encapsulamento
+## 4.4 - Encapsulamento
 
 O primeiro exercício pede que você ponha seu código para desenhar quadrados em uma definição de função e então chame a função, passando o turtle como parâmetro. Aqui está uma solução:
 
@@ -156,7 +156,7 @@ square(alice)
 
 Incluir uma parte do código em uma função chama-se encapsulamento. Um dos benefícios do encapsulamento é que ele atribui um nome ao código, o que serve como uma espécie de documentação. Outra vantagem é que se você reutilizar o código, é mais conciso chamar uma função duas vezes que copiar e colar o corpo!
 
-Generalização
+## 4.5 - Generalização
 
 O próximo passo é acrescentar um parâmetro length ao square. Aqui está uma solução:
 
@@ -198,7 +198,7 @@ Esses são os argumentos de palavra-chave porque incluem os nomes dos parâmetro
 
 Esta sintaxe torna o programa mais legível. Também é uma lembrança sobre como os argumentos e os parâmetros funcionam: quando você chama uma função, os argumentos são atribuídos aos parâmetros.
 
-Projeto da interface
+## 4.6 - Projeto da interface
 
 O próximo passo é escrever circle, que recebe um raio r, como parâmetro. Aqui está uma solução simples que usa o polygon para desenhar um polígono de 50 lados:
 
@@ -238,7 +238,7 @@ def circle(t, r):
 
 Neste ponto, o número de segmentos é um número inteiro próximo a circumference/3, então o comprimento de cada segmento é aproximadamente 3, pequeno o suficiente para que os círculos fiquem bons, mas grandes o suficiente para serem eficientes e aceitáveis para círculos de qualquer tamanho.
 
-Refatoração
+## 4.7 - Refatoração
 
 Quando escrevi circle, pude reutilizar polygon porque um polígono de muitos lados é uma boa aproximação de um círculo. Mas o arc não é tão cooperativo; não podemos usar polygon ou circle para desenhar um arco.
 
@@ -300,7 +300,7 @@ Este processo – recompor um programa para melhorar interfaces e facilitar a re
 
 Se tivéssemos planejado, poderíamos ter escrito polyline primeiro e evitado a refatoração, mas muitas vezes não sabemos o suficiente já no início de um projeto para projetar todas as interfaces. Quando começarmos a escrever código, entenderemos melhor o problema. Às vezes, a refatoração é um sinal de que aprendemos algo.
 
-Um plano de desenvolvimento
+## 4.8 - Um plano de desenvolvimento
 
 Um plano de desenvolvimento é um processo para escrever programas. O processo que usamos neste estudo de caso é “encapsulamento e generalização”. Os passos deste processo são:
 
@@ -316,7 +316,7 @@ Um plano de desenvolvimento é um processo para escrever programas. O processo q
 
 Este processo tem algumas desvantagens – veremos alternativas mais tarde – mas pode ser útil se você não souber de antemão como dividir o programa em funções. Esta abordagem permite criar o projeto no decorrer do trabalho.
 
-docstring
+## 4.9 - docstring
 
 Uma docstring é uma string no início de uma função que explica a interface (“doc” é uma abreviação para “documentação”). Aqui está um exemplo:
 
@@ -340,7 +340,7 @@ Por convenção, todas as docstrings têm aspas triplas, também conhecidas como
 
 Escrever este tipo de documentação é uma parte importante do projeto da interface. Uma interface bem projetada deve ser simples de explicar; se não for assim, talvez a interface possa ser melhorada.
 
-Depuração
+## 4.10 - Depuração
 
 Uma interface é como um contrato entre uma função e quem a chama. Quem chama concorda em fornecer certos parâmetros e a função concorda em fazer certa ação.
 
@@ -352,7 +352,7 @@ Precondições são responsabilidade de quem chama. Se quem chama violar uma pre
 
 Se as precondições forem satisfeitas e as pós-condições não forem, o problema está na função. Se as suas precondições e pós-condições forem claras, elas podem ajudar na depuração.
 
-Glossário
+## 4.11 - Glossário
 
 método:
 
@@ -398,7 +398,7 @@ pós-condição:
 
 Uma exigência que deve ser satisfeita pela função antes que ela seja encerrada.
 
-Exercícios
+## 4.12 - Exercícios
 
 Exercício 4.1
 

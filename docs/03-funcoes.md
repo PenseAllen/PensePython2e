@@ -2,7 +2,7 @@
 
 No contexto da programação, uma função é uma sequência nomeada de instruções que executa uma operação de computação. Ao definir uma função, você especifica o nome e a sequência de instruções. Depois, pode “chamar” a função pelo nome.
 
-Chamada de função
+## 3.1 - Chamada de função
 
 Já vimos um exemplo de chamada de função:
 
@@ -54,7 +54,7 @@ Finalmente, str converte o argumento em uma string:
 
 '3.14159'
 
-Funções matemáticas
+## 3.2 - Funções matemáticas
 
 O Python tem um módulo matemático que oferece a maioria das funções matemáticas comuns. Um módulo é um arquivo que contém uma coleção de funções relacionadas.
 
@@ -98,7 +98,7 @@ Se souber trigonometria, você pode verificar o resultado anterior comparando-o 
 
 0.707106781187
 
-Composição
+## 3.3 - Composição
 
 Por enquanto, falamos sobre os elementos de um programa – variáveis, expressões e instruções – de forma isolada, mas não sobre como combiná-los.
 
@@ -118,7 +118,7 @@ x = math.exp(math.log(x+1))
 
 SyntaxError: can't assign to operator
 
-Como acrescentar novas funções
+## 3.4 - Como acrescentar novas funções
 
 Por enquanto, só usamos funções que vêm com o Python, mas também é possível acrescentar novas funções. Uma definição de função especifica o nome de uma nova função e a sequência de instruções que são executadas quando a função é chamada.
 
@@ -192,7 +192,7 @@ I sleep all night and I work all day.
 
 Mas a canção não é bem assim.
 
-Uso e definições
+## 3.5 - Uso e definições
 
 Juntando fragmentos de código da seção anterior, o programa inteiro fica assim:
 
@@ -218,7 +218,7 @@ Como exercício, mova a última linha deste programa para o topo, para que a cha
 
 Agora mova a chamada de função de volta para baixo e mova a definição de print\_lyrics para depois da definição de repeat\_lyrics. O que acontece quando este programa é executado?
 
-Fluxo de execução
+## 3.6 - Fluxo de execução
 
 Para garantir que uma função seja definida antes do seu primeiro uso, é preciso saber a ordem na qual as instruções serão executadas. Isso é chamado de fluxo de execução.
 
@@ -234,7 +234,7 @@ Felizmente, o Python é bom em não perder o fio da meada, então cada vez que u
 
 Resumindo, nem sempre se deve ler um programa de cima para baixo. Às vezes faz mais sentido seguir o fluxo de execução.
 
-Parâmetros e argumentos
+## 3.7 - Parâmetros e argumentos
 
 Algumas funções que vimos exigem argumentos. Por exemplo, ao chamar math.sin, você usa um número como argumento. Algumas funções exigem mais de um argumento: o math.pow exige dois, a base e o expoente.
 
@@ -296,7 +296,7 @@ Eric, the half a bee.
 
 O nome da variável que passamos como argumento (michael) não tem nada a ver com o nome do parâmetro (bruce). Não importa que o valor tenha sido chamado de volta (em quem chama); aqui em print\_twice, chamamos todo mundo de bruce.
 
-As variáveis e os parâmetros são locais
+## 3.8 - As variáveis e os parâmetros são locais
 
 Quando você cria uma variável dentro de uma função, ela é local, ou seja, ela só existe dentro da função. Por exemplo:
 
@@ -326,7 +326,7 @@ NameError: name 'cat' is not defined
 
 Os parâmetros também são locais. Por exemplo, além de print\_twice, não existe o bruce.
 
-Diagrama da pilha
+## 3.9 - Diagrama da pilha
 
 Para monitorar quais variáveis podem ser usadas e onde, é uma boa ideia desenhar um diagrama da pilha. Assim como diagramas de estado, os diagramas da pilha mostram o valor de cada variável, mas também mostram a função à qual cada variável pertence.
 
@@ -362,7 +362,7 @@ Esta lista de funções é chamada de traceback. Ela mostra o arquivo do program
 
 A ordem das funções no traceback é a mesma que a ordem dos frames no diagrama da pilha. A função que está sendo executada no momento está no final.
 
-Funções com resultado e funções nulas
+## 3.10 - Funções com resultado e funções nulas
 
 Algumas funções que usamos, como as funções matemáticas, devolvem resultados; por falta de um nome melhor, vou chamá-las de funções com resultados. Outras funções, como print\_twice, executam uma ação, mas não devolvem um valor. Elas são chamadas de funções nulas.
 
@@ -404,7 +404,7 @@ O valor None não é o mesmo que a string 'None'. É um valor especial que tem s
 
 As funções que apresentamos por enquanto são todas nulas. Vamos apresentar funções com resultado mais adiante.
 
-Por que funções?
+## 3.11 - Por que funções?
 
 Caso o objetivo de dividir um programa em funções não esteja claro, saiba que na verdade há várias razões:
 
@@ -416,7 +416,7 @@ Caso o objetivo de dividir um programa em funções não esteja claro, saiba que
 
 •        As funções bem projetadas muitas vezes são úteis para muitos programas. Uma vez que escreva e depure uma, você pode reutilizá-la.
 
-Depuração
+## 3.12 - Depuração
 
 Uma das habilidades mais importantes que você vai aprender é a depuração. Embora possa ser frustrante, a depuração é uma das partes mais intelectualmente ricas, desafiadoras e interessantes da programação.
 
@@ -428,7 +428,7 @@ Para algumas pessoas, programar e depurar são a mesma coisa. Isto é, a program
 
 Por exemplo, o Linux é um sistema operacional que contém milhões de linhas de código, mas começou como um programa simples que Linus Torvalds usava para explorar o chip Intel 80386. Segundo Larry Greenfield, “Um dos primeiros projetos de Linus foi um programa que alternaria entre a exibição de AAAA e BBBB. Mais tarde isso se desenvolveu até virar o Linux.” (Guia do usuário de Linux versão beta 1).
 
-Glossário
+## 3.13 - Glossário
 
 função:
 
@@ -518,7 +518,7 @@ traceback:
 
 Lista das funções que estão sendo executadas, exibidas quando ocorre uma exceção.
 
-Exercícios
+## 3.14 - Exercícios
 
 Exercício 3.1
 

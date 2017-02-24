@@ -2,7 +2,7 @@
 
 Muitas das funções do Python que usamos, como as matemáticas, produzem valores de retorno. Mas as funções que escrevemos são todas nulas: têm um efeito, como exibir um valor ou mover um turtle, mas não têm um valor de retorno. Neste capítulo você aprenderá a escrever funções com resultados.
 
-Valores de retorno
+## 6.1 - Valores de retorno
 
 A chamada de função gera um valor de retorno, que normalmente atribuímos a uma variável ou usamos como parte de uma expressão.
 
@@ -66,7 +66,7 @@ A propósito, o Python oferece uma função integrada chamada abs, que calcula v
 
 Como exercício, escreva uma função compare que receba dois valores, x e y, e retorne 1 se x &gt; y, 0 se x == y e -1 se x &lt; y.
 
-Desenvolvimento incremental
+## 6.2 - Desenvolvimento incremental
 
 Conforme você escrever funções maiores, pode ser que passe mais tempo as depurando.
 
@@ -154,7 +154,7 @@ Os principais aspectos do processo são:
 
 Como exercício, use o desenvolvimento incremental para escrever uma função chamada hypotenuse, que devolva o comprimento da hipotenusa de um triângulo retângulo dados os comprimentos dos outros dois lados como argumentos. Registre cada etapa do processo de desenvolvimento no decorrer do processo.
 
-Composição
+## 6.3 - Composição
 
 Como você já deveria esperar a essa altura, é possível chamar uma função de dentro de outra. Como exemplo, escreveremos uma função que recebe dois pontos, o centro do círculo e um ponto no perímetro, para calcular a área do círculo.
 
@@ -182,7 +182,7 @@ def circle\_area(xc, yc, xp, yp):
 
     return area(distance(xc, yc, xp, yp))
 
-Funções booleanas
+## 6.4 - Funções booleanas
 
 As funções podem retornar booleans, o que pode ser conveniente para esconder testes complicados dentro de funções. Por exemplo:
 
@@ -230,7 +230,7 @@ Mas a comparação extra é desnecessária.
 
 Como um exercício, escreva uma função is\_between(x, y, z) que retorne True, se x ≤ y ≤ z, ou False, se não for o caso.
 
-Mais recursividade
+## 6.5 - Mais recursividade
 
 Cobrimos apenas um pequeno subconjunto do Python, mas talvez seja bom você saber que este subconjunto é uma linguagem de programação completa, ou seja, qualquer coisa que possa ser calculada pode ser expressa nesta linguagem. Qualquer programa que já foi escrito pode ser reescrito apenas com os recursos da linguagem que você aprendeu até agora (na verdade, seria preciso alguns comandos para dispositivos de controle como mouse, discos etc., mas isso é tudo).
 
@@ -304,7 +304,7 @@ Os valores de retorno são mostrados ao serem passados de volta até o alto da p
 
 No último frame, as variáveis locais recurse e result não existem, porque o ramo que os cria não é executado.
 
-Salto de fé
+## 6.6 - Salto de fé
 
 Seguir o fluxo da execução é uma forma de ler programas, mas poderá ser trabalhoso demais. Uma alternativa é o que chamo de “salto de fé” (leap of faith). Ao chegar a uma chamada de função, em vez de seguir o fluxo de execução suponha que a função esteja funcionando corretamente e que está retornando o resultado certo.
 
@@ -316,7 +316,7 @@ O mesmo é verdade para programas recursivos. Quando chega à chamada recursiva,
 
 Naturalmente, é um pouco estranho supor que a função funcione corretamente quando ainda não terminou de escrevê-la, mas é por isso que se chama um salto de fé!
 
-Mais um exemplo
+## 6.7 - Mais um exemplo
 
 Depois do factorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição (ver http://en.wikipedia.org/wiki/Fibonacci\_number):
 
@@ -344,7 +344,7 @@ def fibonacci (n):
 
 Se tentar seguir o fluxo de execução aqui, até para valores razoavelmente pequenos de n, sua cabeça explode. Porém, seguindo o salto de fé, supondo que as duas chamadas recursivas funcionem corretamente, então é claro que vai receber o resultado correto adicionando-as juntas.
 
-Verificação de tipos
+## 6.8 - Verificação de tipos
 
 O que acontece se chamarmos factorial e usarmos 1.5 como argumento?
 
@@ -402,7 +402,7 @@ Esse programa demonstra um padrão às vezes chamado de guardião. As duas prime
 
 Na “Busca reversa”, na página 165, veremos uma alternativa mais flexível para a exibição de uma mensagem de erro: o levantamento de exceções.
 
-Depuração
+## 6.9 - Depuração
 
 Quebrar um grande programa em funções menores cria controles naturais da depuração. Se uma função não estiver funcionando, há três possibilidades a considerar:
 
@@ -466,7 +466,7 @@ returning 1
 
 Se o fluxo de execução parecer confuso a você, este tipo de saída pode ser útil. Leva um tempo para desenvolver um scaffolding eficaz, mas um pouco dele pode economizar muita depuração.
 
-Glossário
+## 6.10 - Glossário
 
 variável temporária:
 
@@ -488,7 +488,7 @@ guardião:
 
 Um padrão de programação que usa uma instrução condicional para verificar e lidar com circunstâncias que possam causar erros.
 
-Exercícios
+## 6.11 - Exercícios
 
 Exercício 6.1
 

@@ -2,7 +2,7 @@
 
 Um dos recursos mais eficientes de uma linguagem de programação é a capacidade de manipular variáveis. Uma variável é um nome que se refere a um valor.
 
-Instruções de atribuição
+## 2.1 - Instruções de atribuição
 
 Uma instrução de atribuição cria uma nova variável e dá um valor a ela:
 
@@ -18,7 +18,7 @@ Uma forma comum de representar variáveis por escrito é colocar o nome com uma 
 
 Figura 2.1 – Diagrama de estado.
 
-Nomes de variáveis
+## 2.2 - Nomes de variáveis
 
 Os programadores geralmente escolhem nomes significativos para as suas variáveis – eles documentam o uso da variável.
 
@@ -62,7 +62,7 @@ break     except     in        raise
 
 Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvolvimento, as palavras-chave são exibidas em uma cor diferente; se você tentar usar uma como nome de variável, vai perceber.
 
-Expressões e instruções
+## 2.3 - Expressões e instruções
 
 Uma expressão é uma combinação de valores, variáveis e operadores. Um valor por si mesmo é considerado uma expressão, assim como uma variável, portanto as expressões seguintes são todas legais:
 
@@ -90,7 +90,7 @@ A primeira linha é uma instrução de atribuição que dá um valor a n. A segu
 
 Quando você digita uma instrução, o interpretador a executa, o que significa que ele faz o que a instrução diz. Em geral, instruções não têm valores.
 
-Modo script
+## 2.4 - Modo script
 
 Até agora executamos o Python no modo interativo, no qual você interage diretamente com o interpretador. O modo interativo é uma boa forma de começar, mas se estiver trabalhando com mais do que algumas linhas do código, o processo pode ficar desorganizado.
 
@@ -146,7 +146,7 @@ x + 1
 
 Agora ponha as mesmas instruções em um script e o execute. Qual é a saída? Altere o script transformando cada expressão em uma instrução de exibição e então o execute novamente.
 
-Ordem das operações
+## 2.5 - Ordem das operações
 
 Quando uma expressão contém mais de um operador, a ordem da avaliação depende da ordem das operações. Para operadores matemáticos, o Python segue a convenção matemática. O acrônimo PEMDAS pode ser útil para lembrar das regras:
 
@@ -160,7 +160,7 @@ Quando uma expressão contém mais de um operador, a ordem da avaliação depend
 
 Eu não fico sempre tentando lembrar da precedência de operadores. Se a expressão não estiver clara à primeira vista, uso parênteses para fazer isso.
 
-Operações com strings
+## 2.6 - Operações com strings
 
 Em geral, não é possível executar operações matemáticas com strings, mesmo se elas parecerem números, então coisas assim são ilegais:
 
@@ -182,7 +182,7 @@ O operador \* também funciona em strings; ele executa a repetição. Por exempl
 
 Este uso de + e \* faz sentido por analogia com a adição e a multiplicação. Tal como 4\*3 é equivalente a 4+4+4, esperamos que 'Spam'\*3 seja o mesmo que 'Spam'+'Spam'+'Spam', e assim é. Por outro lado, há uma diferença significativa entre a concatenação de strings e a repetição em relação à adição e à multiplicação de números inteiros. Você consegue pensar em uma propriedade que a adição tem, mas a concatenação de strings não tem?
 
-Comentários
+## 2.7 - Comentários
 
 Conforme os programas ficam maiores e mais complicados, eles são mais difíceis de ler. As linguagens formais são densas e muitas vezes é difícil ver um pedaço de código e compreender o que ele faz ou por que faz isso.
 
@@ -210,7 +210,7 @@ v = 5    \# velocidade em metros/segundo.
 
 Bons nomes de variáveis podem reduzir a necessidade de comentários, mas nomes longos podem tornar expressões complexas difíceis de ler, então é preciso analisar o que vale mais a pena.
 
-Depuração
+## 2.8 - Depuração
 
 Há três tipos de erros que podem ocorrer em um programa: erros de sintaxe, erros de tempo de execução e erros semânticos. É útil distinguir entre eles para rastreá-los mais rapidamente.
 
@@ -232,7 +232,7 @@ O terceiro tipo do erro é “semântico”, ou seja, relacionado ao significado
 
 Identificar erros semânticos pode ser complicado, porque é preciso trabalhar de trás para a frente, vendo a saída do programa e tentando compreender o que ele está fazendo.
 
-Glossário
+## 2.9 - Glossário
 
 variável:
 
@@ -310,7 +310,7 @@ erro semântico:
 
 Um erro que faz com que um programa faça algo diferente do que o programador pretendia.
 
-Exercícios
+## 2.10 - Exercícios
 
 Exercício 2.1
 

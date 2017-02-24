@@ -2,7 +2,7 @@
 
 Este capítulo apresenta outro tipo integrado chamado dicionário. Dicionários são um dos melhores recursos do Python; eles são os blocos de montar de muitos algoritmos eficientes e elegantes.
 
-Um dicionário é um mapeamento
+## 11.1 - Um dicionário é um mapeamento
 
 Um dicionário se parece com uma lista, mas é mais geral. Em uma lista, os índices têm que ser números inteiros; em um dicionário, eles podem ser de (quase) qualquer tipo.
 
@@ -82,7 +82,7 @@ O operador in usa algoritmos diferentes para listas e dicionários. Para listas,
 
 Para dicionários, o Python usa um algoritmo chamado hashtable (tabela de dispersão), que tem uma propriedade notável: o operador in leva praticamente o mesmo tempo na busca, não importa quantos itens estejam no dicionário. Eu explico como isso é possível em “Hashtables”, na página 302, mas a explicação pode não fazer sentido até que você tenha lido mais alguns capítulos.
 
-Um dicionário como uma coleção de contadores
+## 11.2 - Um dicionário como uma coleção de contadores
 
 Suponha que você receba uma string e queira contar quantas vezes cada letra aparece nela. Há vários modos de fazer isso:
 
@@ -146,7 +146,7 @@ Os dicionários têm um método chamado get, que toma uma chave e um valor-padr�
 
 Como exercício, use o get para escrever a função histogram de forma mais concisa. Tente eliminar a instrução if.
 
-Loop e dicionários
+## 11.3 - Loop e dicionários
 
 Se usar um dicionário em uma instrução for, ela atravessa as chaves do dicionário. Por exemplo, print\_hist exibe cada chave e o valor correspondente:
 
@@ -188,7 +188,7 @@ r 2
 
 t 1
 
-Busca reversa
+## 11.4 - Busca reversa
 
 Considerando um dicionário d e uma chave k, é fácil encontrar o valor correspondente v = d \[k\]. Esta operação chama-se busca.
 
@@ -246,7 +246,7 @@ LookupError: value does not appear in the dictionary
 
 Uma busca reversa é muito mais lenta que uma busca no sentido normal; se for preciso fazê-lo muitas vezes, ou se o dicionário ficar muito grande, o desempenho do seu programa será prejudicado.
 
-Dicionários e listas
+## 11.5 - Dicionários e listas
 
 As listas podem aparecer como valores em um dicionário. Por exemplo, se você receber um dicionário que mapeie letras e frequências, é uma boa ideia invertê-lo; isto é, crie um dicionário que mapeie de frequências a letras. Como pode haver várias letras com a mesma frequência, cada valor no dicionário invertido deve ser uma lista de letras.
 
@@ -314,7 +314,7 @@ Este sistema funciona perfeitamente se as chaves forem imutáveis. Porém, se as
 
 Como os dicionários são mutáveis, eles não podem ser usados como chaves, mas podem ser usados como valores.
 
-Memos
+## 11.6 - Memos
 
 Se usou a função de fibonacci em “Mais um exemplo”, na página 101, pode ter notado que quanto maior o argumento dado mais tempo a função leva para ser executada. Além disso, o tempo de execução aumenta rapidamente.
 
@@ -348,7 +348,7 @@ Sempre que fibonacci é chamada, ela verifica known. Se o resultado já estiver 
 
 Se você executar essa versão de fibonacci e a comparar com a original, descobrirá que é muito mais rápida.
 
-Variáveis globais
+## 11.7 - Variáveis globais
 
 No exemplo anterior, known é criada fora da função, então pertence ao frame especial chamado \_\_main\_\_. As variáveis em \_\_main\_\_ às vezes são chamadas de globais, porque podem ser acessadas de qualquer função. Em contraste com as variáveis locais, que desaparecem quando sua função termina, as variáveis globais persistem de uma chamada da função à seguinte.
 
@@ -422,7 +422,7 @@ def example5():
 
 As variáveis globais podem ser úteis, mas se você tiver muitas delas e alterá-las com frequência, isso poderá dificultar a depuração do programa.
 
-Depuração
+## 11.8 - Depuração
 
 Ao trabalhar com conjuntos de dados maiores, depurar exibindo e verificando a saída à mão pode ser trabalhoso. Aqui estão algumas sugestões para depurar grandes conjuntos de dados:
 
@@ -450,7 +450,7 @@ A formatação da saída para depuração pode facilitar a busca de erros. Vimos
 
 Reforçando, o tempo que você passar construindo o scaffolding pode reduzir o tempo de depuração.
 
-Glossário
+## 11.9 - Glossário
 
 mapeamento:
 
@@ -532,7 +532,7 @@ declaração:
 
 Instrução tal como global, que diz ao interpretador algo a respeito de uma variável.
 
-Exercícios
+## 11.10 - Exercícios
 
 Exercício 11.1
 

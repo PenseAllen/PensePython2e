@@ -4,7 +4,7 @@ Uma das minhas metas com este livro é ensinar o mínimo possível de Python. Qu
 
 Agora quero voltar a algumas coisas boas que ficaram para trás. O Python oferece vários recursos que não são realmente necessários – você pode escrever um bom código sem eles – mas com eles é possível escrever um código mais conciso, legível ou eficiente e, às vezes, todos os três.
 
-Expressões condicionais
+## 19.1 - Expressões condicionais
 
 Vimos instruções condicionais em “Execução condicional”, na página 78. As instruções condicionais muitas vezes são usadas para escolher um entre dois valores; por exemplo:
 
@@ -64,7 +64,7 @@ def \_\_init\_\_(self, name, contents=None):
 
 Em geral, é possível substituir uma instrução condicional por uma expressão condicional se ambos os ramos contiverem expressões simples que sejam retornadas ou atribuídas à mesma variável.
 
-Abrangência de listas
+## 19.2 - Abrangência de listas
 
 Em “Mapeamento, filtragem e redução”, na página 147, vimos os padrões de filtragem e mapeamento. Por exemplo, esta função toma uma lista de strings, mapeia o método de string capitalize aos elementos, e retorna uma nova lista de strings:
 
@@ -112,7 +112,7 @@ Abrangências de listas são concisas e fáceis de ler, pelo menos para express�
 
 Porém, em minha defesa, as abrangências de listas são mais difíceis de depurar porque não é possível ter instruções de exibição dentro do loop. Sugiro que você as use só se o cálculo for simples o suficiente para que acerte já de primeira. E para principiantes isso significa nunca.
 
-Expressões geradoras
+## 19.3 - Expressões geradoras
 
 Expressões geradoras são semelhantes às abrangências de listas, mas com parênteses em vez de colchetes:
 
@@ -156,7 +156,7 @@ As expressões geradoras muitas vezes são usadas com funções como sum, max e 
 
 30
 
-any e all
+## 19.4 - any e all
 
 O Python tem uma função integrada, any, que recebe uma sequência de valores booleanos e retorna True se algum dos valores for True. Ela funciona em listas:
 
@@ -182,7 +182,7 @@ Usar any com uma expressão geradora é eficiente porque o programa é interromp
 
 O Python oferece outra função integrada, all, que retorna True se todos os elementos da sequência forem True. Como exercício, use all para reescrever uses\_all de “Busca”, na página 136.
 
-Conjuntos
+## 19.5 - Conjuntos
 
 Na seção “Subtração de dicionário”, da página 198, uso dicionários para encontrar as palavras que aparecem em um documento, mas não numa lista de palavras. A função que escrevi recebe d1, que contém as palavras do documento como chaves e d2, que contém a lista de palavras. Ela retorna um dicionário que contém as chaves de d1 que não estão em d2:
 
@@ -258,7 +258,7 @@ O operador &lt;= verifica se um conjunto é um subconjunto ou outro, incluindo a
 
 Como exercício, reescreva avoids usando conjuntos.
 
-Contadores
+## 19.6 - Contadores
 
 Um contador é como um conjunto, exceto que se um elemento aparecer mais de uma vez, o contador acompanha quantas vezes ele aparece. Se tiver familiaridade com a ideia matemática de um multiconjunto, um contador é uma forma natural de representar um multiconjunto.
 
@@ -302,7 +302,7 @@ p 1
 
 a 1
 
-defaultdict
+## 19.7 - defaultdict
 
 O módulo collections também tem defaultdict, que se parece com um dicionário, exceto pelo fato de que se você acessar uma chave que não existe, um novo valor pode ser gerado automaticamente.
 
@@ -388,7 +388,7 @@ def all\_anagrams(filename):
 
 A minha solução para o Exercício 18.3, que você pode baixar em http://thinkpython2.com/code/PokerHandSoln.py, usa setdefault na função has\_straightflush. O problema dessa solução é criar um objeto Hand cada vez que passa pelo loop, seja ele necessário ou não. Como exercício, reescreva-a usando um defaultdict.
 
-Tuplas nomeadas
+## 19.8 - Tuplas nomeadas
 
 Muitos objetos simples são basicamente coleções de valores relacionados. Por exemplo, o objeto Point, definido no Capítulo 15, contém dois números, x e y. Ao definir uma classe como essa, normalmente você começa com um método init e um método str:
 
@@ -454,7 +454,7 @@ class Pointier(Point):
 
 Ou poderá mudar para uma definição de classe convencional.
 
-Reunindo argumentos de palavra-chave
+## 19.9 - Reunindo argumentos de palavra-chave
 
 Em “Tuplas com argumentos de comprimento variável”, na página 181, vimos como escrever uma função que reúne seus argumentos em uma tupla:
 
@@ -508,7 +508,7 @@ TypeError: \_\_new\_\_() missing 1 required positional argument: 'y'
 
 Quando estiver trabalhando com funções com um grande número de parâmetros, muitas vezes é útil criar e usar dicionários que especifiquem as opções usadas frequentemente.
 
-Glossário
+## 19.10 - Glossário
 
 expressão condicional:
 
@@ -530,7 +530,7 @@ fábrica (factory):
 
 Função normalmente passada como parâmetro, usada para criar objetos.
 
-Exercícios
+## 19.11 - Exercícios
 
 Exercício 19.1
 

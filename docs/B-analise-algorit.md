@@ -22,7 +22,7 @@ Uma coisa boa sobre este tipo de comparação é que ela é própria para a clas
 
 Esse tipo de análise tem algumas desvantagens, mas falaremos disso mais adiante.
 
-Ordem de crescimento
+## B.1 - Ordem de crescimento
 
 Vamos supor que você analisou dois algoritmos e expressou seus tempos de execução em relação ao tamanho da entrada: o algoritmo A leva 100n+1 passos para resolver um problema com o tamanho n; o algoritmo B leva n2 + n + 1 passos.
 
@@ -86,7 +86,7 @@ Programadores que se preocupam com o desempenho muitas vezes consideram esse tip
 
 Porém, se mantiver essas questões em mente, a análise algorítmica pode ser uma ferramenta útil. Pelo menos para grandes problemas, os “melhores” algoritmos são normalmente melhores, e, às vezes, muito melhores. A diferença entre dois algoritmos com a mesma ordem de crescimento é normalmente um fator constante, mas a diferença entre um bom algoritmo e um algoritmo ruim é ilimitada!
 
-Análise de operações básicas do Python
+## B.2 - Análise de operações básicas do Python
 
 No Python, a maior parte das operações aritméticas tem um tempo constante; a multiplicação normalmente leva mais tempo que a adição e a subtração, e a divisão leva até mais tempo, mas esses tempos de execução não dependem da magnitude dos operandos. Os números inteiros muito grandes são uma exceção; nesse caso, o tempo de execução aumenta com o número de dígitos.
 
@@ -146,7 +146,7 @@ Leia a página da Wikipédia sobre algoritmos de ordenação em http://en.wikipe
 
 7.        Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação O(n log n)?
 
-Análise de algoritmos de busca
+## B.3 - Análise de algoritmos de busca
 
 Uma busca é um algoritmo que recebe uma coleção e um item de objetivo e determina se o objetivo está na coleção, muitas vezes retornando o índice do objetivo.
 
@@ -162,7 +162,7 @@ A busca por bisseção pode ser muito mais rápida que a busca linear, mas é pr
 
 Há outra estrutura de dados chamada hashtable, que é até mais rápida – você pode fazer uma busca em tempo constante – e ela não exige que os itens estejam ordenados. Os dicionários do Python são implementados usando hashtables e é por isso a maior parte das operações de dicionário, incluindo o operador in, são de tempo constante.
 
-Hashtables
+## B.4 - Hashtables
 
 Para explicar como hashtables funcionam e por que o seu desempenho é tão bom, começo com uma implementação simples de um mapa e vou melhorá-lo gradualmente até que seja uma hashtable.
 
@@ -312,7 +312,7 @@ Uma característica importante deste algoritmo é que quando alteramos o tamanho
 
 Você pode baixar minha implementação de HashMap em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
 
-Glossário
+## B.5 - Glossário
 
 análise de algoritmos:
 
@@ -358,7 +358,7 @@ hashtable:
 
 Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.
 
-Sobre o autor
+## B.6 - Sobre o autor
 
 Allen Downey é professor de Ciência da Computação no Olin College of Engineering. Ele já ensinou no Wellesley College, Colby College e na U.C. Berkeley. É doutor em Ciência da Computação pela U.C. Berkeley e mestre e graduado pelo MIT.
 

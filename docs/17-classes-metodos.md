@@ -4,7 +4,7 @@ Embora estejamos usando alguns recursos orientadas a objeto do Python, os progra
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time2.py e as soluções para os exercícios estão em http://thinkpython2.com/code/Point2\_soln.py.
 
-Recursos orientados a objeto
+## 17.1 - Recursos orientados a objeto
 
 Python é uma linguagem de programação orientada a objeto, ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
 
@@ -30,7 +30,7 @@ Métodos são semanticamente o mesmo que funções, mas há duas diferenças sin
 
 Nas próximas seções tomaremos as funções dos dois capítulos anteriores e as transformaremos em métodos. Essa transformação é puramente mecânica; você pode fazê-la seguindo uma série de passos. Se estiver à vontade para fazer a conversão entre uma forma e outra, sempre poderá escolher a melhor forma para contemplar os seus objetivos.
 
-Exibição de objetos
+## 17.2 - Exibição de objetos
 
 No Capítulo 16 definimos uma classe chamada Time em “Time”, na página 231, e você escreveu uma função denominada print\_time:
 
@@ -100,7 +100,7 @@ Essa mudança de perspectiva pode ser mais polida, mas não é óbvio que seja �
 
 Como exercício, reescreva time\_to\_int (de “Prototipação versus planejamento”, na página 234) como um método. Você pode ficar tentado a reescrever int\_to\_time como um método também, mas isso não faz muito sentido porque não haveria nenhum objeto sobre o qual invocá-lo.
 
-Outro exemplo
+## 17.3 - Outro exemplo
 
 Aqui está uma versão de increment (de “Modificadores”, na página 233) reescrita como método:
 
@@ -142,7 +142,7 @@ sketch(parrot, cage, dead=True)
 
 parrot e cage são posicionais, e dead é um argumento de palavra-chave.
 
-Um exemplo mais complicado
+## 17.4 - Um exemplo mais complicado
 
 Reescrever is\_after (de “Time”, na página 231) é ligeiramente mais complicado, porque ela recebe dois objetos Time como parâmetros. Nesse caso, a convenção é denominar o primeiro parâmetro self e o segundo parâmetro other:
 
@@ -160,7 +160,7 @@ True
 
 Uma vantagem desta sintaxe é que é quase literal em inglês: “o fim é depois da partida?”.
 
-Método init
+## 17.5 - Método init
 
 O método init (abreviação da palavra em inglês para “inicialização”) é um método especial, invocado quando um objeto é instanciado. Seu nome completo é \_\_init\_\_ (dois caracteres de sublinhado, seguidos de init, e mais dois sublinhados). Um método init da classe Time pode ser algo assim:
 
@@ -208,7 +208,7 @@ E se você fornecer três argumentos, os três valores-padrão serão ignorados.
 
 Como exercício, escreva um método init da classe Point que receba x e y como parâmetros opcionais e os relacione aos atributos correspondentes.
 
-Método \_\_str\_\_
+## 17.6 - Método \_\_str\_\_
 
 \_\_str\_\_ é um método especial, como \_\_init\_\_, usado para retornar uma representação de string de um objeto.
 
@@ -232,7 +232,7 @@ Quando escrevo uma nova classe, quase sempre começo escrevendo \_\_init\_\_, o 
 
 Como exercício, escreva um método str da classe Point. Crie um objeto Point e exiba-o.
 
-Sobrecarga de operadores
+## 17.7 - Sobrecarga de operadores
 
 Ao definir outros métodos especiais, você pode especificar o comportamento de operadores nos tipos definidos pelo programador. Por exemplo, se você definir um método chamado \_\_add\_\_ para a classe Time de Time, pode usar o operador + em objetos Time.
 
@@ -262,7 +262,7 @@ Alterar o comportamento de um operador para que funcione com tipos definidos pel
 
 Como exercício, escreva um método add para a classe Point.
 
-Despacho por tipo
+## 17.8 - Despacho por tipo
 
 Na seção anterior, acrescentamos dois objetos Time, mas você também pode querer acrescentar um número inteiro a um objeto Time. A seguir, veja uma versão de \_\_add\_\_, que verifica o tipo de other e invoca add\_time ou increment:
 
@@ -334,7 +334,7 @@ Como exercício, escreva um método add para Points que funcione com um objeto P
 
 •        Se o segundo operando for uma tupla, o método deve adicionar o primeiro elemento da tupla à coordenada de x e o segundo elemento à coordenada de y, retornando um novo Point com o resultado.
 
-Polimorfismo
+## 17.9 - Polimorfismo
 
 O despacho por tipo é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.
 
@@ -384,7 +384,7 @@ Em geral, se todas as operações dentro de uma função forem compatíveis com 
 
 O melhor tipo de polimorfismo é o não intencional, quando você descobre que uma função que já escreveu pode ser aplicada a um tipo para o qual ela não tinha planejada.
 
-Interface e implementação
+## 17.10 - Interface e implementação
 
 Uma das metas do projeto orientado a objeto é facilitar a manutenção do programa, para que você possa mantê-lo funcionando quando outras partes do sistema forem alteradas, e também poder alterar o programa para satisfazer novas condições.
 
@@ -400,7 +400,7 @@ Pode acontecer que, depois de implementar uma nova classe, você descubra uma im
 
 No entanto, se projetou a interface cuidadosamente, pode alterar a implementação sem mudar a interface, e não será preciso mudar outras partes do programa.
 
-Depuração
+## 17.11 - Depuração
 
 É legal acrescentar atributos a objetos em qualquer ponto da execução de um programa, mas se você tiver objetos do mesmo tipo que não têm os mesmos atributos, é fácil cometer erros. É uma boa ideia inicializar todos os atributos de um objeto no método init.
 
@@ -426,7 +426,7 @@ print\_attributes atravessa o dicionário e imprime cada nome de atributo e o se
 
 A função integrada getattr recebe um objeto e um nome de atributo (como uma string) e devolve o valor do atributo.
 
-Glossário
+## 17.12 - Glossário
 
 linguagem orientada a objeto:
 
@@ -464,7 +464,7 @@ ocultamento de informação:
 
 Princípio segundo o qual a interface fornecida por um objeto não deve depender da sua implementação, especialmente em relação à representação dos seus atributos.
 
-Exercícios
+## 17.13 - Exercícios
 
 Exercício 17.1
 

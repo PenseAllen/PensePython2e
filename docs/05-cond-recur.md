@@ -2,7 +2,7 @@
 
 O tópico principal deste capítulo é a instrução if, que executa códigos diferentes dependendo do estado do programa. Mas primeiro quero apresentar dois novos operadores: divisão pelo piso e módulo.
 
-Divisão pelo piso e módulo
+## 5.1 - Divisão pelo piso e módulo
 
 O operador de divisão pelo piso, //, divide dois números e arredonda o resultado para um número inteiro para baixo. Por exemplo, suponha que o tempo de execução de um filme seja de 105 minutos. Você pode querer saber a quanto isso corresponde em horas. A divisão convencional devolve um número de ponto flutuante:
 
@@ -44,7 +44,7 @@ Além disso, você pode extrair o dígito ou dígitos mais à direita de um núm
 
 Se estiver usando o Python 2, a divisão funciona de forma diferente. O operador de divisão, /, executa a divisão pelo piso se ambos os operandos forem números inteiros e faz a divisão de ponto flutuante se pelo menos um dos operandos for do tipo float.
 
-Expressões booleanas
+## 5.2 - Expressões booleanas
 
 Uma expressão booleana é uma expressão que pode ser verdadeira ou falsa. Os exemplos seguintes usam o operador ==, que compara dois operandos e produz True se forem iguais e False se não forem:
 
@@ -80,7 +80,7 @@ x &lt;= y                \# x é menor ou igual a y
 
 Embora essas operações provavelmente sejam familiares para você, os símbolos do Python são diferentes dos símbolos matemáticos. Um erro comum é usar apenas um sinal de igual (=) em vez de um sinal duplo (==). Lembre-se de que = é um operador de atribuição e == é um operador relacional. Não existe =&lt; ou =&gt;.
 
-Operadores lógicos
+## 5.3 - Operadores lógicos
 
 Há três operadores lógicos: and, or e not. A semântica (significado) destes operadores é semelhante ao seu significado em inglês. Por exemplo, x&gt; 0 and x &lt;10 só é verdade se x for maior que 0 e menor que 10.
 
@@ -96,7 +96,7 @@ True
 
 Esta flexibilidade tem sua utilidade, mas há algumas sutilezas relativas a ela que podem ser confusas. Assim, pode ser uma boa ideia evitá-la (a menos que saiba o que está fazendo).
 
-Execução condicional
+## 5.4 - Execução condicional
 
 Para escrever programas úteis, quase sempre precisamos da capacidade de verificar condições e mudar o comportamento do programa de acordo com elas. Instruções condicionais nos dão esta capacidade. A forma mais simples é a instrução if:
 
@@ -114,7 +114,7 @@ if x &lt; 0:
 
     pass          \# A FAZER: lidar com valores negativos!
 
-Execução alternativa
+## 5.5 - Execução alternativa
 
 Uma segunda forma da instrução if é a “execução alternativa”, na qual há duas possibilidades e a condição determina qual será executada. A sintaxe pode ser algo assim:
 
@@ -128,7 +128,7 @@ else:
 
 Se o resto quando x for dividido por 2 for 0, então sabemos que x é par e o programa exibe uma mensagem adequada. Se a condição for falsa, o segundo conjunto de instruções é executado. Como a condição deve ser verdadeira ou falsa, exatamente uma das alternativas será executada. As alternativas são chamadas de ramos (branches), porque são ramos no fluxo da execução.
 
-Condicionais encadeadas
+## 5.6 - Condicionais encadeadas
 
 Às vezes, há mais de duas possibilidades e precisamos de mais que dois ramos. Esta forma de expressar uma operação de computação é uma condicional encadeada:
 
@@ -160,7 +160,7 @@ elif choice == 'c':
 
 Cada condição é verificada em ordem. Se a primeira for falsa, a próxima é verificada, e assim por diante. Se uma delas for verdadeira, o ramo correspondente é executado e a instrução é encerrada. Mesmo se mais de uma condição for verdade, só o primeiro ramo verdadeiro é executado.
 
-Condicionais aninhadas
+## 5.7 - Condicionais aninhadas
 
 Uma condicional também pode ser aninhada dentro de outra. Poderíamos ter escrito o exemplo na seção anterior desta forma:
 
@@ -202,7 +202,7 @@ if 0 &lt; x &lt; 10:
 
     print('x is a positive single-digit number.')
 
-Recursividade
+## 5.8 - Recursividade
 
 É legal para uma função chamar outra; também é legal para uma função chamar a si própria. Pode não ser óbvio porque isso é uma coisa boa, mas na verdade é uma das coisas mais mágicas que um programa pode fazer. Por exemplo, veja a seguinte função:
 
@@ -268,7 +268,7 @@ O resto da função é similar à countdown: ela mostra s e então chama a si me
 
 Para exemplos simples como esse, provavelmente é mais fácil usar um loop for. Mais adiante veremos exemplos que são difíceis de escrever com um loop for e fáceis de escrever com recursividade, então é bom começar cedo.
 
-Diagramas da pilha para funções recursivas
+## 5.9 - Diagramas da pilha para funções recursivas
 
 Em “Diagrama da pilha”, na página 55, usamos um diagrama da pilha para representar o estado de um programa durante uma chamada de função. O mesmo tipo de diagrama pode ajudar a interpretar uma função recursiva.
 
@@ -284,7 +284,7 @@ Os quatro frames do countdown têm valores diferentes para o parâmetro n. O fun
 
 Como exercício, desenhe um diagrama da pilha para print\_n chamado com s = 'Hello' e n=2. Então escreva uma função chamada do\_n que tome um objeto de função e um número n como argumentos e que chame a respectiva função n vezes.
 
-Recursividade infinita
+## 5.10 - Recursividade infinita
 
 Se a recursividade nunca atingir um caso-base, continua fazendo chamadas recursivas para sempre, e o programa nunca termina. Isso é conhecido como recursividade infinita e geralmente não é uma boa ideia. Aqui está um programa mínimo com recursividade infinita:
 
@@ -314,7 +314,7 @@ Este traceback é um pouco maior que o que vimos no capítulo anterior. Quando o
 
 Se você escrever em recursividade infinita por engano, confira se a sua função tem um caso-base que não faz uma chamada recursiva. E se houver um caso-base, verifique se você vai mesmo atingi-lo.
 
-Entrada de teclado
+## 5.11 - Entrada de teclado
 
 Os programas que escrevemos até agora não aceitam entradas do usuário. Eles sempre fazem a mesma coisa cada vez.
 
@@ -370,7 +370,7 @@ ValueError: invalid literal for int() with base 10
 
 Veremos como tratar este tipo de erro mais adiante.
 
-Depuração
+## 5.12 - Depuração
 
 Quando um erro de sintaxe ou de tempo de execução ocorre, a mensagem de erro contém muita informação, às vezes, até demais. As partes mais úteis são normalmente:
 
@@ -422,7 +422,7 @@ A mensagem de erro indica a linha 5, mas não há nada de errado com esta linha.
 
 É preciso ler as mensagens de erro com atenção, mas não assumir que tudo que dizem esteja correto.
 
-Glossário
+## 5.13 - Glossário
 
 divisão pelo piso:
 
@@ -484,7 +484,7 @@ recursividade infinita:
 
 Recursividade que não tem um caso-base, ou nunca o atinge. A recursividade infinita eventualmente causa um erro em tempo de execução.
 
-Exercícios
+## 5.14 - Exercícios
 
 Exercício 5.1
 

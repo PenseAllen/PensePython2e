@@ -2,7 +2,7 @@
 
 Strings não são como números inteiros, de ponto flutuante ou booleanos. Uma string é uma sequência, ou seja, uma coleção ordenada de outros valores. Neste capítulo você verá como acessar os caracteres que compõem uma string e aprenderá alguns métodos que as strings oferecem.
 
-Uma string é uma sequência
+## 8.1 - Uma string é uma sequência
 
 Uma string é uma sequência de caracteres. Você pode acessar um caractere de cada vez com o operador de colchete:
 
@@ -48,7 +48,7 @@ Porém, o valor do índice tem que ser um número inteiro. Se não for, é isso 
 
 TypeError: string indices must be integers
 
-len
+## 8.2 - len
 
 len é uma função integrada que devolve o número de caracteres em uma string:
 
@@ -76,7 +76,7 @@ A razão de haver um IndexError aqui é que não há nenhuma letra em 'banana' c
 
 Ou você pode usar índices negativos, que contam de trás para a frente a partir do fim da string. A expressão fruit\[-1\] apresenta a última letra, fruit\[-2\] apresenta a segunda letra de trás para a frente, e assim por diante.
 
-Travessia com loop for
+## 8.3 - Travessia com loop for
 
 Muitos cálculos implicam o processamento de um caractere por vez em uma string. Muitas vezes começam no início, selecionam um caractere por vez, fazem algo e continuam até o fim. Este modelo do processamento chama-se travessia. Um modo de escrever uma travessia é com o loop while:
 
@@ -132,7 +132,7 @@ Qack
 
 Claro que não está exatamente certo porque “Ouack” e “Quack” foram mal soletrados. Como exercício, altere o programa para corrigir este erro.
 
-Fatiamento de strings
+## 8.4 - Fatiamento de strings
 
 Um segmento de uma string é chamado de fatia. Selecionar uma fatia é como selecionar um caractere:
 
@@ -174,7 +174,7 @@ Uma string vazia não contém nenhum caractere e tem o comprimento 0, fora isso,
 
 Continuando este exemplo, o que você acha que fruit\[:\] significa? Teste e veja.
 
-Strings são imutáveis
+## 8.5 - Strings são imutáveis
 
 É tentador usar o operador \[\] no lado esquerdo de uma atribuição, com a intenção de alterar um caractere em uma string. Por exemplo:
 
@@ -198,7 +198,7 @@ A razão do erro é que as strings são imutáveis, o que significa que você n�
 
 Esse exemplo concatena uma nova primeira letra a uma fatia de greeting. Não tem efeito sobre a string original.
 
-Buscando
+## 8.6 - Buscando
 
 O que faz a seguinte função?
 
@@ -226,7 +226,7 @@ Este modelo de cálculo – atravessar uma sequência e voltar quando encontramo
 
 Como exercício, altere find para que tenha um terceiro parâmetro: o índice em word onde deve começar a procurar.
 
-Loop e contagem
+## 8.7 - Loop e contagem
 
 O seguinte programa conta o número de vezes que a letra a aparece em uma string:
 
@@ -248,7 +248,7 @@ Como exercício, encapsule este código em uma função denominada count e gener
 
 Então reescreva a função para que, em vez de atravessar a string, ela use a versão de três parâmetros do find da seção anterior.
 
-Métodos de strings
+## 8.8 - Métodos de strings
 
 As strings oferecem métodos que executam várias operações úteis. Um método é semelhante a uma função – toma argumentos e devolve um valor –, mas a sintaxe é diferente. Por exemplo, o método upper recebe uma string e devolve uma nova string com todas as letras maiúsculas.
 
@@ -300,7 +300,7 @@ Este é um exemplo de um argumento opcional. find também pode receber um tercei
 
 Esta busca falha porque b não aparece no intervalo do índice de 1 a 2, não incluindo 2. Fazer buscas até (mas não incluindo) o segundo índice torna find similar ao operador de fatiamento.
 
-Operador in
+## 8.9 - Operador in
 
 A palavra in é um operador booleano que recebe duas strings e retorna True se a primeira aparecer como uma substring da segunda:
 
@@ -334,7 +334,7 @@ e
 
 s
 
-Comparação de strings
+## 8.10 - Comparação de strings
 
 Os operadores relacionais funcionam em strings. Para ver se duas strings são iguais:
 
@@ -362,7 +362,7 @@ Your word, Pineapple, comes before banana.
 
 Uma forma comum de lidar com este problema é converter strings em um formato-padrão, como letras minúsculas, antes de executar a comparação. Lembre-se disso caso tenha que se defender de um homem armado com um abacaxi.
 
-Depuração
+## 8.11 - Depuração
 
 Ao usar índices para atravessar os valores em uma sequência, é complicado acertar o começo e o fim da travessia. Aqui está uma função que supostamente compara duas palavras e retorna True se uma das palavras for o reverso da outra, mas contém dois erros:
 
@@ -450,7 +450,7 @@ Tomei a liberdade de arrumar as variáveis no frame e acrescentei linhas pontilh
 
 Começando com este diagrama, execute o programa em papel, alterando os valores de i e j durante cada iteração. Encontre e corrija o segundo erro desta função.
 
-Glossário
+## 8.12 - Glossário
 
 objeto:
 
@@ -500,7 +500,7 @@ argumento opcional:
 
 Um argumento de função ou método que não é necessário.
 
-Exercícios
+## 8.13 - Exercícios
 
 Exercício 8.1
 

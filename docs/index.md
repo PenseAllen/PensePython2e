@@ -38,7 +38,6 @@ Esta versão digital de [__Pense em Python__](https://novatec.com.br/livros/pens
 
 
 * [Apêndice A: Depuração](A-depuracao.md)
-
 * [Apêndice B: Análise de algoritmos](B-analise-algorit.md)
 
 

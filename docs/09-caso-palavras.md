@@ -2,7 +2,7 @@
 
 Este capítulo apresenta o segundo estudo de caso que envolve solucionar quebra-cabeças usando palavras com certas propriedades. Por exemplo, encontraremos os palíndromos mais longos em inglês e procuraremos palavras cujas letras apareçam em ordem alfabética. E apresentarei outro plano de desenvolvimento de programa: a redução a um problema resolvido anteriormente.
 
-Leitura de listas de palavras
+## 9.1 - Leitura de listas de palavras
 
 Para os exercícios deste capítulo vamos usar uma lista de palavras em inglês. Há muitas listas de palavras disponíveis na internet, mas a mais conveniente ao nosso propósito é uma das listas de palavras disponibilizadas em domínio público por Grady Ward como parte do projeto lexical Moby (ver http://wikipedia.org/wiki/Moby\_Project). É uma lista de 113.809 palavras cruzadas oficiais; isto é, as palavras que se consideram válidas em quebra-cabeças de palavras cruzadas e outros jogos de palavras. Na coleção Moby, o nome do arquivo é 113809of.fic; você pode baixar uma cópia, com um nome mais simples como words.txt, de http://thinkpython2.com/code/words.txt.
 
@@ -44,7 +44,7 @@ for line in fin:
 
     print(word)
 
-Exercícios
+## 9.2 - Exercícios
 
 Há soluções para estes exercícios na próxima seção. Mas é bom você tentar fazer cada um antes de ver as soluções.
 
@@ -82,7 +82,7 @@ Exercício 9.6
 
 Escreva uma função chamada is\_abecedarian que retorne True se as letras numa palavra aparecerem em ordem alfabética (tudo bem se houver letras duplas). Quantas palavras em ordem alfabética existem?
 
-Busca
+## 9.3 - Busca
 
 Todos os exercícios na seção anterior têm algo em comum; eles podem ser resolvidos com o modelo de busca que vimos em “Buscando”, na página 123. O exemplo mais simples é:
 
@@ -150,7 +150,7 @@ def uses\_all(word, required):
 
 Esse é um exemplo de um plano de desenvolvimento de programa chamado redução a um problema resolvido anteriormente, ou seja, você reconhece o problema no qual está trabalhando como um exemplo de um problema já resolvido e aplica uma solução existente.
 
-Loop com índices
+## 9.4 - Loop com índices
 
 Escrevi as funções na seção anterior com loops for porque eu só precisava dos caracteres nas strings; não precisava fazer nada com os índices.
 
@@ -234,7 +234,7 @@ def is\_palindrome(word):
 
 Usando is\_reverse da Figura 8.2.
 
-Depuração
+## 9.5 - Depuração
 
 Testar programas é difícil. As funções neste capítulo são relativamente fáceis para testar porque é possível verificar os resultados à mão. Ainda assim, pode ser difícil ou até impossível escolher um grupo de palavras que teste todos os erros possíveis.
 
@@ -248,7 +248,7 @@ Em geral, o teste pode ajudar a encontrar bugs, mas não é fácil gerar um bom 
 
 Testar programas pode ser usado para mostrar a presença de bugs, mas nunca para mostrar a ausência deles! – Edsger W. Dijkstra
 
-Glossário
+## 9.6 - Glossário
 
 objeto de arquivo:
 
@@ -262,7 +262,7 @@ caso especial:
 
 Um caso de teste que é atípico ou não é óbvio (e com probabilidade menor de ser tratado corretamente).
 
-Exercícios
+## 9.7 - Exercícios
 
 Exercício 9.7
 

@@ -2,7 +2,7 @@
 
 Este capítulo é sobre a iteração, a capacidade de executar um bloco de instruções repetidamente. Vimos um tipo de iteração, usando a recursividade, em “Recursividade”, na página 81. Vimos outro tipo, usando um loop for, em “Repetição simples”, na página 65. Neste capítulo veremos ainda outro tipo, usando a instrução while. Porém, primeiro quero falar um pouco mais sobre a atribuição de variáveis.
 
-Reatribuição
+## 7.1 - Reatribuição
 
 Pode ser que você já tenha descoberto que é legal fazer mais de uma atribuição para a mesma variável. Uma nova atribuição faz uma variável existente referir-se a um novo valor (e deixar de referir-se ao valor anterior).
 
@@ -44,7 +44,7 @@ A reatribuição de variáveis muitas vezes é útil, mas você deve usá-la com
 
 Figura 7.1 – Diagrama de estado.
 
-Atualização de variáveis
+## 7.2 - Atualização de variáveis
 
 Um tipo comum de reatribuição é uma atualização, onde o novo valor da variável depende do velho.
 
@@ -66,7 +66,7 @@ Antes de poder atualizar uma variável é preciso inicializá-la, normalmente co
 
 Atualizar uma variável acrescentando 1 chama-se incremento; subtrair 1 chama-se decremento.
 
-Instrução while
+## 7.3 - Instrução while
 
 Os computadores muitas vezes são usados para automatizar tarefas repetitivas. A repetição de tarefas idênticas ou semelhantes sem fazer erros é algo que os computadores fazem bem e as pessoas não. Em um programa de computador, a repetição também é chamada de iteração.
 
@@ -126,7 +126,7 @@ A questão difícil é se podemos provar que este programa termina para todos os
 
 Como um exercício, reescreva a função print\_n de “Recursividade”, na página 81, usando a iteração em vez da recursividade.
 
-break
+## 7.4 - break
 
 Às vezes você não sabe que está na hora de terminar um loop até que já esteja na metade do corpo. Neste caso pode usar a instrução break para sair do loop.
 
@@ -158,7 +158,7 @@ Done!
 
 Esta forma de escrever loops while é comum porque podemos verificar a condição em qualquer lugar do loop (não somente no topo) e podemos exprimir a condição de parada afirmativamente (“pare quando isto acontecer”) em vez de negativamente (“continue a seguir até que isto aconteça”).
 
-Raízes quadradas
+## 7.5 - Raízes quadradas
 
 Loops muitas vezes são usados em programas que calculam resultados numéricos, começando com uma resposta aproximada e melhorando-a iterativamente.
 
@@ -246,7 +246,7 @@ if abs(y-x) &lt; epsilon:
 
 Quando epsilon tem um valor como 0.0000001, isso determina se está próximo o suficiente.
 
-Algoritmos
+## 7.6 - Algoritmos
 
 O método de Newton é um exemplo de um algoritmo: um processo mecânico para resolver uma categoria de problemas (neste caso, calcular raízes quadradas).
 
@@ -260,7 +260,7 @@ A execução de algoritmos é maçante, mas projetá-los é interessante, intele
 
 Algumas coisas que as pessoas fazem naturalmente, sem dificuldade ou pensamento consciente, são as mais difíceis para exprimir algoritmicamente. A compreensão de linguagem natural é um bom exemplo. Todos nós o fazemos, mas por enquanto ninguém foi capaz de explicar como o fazemos, pelo menos não na forma de um algoritmo.
 
-Depuração
+## 7.7 - Depuração
 
 Ao começar a escrever programas maiores, pode ser que você passe mais tempo depurando. Mais código significa mais possibilidades fazer erros e mais lugares para esconder defeitos.
 
@@ -274,7 +274,7 @@ Cada vez que executar uma verificação assim, divida ao meio o número de linha
 
 Na prática, nem sempre é claro o que representa o “meio do programa” e nem sempre é possível verificá-lo. Não faz sentido contar linhas e encontrar o ponto central exato. Em vez disso, pense em lugares no programa onde poderia haver erros e lugares onde é fácil inserir um ponto de verificação. Então escolha um lugar onde as possibilidades são basicamente as mesmas de que o defeito esteja antes ou depois da verificação.
 
-Glossário
+## 7.8 - Glossário
 
 reatribuição:
 
@@ -308,7 +308,7 @@ algoritmo:
 
 Um processo geral para resolver uma categoria de problemas.
 
-Exercícios
+## 7.9 - Exercícios
 
 Exercício 7.1
 

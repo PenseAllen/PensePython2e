@@ -6,7 +6,7 @@ Se você não joga pôquer, pode ler sobre ele em http://en.wikipedia.org/wiki/P
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Card.py.
 
-Objetos Card
+## 18.1 - Objetos Card
 
 Há 52 cartas em um baralho, cada uma das quais pertencendo a 1 dos 4 naipes e a 1 dos 13 valores. Os naipes são espadas, copas, ouros e paus (no bridge, em ordem descendente). A ordem dos valores é ás, 2, 3, 4, 5, 6, 7, 8, 9, 10, valete, dama e rei. Dependendo do jogo que estiver jogando, um ás pode ser mais alto que o rei ou mais baixo que 2.
 
@@ -54,7 +54,7 @@ Para criar um Card, você chama Card com o naipe e valor desejados:
 
 queen\_of\_diamonds = Card(1, 12)
 
-Atributos de classe
+## 18.2 - Atributos de classe
 
 Para exibir objetos Card de uma forma que as pessoas possam ler com facilidade, precisamos de um mapeamento dos códigos de número inteiro aos naipes e valores correspondentes. Uma forma natural de fazer isso é com listas de strings. Atribuímos essas listas a atributos de classe:
 
@@ -96,7 +96,7 @@ A Figura 18.1 é um diagrama do objeto de classe Card e uma instância de Card. 
 
 Figura 18.1 – Diagrama de objeto.
 
-Comparação de cartas
+## 18.3 - Comparação de cartas
 
 Para tipos integrados, há operadores relacionais (&lt;, &gt;, == etc.) que comparam valores e determinam quando um é maior, menor ou igual a outro. Para tipos definidos pelo programador, podemos ignorar o comportamento dos operadores integrados fornecendo um método denominado \_\_lt\_\_, que representa “menos que”.
 
@@ -136,7 +136,7 @@ Você pode escrever isso de forma mais concisa usando uma comparação de tuplas
 
 Como exercício, escreva um método \_\_lt\_\_ para objetos Time. Você pode usar uma comparação de tuplas, mas também pode usar a comparação de números inteiros.
 
-Baralhos
+## 18.4 - Baralhos
 
 Agora que temos Card, o próximo passo é definir Deck (baralho). Como um baralho é composto de cartas, é natural que um baralho contenha uma lista de cartas como atributo.
 
@@ -158,7 +158,7 @@ class Deck:
 
 A forma mais fácil de preencher o baralho é com um loop aninhado. O loop exterior enumera os naipes de 0 a 3. O loop interior enumera os valores de 1 a 13. Cada iteração cria um novo Card com o naipe e valor atual, e a acrescenta a self.cards.
 
-Exibição do baralho
+## 18.5 - Exibição do baralho
 
 Aqui está um método \_\_str\_\_ para Deck:
 
@@ -200,7 +200,7 @@ King of Spades
 
 Embora o resultado apareça em 52 linhas, na verdade ele é uma string longa com quebras de linha.
 
-Adição, remoção, embaralhamento e classificação
+## 18.6 - Adição, remoção, embaralhamento e classificação
 
 Para lidar com as cartas, gostaríamos de ter um método que removesse uma carta do baralho e a devolvesse. O método de lista pop oferece uma forma conveniente de fazer isso:
 
@@ -236,7 +236,7 @@ Não se esqueça de importar random.
 
 Como exercício, escreva um método de Deck chamado sort, que use o método de lista sort para classificar as cartas em um Deck. sort usa o método \_\_lt\_\_ que definimos para determinar a ordem.
 
-Herança
+## 18.7 - Herança
 
 A herança é a capacidade de definir uma nova classe que seja uma versão modificada de uma classe existente. Como exemplo, digamos que queremos que uma classe represente uma “mão”, isto é, as cartas mantidas por um jogador. Uma mão é semelhante a um baralho: ambos são compostos por uma coleção de cartas, e ambos exigem operações como adicionar e remover cartas.
 
@@ -306,7 +306,7 @@ A herança é um recurso útil. Alguns programas que poderiam ser repetitivos se
 
 De outro lado, a herança pode tornar os programas difíceis de ler. Quando um método é invocado, às vezes não está claro onde encontrar sua definição. O código relevante pode ser espalhado por vários módulos. Além disso, muitas das coisas que podem ser feitas usando a herança podem ser feitas sem elas, às vezes, até de forma melhor.
 
-Diagramas de classe
+## 18.8 - Diagramas de classe
 
 Por enquanto vimos diagramas de pilha, que mostram o estado de um programa e diagramas de objeto, que mostram os atributos de um objeto e seus valores. Esses diagramas representam um retrato da execução de um programa, então eles mudam no decorrer da execução do programa.
 
@@ -334,7 +334,7 @@ Não há nenhuma dependência neste diagrama. Elas normalmente apareceriam com u
 
 Um diagrama mais detalhado poderia mostrar que um Deck na verdade contém uma lista de Cards, mas os tipos integrados como lista e dict não são normalmente incluídos em diagramas de classe.
 
-Encapsulamento de dados
+## 18.9 - Encapsulamento de dados
 
 Os capítulos anteriores demonstram um plano de desenvolvimento que poderíamos chamar de “projeto orientado a objeto”. Identificamos os objetos de que precisamos – como Point, Rectangle e Time – e definimos classes para representá-los. Em cada caso há uma correspondência óbvia entre o objeto e alguma entidade no mundo real (ou, pelo menos, no mundo matemático).
 
@@ -396,7 +396,7 @@ Como exercício, baixe o meu código de Markov de http://thinkpython2.com/code/m
 
 Solução: http://thinkpython2.com/code/Markov.py (observe o M maiúsculo).
 
-Depuração
+## 18.10 - Depuração
 
 A herança pode dificultar a depuração porque quando você invoca um método em um objeto, pode ser difícil compreender qual método será invocado.
 
@@ -430,7 +430,7 @@ Aqui está uma sugestão de projeto: quando você ignora um método, a interface
 
 Se violar esta regra, o que se chama de “princípio de substituição de Liskov”, seu código cairá como (desculpe) um castelo de cartas.
 
-Glossário
+## 18.11 - Glossário
 
 codificar:
 
@@ -484,7 +484,7 @@ encapsulamento de dados:
 
 Plano de desenvolvimento de programa que envolve um protótipo usando variáveis globais e uma versão final que transforma as variáveis globais em atributos de instância.
 
-Exercícios
+## 18.12 - Exercícios
 
 Exercício 18.1
 

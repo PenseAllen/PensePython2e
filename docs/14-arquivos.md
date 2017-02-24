@@ -2,7 +2,7 @@
 
 Este capítulo apresenta a ideia de programas “persistentes”, que mantêm dados em armazenamento permanente, e mostra como usar tipos diferentes de armazenamento permanente, como arquivos e bancos de dados.
 
-Persistência
+## 14.1 - Persistência
 
 A maioria dos programas que vimos até agora são transitórios, porque são executados por algum tempo e produzem alguma saída, mas, quando terminam, seus dados desaparecem. Se executar o programa novamente, ele começa novamente do zero.
 
@@ -14,7 +14,7 @@ Uma das formas mais simples para programas manterem seus dados é lendo e escrev
 
 Uma alternativa é armazenar o estado do programa em um banco de dados. Neste capítulo apresentarei um banco de dados simples e um módulo, pickle, que facilita o armazenamento de dados de programas.
 
-Leitura e escrita
+## 14.2 - Leitura e escrita
 
 Um arquivo de texto é uma sequência de caracteres armazenados em um meio permanente como uma unidade de disco rígido, pendrive ou CD-ROM. Vimos como abrir e ler um arquivo em “Leitura de listas de palavras” na página 133.
 
@@ -46,7 +46,7 @@ Ao terminar de escrever, você deve fechar o arquivo:
 
 Se não fechar o arquivo, ele é fechado para você quando o programa termina.
 
-Operador de formatação
+## 14.3 - Operador de formatação
 
 O argumento de write tem que ser uma string, então, se quisermos inserir outros valores em um arquivo, precisamos convertê-los em strings. O modo mais fácil de fazer isso é com str:
 
@@ -96,7 +96,7 @@ No primeiro exemplo não há elementos suficientes; no segundo, o elemento é do
 
 Para obter mais informações sobre o operador de formato, veja https://docs.python.org/3/library/stdtypes.html\#printf-style-string-formatting. Você pode ler sobre uma alternativa mais eficiente, o método de formatação de strings, em https://docs.python.org/3/library/stdtypes.html\#str.format.
 
-Nomes de arquivo e caminhos
+## 14.4 - Nomes de arquivo e caminhos
 
 Os arquivos são organizados em diretórios (também chamados de “pastas”). Cada programa em execução tem um “diretório atual”, que é o diretório-padrão da maior parte das operações. Por exemplo, quando você abre um arquivo de leitura, o Python o procura no diretório atual.
 
@@ -166,7 +166,7 @@ os.path.join recebe um diretório e um nome de arquivo e os une em um caminho co
 
 O módulo os fornece uma função chamada walk, que é semelhante, só que mais versátil. Como exercício, leia a documentação e use-a para exibir os nomes dos arquivos em um diretório dado e seus subdiretórios. Você pode baixar minha solução em http://thinkpython2.com/code/walk.py.
 
-Captura de exceções
+## 14.5 - Captura de exceções
 
 Muitas coisas podem dar errado quando você tenta ler e escrever arquivos. Se tentar abrir um arquivo que não existe, você recebe um IOError:
 
@@ -202,7 +202,7 @@ O Python começa executando a cláusula try. Se tudo for bem, ele ignora a cláu
 
 Lidar com exceções usando uma instrução try chama-se capturar uma exceção. Neste exemplo, a cláusula except exibe uma mensagem de erro que não é muito útil. Em geral, a captura de uma exceção oferece a oportunidade de corrigir o problema ou tentar novamente, ou, ao menos, de terminar o programa adequadamente.
 
-Bancos de dados
+## 14.6 - Bancos de dados
 
 Um banco de dados é um arquivo organizado para armazenar dados. Muitos bancos de dados são organizados como um dicionário, porque mapeiam chaves a valores. A maior diferença entre um banco de dados e um dicionário é que o banco de dados está em um disco (ou outro armazenamento permanente), portanto persiste depois que o programa termina.
 
@@ -246,7 +246,7 @@ Como em outros arquivos, você deve fechar o banco de dados quando terminar:
 
 &gt;&gt;&gt; db.close()
 
-Usando o Pickle
+## 14.7 - Usando o Pickle
 
 Uma limitação de dbm é que as chaves e os valores têm que ser strings ou bytes. Se tentar usar algum outro tipo, vai receber um erro.
 
@@ -288,7 +288,7 @@ Em outras palavras, usar o pickle de frente para trás e de trás para a frente 
 
 Você pode usar o pickle para guardar variáveis que não são strings em um banco de dados. Na verdade, esta combinação é tão comum que foi encapsulada em um módulo chamado shelve.
 
-Pipes
+## 14.8 - Pipes
 
 A maior parte dos sistemas operacionais fornece uma interface de linha de comando, conhecida como shell. Shells normalmente fornecem comandos para navegar nos sistemas de arquivos e executar programas. Por exemplo, em Unix você pode alterar diretórios com cd, exibir o conteúdo de um diretório com ls e abrir um navegador web digitando (por exemplo) firefox.
 
@@ -336,7 +336,7 @@ Você pode usar um pipe para executar o md5sum do Python e receber o resultado:
 
 None
 
-Módulos de escrita
+## 14.9 - Módulos de escrita
 
 Qualquer arquivo que contenha código do Python pode ser importado como um módulo. Por exemplo, vamos supor que você tenha um arquivo chamado wc.py com o seguinte código:
 
@@ -388,7 +388,7 @@ Atenção: se você importar um módulo que já tenha sido importado, o Python n
 
 Se quiser recarregar um módulo, você pode usar a função integrada reload, mas isso pode causar problemas, então o mais seguro é reiniciar o interpretador e importar o módulo novamente.
 
-Depuração
+## 14.10 - Depuração
 
 Quando estiver lendo e escrevendo arquivos, você pode ter problemas com whitespace. Esses erros podem ser difíceis para depurar, porque os espaços, tabulações e quebras de linha normalmente são invisíveis:
 
@@ -412,7 +412,7 @@ Outro problema que você pode ter é que sistemas diferentes usam caracteres dif
 
 Para a maior parte dos sistemas há aplicações para converter de um formato a outro. Você pode encontrá-los (e ler mais sobre o assunto) em http://en.wikipedia.org/wiki/Newline. Ou, é claro, você pode escrever um por conta própria.
 
-Glossário
+## 14.11 - Glossário
 
 persistente:
 
@@ -470,7 +470,7 @@ objeto pipe:
 
 Objeto que representa um programa em execução, permitindo que um programa do Python execute comandos e leia os resultados.
 
-Exercícios
+## 14.12 - Exercícios
 
 Exercício 14.1
 
