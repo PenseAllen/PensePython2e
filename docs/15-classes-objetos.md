@@ -8,15 +8,15 @@ Os exemplos de código deste capítulo estão disponíveis em http://thinkpython
 
 Já usamos muitos tipos integrados do Python; agora vamos definir um tipo próprio. Como exemplo, criaremos um tipo chamado Point, que representa um ponto no espaço bidimensional.
 
-Na notação matemática, os pontos muitas vezes são escritos entre parênteses, com uma vírgula separando as coordenadas. Por exemplo, (0,0) representa a origem e (x, y) representa o ponto que está x unidades à direita e y unidades a partir da origem.
+Na notação matemática, os pontos muitas vezes são escritos entre parênteses, com uma vírgula separando as coordenadas. Por exemplo, (0,0) representa a origem e (x, y) representa o ponto que está x unidades à direita e y unidades acima da origem.
 
 Há várias formas para representar pontos no Python:
 
-•        Podemos armazenar as coordenadas separadamente em duas variáveis, x e y.
+* Podemos armazenar as coordenadas separadamente em duas variáveis, x e y.
 
-•        Podemos armazenar as coordenadas como elementos em uma lista ou tupla.
+* Podemos armazenar as coordenadas como elementos em uma lista ou tupla.
 
-•        Podemos criar um tipo para representar pontos como objetos.
+* Podemos criar um tipo para representar pontos como objetos.
 
 Criar um tipo é mais complicado que outras opções, mas tem vantagens que logo ficarão evidentes.
 
@@ -118,9 +118,9 @@ Como exercício, escreva uma função chamada distance\_between\_points, que tom
 
 Há duas possibilidades, no mínimo:
 
-•        Você pode especificar um canto do retângulo (ou o centro), a largura e a altura.
+* Você pode especificar um canto do retângulo (ou o centro), a largura e a altura.
 
-•        Você pode especificar dois cantos opostos.
+* Você pode especificar dois cantos opostos.
 
 Nesse ponto é difícil dizer qual opção é melhor, então implementaremos a primeira, como exemplo.
 
@@ -391,4 +391,3 @@ Escreva uma função chamada draw\_rect que receba um objeto Turtle e um Rectang
 Escreva uma função chamada draw\_circle, que tome um Turtle e um Circle e desenhe o círculo.
 
 Solução: http://thinkpython2.com/code/draw.py.
-

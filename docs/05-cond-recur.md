@@ -374,9 +374,9 @@ Veremos como tratar este tipo de erro mais adiante.
 
 Quando um erro de sintaxe ou de tempo de execução ocorre, a mensagem de erro contém muita informação, às vezes, até demais. As partes mais úteis são normalmente:
 
-•        que tipo de erro foi;
+* que tipo de erro foi;
 
-•        onde ocorreu.
+* onde ocorreu.
 
 Erros de sintaxe são normalmente fáceis de encontrar, mas há algumas pegadinhas. Erros de whitespace podem ser complicados porque os espaços e tabulações são invisíveis e estamos acostumados a ignorá-los.
 

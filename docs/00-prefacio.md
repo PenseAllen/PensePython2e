@@ -8,13 +8,13 @@ Um dos problemas que eu via eram os livros. Eram muito grandes, com detalhes des
 
 Duas semanas antes do primeiro dia de aula, eu decidi escrever meu próprio livro. Meus objetivos eram:
 
-•        que o livro fosse curto. Era melhor os alunos lerem 10 páginas que não lerem 50.
+* que o livro fosse curto. Era melhor os alunos lerem 10 páginas que não lerem 50.
 
-•        abordar o vocabulário com cuidado. Tentei minimizar o jargão e definir cada termo no momento do primeiro uso.
+* abordar o vocabulário com cuidado. Tentei minimizar o jargão e definir cada termo no momento do primeiro uso.
 
-•        construir o aprendizado passo a passo. Para evitar alçapões, dividi os tópicos mais difíceis e em uma série de etapas menores.
+* construir o aprendizado passo a passo. Para evitar alçapões, dividi os tópicos mais difíceis e em uma série de etapas menores.
 
-•        que o conteúdo fosse concentrado em programar mesmo, não na linguagem de programação. Selecionei um subconjunto mínimo útil do Java e omiti o resto.
+* que o conteúdo fosse concentrado em programar mesmo, não na linguagem de programação. Selecionei um subconjunto mínimo útil do Java e omiti o resto.
 
 Eu precisava de um título, então, por capricho, decidi chamá-lo de Pense como um cientista da computação.
 
@@ -30,25 +30,25 @@ Desde então continuei a desenvolver o livro, corrigindo erros, melhorando algun
 
 O resultado está aqui, agora com o título menos grandioso de Pense em Python. Fiz algumas alterações:
 
-•        Acrescentei uma seção sobre depuração (debugging) no fim de cada capítulo. Essas seções apresentam técnicas gerais para encontrar e evitar bugs (erros de programação) e avisos sobre armadilhas do Python.
+* Acrescentei uma seção sobre depuração (debugging) no fim de cada capítulo. Essas seções apresentam técnicas gerais para encontrar e evitar bugs (erros de programação) e avisos sobre armadilhas do Python.
 
-•        Acrescentei exercícios, incluindo testes curtos de compreensão e alguns projetos substanciais. A maior parte dos exercícios tem um link para a minha solução.
+* Acrescentei exercícios, incluindo testes curtos de compreensão e alguns projetos substanciais. A maior parte dos exercícios tem um link para a minha solução.
 
-•        Acrescentei uma série de estudos de caso – exemplos mais longos com exercícios, soluções e discussões.
+* Acrescentei uma série de estudos de caso – exemplos mais longos com exercícios, soluções e discussões.
 
-•        Expandi a discussão sobre planos de desenvolvimento de programas e padrões de design básicos.
+* Expandi a discussão sobre planos de desenvolvimento de programas e padrões de design básicos.
 
-•        Acrescentei apêndices sobre depuração e análise de algoritmos.
+* Acrescentei apêndices sobre depuração e análise de algoritmos.
 
 Esta edição de Pense em Python tem as seguintes novidades:
 
-•        O livro e todo o código de apoio foram atualizados para o Python 3.
+* O livro e todo o código de apoio foram atualizados para o Python 3.
 
-•        Acrescentei algumas seções e mais detalhes sobre a web, para ajudar os principiantes a executar o Python em um navegador, e não ter que lidar com a instalação do programa até que seja necessário.
+* Acrescentei algumas seções e mais detalhes sobre a web, para ajudar os principiantes a executar o Python em um navegador, e não ter que lidar com a instalação do programa até que seja necessário.
 
-•        Para “Módulo turtle” na página 63 troquei meu próprio pacote gráfico turtle, chamado Swampy, para um módulo Python mais padronizado, turtle, que é mais fácil de instalar e mais eficiente.
+* Para “Módulo turtle” na página 63 troquei meu próprio pacote gráfico turtle, chamado Swampy, para um módulo Python mais padronizado, turtle, que é mais fácil de instalar e mais eficiente.
 
-•        Acrescentei um novo capítulo chamado “Extra”, que introduz alguns recursos adicionais do Python, não estritamente necessários, mas às vezes práticos.
+* Acrescentei um novo capítulo chamado “Extra”, que introduz alguns recursos adicionais do Python, não estritamente necessários, mas às vezes práticos.
 
 Espero que goste de trabalhar com este livro, e que ele o ajude a aprender a programar e pensar, pelo menos um pouquinho, como um cientista da computação.
 
@@ -95,11 +95,11 @@ Envie comentários e dúvidas sobre este livro à editora, escrevendo para: nova
 
 Temos uma página web para este livro na qual incluímos erratas, exemplos e quaisquer outras informações adicionais.
 
-•        Página da edição em português
+* Página da edição em português
 
         http://www.novatec.com.br/catalogo/7522508-pense-em-python
 
-•        Página da edição original em inglês
+* Página da edição original em inglês
 
         http://bit.ly/think-python\_2E
 
@@ -127,268 +127,268 @@ Se tiver alguma sugestão ou correção, por favor, envie um email a feedback@th
 
 Se você incluir pelo menos uma parte da frase onde o erro aparece, é mais fácil para eu procurá-lo. Também pode ser o número da página e seção, mas aí é um pouquinho mais difícil de encontrar o erro a ser corrigido. Obrigado!
 
-•        Lloyd Hugh Allen enviou uma correção da Seção 8.4.
+* Lloyd Hugh Allen enviou uma correção da Seção 8.4.
 
-•        Yvon Boulianne enviou a correção de um erro semântico no Capítulo 5.
+* Yvon Boulianne enviou a correção de um erro semântico no Capítulo 5.
 
-•        Fred Bremmer enviou uma correção da Seção 2.1.
+* Fred Bremmer enviou uma correção da Seção 2.1.
 
-•        Jonah Cohen escreveu os scripts em Perl para converter a fonte de LaTeX deste livro para o belo HTML.
+* Jonah Cohen escreveu os scripts em Perl para converter a fonte de LaTeX deste livro para o belo HTML.
 
-•        Michael Conlon enviou uma correção gramatical do Capítulo 2 e uma melhoria no estilo do Capítulo 1, além de iniciar a discussão sobre os aspectos técnicos de interpretadores.
+* Michael Conlon enviou uma correção gramatical do Capítulo 2 e uma melhoria no estilo do Capítulo 1, além de iniciar a discussão sobre os aspectos técnicos de interpretadores.
 
-•        Benoit Girard enviou uma correção a um erro humorístico na Seção 5.6.
+* Benoit Girard enviou uma correção a um erro humorístico na Seção 5.6.
 
-•        Courtney Gleason e Katherine Smith escreveram horsebet.py, que foi usado como um estudo de caso em uma versão anterior do livro. O programa agora pode ser encontrado no site.
+* Courtney Gleason e Katherine Smith escreveram horsebet.py, que foi usado como um estudo de caso em uma versão anterior do livro. O programa agora pode ser encontrado no site.
 
-•        Lee Harr enviou mais correções do que temos espaço para relacionar aqui, e na verdade ele deve ser apontado como um dos editores principais do texto.
+* Lee Harr enviou mais correções do que temos espaço para relacionar aqui, e na verdade ele deve ser apontado como um dos editores principais do texto.
 
-•        James Kaylin é um estudante que usa o texto. Ele enviou várias correções.
+* James Kaylin é um estudante que usa o texto. Ele enviou várias correções.
 
-•        David Kershaw corrigiu a função catTwice defeituosa na Seção 3.10.
+* David Kershaw corrigiu a função catTwice defeituosa na Seção 3.10.
 
-•        Eddie Lam entregou diversas correções aos Capítulos 1, 2, e 3. Ele também corrigiu o Makefile para criar um índice na primeira vez que rodar e nos ajudou a estabelecer um esquema de versionamento.
+* Eddie Lam entregou diversas correções aos Capítulos 1, 2, e 3. Ele também corrigiu o Makefile para criar um índice na primeira vez que rodar e nos ajudou a estabelecer um esquema de versionamento.
 
-•        Man-Yong Lee enviou uma correção do código de exemplo na Seção 2.4.
+* Man-Yong Lee enviou uma correção do código de exemplo na Seção 2.4.
 
-•        David Mayo indicou que a palavra “inconscientemente” no Capítulo 1 devia ser alterada para “subconscientemente”.
+* David Mayo indicou que a palavra “inconscientemente” no Capítulo 1 devia ser alterada para “subconscientemente”.
 
-•        Chris McAloon enviou várias correções para as Seções 3.9 e 3.10.
+* Chris McAloon enviou várias correções para as Seções 3.9 e 3.10.
 
-•        Matthew J. Moelter tem contribuído já há um bom tempo e entregou diversas correções e sugestões para o livro.
+* Matthew J. Moelter tem contribuído já há um bom tempo e entregou diversas correções e sugestões para o livro.
 
-•        Simon Dicon Montford informou que havia uma definição de função ausente e vários erros de ortografia no Capítulo 3. Ele também encontrou erros na função increment no Capítulo 13.
+* Simon Dicon Montford informou que havia uma definição de função ausente e vários erros de ortografia no Capítulo 3. Ele também encontrou erros na função increment no Capítulo 13.
 
-•        John Ouzts corrigiu a definição de “valor de retorno” no Capítulo 3.
+* John Ouzts corrigiu a definição de “valor de retorno” no Capítulo 3.
 
-•        Kevin Parks enviou comentários e sugestões valiosos para melhorar a distribuição do livro.
+* Kevin Parks enviou comentários e sugestões valiosos para melhorar a distribuição do livro.
 
-•        David Pool encontrou um erro de ortografia no glossário do Capítulo 1, e também enviou palavras gentis de encorajamento.
+* David Pool encontrou um erro de ortografia no glossário do Capítulo 1, e também enviou palavras gentis de encorajamento.
 
-•        Michael Schmitt enviou uma correção ao capítulo sobre arquivos e exceções.
+* Michael Schmitt enviou uma correção ao capítulo sobre arquivos e exceções.
 
-•        Robin Shaw indicou um erro na Seção 13.1, onde a função printTime foi usada em um exemplo sem ser definida.
+* Robin Shaw indicou um erro na Seção 13.1, onde a função printTime foi usada em um exemplo sem ser definida.
 
-•        Paul Sleigh encontrou um erro no Capítulo 7 e um bug no script em Perl de Jonah Cohen, que gera o HTML do LaTeX.
+* Paul Sleigh encontrou um erro no Capítulo 7 e um bug no script em Perl de Jonah Cohen, que gera o HTML do LaTeX.
 
-•        Craig T. Snydal está testando o texto em um curso na Drew University. Ele contribuiu com várias sugestões valiosas e correções.
+* Craig T. Snydal está testando o texto em um curso na Drew University. Ele contribuiu com várias sugestões valiosas e correções.
 
-•        Ian Thomas e seus alunos estão usando o texto em um curso de programação. Eles são os primeiros a testar os capítulos da segunda metade do livro e fizeram muitas correções e sugestões.
+* Ian Thomas e seus alunos estão usando o texto em um curso de programação. Eles são os primeiros a testar os capítulos da segunda metade do livro e fizeram muitas correções e sugestões.
 
-•        Keith Verheyden enviou uma correção no Capítulo 3.
+* Keith Verheyden enviou uma correção no Capítulo 3.
 
-•        Peter Winstanley nos avisou sobre um erro antigo no latim do Capítulo 3.
+* Peter Winstanley nos avisou sobre um erro antigo no latim do Capítulo 3.
 
-•        Chris Wrobel fez correções ao código no capítulo sobre arquivos E/S e exceções.
+* Chris Wrobel fez correções ao código no capítulo sobre arquivos E/S e exceções.
 
-•        Moshe Zadka fez contribuições inestimáveis para este projeto. Além de escrever o primeiro rascunho do capítulo sobre Dicionários, ele forneceu orientação contínua nas primeiras etapas do livro.
+* Moshe Zadka fez contribuições inestimáveis para este projeto. Além de escrever o primeiro rascunho do capítulo sobre Dicionários, ele forneceu orientação contínua nas primeiras etapas do livro.
 
-•        Christoph Zwerschke enviou várias correções e sugestões pedagógicas, e explicou a diferença entre gleich e selbe.
+* Christoph Zwerschke enviou várias correções e sugestões pedagógicas, e explicou a diferença entre gleich e selbe.
 
-•        James Mayer enviou-nos um monte de erros tipográficos e ortográficos, inclusive dois da lista de contribuidores.
+* James Mayer enviou-nos um monte de erros tipográficos e ortográficos, inclusive dois da lista de contribuidores.
 
-•        Hayden McAfee percebeu uma inconsistência potencialmente confusa entre dois exemplos.
+* Hayden McAfee percebeu uma inconsistência potencialmente confusa entre dois exemplos.
 
-•        Angel Arnal faz parte de uma equipe internacional de tradutores que trabalhou na versão do texto para o espanhol. Ele também encontrou vários erros na versão em inglês.
+* Angel Arnal faz parte de uma equipe internacional de tradutores que trabalhou na versão do texto para o espanhol. Ele também encontrou vários erros na versão em inglês.
 
-•        Tauhidul Hoque e Lex Berezhny criaram as ilustrações do Capítulo 1 e melhoraram muitas das outras ilustrações.
+* Tauhidul Hoque e Lex Berezhny criaram as ilustrações do Capítulo 1 e melhoraram muitas das outras ilustrações.
 
-•        O Dr. Michele Alzetta pegou um erro no Capítulo 8 e enviou alguns comentários pedagógicos interessantes e sugestões sobre Fibonacci e o jogo do Mico.
+* O Dr. Michele Alzetta pegou um erro no Capítulo 8 e enviou alguns comentários pedagógicos interessantes e sugestões sobre Fibonacci e o jogo do Mico.
 
-•        Andy Mitchell pegou um erro de ortografia no Capítulo 1 e um exemplo ruim no Capítulo 2.
+* Andy Mitchell pegou um erro de ortografia no Capítulo 1 e um exemplo ruim no Capítulo 2.
 
-•        Kalin Harvey sugeriu um esclarecimento no Capítulo 7 e achou alguns erros de ortografia.
+* Kalin Harvey sugeriu um esclarecimento no Capítulo 7 e achou alguns erros de ortografia.
 
-•        Christopher P. Smith encontrou vários erros de ortografia e ajudou-nos a atualizar o livro para o Python 2.2.
+* Christopher P. Smith encontrou vários erros de ortografia e ajudou-nos a atualizar o livro para o Python 2.2.
 
-•        David Hutchins encontrou um erro de ortografia no prefácio.
+* David Hutchins encontrou um erro de ortografia no prefácio.
 
-•        Gregor Lingl é professor de Python em uma escola de Ensino Médio em Viena, na Áustria. Ele está trabalhando em uma tradução do livro para o alemão e encontrou alguns erros feios no Capítulo 5.
+* Gregor Lingl é professor de Python em uma escola de Ensino Médio em Viena, na Áustria. Ele está trabalhando em uma tradução do livro para o alemão e encontrou alguns erros feios no Capítulo 5.
 
-•        Julie Peters achou um erro de ortografia no prefácio.
+* Julie Peters achou um erro de ortografia no prefácio.
 
-•        Florin Oprina enviou uma melhoria para o makeTime, uma correção no printTime e um belo erro de ortografia.
+* Florin Oprina enviou uma melhoria para o makeTime, uma correção no printTime e um belo erro de ortografia.
 
-•        D. J. Webre sugeriu um esclarecimento no Capítulo 3.
+* D. J. Webre sugeriu um esclarecimento no Capítulo 3.
 
-•        Ken encontrou um punhado de erros nos Capítulos 8, 9 e 11.
+* Ken encontrou um punhado de erros nos Capítulos 8, 9 e 11.
 
-•        Ivo Wever achou um erro de ortografia no Capítulo 5 e sugeriu um esclarecimento no Capítulo 3.
+* Ivo Wever achou um erro de ortografia no Capítulo 5 e sugeriu um esclarecimento no Capítulo 3.
 
-•        Curtis Yanko sugeriu um esclarecimento no Capítulo 2.
+* Curtis Yanko sugeriu um esclarecimento no Capítulo 2.
 
-•        Ben Logan enviou vários erros de ortografia e problemas com a tradução do livro para HTML.
+* Ben Logan enviou vários erros de ortografia e problemas com a tradução do livro para HTML.
 
-•        Jason Armstrong percebeu que faltava uma palavra no Capítulo 2.
+* Jason Armstrong percebeu que faltava uma palavra no Capítulo 2.
 
-•        Louis Cordier notou um ponto no Capítulo 16 onde o código não correspondia com o texto.
+* Louis Cordier notou um ponto no Capítulo 16 onde o código não correspondia com o texto.
 
-•        Brian Caim sugeriu vários esclarecimentos nos Capítulos 2 e 3.
+* Brian Caim sugeriu vários esclarecimentos nos Capítulos 2 e 3.
 
-•        Rob Black entregou um monte de correções, inclusive algumas alterações para Python 2.2.
+* Rob Black entregou um monte de correções, inclusive algumas alterações para Python 2.2.
 
-•        Jean-Philippe Rey, da École Centrale Paris, enviou uma série de patches, inclusive algumas atualizações do Python 2.2 e outras melhorias bem pensadas.
+* Jean-Philippe Rey, da École Centrale Paris, enviou uma série de patches, inclusive algumas atualizações do Python 2.2 e outras melhorias bem pensadas.
 
-•        Jason Mader, da George Washington University, fez uma série de sugestões e correções úteis.
+* Jason Mader, da George Washington University, fez uma série de sugestões e correções úteis.
 
-•        Jan Gundtofte-Bruun nos lembrou de que “un erro” é um erro.
+* Jan Gundtofte-Bruun nos lembrou de que “un erro” é um erro.
 
-•        Abel David e Alexis Dinno nos lembraram de que o plural de “matriz” é “matrizes”, não “matrixes”. Este erro esteve no livro por anos, mas dois leitores com as mesmas iniciais informaram a respeito dele no mesmo dia. Bizarro.
+* Abel David e Alexis Dinno nos lembraram de que o plural de “matriz” é “matrizes”, não “matrixes”. Este erro esteve no livro por anos, mas dois leitores com as mesmas iniciais informaram a respeito dele no mesmo dia. Bizarro.
 
-•        Charles Thayer nos estimulou a sumir com os pontos e vírgulas que tínhamos posto no final de algumas instruções e a otimizar nosso uso de “argumento” e “parâmetro”.
+* Charles Thayer nos estimulou a sumir com os pontos e vírgulas que tínhamos posto no final de algumas instruções e a otimizar nosso uso de “argumento” e “parâmetro”.
 
-•        Roger Sperberg indicou uma parte distorcida de lógica no Capítulo 3.
+* Roger Sperberg indicou uma parte distorcida de lógica no Capítulo 3.
 
-•        Sam Bull indicou um parágrafo confuso no Capítulo 2.
+* Sam Bull indicou um parágrafo confuso no Capítulo 2.
 
-•        Andrew Cheung indicou duas ocorrências de “uso antes da definição”.
+* Andrew Cheung indicou duas ocorrências de “uso antes da definição”.
 
-•        C. Corey Capel notou uma palavra ausente e um erro de ortografia no Capítulo 4.
+* C. Corey Capel notou uma palavra ausente e um erro de ortografia no Capítulo 4.
 
-•        Alessandra ajudou a eliminar algumas coisas confusas do Turtle.
+* Alessandra ajudou a eliminar algumas coisas confusas do Turtle.
 
-•        Wim Champagne encontrou uma confusão de palavras em um exemplo de dicionário.
+* Wim Champagne encontrou uma confusão de palavras em um exemplo de dicionário.
 
-•        Douglas Wright indicou um problema com a divisão pelo piso em arc.
+* Douglas Wright indicou um problema com a divisão pelo piso em arc.
 
-•        Jared Spindor encontrou uma confusão no fim de uma frase.
+* Jared Spindor encontrou uma confusão no fim de uma frase.
 
-•        Lin Peiheng enviou várias sugestões muito úteis.
+* Lin Peiheng enviou várias sugestões muito úteis.
 
-•        Ray Hagtvedt enviou dois erros e um quase erro.
+* Ray Hagtvedt enviou dois erros e um quase erro.
 
-•        Torsten Hübsch indicou uma inconsistência no Swampy.
+* Torsten Hübsch indicou uma inconsistência no Swampy.
 
-•        Inga Petuhhov corrigiu um exemplo no Capítulo 14.
+* Inga Petuhhov corrigiu um exemplo no Capítulo 14.
 
-•        Arne Babenhauserheide enviou várias correções úteis.
+* Arne Babenhauserheide enviou várias correções úteis.
 
-•        Mark E. Casida é é bom em encontrar palavras repetidas.
+* Mark E. Casida é é bom em encontrar palavras repetidas.
 
-•        Scott Tyler preencheu um que faltava. E em seguida enviou um monte de correções.
+* Scott Tyler preencheu um que faltava. E em seguida enviou um monte de correções.
 
-•        Gordon Shephard enviou várias correções, todas em emails separados.
+* Gordon Shephard enviou várias correções, todas em emails separados.
 
-•        Andrew Turner notou um erro no Capítulo 8.
+* Andrew Turner notou um erro no Capítulo 8.
 
-•        Adam Hobart corrigiu um problema com a divisão pelo piso em arc.
+* Adam Hobart corrigiu um problema com a divisão pelo piso em arc.
 
-•        Daryl Hammond e Sarah Zimmerman indicaram que eu trouxe o math.pi para a mesa cedo demais. E Zim achou um erro de ortografia.
+* Daryl Hammond e Sarah Zimmerman indicaram que eu trouxe o math.pi para a mesa cedo demais. E Zim achou um erro de ortografia.
 
-•        George Sass encontrou um bug em uma seção de depuração.
+* George Sass encontrou um bug em uma seção de depuração.
 
-•        Brian Bingham sugeriu o Exercício 11.5.
+* Brian Bingham sugeriu o Exercício 11.5.
 
-•        Leah Engelbert-Fenton indicou que usei tuple como um nome de variável, contrariando meu próprio conselho. E, em seguida, encontrou uma porção de erros de ortografia e um “uso antes da definição”.
+* Leah Engelbert-Fenton indicou que usei tuple como um nome de variável, contrariando meu próprio conselho. E, em seguida, encontrou uma porção de erros de ortografia e um “uso antes da definição”.
 
-•        Joe Funke achou um erro de ortografia.
+* Joe Funke achou um erro de ortografia.
 
-•        Chao-chao Chen encontrou uma inconsistência no exemplo de Fibonacci.
+* Chao-chao Chen encontrou uma inconsistência no exemplo de Fibonacci.
 
-•        Jeff Paine sabe a diferença entre espaço e spam.
+* Jeff Paine sabe a diferença entre espaço e spam.
 
-•        Lubos Pintes enviou um erro de ortografia.
+* Lubos Pintes enviou um erro de ortografia.
 
-•        Gregg Lind e Abigail Heithoff sugeriram o Exercício 14.3.
+* Gregg Lind e Abigail Heithoff sugeriram o Exercício 14.3.
 
-•        Max Hailperin entregou uma série de correções e sugestões. Max é um dos autores das extraordinárias Abstrações Concretas (Tecnologia de curso, 1998), que você pode querer ler quando terminar este livro.
+* Max Hailperin entregou uma série de correções e sugestões. Max é um dos autores das extraordinárias Abstrações Concretas (Tecnologia de curso, 1998), que você pode querer ler quando terminar este livro.
 
-•        Chotipat Pornavalai encontrou um erro em uma mensagem de erro.
+* Chotipat Pornavalai encontrou um erro em uma mensagem de erro.
 
-•        Stanislaw Antol enviou uma lista com várias sugestões úteis.
+* Stanislaw Antol enviou uma lista com várias sugestões úteis.
 
-•        Eric Pashman enviou uma série de correções para os Capítulos 4-11.
+* Eric Pashman enviou uma série de correções para os Capítulos 4-11.
 
-•        Miguel Azevedo encontrou alguns erros de ortografia.
+* Miguel Azevedo encontrou alguns erros de ortografia.
 
-•        Jianhua Liu enviou uma longa lista de correções.
+* Jianhua Liu enviou uma longa lista de correções.
 
-•        Nick King encontrou uma palavra que faltava.
+* Nick King encontrou uma palavra que faltava.
 
-•        Martin Zuther enviou uma longa lista de sugestões.
+* Martin Zuther enviou uma longa lista de sugestões.
 
-•        Adam Zimmerman encontrou uma inconsistência em uma ocorrência de “ocorrência” e vários outros erros.
+* Adam Zimmerman encontrou uma inconsistência em uma ocorrência de “ocorrência” e vários outros erros.
 
-•        Ratnakar Tiwari sugeriu uma nota de rodapé explicando triângulos degenerados.
+* Ratnakar Tiwari sugeriu uma nota de rodapé explicando triângulos degenerados.
 
-•        Anurag Goel sugeriu outra solução para is\_abecedarian e enviou algumas correções adicionais. E ele sabe soletrar Jane Austen.
+* Anurag Goel sugeriu outra solução para is\_abecedarian e enviou algumas correções adicionais. E ele sabe soletrar Jane Austen.
 
-•        Kelli Kratzer notou um dos erros de ortografia.
+* Kelli Kratzer notou um dos erros de ortografia.
 
-•        Mark Griffiths indicou um exemplo confuso no Capítulo 3.
+* Mark Griffiths indicou um exemplo confuso no Capítulo 3.
 
-•        Roydan Ongie encontrou um erro no meu método de Newton.
+* Roydan Ongie encontrou um erro no meu método de Newton.
 
-•        Patryk Wolowiec me ajudou com um problema na versão do HTML.
+* Patryk Wolowiec me ajudou com um problema na versão do HTML.
 
-•        Mark Chonofsky me falou de uma nova palavra-chave no Python 3.
+* Mark Chonofsky me falou de uma nova palavra-chave no Python 3.
 
-•        Russell Coleman ajudou com a minha geometria.
+* Russell Coleman ajudou com a minha geometria.
 
-•        Wei Huang notou vários erros tipográficos.
+* Wei Huang notou vários erros tipográficos.
 
-•        Karen Barber achou o erro de ortografia mais antigo no livro.
+* Karen Barber achou o erro de ortografia mais antigo no livro.
 
-•        Nam Nguyen encontrou um erro de ortografia e indicou que usei o Decorator, mas não mencionei o nome.
+* Nam Nguyen encontrou um erro de ortografia e indicou que usei o Decorator, mas não mencionei o nome.
 
-•        Stéphane Morin enviou várias correções e sugestões.
+* Stéphane Morin enviou várias correções e sugestões.
 
-•        Paul Stoop corrigiu um erro de ortografia em uses\_only.
+* Paul Stoop corrigiu um erro de ortografia em uses\_only.
 
-•        Eric Bronner indicou uma confusão na discussão da ordem de operações.
+* Eric Bronner indicou uma confusão na discussão da ordem de operações.
 
-•        Alexandros Gezerlis definiu um novo padrão para o número e a qualidade das sugestões que enviou. Estamos profundamente gratos!
+* Alexandros Gezerlis definiu um novo padrão para o número e a qualidade das sugestões que enviou. Estamos profundamente gratos!
 
-•        Gray Thomas sabe diferenciar a direita da esquerda.
+* Gray Thomas sabe diferenciar a direita da esquerda.
 
-•        Giovanni Escobar Sosa enviou uma longa lista de correções e sugestões.
+* Giovanni Escobar Sosa enviou uma longa lista de correções e sugestões.
 
-•        Alix Etienne corrigiu uma das URLs.
+* Alix Etienne corrigiu uma das URLs.
 
-•        Kuang He encontrou um erro de ortografia.
+* Kuang He encontrou um erro de ortografia.
 
-•        Daniel Neilson corrigiu um erro sobre a ordem de operações.
+* Daniel Neilson corrigiu um erro sobre a ordem de operações.
 
-•        Will McGinnis indicou que polyline foi definida de forma diferente em dois lugares.
+* Will McGinnis indicou que polyline foi definida de forma diferente em dois lugares.
 
-•        Swarup Sahoo notou que faltava um ponto e vírgula.
+* Swarup Sahoo notou que faltava um ponto e vírgula.
 
-•        Frank Hecker indicou que um exercício estava mal especificado e encontrou alguns links quebrados.
+* Frank Hecker indicou que um exercício estava mal especificado e encontrou alguns links quebrados.
 
-•        Animesh B me ajudou a esclarecer um exemplo confuso.
+* Animesh B me ajudou a esclarecer um exemplo confuso.
 
-•        Martin Caspersen encontrou dois erros de arredondamento.
+* Martin Caspersen encontrou dois erros de arredondamento.
 
-•        Gregor Ulm enviou várias correções e sugestões.
+* Gregor Ulm enviou várias correções e sugestões.
 
-•        Dimitrios Tsirigkas sugeriu que eu esclarecesse um exercício.
+* Dimitrios Tsirigkas sugeriu que eu esclarecesse um exercício.
 
-•        Carlos Tafur enviou uma página de correções e sugestões.
+* Carlos Tafur enviou uma página de correções e sugestões.
 
-•        Martin Nordsletten encontrou um bug na solução de um exercício.
+* Martin Nordsletten encontrou um bug na solução de um exercício.
 
-•        Lars O.D. Christensen encontrou uma referência quebrada.
+* Lars O.D. Christensen encontrou uma referência quebrada.
 
-•        Vitor Simeone encontrou um erro de ortografia.
+* Vitor Simeone encontrou um erro de ortografia.
 
-•        Sven Hoexter indicou que uma entrada de uma variável nomeada se sobrepõe a uma função integrada.
+* Sven Hoexter indicou que uma entrada de uma variável nomeada se sobrepõe a uma função integrada.
 
-•        Viet Le encontrou um erro de ortografia.
+* Viet Le encontrou um erro de ortografia.
 
-•        Stephen Gregory indicou o problema com cmp no Python 3.
+* Stephen Gregory indicou o problema com cmp no Python 3.
 
-•        Matthew Shultz me avisou sobre um link quebrado.
+* Matthew Shultz me avisou sobre um link quebrado.
 
-•        Lokesh Kumar Makani me avisou sobre alguns links quebrados e algumas alterações em mensagens de erro.
+* Lokesh Kumar Makani me avisou sobre alguns links quebrados e algumas alterações em mensagens de erro.
 
-•        Ishwar Bhat corrigiu minha declaração do último teorema de Fermat.
+* Ishwar Bhat corrigiu minha declaração do último teorema de Fermat.
 
-•        Brian McGhie sugeriu um esclarecimento.
+* Brian McGhie sugeriu um esclarecimento.
 
-•        Andrea Zanella traduziu o livro para o italiano e enviou uma série de correções ao longo do caminho.
+* Andrea Zanella traduziu o livro para o italiano e enviou uma série de correções ao longo do caminho.
 
-•        Muito, muito obrigada a Melissa Lewis e Luciano Ramalho pelos comentários e sugestões excelentes na segunda edição.
+* Muito, muito obrigada a Melissa Lewis e Luciano Ramalho pelos comentários e sugestões excelentes na segunda edição.
 
-•        Obrigado a Harry Percival do PythonAnywhere por ajudar as pessoas a começar a usar o Python em um navegador.
+* Obrigado a Harry Percival do PythonAnywhere por ajudar as pessoas a começar a usar o Python em um navegador.
 
-•        Xavier Van Aubel fez várias correções úteis na segunda edição.
+* Xavier Van Aubel fez várias correções úteis na segunda edição.

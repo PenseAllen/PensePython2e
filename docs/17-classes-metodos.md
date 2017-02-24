@@ -8,11 +8,11 @@ Os exemplos de código deste capítulo estão disponíveis em http://thinkpython
 
 Python é uma linguagem de programação orientada a objeto, ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
 
-•        Os programas incluem definições de classes e métodos.
+* Os programas incluem definições de classes e métodos.
 
-•        A maior parte dos cálculos é expressa em termos de operações em objetos.
+* A maior parte dos cálculos é expressa em termos de operações em objetos.
 
-•        Os objetos muitas vezes representam coisas no mundo real, e os métodos muitas vezes correspondem às formas em que as coisas no mundo real interagem.
+* Os objetos muitas vezes representam coisas no mundo real, e os métodos muitas vezes correspondem às formas em que as coisas no mundo real interagem.
 
 Por exemplo, a classe Time definida no Capítulo 16 corresponde à forma em que as pessoas registram a hora do dia, e as funções que definimos correspondem aos tipos de coisas que as pessoas fazem com os horários. De forma similar, as classes Point e Rectangle no Capítulo 15 correspondem aos conceitos matemáticos de ponto e retângulo.
 
@@ -24,9 +24,9 @@ Essa observação é a motivação para usar métodos; um método é uma funçã
 
 Métodos são semanticamente o mesmo que funções, mas há duas diferenças sintáticas:
 
-•        Os métodos são definidos dentro de uma definição de classe para tornar clara a relação entre a classe e o método.
+* Os métodos são definidos dentro de uma definição de classe para tornar clara a relação entre a classe e o método.
 
-•        A sintaxe para invocar um método é diferente da sintaxe para chamar uma função.
+* A sintaxe para invocar um método é diferente da sintaxe para chamar uma função.
 
 Nas próximas seções tomaremos as funções dos dois capítulos anteriores e as transformaremos em métodos. Essa transformação é puramente mecânica; você pode fazê-la seguindo uma série de passos. Se estiver à vontade para fazer a conversão entre uma forma e outra, sempre poderá escolher a melhor forma para contemplar os seus objetivos.
 
@@ -92,9 +92,9 @@ class Time:
 
 A razão dessa convenção é uma metáfora implícita:
 
-•        A sintaxe de uma chamada de função, print\_time(start), sugere que a função é o agente ativo. Ela diz algo como: “Ei, print\_time! Aqui está um objeto para você exibir”.
+* A sintaxe de uma chamada de função, print\_time(start), sugere que a função é o agente ativo. Ela diz algo como: “Ei, print\_time! Aqui está um objeto para você exibir”.
 
-•        Na programação orientada a objeto, os objetos são os agentes ativos. Uma invocação de método como start.print\_time() diz: “Ei, start! Por favor, exiba-se”.
+* Na programação orientada a objeto, os objetos são os agentes ativos. Uma invocação de método como start.print\_time() diz: “Ei, start! Por favor, exiba-se”.
 
 Essa mudança de perspectiva pode ser mais polida, mas não é óbvio que seja útil. Nos exemplos que vimos até agora, pode não ser. Porém, às vezes, deslocar a responsabilidade das funções para os objetos permite escrever funções (ou métodos) mais versáteis e facilita a manutenção e reutilização do código.
 
@@ -330,9 +330,9 @@ E é assim que ele é usado:
 
 Como exercício, escreva um método add para Points que funcione com um objeto Point ou com uma tupla:
 
-•        Se o segundo operando for um Point, o método deve retornar um novo Point cuja coordenada x é a soma das coordenadas x dos operandos, e o mesmo se aplica às coordenadas de y.
+* Se o segundo operando for um Point, o método deve retornar um novo Point cuja coordenada x é a soma das coordenadas x dos operandos, e o mesmo se aplica às coordenadas de y.
 
-•        Se o segundo operando for uma tupla, o método deve adicionar o primeiro elemento da tupla à coordenada de x e o segundo elemento à coordenada de y, retornando um novo Point com o resultado.
+* Se o segundo operando for uma tupla, o método deve adicionar o primeiro elemento da tupla à coordenada de x e o segundo elemento à coordenada de y, retornando um novo Point com o resultado.
 
 ## 17.9 - Polimorfismo
 

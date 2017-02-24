@@ -386,11 +386,11 @@ Crédito: este estudo de caso é baseado em um exemplo de Kernighan and Pike, Th
 
 Usar análise de Markov para gerar o texto aleatório é divertido, mas também há uma razão para este exercício: a seleção da estrutura de dados. Na sua solução para os exercícios anteriores, você teve que selecionar:
 
-•        como representar os prefixos;
+* como representar os prefixos;
 
-•        como representar a coleção de sufixos possíveis;
+* como representar a coleção de sufixos possíveis;
 
-•        como representar o mapeamento de cada prefixo à coleção de possíveis sufixos.
+* como representar o mapeamento de cada prefixo à coleção de possíveis sufixos.
 
 O último é fácil: um dicionário é a escolha óbvia para um mapeamento de chaves a valores correspondentes.
 

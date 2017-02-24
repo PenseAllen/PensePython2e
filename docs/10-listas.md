@@ -60,11 +60,11 @@ As listas são representadas pelas caixas com a palavra “lista” fora delas e
 
 Índices de listas funcionam da mesma forma que os índices de strings:
 
-•        Qualquer expressão de números inteiros pode ser usada como índice.
+* Qualquer expressão de números inteiros pode ser usada como índice.
 
-•        Se tentar ler ou escrever um elemento que não existe, você recebe um IndexError.
+* Se tentar ler ou escrever um elemento que não existe, você recebe um IndexError.
 
-•        Se um índice tiver um valor negativo, ele conta de trás para a frente, a partir do final da lista.
+* Se um índice tiver um valor negativo, ele conta de trás para a frente, a partir do final da lista.
 
 O operador in também funciona com listas:
 

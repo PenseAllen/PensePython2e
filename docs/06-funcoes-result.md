@@ -406,11 +406,11 @@ Na “Busca reversa”, na página 165, veremos uma alternativa mais flexível p
 
 Quebrar um grande programa em funções menores cria controles naturais da depuração. Se uma função não estiver funcionando, há três possibilidades a considerar:
 
-•        Há algo errado com os argumentos que a função está recebendo; uma precondição está sendo violada.
+* Há algo errado com os argumentos que a função está recebendo; uma precondição está sendo violada.
 
-•        Há algo errado com a função; uma pós-condição foi violada.
+* Há algo errado com a função; uma pós-condição foi violada.
 
-•        Há algo errado com o valor de retorno ou a forma na qual está sendo usado.
+* Há algo errado com o valor de retorno ou a forma na qual está sendo usado.
 
 Para excluir a primeira possibilidade, você pode acrescentar uma instrução print no início da função e exibir os valores dos parâmetros (e talvez os seus tipos). Ou escrever código que verifique as precondições explicitamente.
 

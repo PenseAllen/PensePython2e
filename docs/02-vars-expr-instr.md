@@ -150,13 +150,13 @@ Agora ponha as mesmas instruções em um script e o execute. Qual é a saída? A
 
 Quando uma expressão contém mais de um operador, a ordem da avaliação depende da ordem das operações. Para operadores matemáticos, o Python segue a convenção matemática. O acrônimo PEMDAS pode ser útil para lembrar das regras:
 
-•        Os Parênteses têm a precedência mais alta e podem ser usados para forçar a avaliação de uma expressão na ordem que você quiser. Como as expressões em parênteses são avaliadas primeiro, 2 \* (3-1) é 4, e (1+1)\*\*(5-2) é 8. Também é possível usar parênteses para facilitar a leitura de uma expressão, como no caso de (minute \* 100) / 60, mesmo se o resultado não for alterado.
+* Os Parênteses têm a precedência mais alta e podem ser usados para forçar a avaliação de uma expressão na ordem que você quiser. Como as expressões em parênteses são avaliadas primeiro, 2 \* (3-1) é 4, e (1+1)\*\*(5-2) é 8. Também é possível usar parênteses para facilitar a leitura de uma expressão, como no caso de (minute \* 100) / 60, mesmo se o resultado não for alterado.
 
-•        A Exponenciação tem a próxima precedência mais alta, então 1 + 2\*\*3 é 9, não 27, e 2 \* 3\*\*2 é 18, não 36.
+* A Exponenciação tem a próxima precedência mais alta, então 1 + 2\*\*3 é 9, não 27, e 2 \* 3\*\*2 é 18, não 36.
 
-•        A Multiplicação e a Divisão têm precedência mais alta que a Adição e a Subtração. Assim, 2\*3-1 é 5, não 4, e 6+4/2 é 8, não 5.
+* A Multiplicação e a Divisão têm precedência mais alta que a Adição e a Subtração. Assim, 2\*3-1 é 5, não 4, e 6+4/2 é 8, não 5.
 
-•        Os operadores com a mesma precedência são avaliados da esquerda para a direita (exceto na exponenciação). Assim, na expressão degrees/ 2 \* pi, a divisão acontece primeiro e o resultado é multiplicado por pi. Para dividir por 2π, você pode usar parênteses ou escrever degrees / 2 / pi.
+* Os operadores com a mesma precedência são avaliados da esquerda para a direita (exceto na exponenciação). Assim, na expressão degrees/ 2 \* pi, a divisão acontece primeiro e o resultado é multiplicado por pi. Para dividir por 2π, você pode usar parênteses ou escrever degrees / 2 / pi.
 
 Eu não fico sempre tentando lembrar da precedência de operadores. Se a expressão não estiver clara à primeira vista, uso parênteses para fazer isso.
 
@@ -316,15 +316,15 @@ Exercício 2.1
 
 Repetindo o meu conselho do capítulo anterior, sempre que você aprender um recurso novo, você deve testá-lo no modo interativo e fazer erros de propósito para ver o que acontece.
 
-•        Vimos que n = 42 é legal. E 42 = n?
+* Vimos que n = 42 é legal. E 42 = n?
 
-•        Ou x = y = 1?
+* Ou x = y = 1?
 
-•        Em algumas linguagens, cada instrução termina em um ponto e vírgula ;. O que acontece se você puser um ponto e vírgula no fim de uma instrução no Python?
+* Em algumas linguagens, cada instrução termina em um ponto e vírgula ;. O que acontece se você puser um ponto e vírgula no fim de uma instrução no Python?
 
-•        E se puser um ponto no fim de uma instrução?
+* E se puser um ponto no fim de uma instrução?
 
-•        Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece se você tentar fazer o mesmo no Python?
+* Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece se você tentar fazer o mesmo no Python?
 
 Exercício 2.2
 
