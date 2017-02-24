@@ -1,0 +1,22 @@
+0 Prefácio
+1	A jornada do programa
+2	Variáveis, expressões e instruções
+3	Funções
+4	Estudo de caso: projeto de interface
+5	Condicionais e recursividade
+6	Funções com resultado
+7	Iteração
+8	Strings
+9	Estudo de caso: jogos de palavras
+10	Listas
+11	Dicionários
+12	Tuplas
+13	Estudo de caso: seleção de estrutura de dados
+14	Arquivos
+15	Classes e objetos
+16	Classes e funções
+17	Classes e métodos
+18	Herança
+19	Extra
+A	Depuração
+B	Análise de algoritmos
