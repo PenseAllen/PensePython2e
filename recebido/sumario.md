@@ -464,29 +464,29 @@ Capítulo 20 ■ Depuração        284
 
 Erros de sintaxe        284
 
-Continuo fazendo alterações e não faz nenhuma diferença        286
+!Continuo fazendo alterações e não faz nenhuma diferença        286
 
 Erros de tempo de execução        286
 
-Meu programa não faz nada        286
+!Meu programa não faz nada        286
 
-Meu programa fica suspenso        287
+!Meu programa fica suspenso        287
 
-Quando executo o programa recebo uma exceção        288
+!Quando executo o programa recebo uma exceção        288
 
-Acrescentei tantas instruções print que fui inundado pelos resultados        290
+!Acrescentei tantas instruções print que fui inundado pelos resultados        290
 
 Erros semânticos        291
 
-Meu programa não funciona        291
+!Meu programa não funciona        291
 
-Tenho uma baita expressão cabeluda e ela não faz o que espero        292
+!Tenho uma baita expressão cabeluda e ela não faz o que espero        292
 
-Tenho uma função que não retorna o que espero        293
+!Tenho uma função que não retorna o que espero        293
 
-Estou perdido e preciso de ajuda        293
+!Estou perdido e preciso de ajuda        293
 
-Sério, preciso mesmo de ajuda        293
+!Sério, preciso mesmo de ajuda        293
 
 Capítulo 21 ■ Análise de algoritmos        295
 
