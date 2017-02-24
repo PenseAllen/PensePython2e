@@ -2,7 +2,7 @@
 
 import re
 
-nome_caps = {
+NOME_CAPS = {
     0 : 'prefacio',
     1 : 'jornada',
     2 : 'vars-expr-instr',
@@ -27,28 +27,35 @@ nome_caps = {
     21 : 'analise-algorit',
 }
 
-with open('../recebido/PenseEmPython.md', encoding='utf8') as fp:
-    md = fp.read()
+DIR_CAPITULOS = '../recebido/capitulos/'
 
-cap_sep = re.compile(r'^capítulo\s+\d+\n\n', re.MULTILINE)
+def main():
+    with open('../recebido/PenseEmPython.md', encoding='utf8') as fp:
+        md = fp.read()
 
-caps = cap_sep.split(md)
+    cap_sep = re.compile(r'^capítulo\s+\d+\n\n', re.MULTILINE)
 
-for i, cap in enumerate(caps):
-    quebra = cap.find('\n\n')
-    titulo = cap[:quebra]
-    corpo = cap[quebra:]
-    parte = 'Apêndice'
-    if i == 20:
-        prefixo = 'A'
-    elif i == 21:
-        prefixo = 'B'
-    else:
-        parte = 'Capítulo'
-        prefixo = format(i, '02d')
-    nome_arq = prefixo + '-' + nome_caps[i] + '.md'
-    parte += ' ' + prefixo.lstrip('0')
-    print('{}. [{}]({})'.format(prefixo.lstrip('0'), titulo, nome_arq))
-    # ATENÇÃO: as instruções a seguir SOBRESCREVEM os arquivos no diretório docs/
-    #with open('../docs/' + nome_arq, 'wt', encoding='utf8') as fp:
-    #    fp.write('# ' + parte + ': ' + titulo + corpo)
+    caps = cap_sep.split(md)
+
+    for i, cap in enumerate(caps):
+        quebra = cap.find('\n\n')
+        titulo = cap[:quebra]
+        corpo = cap[quebra:]
+        parte = 'Apêndice'
+        if i == 20:
+            prefixo = 'A'
+        elif i == 21:
+            prefixo = 'B'
+        else:
+            parte = 'Capítulo'
+            prefixo = format(i, '02d')
+        nome_arq = prefixo + '-' + NOME_CAPS[i] + '.md'
+        parte += ' ' + prefixo.lstrip('0')
+        print('{}. [{}]({})'.format(prefixo.lstrip('0'), titulo, nome_arq))
+        # ATENÇÃO: as instruções a seguir SOBRESCREVEM os arquivos no diretório
+        # DIR_CAPITULOS
+        #with open(DIR_CAPITULOS + nome_arq, 'wt', encoding='utf8') as fp:
+        #    fp.write('# ' + parte + ': ' + titulo + corpo)
+
+if __name__ == '__main__':
+    main()
