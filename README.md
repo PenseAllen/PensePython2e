@@ -1,6 +1,6 @@
 # Pense em Python
 
-Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey. Licença [CC BY-NC 3.0](LICENSE.md)
+Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey, publicado sob licença [CC BY-NC 3.0](LICENSE.md).
 
 [Versão navegável em HTML](https://PenseAllen.github.io/PensePython2/)
 
