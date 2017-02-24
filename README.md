@@ -27,5 +27,5 @@ A partir desse ponto, os ajustes nos capítulos foram feitos manualmente, com aj
 Editor: Rubens Prates<br>
 Tradução: Sheila Gomes<br>
 Revisão Gramatical: Smirna Cavalheiro<br>
-Editoração Eletrônica: Carolina Kuwabata
+Editoração Eletrônica: Carolina Kuwabata<br>
 Assistente Editorial: Priscila A. Yoshimatsu
