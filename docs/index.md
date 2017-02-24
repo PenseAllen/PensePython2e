@@ -2,7 +2,7 @@
 
 ### Pense como um cientista da computação
 
-> __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias.<br>[ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
+> __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias. [ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
 
 Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de __Allen B. Downey__. Licença [CC BY-NC 3.0](LICENSE.md).
 
