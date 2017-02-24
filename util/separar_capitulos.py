@@ -49,5 +49,6 @@ for i, cap in enumerate(caps):
     nome_arq = prefixo + '-' + nome_caps[i] + '.md'
     parte += ' ' + prefixo.lstrip('0')
     print('{}. [{}]({})'.format(prefixo.lstrip('0'), titulo, nome_arq))
-    #with open('../capitulos/' + nome_arq, 'wt', encoding='utf8') as fp:
+    # ATENÇÃO: as instruções a seguir SOBRESCREVEM os arquivos no diretório docs/
+    #with open('../docs/' + nome_arq, 'wt', encoding='utf8') as fp:
     #    fp.write('# ' + parte + ': ' + titulo + corpo)
