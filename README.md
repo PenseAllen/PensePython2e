@@ -7,7 +7,9 @@ Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/)
 
 ## Proveniência
 
-O arquivo [`PenseEmPython.xml`](recebido/PenseEmPython.xml) em formato DocBook foi gerado a partir do arquivo InDesign criado pela Editora Novatec para a tradução brasileira [Pense em Python](https://novatec.com.br/livros/pense-em-python/), publicada sob licença da O'Reilly Media. Na conversão para DocBook foram usados os programas InDesign, Word e LibreOffice.
+Agradecemos à Editora Novatec por ter cedido gentilmente arquivos com o texto e as figuras de [Pense em Python](https://novatec.com.br/livros/pense-em-python/), publicado sob licença da O'Reilly Media.
+
+O arquivo [`PenseEmPython.xml`](recebido/PenseEmPython.xml) em formato DocBook foi gerado a partir do arquivo InDesign criado pela Editora Novatec. Na conversão para DocBook foram usados os programas InDesign, Word e LibreOffice.
 
 O DocBook `PenseEmPython.xml` foi convertido para _markdown_ com a ferramenta Pandoc versão 1.19.2.1 usando a seguinte linha de comando:
 
