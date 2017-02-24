@@ -4,6 +4,7 @@ Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/)
 
 [Versão navegável em HTML](https://PenseAllen.github.io/PensePython2/)
 
+> __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias.
 
 ## Proveniência
 
