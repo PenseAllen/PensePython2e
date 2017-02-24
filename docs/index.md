@@ -4,7 +4,7 @@
 
 > __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias. [ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
 
-Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de __Allen B. Downey__. Licença [CC BY-NC 3.0](LICENSE.md).
+Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de __Allen B. Downey__. Licença [CC BY-NC 3.0](https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md).
 
 Traduzido e publicado no Brasil sob licença da O'Reilly Media pela [Editora Novatec](https://novatec.com.br) como [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/), ISBN: 978-85-7522-508-0.
 
