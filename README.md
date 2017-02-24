@@ -2,7 +2,7 @@
 
 Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey. Licença [CC BY-NC 3.0](LICENSE.md)
 
-[Versão navegável em HTML](https://PenseAllen.github.io/PensePython/)
+[Versão navegável em HTML](https://PenseAllen.github.io/PensePython2/)
 
 
 ## Proveniência
@@ -15,6 +15,6 @@ O DocBook `PenseEmPython.xml` foi convertido para _markdown_ com a ferramenta Pa
 $ pandoc PenseEmPython.xml -f docbook -t markdown_github -o PenseEmPython.md
 ```
 
-Os arquivos _markdown_ separados por capítulo foram gerados a partir de `PenseEmPython.md` pelo script [`separar_capitulos.py`](util/separar_capitulos.py).
+Os arquivos _markdown_ separados por capítulo em [`docs/`](docs/) foram gerados a partir de `PenseEmPython.md` pelo script [`separar_capitulos.py`](util/separar_capitulos.py).
 
 A partir desse ponto, os ajustes nos capítulos foram feitos manualmente, com ajuda ocasional de scripts encontrados no diretório [`util/`](util/).
