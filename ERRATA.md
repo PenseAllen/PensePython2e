@@ -6,7 +6,7 @@ Ante-penúltimo ponto: em vez de "Muito, muito obrigada" deveria ser "Muito, mui
 
 ### Exemplos de uso de código (de acordo com a política da O'Reilly)
 
-O título desta sessão em inglês é "Using Code Examples". Em português, "Uso do código dos exemplos" seria uma tradução mais fiel. O texto entre parênteses não aparece no PDF original da O'Reilly (p. xiii do PDF).
+O título desta sessão em inglês é "Using Code Examples". Em português, "Uso do código dos exemplos" seria uma tradução mais fiel. O texto entre parênteses não aparece no PDF da O'Reilly (p. xiii do PDF original).
 
 ## Capítulo 15
 

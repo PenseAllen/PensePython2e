@@ -2,35 +2,25 @@
 
 O objetivo deste livro é ensinar a pensar como um cientista da computação. Esta forma de pensar combina algumas das melhores características da matemática, da engenharia e das ciências naturais. Assim como os matemáticos, os cientistas da computação usam linguagens formais para denotar ideias (especificamente operações de computação). Como engenheiros, eles projetam coisas, reunindo componentes em sistemas e avaliando as opções de melhor retorno entre as alternativas à disposição. Como cientistas, observam o comportamento de sistemas complexos, formam hipóteses e testam previsões.
 
-A habilidade específica mais importante de um cientista da computação é a resolução de problemas. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
+A habilidade específica mais importante de um cientista da computação é a __resolução de problemas__. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
 
 Em um nível você aprenderá a programar, uma habilidade útil por si mesma. Em outro nível usará a programação como um meio para um fim. Conforme avançarmos, este fim ficará mais claro.
 
 ## 1.1 - O que é um programa?
 
-Um programa é uma sequência de instruções que especifica como executar uma operação de computação. A operação de computação pode ser algo matemático, como solucionar um sistema de equações ou encontrar as raízes de um polinômio, mas também pode ser uma operação de computação simbólica, como a busca e a substituição de textos em um documento; ou algo gráfico, como o processamento de uma imagem ou a reprodução de um vídeo.
+Um __programa__ é uma sequência de instruções que especifica como executar uma operação de computação. A operação de computação pode ser algo matemático, como solucionar um sistema de equações ou encontrar as raízes de um polinômio, mas também pode ser uma operação de computação simbólica, como a busca e a substituição de textos em um documento; ou algo gráfico, como o processamento de uma imagem ou a reprodução de um vídeo.
 
 Os detalhes parecem diferentes em linguagens diferentes, mas algumas instruções básicas aparecem em quase todas as linguagens:
 
-entrada:
+__entrada:__ Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.
 
-Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.
+__saída:__ Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.
 
-saída:
+__matemática:__ Executar operações matemáticas básicas como adição e multiplicação.
 
-Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.
+__execução condicional:__ Verificar a existência de certas condições e executar o código adequado.
 
-matemática:
-
-Executar operações matemáticas básicas como adição e multiplicação.
-
-execução condicional:
-
-Verificar a existência de certas condições e executar o código adequado.
-
-repetição:
-
-Executar várias vezes alguma ação, normalmente com algumas variações.
+__repetição:__ Executar várias vezes alguma ação, normalmente com algumas variações.
 
 Acredite ou não, isto é basicamente tudo o que é preciso saber. Cada programa que você já usou, complicado ou não, é composto de instruções muito parecidas com essas. Podemos então chegar à conclusão de que programar é o processo de quebrar uma tarefa grande e complexa em subtarefas cada vez menores, até que estas sejam simples o suficiente para serem executadas por uma dessas instruções básicas.
 
@@ -44,7 +34,7 @@ Há uma série de sites que ajudam a usar e executar o Python. Se já tem um fav
 
 Há duas versões do Python, o Python 2 e o Python 3. Como elas são muito semelhantes, se você aprender uma versão, é fácil trocar para a outra. Como é iniciante, você encontrará poucas diferenças. Este livro foi escrito para o Python 3, mas também incluí algumas notas sobre o Python 2.
 
-O interpretador do Python é um programa que lê e executa o código Python. Dependendo do seu ambiente, é possível iniciar o interpretador clicando em um ícone, ou digitando python em uma linha de comando. Quando ele iniciar, você deverá ver uma saída como esta:
+O __interpretador__ do Python é um programa que lê e executa o código Python. Dependendo do seu ambiente, é possível iniciar o interpretador clicando em um ícone, ou digitando python em uma linha de comando. Quando ele iniciar, você deverá ver uma saída como esta:
 
 Python 3.4.0 (default, Jun 19 2015, 14:20:21)
 
@@ -345,4 +335,3 @@ Inicialize o interpretador do Python e use-o como uma calculadora.
 2.        Quantas milhas há em 10 quilômetros? Dica: uma milha equivale a 1,61 quilômetro.
 
 3.        Se você correr 10 quilômetros em 42 minutos e 42 segundos, qual é o seu passo médio (tempo por milha em minutos e segundos)? Qual é a sua velocidade média em milhas por hora?
-
