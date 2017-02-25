@@ -2,13 +2,17 @@
 
 ### Pense como um cientista da computação
 
+Este livro ensina programação para quem nunca programou, usando [Python 3](https://www.python.org/) nos exemplos. É aplicado no Olin College, IBMEC e outras faculdades de engenharia de primeira linha.
+
 > __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias. [ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
 
-Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de __Allen B. Downey__. Licença [CC BY-NC 3.0](https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md).
+[__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) é uma tradução do livro [Think Python](http://shop.oreilly.com/product/0636920045267.do) (2ª edição), de __Allen B. Downey__, traduzido e publicado no Brasil pela [Editora Novatec](https://novatec.com.br) sob licença da O'Reilly Media.
 
-Traduzido e publicado no Brasil sob licença da O'Reilly Media pela [Editora Novatec](https://novatec.com.br) como [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/), ISBN: 978-85-7522-508-0.
+O autor, Allen Downey, publicou o [original em inglês](http://greenteapress.com/wp/think-python-2e/) sob uma licença Creative Commons Atribuição-NãoComercial [CC BY-NC 3.0](https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md).
 
-Esta versão digital de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) foi criada a partir de arquivos cedidos gentilmente por Rubens Prates, da Editora Novatec, atendendo ao desejo do autor — Allen B. Downey — de oferecer seu trabalho através de uma licença livre.
+A Novatec oferece à comunidade esta tradução, feita por Sheila Gomes, nos termos da mesma licença do original, [CC BY-NC 3.0](https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md) atendendo ao desejo do autor oferecer seu trabalho através de uma licença livre.
+
+Esta versão digital de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) em português foi criada por [Luciano Ramalho](https://twitter.com/ramalhoorg) da [ThoughtWorks](https://www.thoughtworks.com/) a partir de arquivos cedidos por Rubens Prates, da [Editora Novatec](https://novatec.com.br).
 
 
 ## Sumário
