@@ -16,7 +16,7 @@ Duas semanas antes do primeiro dia de aula, eu decidi escrever meu próprio livr
 
 * que o conteúdo fosse concentrado em programar mesmo, não na linguagem de programação. Selecionei um subconjunto mínimo útil do Java e omiti o resto.
 
-Eu precisava de um título, então, por capricho, decidi chamá-lo de Pense como um cientista da computação.
+Eu precisava de um título, então, por capricho, decidi chamá-lo de _Pense como um cientista da computação_.
 
 A minha primeira versão era apenas um esboço, mas funcionou. Os alunos liam e entendiam o suficiente para podermos usar o tempo de aula para os tópicos difíceis, interessantes e (o mais importante) para permitir que os alunos praticassem.
 
@@ -28,7 +28,7 @@ Em 2003 comecei a trabalhar no Olin College e a ensinar Python pela primeira vez
 
 Desde então continuei a desenvolver o livro, corrigindo erros, melhorando alguns exemplos e acrescentando material, especialmente exercícios.
 
-O resultado está aqui, agora com o título menos grandioso de Pense em Python. Fiz algumas alterações:
+O resultado está aqui, agora com o título menos grandioso de _Pense em Python_. Fiz algumas alterações:
 
 * Acrescentei uma seção sobre depuração (debugging) no fim de cada capítulo. Essas seções apresentam técnicas gerais para encontrar e evitar bugs (erros de programação) e avisos sobre armadilhas do Python.
 
@@ -40,7 +40,7 @@ O resultado está aqui, agora com o título menos grandioso de Pense em Python. 
 
 * Acrescentei apêndices sobre depuração e análise de algoritmos.
 
-Esta edição de Pense em Python tem as seguintes novidades:
+Esta edição de _Pense em Python_ tem as seguintes novidades:
 
 * O livro e todo o código de apoio foram atualizados para o Python 3.
 
@@ -52,46 +52,46 @@ Esta edição de Pense em Python tem as seguintes novidades:
 
 Espero que goste de trabalhar com este livro, e que ele o ajude a aprender a programar e pensar, pelo menos um pouquinho, como um cientista da computação.
 
-Allen B. Downey
-Olin College
+_Allen B. Downey_<br>
+_Olin College_
 
 ## Convenções usadas neste livro
 
 As seguintes convenções tipográficas são usadas neste livro:
 
-Itálico
+_Itálico_
 
 Indica novos termos, URLs, endereços de email, nomes de arquivo e extensões de arquivo.
 
-Negrito
+__Negrito__
 
 Indica termos definidos no glossário no final de capítulo.
 
-Monoespaçado
+`Monoespaçado`
 
 Usada para código de programa, bem como dentro de parágrafos para referir-se a elementos do programa, como nomes de variáveis ou de funções, bancos de dados, tipos de dados, variáveis de ambiente, instruções e palavras-chave.
 
-Monoespaçado negrito
+__`Monoespaçado negrito`__
 
 Exibe comandos ou outros textos que devem ser digitados literalmente pelo usuário.
 
-Monoespaçado itálico
+_`Monoespaçado itálico`_
 
 Exibe textos que devem ser substituídos por valores fornecidos pelos usuários ou por valores determinados pelo contexto.
 
-Exemplos de uso de código (de acordo com a política da O'Reilly)
+## Uso do código dos exemplos (de acordo com a política da O'Reilly)
 
 Há material suplementar (exemplos de código, exercícios etc.) disponível para baixar em http://www.greenteapress.com/thinkpython2/code.
 
 Este livro serve para ajudar você a fazer o que precisa. Em geral, se o livro oferece exemplos de código, você pode usá-los nos seus programas e documentação. Não é preciso entrar em contato conosco para pedir permissão, a menos que esteja reproduzindo uma porção significativa do código. Por exemplo, escrever um programa que use vários pedaços de código deste livro não exige permissão. Vender ou distribuir um CD-ROM de exemplos dos livros da O’Reilly exige permissão. Responder a uma pergunta citando este livro e reproduzindo exemplos de código não exige permissão. Incorporar uma quantidade significativa de exemplos de código deste livro na documentação do seu produto exige permissão.
 
-Agradecemos, mas não exigimos, crédito. O crédito normalmente inclui o título, o autor, a editora e o ISBN. Por exemplo: “Pense em Python, 2ª edição, por Allen B. Downey (O’Reilly). Copyright 2016 Allen Downey, 978-1-4919-3936-9.”
+Agradecemos, mas não exigimos, crédito. O crédito normalmente inclui o título, o autor, a editora e o ISBN. Por exemplo: “_Pense em Python_, 2ª edição, por Allen B. Downey (O’Reilly). Copyright 2016 Allen Downey, 978-1-4919-3936-9.”
 
-Se acreditar que o seu uso dos exemplos de código não se ajusta à permissão dada anteriormente, fique à vontade para entrar em contato conosco pelo email permissions@oreilly.com.
+Se acreditar que o seu uso dos exemplos de código não se ajusta à permissão dada anteriormente, fique à vontade para entrar em contato conosco pelo email `permissions@oreilly.com`.
 
-Como entrar em contato conosco
+## Como entrar em contato conosco
 
-Envie comentários e dúvidas sobre este livro à editora, escrevendo para: novatec@novatec.com.br.
+Envie comentários e dúvidas sobre este livro à editora, escrevendo para: `novatec@novatec.com.br`.
 
 Temos uma página web para este livro na qual incluímos erratas, exemplos e quaisquer outras informações adicionais.
 
@@ -101,29 +101,31 @@ Temos uma página web para este livro na qual incluímos erratas, exemplos e qua
 
 * Página da edição original em inglês
 
-        http://bit.ly/think-python\_2E
+        http://bit.ly/think-python_2E
 
 Para obter mais informações sobre os livros da Novatec, acesse nosso site em http://www.novatec.com.br.
 
-Agradecimentos
+
+## Agradecimentos
 
 Muito obrigado a Jeff Elkner, que traduziu meu livro de Java para o Python, o que deu início a este projeto e me apresentou ao que acabou sendo a minha linguagem favorita.
 
-Agradeço também a Chris Meyers, que contribuiu em várias seções do Pense como um cientista da computação.
+Agradeço também a Chris Meyers, que contribuiu em várias seções do _Pense como um cientista da computação_.
 
 Obrigado à Fundação do Software Livre pelo desenvolvimento da Licença de Documentação Livre GNU, que me ajudou a tornar possível a colaboração com Jeff e Chris, e ao Creative Commons pela licença que estou usando agora.
 
-Obrigado aos editores do Lulu, que trabalharam no Pense como um cientista da computação.
+Obrigado aos editores do Lulu, que trabalharam no _Pense como um cientista da computação_.
 
-Obrigado aos editores da O’Reilly Media, que trabalharam no Pense em Python.
+Obrigado aos editores da O’Reilly Media, que trabalharam no _Pense em Python_.
 
 Obrigado a todos os estudantes que trabalharam com versões anteriores deste livro e a todos os contribuidores (listados a seguir) que enviaram correções e sugestões.
 
-Lista de contribuidores
+
+## Lista de contribuidores
 
 Mais de cem leitores perspicazes e atentos enviaram sugestões e correções nos últimos anos. Suas contribuições e entusiasmo por este projeto foram inestimáveis.
 
-Se tiver alguma sugestão ou correção, por favor, envie um email a feedback@thinkpython.com. Se eu fizer alguma alteração baseada no seu comentário, acrescentarei seu nome à lista de contribuidores (a menos que você peça para eu omitir a informação).
+Se tiver alguma sugestão ou correção, por favor, envie um email a `feedback@thinkpython.com`. Se eu fizer alguma alteração baseada no seu comentário, acrescentarei seu nome à lista de contribuidores (a menos que você peça para eu omitir a informação).
 
 Se você incluir pelo menos uma parte da frase onde o erro aparece, é mais fácil para eu procurá-lo. Também pode ser o número da página e seção, mas aí é um pouquinho mais difícil de encontrar o erro a ser corrigido. Obrigado!
 
@@ -387,7 +389,7 @@ Se você incluir pelo menos uma parte da frase onde o erro aparece, é mais fác
 
 * Andrea Zanella traduziu o livro para o italiano e enviou uma série de correções ao longo do caminho.
 
-* Muito, muito obrigada a Melissa Lewis e Luciano Ramalho pelos comentários e sugestões excelentes na segunda edição.
+* Muito, muito obrigado a Melissa Lewis e Luciano Ramalho pelos comentários e sugestões excelentes na segunda edição.
 
 * Obrigado a Harry Percival do PythonAnywhere por ajudar as pessoas a começar a usar o Python em um navegador.
 
