@@ -1,6 +1,7 @@
 # Pense em Python
 
-https://github.com/PenseAllen/PensePython2e/raw/master/img/
+<a href="https://novatec.com.br/livros/pense-em-python/"><img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;"></a>
+
 
 ### Pense como um cientista da computação
 
