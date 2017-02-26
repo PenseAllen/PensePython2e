@@ -618,67 +618,53 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
 ## 10.14 - Glossário
 
-lista:
-
+__lista__<br>
 Uma sequência de valores.
 
-elemento:
-
+__elemento__<br>
 Um dos valores em uma lista (ou outra sequência), também chamado de item.
 
-lista aninhada:
-
+__lista aninhada__<br>
 Uma lista que é um elemento de outra lista.
 
-acumuladora:
-
+__acumuladora__<br>
 Variável usada em um loop para adicionar ou acumular um resultado.
 
-atribuição aumentada:
-
+__atribuição aumentada__<br>
 Instrução que atualiza o valor de uma variável usando um operador como +=.
 
-redução:
-
+__redução__<br>
 Padrão de processamento que atravessa uma sequência e acumula os elementos em um único resultado.
 
-mapeamento:
-
+__mapeamento__<br>
 Padrão de processamento que atravessa uma sequência e executa uma operação em cada elemento.
 
-filtragem:
-
+__filtragem__<br>
 Padrão de processamento que atravessa uma lista e seleciona os elementos que satisfazem algum critério.
 
-objeto:
-
+__objeto__<br>
 Algo a que uma variável pode se referir. Um objeto tem um tipo e um valor.
 
-equivalente:
-
+__equivalente__<br>
 Ter o mesmo valor.
 
-idêntico:
-
+__idêntico__<br>
 Ser o mesmo objeto (o que implica equivalência).
 
-referência:
-
+__referência__<br>
 Associação entre uma variável e seu valor.
 
-alias:
-
+__alias__<br>
 Uma circunstância onde duas ou mais variáveis se referem ao mesmo objeto.
 
-delimitador:
-
+__delimitador__<br>
 Um caractere ou uma string usada para indicar onde uma string deve ser dividida.
 
 ## 10.15 - Exercícios
 
 Você pode baixar as soluções para estes exercícios em http://thinkpython2.com/code/list\_exercises.py.
 
-Exercício 10.1
+### Exercício 10.1
 
 Escreva uma função chamada nested\_sum que receba uma lista de listas de números inteiros e adicione os elementos de todas as listas aninhadas. Por exemplo:
 
@@ -688,7 +674,7 @@ Escreva uma função chamada nested\_sum que receba uma lista de listas de núme
 
 21
 
-Exercício 10.2
+### Exercício 10.2
 
 Escreva uma função chamada cumsum que receba uma lista de números e retorne a soma cumulativa; isto é, uma nova lista onde o i-ésimo elemento é a soma dos primeiros i+1 elementos da lista original. Por exemplo:
 
@@ -698,7 +684,7 @@ Escreva uma função chamada cumsum que receba uma lista de números e retorne a
 
 \[1, 3, 6\]
 
-Exercício 10.3
+### Exercício 10.3
 
 Escreva uma função chamada middle que receba uma lista e retorne uma nova lista com todos os elementos originais, exceto os primeiros e os últimos elementos. Por exemplo:
 
@@ -708,7 +694,7 @@ Escreva uma função chamada middle que receba uma lista e retorne uma nova list
 
 \[2, 3\]
 
-Exercício 10.4
+### Exercício 10.4
 
 Escreva uma função chamada chop que tome uma lista alterando-a para remover o primeiro e o último elementos, e retorne None. Por exemplo:
 
@@ -720,7 +706,7 @@ Escreva uma função chamada chop que tome uma lista alterando-a para remover o 
 
 \[2, 3\]
 
-Exercício 10.5
+### Exercício 10.5
 
 Escreva uma função chamada is\_sorted que tome uma lista como parâmetro e retorne True se a lista estiver classificada em ordem ascendente, e False se não for o caso. Por exemplo:
 
@@ -732,15 +718,15 @@ True
 
 False
 
-Exercício 10.6
+### Exercício 10.6
 
 Duas palavras são anagramas se você puder soletrar uma rearranjando as letras da outra. Escreva uma função chamada is\_anagram que tome duas strings e retorne True se forem anagramas.
 
-Exercício 10.7
+### Exercício 10.7
 
 Escreva uma função chamada has\_duplicates que tome uma lista e retorne True se houver algum elemento que apareça mais de uma vez. Ela não deve modificar a lista original.
 
-Exercício 10.8
+### Exercício 10.8
 
 Este exercício pertence ao assim chamado Paradoxo de aniversário, sobre o qual você pode ler em http://en.wikipedia.org/wiki/Birthday\_paradox.
 
@@ -748,13 +734,13 @@ Se há 23 alunos na sua sala, quais são as chances de dois deles fazerem aniver
 
 Se quiser, você pode baixar minha solução em http://thinkpython2.com/code/birthday.py.
 
-Exercício 10.9
+### Exercício 10.9
 
 Escreva uma função que leia o arquivo words.txt e construa uma lista com um elemento por palavra. Escreva duas versões desta função, uma usando o método append e outra usando a expressão t = t + \[x\]. Qual leva mais tempo para ser executada? Por quê?
 
 Solução: http://thinkpython2.com/code/wordlist.py.
 
-Exercício 10.10
+### Exercício 10.10
 
 Para verificar se uma palavra está na lista de palavras, você pode usar o operador in, mas isso seria lento porque pesquisaria as palavras em ordem.
 
@@ -768,13 +754,13 @@ Ou você pode ler a documentação do módulo bisect e usá-lo!
 
 Solução: http://thinkpython2.com/code/inlist.py.
 
-Exercício 10.11
+### Exercício 10.11
 
 Duas palavras são um “par inverso” se uma for o contrário da outra. Escreva um programa que encontre todos os pares inversos na lista de palavras.
 
 Solução: http://thinkpython2.com/code/reverse\_pair.py.
 
-Exercício 10.12
+### Exercício 10.12
 
 Duas palavras “interligam-se” quando, ao tomarmos letras alternadas de cada uma, formamos uma palavra nova. Por exemplo, “shoe” e “cold” interligam-se para formar “schooled”.
 

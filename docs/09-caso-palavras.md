@@ -48,11 +48,11 @@ for line in fin:
 
 Há soluções para estes exercícios na próxima seção. Mas é bom você tentar fazer cada um antes de ver as soluções.
 
-Exercício 9.1
+### Exercício 9.1
 
 Escreva um programa que leia words.txt e imprima apenas as palavras com mais de 20 caracteres (sem contar whitespace).
 
-Exercício 9.2
+### Exercício 9.2
 
 Em 1939, Ernest Vincent Wright publicou uma novela de 50.000 palavras, chamada Gadsby, que não contém a letra “e”. Como o “e” é a letra mais comum em inglês, isso não é algo fácil de fazer.
 
@@ -64,21 +64,21 @@ Escreva uma função chamada has\_no\_e que retorne True se a palavra dada não 
 
 Altere seu programa na seção anterior para imprimir apenas as palavras que não têm “e” e calcule a porcentagem de palavras na lista que não têm “e”.
 
-Exercício 9.3
+### Exercício 9.3
 
 Escreva uma função chamada avoids que receba uma palavra e uma série de letras proibidas, e retorne True se a palavra não usar nenhuma das letras proibidas.
 
 Altere o código para que o usuário digite uma série de letras proibidas e o programa imprima o número de palavras que não contêm nenhuma delas. Você pode encontrar uma combinação de cinco letras proibidas que exclua o menor número possível de palavras?
 
-Exercício 9.4
+### Exercício 9.4
 
 Escreva uma função chamada uses\_only que receba uma palavra e uma série de letras e retorne True, se a palavra só contiver letras da lista. Você pode fazer uma frase usando só as letras acefhlo? Que não seja “Hoe alfalfa?”
 
-Exercício 9.5
+### Exercício 9.5
 
 Escreva uma função chamada uses\_all que receba uma palavra e uma série de letras obrigatórias e retorne True se a palavra usar todas as letras obrigatórias pelo menos uma vez. Quantas palavras usam todas as vogais (aeiou)? E que tal aeiouy?
 
-Exercício 9.6
+### Exercício 9.6
 
 Escreva uma função chamada is\_abecedarian que retorne True se as letras numa palavra aparecerem em ordem alfabética (tudo bem se houver letras duplas). Quantas palavras em ordem alfabética existem?
 
@@ -250,21 +250,18 @@ Testar programas pode ser usado para mostrar a presença de bugs, mas nunca para
 
 ## 9.6 - Glossário
 
-objeto de arquivo:
-
+__objeto de arquivo__<br>
 Um valor que representa um arquivo aberto.
 
-redução a um problema resolvido anteriormente:
-
+__redução a um problema resolvido anteriormente__<br>
 Um modo de resolver um problema expressando-o como uma instância de um problema resolvido anteriormente.
 
-caso especial:
-
+__caso especial__<br>
 Um caso de teste que é atípico ou não é óbvio (e com probabilidade menor de ser tratado corretamente).
 
 ## 9.7 - Exercícios
 
-Exercício 9.7
+### Exercício 9.7
 
 Esta pergunta é baseada em um quebra-cabeça veiculado em um programa de rádio chamado Car Talk (http://www.cartalk.com/content/puzzlers):
 
@@ -274,7 +271,7 @@ Escreva um programa que a encontre.
 
 Solução: http://thinkpython2.com/code/cartalk1.py.
 
-Exercício 9.8
+### Exercício 9.8
 
 Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
 
@@ -290,7 +287,7 @@ Escreva um programa Python que teste todos os números de seis dígitos e imprim
 
 Solução: http://thinkpython2.com/code/cartalk2.py.
 
-Exercício 9.9
+### Exercício 9.9
 
 Aqui está outro problema do Car Talk que você pode resolver com uma busca (http://www.cartalk.com/content/puzzlers):
 

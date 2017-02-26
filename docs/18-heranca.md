@@ -432,61 +432,48 @@ Se violar esta regra, o que se chama de “princípio de substituição de Lisko
 
 ## 18.11 - Glossário
 
-codificar:
-
+__codificar__<br>
 Representar um conjunto de valores usando outro conjunto de valores construindo um mapeamento entre eles.
 
-atributo de classe:
-
+__atributo de classe__<br>
 Atributo associado a um objeto de classe. Os atributos de classe são definidos dentro de uma definição de classe, mas fora de qualquer método.
 
-atributo de instância:
-
+__atributo de instância__<br>
 Atributo associado a uma instância de uma classe.
 
-folheado:
-
+__folheado__<br>
 Método ou função que apresenta uma interface diferente para outra função sem fazer muitos cálculos.
 
-herança:
-
+__herança__<br>
 Capacidade de definir uma nova classe que seja uma versão modificada de uma classe definida anteriormente.
 
-classe-pai:
-
+__classe-pai__<br>
 Classe da qual uma classe-filho herda.
 
-classe-filho:
-
+__classe-filho__<br>
 Nova classe criada por herança de uma classe existente; também chamada de “subclasse”.
 
-relação IS-A:
-
+__relação IS-A__<br>
 Relação entre uma classe-filho e sua classe-pai.
 
-relação HAS-A:
-
+__relação HAS-A__<br>
 Relação entre duas classes onde as instâncias de uma classe contêm referências a instâncias da outra.
 
-dependência:
-
+__dependência__<br>
 Relação entre duas classes onde as instâncias de uma classe usam instâncias de outra classe, mas não as guardam como atributos.
 
-diagrama de classe:
-
+__diagrama de classe__<br>
 Diagrama que mostra as classes em um programa e as relações entre elas.
 
-multiplicidade:
-
+__multiplicidade__<br>
 Notação em um diagrama de classe que mostra, para uma relação HAS-A, quantas referências dela são instâncias de outra classe.
 
-encapsulamento de dados:
-
+__encapsulamento de dados__<br>
 Plano de desenvolvimento de programa que envolve um protótipo usando variáveis globais e uma versão final que transforma as variáveis globais em atributos de instância.
 
 ## 18.12 - Exercícios
 
-Exercício 18.1
+### Exercício 18.1
 
 Para o seguinte programa, projete um diagrama de classe UML que mostre estas classes e as relações entre elas.
 
@@ -522,11 +509,11 @@ ping = Ping(pong)
 
 pong.add\_ping(ping)
 
-Exercício 18.2
+### Exercício 18.2
 
 Escreva um método Deck chamado deal\_hands que receba dois parâmetros: o número de mãos e o número de cartas por mão. Ele deve criar o número adequado de objetos Hand, lidar com o número adequado de cartas por mão e retornar uma lista de Hands.
 
-Exercício 18.3
+### Exercício 18.3
 
 A seguir, as mãos possíveis no pôquer, em ordem crescente de valor e ordem decrescente de probabilidade:
 

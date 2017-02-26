@@ -430,97 +430,75 @@ Por exemplo, o Linux é um sistema operacional que contém milhões de linhas de
 
 ## 3.13 - Glossário
 
-função:
-
+__função__<br>
 Uma sequência nomeada de declarações que executa alguma operação útil. As funções podem receber argumentos ou não e podem ou não produzir algum resultado.
 
-definição de função:
-
+__definição de função__<br>
 Uma instrução que cria uma função nova, especificando seu nome, parâmetros e as instruções que contém.
 
-objeto da função:
-
+__objeto da função__<br>
 Um valor é criado por uma definição de função. O nome da função é uma variável que se refere a um objeto de função.
 
-cabeçalho:
-
+__cabeçalho__<br>
 A primeira linha de uma definição de função.
 
-corpo:
-
+__corpo__<br>
 A sequência de instruções dentro de uma definição de função.
 
-parâmetro:
-
+__parâmetro__<br>
 Um nome usado dentro de uma função para se referir ao valor passado como argumento.
 
-chamada de função:
-
+__chamada de função__<br>
 Uma instrução que executa uma função. É composta pelo nome da função seguido de uma lista de argumentos entre parênteses.
 
-argumento:
-
+__argumento__<br>
 Um valor apresentado a uma função quando a função é chamada. Este valor é atribuído ao parâmetro correspondente na função.
 
-variável local:
-
+__variável local__<br>
 Uma variável definida dentro de uma função. Uma variável local só pode ser usada dentro da sua função.
 
-valor de retorno:
-
+__valor de retorno__<br>
 O resultado de uma função. Se uma chamada de função for usada como uma expressão, o valor de retorno é o valor da expressão.
 
-função com resultado:
-
+__função com resultado__<br>
 Uma função que devolve um valor.
 
-função nula:
-
+__função nula__<br>
 Uma função que sempre devolve None.
 
-None:
-
+__None__<br>
 Um valor especial apresentado por funções nulas.
 
-módulo:
-
+__módulo__<br>
 Um arquivo que contém uma coleção de funções relacionadas e outras definições.
 
-instrução de importação:
-
+__instrução de importação__<br>
 Uma instrução que lê um arquivo de módulo e cria um objeto de módulo.
 
-objeto de módulo:
-
+__objeto de módulo__<br>
 Um valor criado por uma instrução import que oferece acesso aos valores definidos em um módulo.
 
-notação de ponto:
-
+__notação de ponto__<br>
 A sintaxe para chamar uma função em outro módulo especificando o nome do módulo seguido de um ponto e o nome da função.
 
-composição:
-
+__composição__<br>
 O uso de uma expressão como parte de uma expressão maior ou de uma instrução como parte de uma instrução maior.
 
-fluxo de execução:
-
+__fluxo de execução__<br>
 A ordem na qual as instruções são executadas.
 
-diagrama da pilha:
-
+__diagrama da pilha__<br>
 Representação gráfica de uma pilha de funções, suas variáveis e os valores a que se referem.
 
-frame:
-
+__frame__<br>
 Uma caixa em um diagrama da pilha que representa uma chamada de função. Contém as variáveis locais e os parâmetros da função.
 
-traceback:
-
+__traceback__<br>
 Lista das funções que estão sendo executadas, exibidas quando ocorre uma exceção.
 
 ## 3.14 - Exercícios
 
-Exercício 3.1
+### Exercício 3.1
 
 Escreva uma função chamada right\_justify, que receba uma string chamada s como parâmetro e exiba a string com espaços suficientes à frente para que a última letra da string esteja na coluna 70 da tela:
 
@@ -530,7 +508,7 @@ Escreva uma função chamada right\_justify, que receba uma string chamada s com
 
 Dica: Use concatenação de strings e repetição. Além disso, o Python oferece uma função integrada chamada len, que apresenta o comprimento de uma string, então o valor de len('monty') é 5.
 
-Exercício 3.2
+### Exercício 3.2
 
 Um objeto de função é um valor que pode ser atribuído a uma variável ou passado como argumento. Por exemplo, do\_twice é uma função que toma um objeto de função como argumento e o chama duas vezes:
 
@@ -560,7 +538,7 @@ do\_twice(print\_spam)
 
 Solução: http://thinkpython2.com/code/do\_four.py.
 
-Exercício 3.3
+### Exercício 3.3
 
 Nota: Este exercício deve ser feito usando-se apenas as instruções e os outros recursos que aprendemos até agora.
 

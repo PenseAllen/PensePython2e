@@ -452,107 +452,87 @@ Reforçando, o tempo que você passar construindo o scaffolding pode reduzir o t
 
 ## 11.9 - Glossário
 
-mapeamento:
-
+__mapeamento__<br>
 Relação na qual cada elemento de um conjunto corresponde a um elemento de outro conjunto.
 
-dicionário:
-
+__dicionário__<br>
 Mapeamento de chaves aos seus valores correspondentes.
 
-par chave-valor:
-
+__par chave-valor__<br>
 Representação do mapeamento de uma chave a um valor.
 
-item:
-
+__item__<br>
 Em um dicionário, outro nome para um par chave-valor.
 
-chave:
-
+__chave__<br>
 Objeto que aparece em um dicionário como a primeira parte de um par chave-valor.
 
-valor:
-
+__valor__<br>
 Objeto que aparece em um dicionário como a segunda parte de um par chave-valor. Isso é mais específico que o nosso uso anterior da palavra “valor”.
 
-implementação:
-
+__implementação__<br>
 Uma forma de executar um cálculo.
 
-hashtable:
-
+__hashtable__<br>
 Algoritmo usado para implementar dicionários de Python.
 
-função hash:
-
+__função hash__<br>
 Função usada por uma hashtable para calcular a posição de uma chave.
 
-hashable:
-
+__hashable__<br>
 Um tipo que tem uma função hash. Tipos imutáveis como números inteiros, de ponto flutuante e strings são hashable; tipos mutáveis, como listas e dicionários, não são.
 
-busca:
-
+__busca__<br>
 Operação de dicionário que recebe uma chave e encontra o valor correspondente.
 
-busca reversa:
-
+__busca reversa__<br>
 Operação de dicionário que recebe um valor e encontra uma ou várias chaves que o mapeiem.
 
-instrução raise:
-
+__instrução raise__<br>
 Instrução que (deliberadamente) causa uma exceção.
 
-item avulso (singleton):
-
+__item avulso (singleton)__<br>
 Uma lista (ou outra sequência) com um único elemento.
 
-gráfico de chamada:
-
+__gráfico de chamada__<br>
 Um diagrama que mostra cada frame criado durante a execução de um programa, com uma flecha apontando quem chama a quem é chamado.
 
-memo:
-
+__memo__<br>
 Valor já calculado, guardado para não ter que fazer o mesmo cálculo no futuro.
 
-variável global:
-
+__variável global__<br>
 Variável definida fora de uma função. As variáveis globais podem ser acessadas de qualquer função.
 
-instrução global:
-
+__instrução global__<br>
 Instrução que declara um nome de variável global.
 
-flag:
-
+__flag__<br>
 Variável booleana usada para indicar se uma condição é verdadeira.
 
-declaração:
-
+__declaração__<br>
 Instrução tal como global, que diz ao interpretador algo a respeito de uma variável.
 
 ## 11.10 - Exercícios
 
-Exercício 11.1
+### Exercício 11.1
 
 Escreva uma função que leia as palavras em words.txt e guarde-as como chaves em um dicionário. Não importa quais são os valores. Então você pode usar o operador in como uma forma rápida de verificar se uma string está no dicionário.
 
 Se fez o Exercício 10.10, você pode comparar a velocidade desta implementação com o operador in de listas e a busca por bisseção.
 
-Exercício 11.2
+### Exercício 11.2
 
 Leia a documentação do método de dicionário setdefault e use-o para escrever uma versão mais concisa de invert\_dict.
 
 Solução: http://thinkpython2.com/code/invert\_dict.py.
 
-Exercício 11.3
+### Exercício 11.3
 
 Memorize a função de Ackermann do Exercício 6.2 e veja se a memorização permite avaliar a função com argumentos maiores. Dica: não.
 
 Solução: http://thinkpython2.com/code/ackermann\_memo.py.
 
-Exercício 11.4
+### Exercício 11.4
 
 Se fez o Exercício 10.7, você já tem uma função chamada has\_duplicates, que recebe uma lista como parâmetro e retorna True se houver algum objeto que aparece mais de uma vez na lista.
 
@@ -560,7 +540,7 @@ Use um dicionário para escrever uma versão mais rápida e simples de has\_dupl
 
 Solução: http://thinkpython2.com/code/has\_duplicates.py.
 
-Exercício 11.5
+### Exercício 11.5
 
 Duas palavras são “pares rotacionados” se for possível rotacionar um deles e chegar ao outro (ver rotate\_word no Exercício 8.5).
 
@@ -568,7 +548,7 @@ Escreva um programa que leia uma lista de palavras e encontre todos os pares rot
 
 Solução: http://thinkpython2.com/code/rotate\_pairs.py.
 
-Exercício 11.6
+### Exercício 11.6
 
 Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
 

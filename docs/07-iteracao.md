@@ -276,41 +276,33 @@ Na prática, nem sempre é claro o que representa o “meio do programa” e nem
 
 ## 7.8 - Glossário
 
-reatribuição:
-
+__reatribuição__<br>
 Atribuir um novo valor a uma variável que já existe.
 
-atualização:
-
+__atualização__<br>
 Uma atribuição onde o novo valor da variável dependa do velho.
 
-inicialização:
-
+__inicialização__<br>
 Uma atribuição que dá um valor inicial a uma variável que será atualizada.
 
-incremento:
-
+__incremento__<br>
 Uma atualização que aumenta o valor de uma variável (normalmente por uma unidade).
 
-decremento:
-
+__decremento__<br>
 Uma atualização que reduz o valor de uma variável.
 
-iteração:
-
+__iteração__<br>
 Execução repetida de um grupo de instruções, usando uma chamada da função recursiva ou um loop.
 
-loop infinito:
-
+__loop infinito__<br>
 Um loop no qual a condição de término nunca é satisfeita.
 
-algoritmo:
-
+__algoritmo__<br>
 Um processo geral para resolver uma categoria de problemas.
 
 ## 7.9 - Exercícios
 
-Exercício 7.1
+### Exercício 7.1
 
 Copie o loop de “Raízes quadradas”, na página 111, e encapsule-o em uma função chamada mysqrt que receba a como parâmetro, escolha um valor razoável de x e devolva uma estimativa da raiz quadrada de a.
 
@@ -340,7 +332,7 @@ a   mysqrt(a)     math.sqrt(a)  diff
 
 A primeira coluna é um número, a; a segunda coluna é a raiz quadrada de a calculada com mysqrt; a terceira coluna é a raiz quadrada calculada por math.sqrt; a quarta coluna é o valor absoluto da diferença entre as duas estimativas.
 
-Exercício 7.2
+### Exercício 7.2
 
 A função integrada eval toma uma string e a avalia, usando o interpretador do Python. Por exemplo:
 
@@ -362,7 +354,7 @@ Escreva uma função chamada eval\_loop que iterativamente peça uma entrada ao 
 
 Ela deve continuar até que o usuário digite 'done'; então deverá exibir o valor da última expressão avaliada.
 
-Exercício 7.3
+### Exercício 7.3
 
 O matemático Srinivasa Ramanujan encontrou uma série infinita que pode ser usada para gerar uma aproximação numérica de 1/π:
 

@@ -432,47 +432,39 @@ Se estiver com problemas para monitorar suas estruturas de dados, o structshape 
 
 ## 12.9 - Glossário
 
-tupla:
-
+__tupla__<br>
 Sequência imutável de elementos.
 
-atribuição de tupla:
-
+__atribuição de tupla__<br>
 Atribuição com uma sequência no lado direito e uma tupla de variáveis à esquerda. O lado direito é avaliado e então seus elementos são atribuídos às variáveis à esquerda.
 
-gather:
-
+__gather__<br>
 Operação para montar uma tupla com argumento de comprimento variável.
 
-scatter:
-
+__scatter__<br>
 Operação para tratar uma sequência como uma lista de argumentos.
 
-objeto zip:
-
+__objeto zip__<br>
 O resultado de chamar uma função integrada zip; um objeto que se repete por uma sequência de tuplas.
 
-iterador:
-
+__iterador__<br>
 Objeto que pode se repetir por uma sequência, mas que não oferece operadores de lista e métodos.
 
-estrutura de dados:
-
+__estrutura de dados__<br>
 Coleção de valores relacionados, muitas vezes organizados em listas, dicionários, tuplas etc.
 
-erro de forma:
-
+__erro de forma__<br>
 Erro causado pelo fato de o valor ter a forma incorreta; isto é, tipo ou tamanho incorreto.
 
 ## 12.10 - Exercícios
 
-Exercício 12.1
+### Exercício 12.1
 
 Escreva uma função chamada most\_frequent que receba uma string e exiba as letras em ordem decrescente de frequência. Encontre amostras de texto de vários idiomas diferentes e veja como a frequência das letras varia entre os idiomas. Compare seus resultados com as tabelas em http://en.wikipedia.org/wiki/Letter\_frequencies.
 
 Solução: http://thinkpython2.com/code/most\_frequent.py.
 
-Exercício 12.2
+### Exercício 12.2
 
 Mais anagramas!
 
@@ -496,13 +488,13 @@ Mais anagramas!
 
         Solução: http://thinkpython2.com/code/anagram\_sets.py.
 
-Exercício 12.3
+### Exercício 12.3
 
 Duas palavras formam um “par de metátese” se você puder transformar uma na outra trocando duas letras, por exemplo, “converse” e “conserve”. Escreva um programa que descubra todos os pares de metátese no dicionário. Dica: não teste todos os pares de palavras e não teste todas as trocas possíveis.
 
 Solução: http://thinkpython2.com/code/metathesis.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
 
-Exercício 12.4
+### Exercício 12.4
 
 Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
 

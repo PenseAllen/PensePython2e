@@ -234,85 +234,66 @@ Identificar erros semânticos pode ser complicado, porque é preciso trabalhar d
 
 ## 2.9 - Glossário
 
-variável:
-
+__variável__<br>
 Um nome que se refere a um valor.
 
-atribuição:
-
+__atribuição__<br>
 Uma instrução que atribui um valor a uma variável.
 
-diagrama de estado:
-
+__diagrama de estado__<br>
 Uma representação gráfica de um grupo de variáveis e os valores a que se referem.
 
-palavra-chave:
-
+__palavra-chave__<br>
 Uma palavra reservada, usada para analisar um programa; não é possível usar palavras-chave como if, def e while como nomes de variáveis.
 
-operando:
-
+__operando__<br>
 Um dos valores que um operador produz.
 
-expressão:
-
+__expressão__<br>
 Uma combinação de variáveis, operadores e valores que representa um resultado único.
 
-avaliar:
-
+__avaliar__<br>
 Simplificar uma expressão executando as operações para produzir um valor único.
 
-instrução:
-
+__instrução__<br>
 Uma seção do código que representa um comando ou ação. Por enquanto, as instruções que vimos são instruções de atribuições e de exibição.
 
-executar:
-
+__executar__<br>
 Executar uma instrução para fazer o que ela diz.
 
-modo interativo:
-
+__modo interativo__<br>
 Um modo de usar o interpretador do Python, digitando o código no prompt.
 
-modo script:
-
+__modo script__<br>
 Um modo de usar o interpretador do Python para ler código em um script e executá-lo.
 
-script:
-
+__script__<br>
 Um programa armazenado em um arquivo.
 
-ordem das operações:
-
+__ordem das operações__<br>
 As regras que governam a ordem na qual as expressões que envolvem vários operadores e operandos são avaliadas.
 
-concatenar:
-
+__concatenar__<br>
 Juntar dois operandos pelas extremidades.
 
-comentários:
-
+__comentários__<br>
 Informações em um programa destinadas a outros programadores (ou qualquer pessoa que leia o texto fonte) que não têm efeito sobre a execução do programa.
 
-erro de sintaxe:
-
+__erro de sintaxe__<br>
 Um erro em um programa que torna sua análise impossível (e por isso impossível de interpretar).
 
-exceção:
-
+__exceção__<br>
 Um erro que se descobre quando o programa é executado.
 
-semântica:
-
+__semântica__<br>
 O significado de um programa.
 
-erro semântico:
-
+__erro semântico__<br>
 Um erro que faz com que um programa faça algo diferente do que o programador pretendia.
 
 ## 2.10 - Exercícios
 
-Exercício 2.1
+### Exercício 2.1
 
 Repetindo o meu conselho do capítulo anterior, sempre que você aprender um recurso novo, você deve testá-lo no modo interativo e fazer erros de propósito para ver o que acontece.
 
@@ -326,7 +307,7 @@ Repetindo o meu conselho do capítulo anterior, sempre que você aprender um rec
 
 * Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece se você tentar fazer o mesmo no Python?
 
-Exercício 2.2
+### Exercício 2.2
 
 Pratique o uso do interpretador do Python como uma calculadora:
 

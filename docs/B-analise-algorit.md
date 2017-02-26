@@ -66,21 +66,21 @@ A tabela seguinte mostra algumas ordens de crescimento mais comuns na análise a
 
 Para os termos logarítmicos, a base do logaritmo não importa; a alteração de bases é o equivalente da multiplicação por uma constante, o que não altera a ordem de crescimento. De forma similar, todas as funções exponenciais pertencem à mesma ordem de crescimento, apesar da base do expoente. As funções exponenciais crescem muito rapidamente, então os algoritmos exponenciais só são úteis para pequenos problemas.
 
-Exercício 21.1
+### Exercício B.1
 
 Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em http://en.wikipedia.org/wiki/Big\_O\_notation e responda às seguintes perguntas:
 
-1.        Qual é a ordem de crescimento de n3 + n2? E de 1000000n3 + n2? Ou de n3 + 1000000n2?
+1. Qual é a ordem de crescimento de n3 + n2? E de 1000000n3 + n2? Ou de n3 + 1000000n2?
 
-2.        Qual é a ordem de crescimento de (n2 + n) . (n + 1)? Antes de começar a multiplicar, lembre-se de que você só precisa do termo principal.
+2. Qual é a ordem de crescimento de (n2 + n) . (n + 1)? Antes de começar a multiplicar, lembre-se de que você só precisa do termo principal.
 
-3.        Se f está em O(g), para alguma função não especificada g, o que podemos dizer de af+b?
+3. Se f está em O(g), para alguma função não especificada g, o que podemos dizer de af+b?
 
-4.        Se f1 e f2 estão em O(g), o que podemos dizer a respeito de f1 + f2?
+4. Se f1 e f2 estão em O(g), o que podemos dizer a respeito de f1 + f2?
 
-5.        Se f1 está em O(g) e f2 está em O(h), o que podemos dizer a respeito de f1 + f2?
+5. Se f1 está em O(g) e f2 está em O(h), o que podemos dizer a respeito de f1 + f2?
 
-6.        Se f1 está em O(g) e f2 é O(h), o que podemos dizer a respeito de f1 . f2?
+6. Se f1 está em O(g) e f2 é O(h), o que podemos dizer a respeito de f1 . f2?
 
 Programadores que se preocupam com o desempenho muitas vezes consideram esse tipo de análise difícil de engolir. A razão para isso é: às vezes os coeficientes e os termos não principais fazem muita diferença. Os detalhes do hardware, a linguagem de programação e as características da entrada fazem grande diferença. E para pequenos problemas, o comportamento assintótico é irrelevante.
 
@@ -128,21 +128,21 @@ A maior parte das operações e métodos de dicionário são de tempo constante,
 
 O desempenho de dicionários é um dos milagres menores da ciência da computação. Vemos como funcionam em “Hashtables”, na página 302.
 
-Exercício 21.2
+### Exercício B.2
 
 Leia a página da Wikipédia sobre algoritmos de ordenação em http://en.wikipedia.org/wiki/Sorting\_algorithm e responda às seguintes perguntas:
 
-1.        O que é um “tipo de comparação”? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para um tipo de comparação? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para qualquer algoritmo de ordenação?
+1. O que é um “tipo de comparação”? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para um tipo de comparação? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para qualquer algoritmo de ordenação?
 
-2.        Qual é a ordem de crescimento do tipo bolha, e por que Barack Obama acha que “não é a escolha certa”?
+2. Qual é a ordem de crescimento do tipo bolha, e por que Barack Obama acha que “não é a escolha certa”?
 
-3.        Qual é a ordem de crescimento do tipo radix? Quais são as precondições necessárias para usá-la?
+3. Qual é a ordem de crescimento do tipo radix? Quais são as precondições necessárias para usá-la?
 
-4.        O que é um tipo estável e qual é sua importância na prática?
+4. O que é um tipo estável e qual é sua importância na prática?
 
-5.        Qual é o pior algoritmo de ordenação (que tenha um nome)?
+5. Qual é o pior algoritmo de ordenação (que tenha um nome)?
 
-6.        Que algoritmo de ordenação a biblioteca C usa? Que algoritmo de ordenação o Python usa? Esses algoritmos são estáveis? Você pode ter que pesquisar no Google para encontrar essas respostas.
+6. Que algoritmo de ordenação a biblioteca C usa? Que algoritmo de ordenação o Python usa? Esses algoritmos são estáveis? Você pode ter que pesquisar no Google para encontrar essas respostas.
 
 7.        Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação O(n log n)?
 
@@ -314,48 +314,37 @@ Você pode baixar minha implementação de HashMap em http://thinkpython2.com/co
 
 ## B.5 - Glossário
 
-análise de algoritmos:
-
+__análise de algoritmos__<br>
 Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.
 
-modelo de máquina:
-
+__modelo de máquina__<br>
 Representação simplificada de um computador usada para descrever algoritmos.
 
-pior caso:
-
+__pior caso__<br>
 Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).
 
-termo principal:
-
+__termo principal__<br>
 Em um polinômio, o termo com o expoente mais alto.
 
-ponto de desvio:
-
+__ponto de desvio__<br>
 Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.
 
-ordem de crescimento:
-
+__ordem de crescimento__<br>
 Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.
 
-notação Grande-O (Big-Oh notation):
-
+__notação Grande-O (Big-Oh notation)__<br>
 Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.
 
-linear:
-
+__linear__<br>
 Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.
 
-quadrático:
-
+__quadrático__<br>
 Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.
 
-busca:
-
+__busca__<br>
 Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.
 
-hashtable:
-
+__hashtable__<br>
 Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.
 
 ## B.6 - Sobre o autor

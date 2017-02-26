@@ -468,29 +468,24 @@ Se o fluxo de execução parecer confuso a você, este tipo de saída pode ser �
 
 ## 6.10 - Glossário
 
-variável temporária:
-
+__variável temporária__<br>
 Uma variável usada para guardar um valor intermediário em um cálculo complexo.
 
-código morto:
-
+__código morto__<br>
 A parte de um programa que nunca pode ser executada, muitas vezes porque aparece depois de uma instrução return.
 
-desenvolvimento incremental:
-
+__desenvolvimento incremental__<br>
 Um plano de desenvolvimento de programa para evitar a depuração, que acrescenta e testa poucas linhas de código de cada vez.
 
-scaffolding (código-muleta):
-
+__scaffolding (código-muleta)__<br>
 O código que se usa durante o desenvolvimento de programa, mas que não faz parte da versão final.
 
-guardião:
-
+__guardião__<br>
 Um padrão de programação que usa uma instrução condicional para verificar e lidar com circunstâncias que possam causar erros.
 
 ## 6.11 - Exercícios
 
-Exercício 6.1
+### Exercício 6.1
 
 Desenhe um diagrama da pilha do seguinte programa. O que o programa exibe?
 
@@ -522,7 +517,7 @@ y = x + 1
 
 print(c(x, y+3, x+y))
 
-Exercício 6.2
+### Exercício 6.2
 
 A função de Ackermann, A(m, n), é definida:
 
@@ -530,7 +525,7 @@ Veja http://en.wikipedia.org/wiki/Ackermann\_function. Escreva uma função deno
 
 Solução: http://thinkpython2.com/code/ackermann.py.
 
-Exercício 6.3
+### Exercício 6.3
 
 Um palíndromo é uma palavra que se soletra da mesma forma nos dois sentidos, como “osso” e “reviver”. Recursivamente, uma palavra é um palíndromo se a primeira e última letras forem iguais e o meio for um palíndromo.
 
@@ -556,11 +551,11 @@ Veremos como funcionam no Capítulo 8.
 
 Solução: http://thinkpython2.com/code/palindrome\_soln.py.
 
-Exercício 6.4
+### Exercício 6.4
 
 Um número a é uma potência de b se for divisível por b e a/b for uma potência de b. Escreva uma função chamada is\_power que receba os parâmetros a e b e retorne True se a for uma potência de b. Dica: pense no caso-base.
 
-Exercício 6.5
+### Exercício 6.5
 
 O maior divisor comum (MDC, ou GCD em inglês) de a e b é o maior número que divide ambos sem sobrar resto.
 

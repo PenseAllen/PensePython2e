@@ -244,45 +244,38 @@ Instruções assert são úteis porque distinguem o código que lida com condiç
 
 ## 16.6 - Glossário
 
-protótipo e correção:
-
+__protótipo e correção__<br>
 Plano de desenvolvimento no qual a escrita do programa parte de um esboço inicial, e depois segue ao teste e correção de erros, conforme sejam encontrados.
 
-desenvolvimento planejado:
-
+__desenvolvimento planejado__<br>
 Plano de desenvolvimento que implica uma compreensão de alto nível do problema e mais planejamento que desenvolvimento incremental ou desenvolvimento prototipado.
 
-função pura:
-
+__função pura__<br>
 Função que não altera nenhum dos objetos que recebe como argumento. A maior parte das funções puras gera resultado.
 
-modificador:
-
+__modificador__<br>
 Função que modifica um ou vários dos objetos que recebe como argumento. A maior parte dos modificadores são nulos; isto é, retornam None.
 
-estilo funcional de programação:
-
+__estilo funcional de programação__<br>
 Estilo de projeto de programa no qual a maioria das funções são puras.
 
-invariável:
-
+__invariável__<br>
 Condição que sempre deve ser verdadeira durante a execução de um programa.
 
-instrução assert:
-
+__instrução assert__<br>
 Instrução que verifica uma condição e levanta uma exceção se esta falhar.
 
 ## 16.7 - Exercícios
 
 Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Time1\_soln.py.
 
-Exercício 16.1
+### Exercício 16.1
 
 Escreva uma função chamada mul\_time que receba um objeto Time e um número e retorne um novo objeto Time que contenha o produto do Time original e do número.
 
 Então use mul\_time para escrever uma função que receba um objeto Time representando o tempo até o fim de uma corrida e um número que represente a distância, e retorne um objeto Time com o passo médio (tempo por milha).
 
-Exercício 16.2
+### Exercício 16.2
 
 O módulo datetime fornece objetos time que são semelhantes aos objetos Time deste capítulo, mas ele oferece um grande conjunto de métodos e operadores. Leia a documentação em http://docs.python.org/3/library/datetime.html.
 

@@ -8,7 +8,7 @@ Este capítulo apresenta um estudo de caso com exercícios que fazem pensar sobr
 
 Como de hábito, você deve pelo menos tentar fazer os exercícios antes de ler as minhas soluções.
 
-Exercício 13.1
+### Exercício 13.1
 
 Escreva um programa que leia um arquivo, quebre cada linha em palavras, remova os espaços em branco e a pontuação das palavras, e as converta em letras minúsculas.
 
@@ -22,7 +22,7 @@ Dica: O módulo string oferece uma string chamada whitespace, que contém space,
 
 Além disso, você pode usar os métodos de string, strip, replace e translate.
 
-Exercício 13.2
+### Exercício 13.2
 
 Acesse o Projeto Gutenberg (http://gutenberg.org) e baixe seu livro favorito em domínio público em formato de texto simples.
 
@@ -32,11 +32,11 @@ Então altere o programa para contar o número total de palavras no livro e o n�
 
 Exiba o número de palavras diferentes usadas no livro. Compare livros diferentes de autores diferentes, escritos em eras diferentes. Que autor usa o vocabulário mais extenso?
 
-Exercício 13.3
+### Exercício 13.3
 
 Altere o programa do exercício anterior para exibir as 20 palavras mais frequentes do livro.
 
-Exercício 13.4
+### Exercício 13.4
 
 Altere o programa anterior para ler uma lista de palavras (ver “Leitura de listas de palavras”, na página 133) e então exiba todas as palavras do livro que não estão na lista de palavras. Quantas delas são erros ortográficos? Quantas delas são palavras comuns que deveriam estar na lista de palavras, e quantas são muito obscuras?
 
@@ -82,7 +82,7 @@ Para escolher aleatoriamente um elemento de uma sequência, você pode usar choi
 
 O módulo random também fornece funções para gerar valores aleatórios de distribuições contínuas, incluindo gaussianas, exponenciais, gamma e algumas outras.
 
-Exercício 13.5
+### Exercício 13.5
 
 Escreva uma função chamada choose\_from\_hist que receba um histograma como definido em “Um dicionário como uma coleção de contadores”, na página 163, e retorne um valor aleatório do histograma, escolhido por probabilidade em proporção à frequência. Por exemplo, para este histograma:
 
@@ -284,7 +284,7 @@ friend's venice apartment ...
 
 Algumas dessas palavras são nomes e possessivos. Os outros, como “rencontre”, já não são de uso comum. Mas algumas são palavras comuns que realmente deveriam estar na lista!
 
-Exercício 13.6
+### Exercício 13.6
 
 O Python fornece uma estrutura de dados chamada set, que fornece muitas operações de conjunto. Você pode ler sobre elas em “Conjuntos”, na página 274, ou ler a documentação em http://docs.python.org/3/library/stdtypes.html\#types-set.
 
@@ -320,7 +320,7 @@ Uma alternativa é:
 
 4.        Usar o índice para encontrar a palavra correspondente na lista de palavras.
 
-Exercício 13.7
+### Exercício 13.7
 
 Escreva um programa que use este algoritmo para escolher uma palavra aleatória do livro.
 
@@ -362,7 +362,7 @@ Por exemplo, se você começar com o prefixo “Half a”, então a próxima pal
 
 Neste exemplo, o comprimento do prefixo é sempre dois, mas você pode fazer a análise de Markov com qualquer comprimento de prefixo.
 
-Exercício 13.8
+### Exercício 13.8
 
 Análise de Markov:
 
@@ -460,33 +460,27 @@ Encontrar um erro difícil exige leitura, execução, ruminação, e, às vezes,
 
 ## 13.11 - Glossário
 
-determinista:
-
+__determinista__<br>
 Relativo a um programa que faz a mesma coisa cada vez que é executado, se receber as mesmas entradas.
 
-pseudoaleatório:
-
+__pseudoaleatório__<br>
 Relativo a uma sequência de números que parecem ser aleatórios, mas que são gerados por um programa determinista.
 
-valor-padrão:
-
+__valor-padrão__<br>
 Valor dado a um parâmetro opcional se não houver nenhum argumento.
 
-ignorar (override):
-
+__ignorar (override)__<br>
 Substituir um valor-padrão por um argumento.
 
-benchmarking:
-
+__benchmarking__<br>
 Processo de escolha entre estruturas de dados pela implementação de alternativas e testes em uma amostra de entradas possíveis.
 
-depuração do pato de borracha:
-
+__depuração do pato de borracha__<br>
 Depurar explicando o problema a um objeto inanimado como um pato de borracha. Articular o problema pode ajudar a resolvê-lo, mesmo se o pato de borracha não conhecer Python.
 
 ## 13.12 - Exercícios
 
-Exercício 13.9
+### Exercício 13.9
 
 A “classificação” de uma palavra é a sua posição em uma lista de palavras classificadas por frequência: a palavra mais comum tem a classificação 1, a segunda mais comum é 2 etc.
 

@@ -332,45 +332,36 @@ Essa abordagem pode facilitar a escrita de funções que atuam com tipos diferen
 
 ## 15.8 - Glossário
 
-classe:
-
+__classe__<br>
 Tipo definido pelo programador. Uma definição de classe cria um objeto de classe.
 
-objeto de classe:
-
+__objeto de classe__<br>
 Objeto que contém a informação sobre um tipo definido pelo programador. O objeto de classe pode ser usado para criar instâncias do tipo.
 
-instância:
-
+__instância__<br>
 Objeto que pertence a uma classe.
 
-instanciar:
-
+__instanciar__<br>
 Criar um objeto.
 
-atributo:
-
+__atributo__<br>
 Um dos valores denominados associados a um objeto.
 
-objeto integrado:
-
+__objeto integrado__<br>
 Objeto que é armazenado como um atributo de outro objeto.
 
-cópia superficial:
-
+__cópia superficial__<br>
 Copiar o conteúdo de um objeto, inclusive qualquer referência a objetos integrados; implementada pela função copy no módulo copy.
 
-cópia profunda:
-
+__cópia profunda__<br>
 Copiar o conteúdo de um objeto, bem como qualquer objeto integrado, e qualquer objeto integrado a estes, e assim por diante; implementado pela função deepcopy no módulo copy.
 
-diagrama de objeto:
-
+__diagrama de objeto__<br>
 Diagrama que mostra objetos, seus atributos e os valores dos atributos.
 
 ## 15.9 - Exercícios
 
-Exercício 15.1
+### Exercício 15.1
 
 Escreva uma definição para uma classe denominada Circle, com os atributos center e radius, onde center é um objeto Point e radius é um número.
 
@@ -384,7 +375,7 @@ Escreva uma função denominada rect\_circle\_overlap, que tome um Circle e um R
 
 Solução: http://thinkpython2.com/code/Circle.py.
 
-Exercício 15.2
+### Exercício 15.2
 
 Escreva uma função chamada draw\_rect que receba um objeto Turtle e um Rectangle e use o Turtle para desenhar o retângulo. Veja no Capítulo 4 os exemplos de uso de objetos Turtle.
 

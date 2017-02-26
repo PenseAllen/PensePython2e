@@ -452,67 +452,55 @@ Começando com este diagrama, execute o programa em papel, alterando os valores 
 
 ## 8.12 - Glossário
 
-objeto:
-
+__objeto__<br>
 Algo a que uma variável pode se referir. Por enquanto, você pode usar “objeto” e “valor” de forma intercambiável.
 
-sequência:
-
+__sequência__<br>
 Uma coleção ordenada de valores onde cada valor é identificado por um índice de número inteiro.
 
-item:
-
+__item__<br>
 Um dos valores em uma sequência.
 
-índice:
-
+__índice__<br>
 Um valor inteiro usado para selecionar um item em uma sequência, como um caractere em uma string. No Python, os índices começam em 0.
 
-fatia:
-
+__fatia__<br>
 Parte de uma string especificada por um intervalo de índices.
 
-string vazia:
-
+__string vazia__<br>
 Uma string sem caracteres e de comprimento 0, representada por duas aspas.
 
-imutável:
-
+__imutável__<br>
 A propriedade de uma sequência cujos itens não podem ser alterados.
 
-atravessar:
-
+__atravessar__<br>
 Repetir os itens em uma sequência, executando uma operação semelhante em cada um.
 
-busca:
-
+__busca__<br>
 Um modelo de travessia que é interrompido quando encontra o que está procurando.
 
-contador:
-
+__contador__<br>
 Uma variável usada para contar algo, normalmente inicializada com zero e então incrementada.
 
-invocação:
-
+__invocação__<br>
 Uma instrução que chama um método.
 
-argumento opcional:
-
+__argumento opcional__<br>
 Um argumento de função ou método que não é necessário.
 
 ## 8.13 - Exercícios
 
-Exercício 8.1
+### Exercício 8.1
 
 Leia a documentação dos métodos de strings em http://docs.python.org/3/library/stdtypes.html\#string-methods. Pode ser uma boa ideia experimentar alguns deles para entender como funcionam. strip e replace são especialmente úteis.
 
 A documentação usa uma sintaxe que pode ser confusa. Por exemplo, em find(sub\[, start\[, end\]\]), os colchetes indicam argumentos opcionais. Então sub é exigido, mas start é opcional, e se você incluir start, então end é opcional.
 
-Exercício 8.2
+### Exercício 8.2
 
 Há um método de string chamado count, que é semelhante à função em “Loop e contagem”, na página 123. Leia a documentação deste método e escreva uma invocação que conte o número de letras a em 'banana'.
 
-Exercício 8.3
+### Exercício 8.3
 
 Uma fatia de string pode receber um terceiro índice que especifique o “tamanho do passo”; isto é, o número de espaços entre caracteres sucessivos. Um tamanho de passo 2 significa tomar um caractere e outro não; 3 significa tomar um e dois não etc.
 
@@ -526,7 +514,7 @@ Um tamanho de passo -1 atravessa a palavra de trás para a frente, então a fati
 
 Use isso para escrever uma versão de uma linha de is\_palindrome do Exercício 6.3.
 
-Exercício 8.4
+### Exercício 8.4
 
 As seguintes funções pretendem verificar se uma string contém alguma letra minúscula, mas algumas delas estão erradas. Para cada função, descreva o que ela faz (assumindo que o parâmetro seja uma string).
 
@@ -582,7 +570,7 @@ def any\_lowercase5(s):
 
     return True
 
-Exercício 8.5
+### Exercício 8.5
 
 Uma cifra de César é uma forma fraca de criptografia que implica “rotacionar” cada letra por um número fixo de lugares. Rotacionar uma letra significa deslocá-lo pelo alfabeto, voltando ao início se for necessário, portanto ‘A’ rotacionado por 3 é ‘D’ e ‘Z’ rotacionado por 1 é ‘A’.
 

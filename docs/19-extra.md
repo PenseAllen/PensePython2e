@@ -510,29 +510,24 @@ Quando estiver trabalhando com funções com um grande número de parâmetros, m
 
 ## 19.10 - Glossário
 
-expressão condicional:
-
+__expressão condicional__<br>
 Expressão que contém um de dois valores, dependendo de uma condição.
 
-abrangência de listas:
-
+__abrangência de listas__<br>
 Expressão com um loop for entre colchetes que produz uma nova lista.
 
-expressão geradora:
-
+__expressão geradora__<br>
 Uma expressão com um loop for entre parênteses que produz um objeto gerador.
 
-multiconjunto:
-
+__multiconjunto__<br>
 Entidade matemática que representa um mapeamento entre os elementos de um conjunto e o número de vezes que aparecem.
 
-fábrica (factory):
-
+__fábrica (factory)__<br>
 Função normalmente passada como parâmetro, usada para criar objetos.
 
 ## 19.11 - Exercícios
 
-Exercício 19.1
+### Exercício 19.1
 
 Esta é uma função que calcula o coeficiente binominal recursivamente:
 

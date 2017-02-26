@@ -428,51 +428,42 @@ A função integrada getattr recebe um objeto e um nome de atributo (como uma st
 
 ## 17.12 - Glossário
 
-linguagem orientada a objeto:
-
+__linguagem orientada a objeto__<br>
 Linguagem que fornece recursos, como tipos definidos pelo programador e métodos, que facilitam a programação orientada a objeto.
 
-programação orientada a objeto:
-
+__programação orientada a objeto__<br>
 Estilo de programação na qual os dados e as operações que os manipulam são organizadas em classes e métodos.
 
-método:
-
+__método__<br>
 Função criada dentro de uma definição de classe e invocada em instâncias desta classe.
 
-sujeito:
-
+__sujeito__<br>
 Objeto sobre o qual um método é invocado.
 
-argumento posicional:
-
+__argumento posicional__<br>
 Argumento que não inclui um nome de parâmetro, portanto não é um argumento de palavra-chave.
 
-sobrecarga de operador:
-
+__sobrecarga de operador__<br>
 Alteração do comportamento de um operador como + para que funcione com um tipo definido pelo programador.
 
-despacho por tipo:
-
+__despacho por tipo__<br>
 Modelo de programação que invoca funções diferentes dependendo do tipo do operando.
 
-polimórfico:
-
+__polimórfico__<br>
 Pertinente a uma função que pode funcionar com mais de um tipo.
 
-ocultamento de informação:
-
+__ocultamento de informação__<br>
 Princípio segundo o qual a interface fornecida por um objeto não deve depender da sua implementação, especialmente em relação à representação dos seus atributos.
 
 ## 17.13 - Exercícios
 
-Exercício 17.1
+### Exercício 17.1
 
 Baixe o código deste capítulo em http://thinkpython2.com/code/Time2.py. Altere os atributos de Time para que um número inteiro único represente os segundos decorridos desde a meia-noite. Então altere os métodos (e a função int\_to\_time) para funcionar com a nova implementação. Você não deve modificar o código de teste em main. Ao terminar, a saída deve ser a mesma que antes.
 
 Solução: http://thinkpython2.com/code/Time2\_soln.py.
 
-Exercício 17.2
+### Exercício 17.2
 
 Este exercício é uma história com moral sobre um dos erros mais comuns e difíceis de encontrar no Python. Escreva uma definição de classe chamada Kangaroo com os seguintes métodos:
 

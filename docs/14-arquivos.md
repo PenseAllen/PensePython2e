@@ -414,65 +414,51 @@ Para a maior parte dos sistemas há aplicações para converter de um formato a 
 
 ## 14.11 - Glossário
 
-persistente:
-
+__persistente__<br>
 Relativo a um programa que roda indefinidamente e mantém pelo menos alguns dos seus dados em armazenamento permanente.
 
-operador de formatação:
-
+__operador de formatação__<br>
 Um operador, %, que recebe uma string de formatação e uma tupla e gera uma string que inclui os elementos da tupla formatada como especificado pela string de formatação.
 
-string de formatação:
-
+__string de formatação__<br>
 String usada com o operador de formatação, que contém sequências de formatação.
 
-sequência de formatação:
-
+__sequência de formatação__<br>
 Sequência de caracteres em uma string de formatação, como %d, que especifica como um valor deve ser formatado.
 
-arquivo de texto:
-
+__arquivo de texto__<br>
 Sequência de caracteres guardados em armazenamento permanente, como uma unidade de disco rígido.
 
-diretório:
-
+__diretório__<br>
 Uma coleção de arquivos nomeada, também chamada de pasta.
 
-caminho:
-
+__caminho__<br>
 String que identifica um arquivo.
 
-caminho relativo:
-
+__caminho relativo__<br>
 Caminho que inicia no diretório atual.
 
-caminho absoluto:
-
+__caminho absoluto__<br>
 Caminho que inicia no diretório de posição mais alta (raiz) no sistema de arquivos.
 
-capturar:
-
+__capturar__<br>
 Impedir uma exceção de encerrar um programa usando as instruções try e except.
 
-banco de dados:
-
+__banco de dados__<br>
 Um arquivo cujo conteúdo é organizado como um dicionário, com chaves que correspondem a valores.
 
-objeto bytes:
-
+__objeto bytes__<br>
 Objeto semelhante a uma string.
 
-shell:
-
+__shell__<br>
 Programa que permite aos usuários digitar comandos e executá-los para iniciar outros programas.
 
-objeto pipe:
-
+__objeto pipe__<br>
 Objeto que representa um programa em execução, permitindo que um programa do Python execute comandos e leia os resultados.
 
 ## 14.12 - Exercícios
 
-Exercício 14.1
+### Exercício 14.1
 
 Escreva uma função chamada sed que receba como argumentos uma string-padrão, uma string de substituição e dois nomes de arquivo; ela deve ler o primeiro arquivo e escrever o conteúdo no segundo arquivo (criando-o, se necessário). Se a string-padrão aparecer em algum lugar do arquivo, ela deve ser substituída pela string de substituição.
 
@@ -480,7 +466,7 @@ Se ocorrer um erro durante a abertura, leitura, escrita ou fechamento dos arquiv
 
 Solução: http://thinkpython2.com/code/sed.py.
 
-Exercício 14.2
+### Exercício 14.2
 
 Se você baixar minha solução do Exercício 12.2 em http://thinkpython2.com/code/anagram\_sets.py, verá que ela cria um dicionário que mapeia uma string ordenada de letras à lista de palavras que podem ser soletradas com aquelas letras. Por exemplo, 'opst' mapeia à lista \['opts', 'post', 'pots', 'spot', 'stop', 'tops'\].
 
@@ -488,7 +474,7 @@ Escreva um módulo que importe anagram\_sets e forneça duas novas funções: st
 
 Solução: http://thinkpython2.com/code/anagram\_db.py.
 
-Exercício 14.3
+### Exercício 14.3
 
 Em uma grande coleção de arquivos MP3 pode haver mais de uma cópia da mesma música, guardada em diretórios diferentes ou com nomes de arquivo diferentes. A meta deste exercício é procurar duplicatas.
 

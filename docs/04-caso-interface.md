@@ -354,53 +354,42 @@ Se as precondições forem satisfeitas e as pós-condições não forem, o probl
 
 ## 4.11 - Glossário
 
-método:
-
+__método__<br>
 Uma função associada a um objeto e chamada usando a notação de ponto.
 
-loop:
-
+__loop__<br>
 Parte de um programa que pode ser executada repetidamente.
 
-encapsulamento:
-
+__encapsulamento__<br>
 O processo de transformar uma sequência de instruções em uma definição de função.
 
-generalização:
-
+__generalização__<br>
 O processo de substituir algo desnecessariamente específico (como um número) por algo adequadamente geral (como uma variável ou parâmetro).
 
-argumento de palavra-chave:
-
+__argumento de palavra-chave__<br>
 Um argumento que inclui o nome do parâmetro como uma “palavra-chave”.
 
-interface:
-
+__interface__<br>
 Uma descrição de como usar uma função, incluindo o nome e as descrições dos argumentos e do valor de retorno.
 
-refatoração:
-
+__refatoração__<br>
 O processo de alterar um programa funcional para melhorar a interface de funções e outras qualidades do código.
 
-plano de desenvolvimento:
-
+__plano de desenvolvimento__<br>
 Um processo de escrever programas.
 
-docstring:
-
+__docstring__<br>
 Uma string que aparece no início de uma definição de função para documentar a interface da função.
 
-precondição:
-
+__precondição__<br>
 Uma exigência que deve ser satisfeita por quem chama a função, antes de executá-la.
 
-pós-condição:
-
+__pós-condição__<br>
 Uma exigência que deve ser satisfeita pela função antes que ela seja encerrada.
 
 ## 4.12 - Exercícios
 
-Exercício 4.1
+### Exercício 4.1
 
 Baixe o código deste capítulo no site http://thinkpython2.com/code/polygon.py.
 
@@ -408,7 +397,7 @@ Baixe o código deste capítulo no site http://thinkpython2.com/code/polygon.py.
 
 2.        A versão do arc em “Refatoração” na página 70 não é muito precisa porque a aproximação linear do círculo está sempre do lado de fora do círculo verdadeiro. Consequentemente, o Turtle acaba ficando alguns píxeis de distância do destino correto. Minha solução mostra um modo de reduzir o efeito deste erro. Leia o código e veja se faz sentido para você. Se desenhar um diagrama, poderá ver como funciona.
 
-Exercício 4.2
+### Exercício 4.2
 
 Escreva um conjunto de funções adequadamente geral que possa desenhar flores como as da Figura 4.1.
 
@@ -416,7 +405,7 @@ Figura 4.1 – Flores no Turtle.
 
 Solução: http://thinkpython2.com/code/flower.py, também exige http://thinkpython2.com/code/polygon.py.
 
-Exercício 4.3
+### Exercício 4.3
 
 Escreva um conjunto de funções adequadamente geral que possa desenhar formas como as da Figura 4.2.
 
@@ -424,7 +413,7 @@ Figura 4.2 – Gráficos de torta no Turtle.
 
 Solução: http://thinkpython2.com/code/pie.py.
 
-Exercício 4.4
+### Exercício 4.4
 
 As letras do alfabeto podem ser construídas a partir de um número moderado de elementos básicos, como linhas verticais e horizontais e algumas curvas. Crie um alfabeto que possa ser desenhado com um número mínimo de elementos básicos e então escreva funções que desenhem as letras.
 
@@ -432,7 +421,7 @@ Você deve escrever uma função para cada letra, com os nomes draw\_a, draw\_b 
 
 Você pode ver uma solução no site http://thinkpython2.com/code/letters.py; ela também exige http://thinkpython2.com/code/polygon.py.
 
-Exercício 4.5
+### Exercício 4.5
 
 Leia sobre espirais em https://pt.wikipedia.org/wiki/Espiral; então escreva um programa que desenhe uma espiral de Arquimedes (ou um dos outros tipos).
 

@@ -424,69 +424,54 @@ A mensagem de erro indica a linha 5, mas não há nada de errado com esta linha.
 
 ## 5.13 - Glossário
 
-divisão pelo piso:
-
+__divisão pelo piso__<br>
 Um operador, denotado por //, que divide dois números e arredonda o resultado para baixo (em direção ao zero), a um número inteiro.
 
-operador módulo:
-
+__operador módulo__<br>
 Um operador, denotado com um sinal de percentagem (%), que funciona com números inteiros e devolve o resto quando um número é dividido por outro.
 
-expressão booleana:
-
+__expressão booleana__<br>
 Uma expressão cujo valor é True (verdadeiro) ou False (falso).
 
-operador relacional:
-
+__operador relacional__<br>
 Um destes operadores, que compara seus operandos: ==, !=, &gt;, &lt;, &gt;= e &lt;=.
 
-operador lógico:
-
+__operador lógico__<br>
 Um destes operadores, que combina expressões booleanas: and (e), or (ou) e not (não).
 
-instrução condicional:
-
+__instrução condicional__<br>
 Uma instrução que controla o fluxo de execução, dependendo de alguma condição.
 
-condição:
-
+__condição__<br>
 A expressão booleana em uma instrução condicional que determina qual ramo deve ser executado.
 
-instrução composta:
-
+__instrução composta__<br>
 Uma instrução composta de um cabeçalho e um corpo. O cabeçalho termina em dois pontos (:). O corpo é endentado em relação ao cabeçalho.
 
-ramo:
-
+__ramo__<br>
 Uma das sequências alternativas de instruções em uma instrução condicional.
 
-condicional encadeada:
-
+__condicional encadeada__<br>
 Uma instrução condicional com uma série de ramos alternativos.
 
-condicional aninhada:
-
+__condicional aninhada__<br>
 Uma instrução condicional que aparece em um dos ramos de outra instrução condicional.
 
-instrução de retorno:
-
+__instrução de retorno__<br>
 Uma instrução que faz uma função terminar imediatamente e voltar a quem a chamou.
 
-recursividade:
-
+__recursividade__<br>
 O processo de chamar a função que está sendo executada no momento.
 
-caso-base:
-
+__caso-base__<br>
 Um ramo condicional em uma função recursiva que não faz uma chamada recursiva.
 
-recursividade infinita:
-
+__recursividade infinita__<br>
 Recursividade que não tem um caso-base, ou nunca o atinge. A recursividade infinita eventualmente causa um erro em tempo de execução.
 
 ## 5.14 - Exercícios
 
-Exercício 5.1
+### Exercício 5.1
 
 O módulo time fornece uma função, também chamada time, que devolve a Hora Média de Greenwich na “época”, que é um tempo arbitrário usado como ponto de referência. Em sistemas UNIX, a época é primeiro de janeiro de 1970.
 
@@ -498,7 +483,7 @@ O módulo time fornece uma função, também chamada time, que devolve a Hora M�
 
 Escreva um script que leia a hora atual e a converta em um tempo em horas, minutos e segundos, mais o número de dias desde a época.
 
-Exercício 5.2
+### Exercício 5.2
 
 O último teorema de Fermat diz que não há nenhum número inteiro positivo a, b e c tal que
 
@@ -514,7 +499,7 @@ para quaisquer valores de n maiores que 2.
 
 2.        Escreva uma função que peça ao usuário para digitar valores para a, b, c e n, os converta em números inteiros e use check\_fermat para verificar se violam o teorema de Fermat.
 
-Exercício 5.3
+### Exercício 5.3
 
 Se você tiver três gravetos, pode ser que consiga arranjá-los em um triângulo ou não. Por exemplo, se um dos gravetos tiver 12 polegadas de comprimento e outros dois tiverem uma polegada de comprimento, não será possível fazer com que os gravetos curtos se encontrem no meio. Há um teste simples para ver se é possível formar um triângulo para quaisquer três comprimentos:
 
@@ -524,7 +509,7 @@ Se algum dos três comprimentos for maior que a soma dos outros dois, então voc
 
 2.        Escreva uma função que peça ao usuário para digitar três comprimentos de gravetos, os converta em números inteiros e use is\_triangle para verificar se os gravetos com os comprimentos dados podem formar um triângulo.
 
-Exercício 5.4
+### Exercício 5.4
 
 Qual é a saída do seguinte programa? Desenhe um diagrama da pilha que mostre o estado do programa quando exibir o resultado.
 
@@ -546,7 +531,7 @@ recurse(3, 0)
 
 Os seguintes exercícios usam o módulo turtle, descrito no Capítulo 4:
 
-Exercício 5.5
+### Exercício 5.5
 
 Leia a próxima função e veja se consegue compreender o que ela faz (veja os exemplos no Capítulo 4). Então execute-a e veja se acertou.
 
@@ -574,7 +559,7 @@ def draw(t, length, n):
 
 Figura 5.2 – Uma curva de Koch.
 
-Exercício 5.6
+### Exercício 5.6
 
 A curva de Koch é um fractal que parece com o da Figura 5.2. Para desenhar uma curva de Koch com o comprimento x, tudo o que você tem que fazer é:
 
