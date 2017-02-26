@@ -217,12 +217,12 @@ Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, út
 ## 1.8 - Glossário
 
 <dl>
-<dt><a id="def-resol" href="#termo-resol">__resolução de problemas__</a></dt>
+<dt><a id="def-resol" href="#termo-resol">resolução de problemas</a></dt>
 <dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
 </dl>
 
 <dl>
-<dt>__linguagem de alto nível__</dt>
+<dt>linguagem de alto nível</dt>
 <dd>Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.</dd>
 </dl>
 
