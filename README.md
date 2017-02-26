@@ -1,5 +1,7 @@
 # Pense em Python
 
+<a href="https://novatec.com.br/livros/pense-em-python/"><img src="img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;"></a>
+
 Tradução do livro [Think Python](http://greenteapress.com/wp/think-python-2e/) (2ª edição), de Allen B. Downey, publicado sob licença [CC BY-NC 3.0](LICENSE.md).
 
 Este livro ensina programação para quem nunca programou, usando Python 3 nos exemplos. É aplicado no Olin College, IBMEC e outras faculdades de engenharia excelentes.

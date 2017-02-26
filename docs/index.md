@@ -1,5 +1,7 @@
 # Pense em Python
 
+https://github.com/PenseAllen/PensePython2e/raw/master/img/
+
 ### Pense como um cientista da computação
 
 Este livro ensina programação para quem nunca programou, usando [Python 3](https://www.python.org/) nos exemplos. É aplicado no Olin College, IBMEC e outras faculdades de engenharia de primeira linha.
