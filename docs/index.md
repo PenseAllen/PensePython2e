@@ -1,9 +1,8 @@
 # Pense em Python
 
-<a href="https://novatec.com.br/livros/pense-em-python/"><img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;"></a>
-
-
 ### Pense como um cientista da computação
+
+<a href="https://novatec.com.br/livros/pense-em-python/"><img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;"></a>
 
 Este livro ensina programação para quem nunca programou, usando [Python 3](https://www.python.org/) nos exemplos. É aplicado no Olin College, IBMEC e outras faculdades de engenharia de primeira linha.
 
