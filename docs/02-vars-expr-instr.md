@@ -40,20 +40,20 @@ SyntaxError: invalid syntax
 
 SyntaxError: invalid syntax
 
-76trombones é ilegal porque começa com um número. more@ é ilegal porque contém um caractere ilegal, o @. Mas o que há de errado com class?
+`76trombones` é ilegal porque começa com um número. `more@` é ilegal porque contém um caractere ilegal, o `@`. Mas o que há de errado com `class`?
 
 A questão é que class é uma das palavras-chave do Python. O interpretador usa palavras-chave para reconhecer a estrutura do programa e elas não podem ser usadas como nomes de variável.
 
 O Python 3 tem estas palavras-chave:
 
 ```
-False     class      finally    is        return
-None      continue   for       lambda     try
-True      def        from      nonlocal   while
-and       del        global    not        with
-as        elif       if        or         yield
-assert    else       import    pass
-break     except     in        raise
+and         del         from        None        True
+as          elif        global      nonlocal    try
+assert      else        if          not         while
+break       except      import      or          with
+class       False       in          pass        yield
+continue    finally     is          raise
+def         for         lambda      return
 ```
 
 Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvolvimento, as palavras-chave são exibidas em uma cor diferente; se você tentar usar uma como nome de variável, vai perceber.
