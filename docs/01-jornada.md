@@ -2,7 +2,7 @@
 
 O objetivo deste livro é ensinar a pensar como um cientista da computação. Esta forma de pensar combina algumas das melhores características da matemática, da engenharia e das ciências naturais. Assim como os matemáticos, os cientistas da computação usam linguagens formais para denotar ideias (especificamente operações de computação). Como engenheiros, eles projetam coisas, reunindo componentes em sistemas e avaliando as opções de melhor retorno entre as alternativas à disposição. Como cientistas, observam o comportamento de sistemas complexos, formam hipóteses e testam previsões.
 
-A habilidade específica mais importante de um cientista da computação é a __resolução de problemas__. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
+A habilidade específica mais importante de um cientista da computação é a a id="termo-resol" href="#def-resol">__resolução de problemas__</a>. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
 
 Em um nível você aprenderá a programar, uma habilidade útil por si mesma. Em outro nível usará a programação como um meio para um fim. Conforme avançarmos, este fim ficará mais claro.
 
@@ -216,11 +216,15 @@ Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, út
 
 ## 1.8 - Glossário
 
-__resolução de problemas__<br>
-O processo de formular um problema, encontrar uma solução e expressá-la.
+<dl>
+<dt><a id="def-resol" href="#termo-resol">__resolução de problemas__</a></dt>
+<dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
+</dl>
 
-__linguagem de alto nível__<br>
-Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.
+<dl>
+<dt>__linguagem de alto nível__</dt>
+<dd>Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.</dd>
+</dl>
 
 __linguagem de baixo nível__<br>
 Uma linguagem de programação criada para o computador executar com facilidade; também chamada de “linguagem de máquina” ou “linguagem assembly”.

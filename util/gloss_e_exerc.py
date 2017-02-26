@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 
 import re
-import collections
-import glob
-import os
-
-from separar_capitulos import NOME_CAPS
-
-SUMARIO = '../recebido/sumario.md'
-DIR_DOCS = '../docs/'
 
 GLOSSARIO_RE = re.compile(r'^## [B|\d]\d?\.\d\d? - Glossário$', re.MULTILINE)
 EXERCICIOS_RE = re.compile(r'^## \d\d?\.\d\d? - Exercícios$', re.MULTILINE)
@@ -18,6 +10,7 @@ VERBETE_REPL = r'__\1__<br>\n'
 
 EXERCICIO_RE = re.compile(r'^(Exercício \d\d?\.\d\d?)$', re.MULTILINE)
 EXERCICIO_REPL = r'### \1'
+
 
 def marcar_verbetes(md):
     casa_glossario = GLOSSARIO_RE.search(md)
@@ -34,12 +27,12 @@ def marcar_verbetes(md):
     corpo = VERBETE_RE.sub(VERBETE_REPL, corpo)
     return md[:inicio] + corpo + md[fim:]
 
+
 def marcar_exercicios(md):
     casa_exercicio = EXERCICIO_RE.search(md)
     assert casa_exercicio
     md = EXERCICIO_RE.sub(EXERCICIO_REPL, md)
     return md
-
 
 
 def main():
