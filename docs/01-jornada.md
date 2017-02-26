@@ -221,7 +221,7 @@ Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, út
 <dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
 <dt>linguagem de alto nível</dt>
 <dd>Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.</dd>
-<dt>__linguagem de baixo nível__</dt>
+<dt>linguagem de baixo nível</dt>
 <dd>Uma linguagem de programação criada para o computador executar com facilidade; também chamada de “linguagem de máquina” ou “linguagem assembly”.</dd>
 </dl>
 
