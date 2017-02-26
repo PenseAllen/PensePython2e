@@ -46,19 +46,15 @@ A questão é que class é uma das palavras-chave do Python. O interpretador usa
 
 O Python 3 tem estas palavras-chave:
 
-False     class      finally    is         return
-
+```
+False     class      finally    is        return
 None      continue   for       lambda     try
-
 True      def        from      nonlocal   while
-
 and       del        global    not        with
-
 as        elif       if        or         yield
-
 assert    else       import    pass
-
 break     except     in        raise
+```
 
 Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvolvimento, as palavras-chave são exibidas em uma cor diferente; se você tentar usar uma como nome de variável, vai perceber.
 
@@ -316,4 +312,3 @@ Pratique o uso do interpretador do Python como uma calculadora:
 2.        Suponha que o preço de capa de um livro seja R$ 24,95, mas as livrarias recebem um desconto de 40%. O transporte custa R$ 3,00 para o primeiro exemplar e 75 centavos para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias?
 
 3.        Se eu sair da minha casa às 6:52 e correr 1 quilômetro a um certo passo (8min15s por quilômetro), então 3 quilômetros a um passo mais rápido (7min12s por quilômetro) e 1 quilômetro no mesmo passo usado em primeiro lugar, que horas chego em casa para o café da manhã?
-

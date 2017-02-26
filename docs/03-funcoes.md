@@ -544,27 +544,19 @@ Nota: Este exercício deve ser feito usando-se apenas as instruções e os outro
 
 1.        Escreva uma função que desenhe uma grade como a seguinte:
 
+```
         + - - - - + - - - - +
-
         |         |         |
-
         |         |         |
-
         |         |         |
-
         |         |         |
-
         + - - - - + - - - - +
-
         |         |         |
-
         |         |         |
-
         |         |         |
-
         |         |         |
-
         + - - - - + - - - - +
+```
 
         Dica: para exibir mais de um valor em uma linha, podemos usar uma sequência de valores separados por vírgula:
 
@@ -583,4 +575,3 @@ Nota: Este exercício deve ser feito usando-se apenas as instruções e os outro
 2.        Escreva uma função que desenhe uma grade semelhante com quatro linhas e quatro colunas.
 
 Solução: http://thinkpython2.com/code/grid.py. Crédito: Este exercício é baseado em outro apresentado por Oualline, em Practical C Programming, Third Edition, O’Reilly Media, 1997.
-
