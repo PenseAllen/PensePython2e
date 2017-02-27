@@ -16,9 +16,10 @@ Esse exemplo faz três atribuições. A primeira atribui uma string a uma nova v
 
 Uma forma comum de representar variáveis por escrito é colocar o nome com uma flecha apontando para o seu valor. Este tipo de número é chamado de diagrama de estado porque mostra o estado no qual cada uma das variáveis está (pense nele como o estado de espírito da variável). A Figura 2.1 mostra o resultado do exemplo anterior.
 
-```python
+![Figura 2.1 – Diagrama de estado.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0201.png)
+
 Figura 2.1 – Diagrama de estado.
-```
+
 
 ## 2.2 - Nomes de variáveis
 
