@@ -221,3 +221,101 @@ Prepare-se para essas reações, pois isso pode ajudar a lidar com elas. Uma abo
 Seu trabalho é ser um bom gerente: encontrar formas de aproveitar as vantagens e atenuar as desvantagens. E também encontrar formas de usar suas emoções para lidar com o problema sem deixar suas reações interferirem na sua capacidade de trabalho.
 
 Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, útil para muitas atividades além da programação. No fim de cada capítulo há uma seção como esta, com as minhas sugestões para fazer a depuração. Espero que sejam úteis!
+
+## 1.8 - Glossário
+
+<dl>
+<dt><a id="glos:resolução de problemas" href="#termo:resolução de problemas">resolução de problemas</a></dt>
+<dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
+
+<dt><a id="glos:linguagem de alto nível" href="#termo:linguagem de alto nível">linguagem de alto nível</a></dt>
+<dd>Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.</dd>
+
+<dt><a id="glos:linguagem de baixo nível" href="#termo:linguagem de baixo nível">linguagem de baixo nível</a></dt>
+<dd>Uma linguagem de programação criada para o computador executar com facilidade; também chamada de “linguagem de máquina” ou “linguagem assembly”.</dd>
+
+<dt><a id="glos:portabilidade" href="#termo:portabilidade">portabilidade</a></dt>
+<dd>A propriedade de um programa de poder ser executado em mais de um tipo de computador.</dd>
+
+<dt><a id="glos:interpretador" href="#termo:interpretador">interpretador</a></dt>
+<dd>Um programa que lê outro programa e o executa.</dd>
+
+<dt><a id="glos:prompt" href="#termo:prompt">prompt</a></dt>
+<dd>Caracteres expostos pelo interpretador para indicar que está pronto para receber entradas do usuário.</dd>
+
+<dt><a id="glos:programa" href="#termo:programa">programa</a></dt>
+<dd>Conjunto de instruções que especificam uma operação de computação.</dd>
+
+<dt><a id="glos:instrução print" href="#termo:instrução print">instrução print</a></dt>
+<dd>Uma instrução que faz o interpretador do Python exibir um valor na tela.</dd>
+
+<dt><a id="glos:operador" href="#termo:operador">operador</a></dt>
+<dd>Um símbolo especial que representa uma operação de computação simples como adição, multiplicação ou concatenação de strings.</dd>
+
+<dt><a id="glos:valor" href="#termo:valor">valor</a></dt>
+<dd>Uma das unidades básicas de dados, como um número ou string, que um programa manipula.</dd>
+
+<dt><a id="glos:tipo" href="#termo:tipo">tipo</a></dt>
+<dd>Uma categoria de valores. Os tipos que vimos por enquanto são números inteiros (tipo int), números de ponto flutuante (tipo float) e strings (tipo str).</dd>
+
+<dt><a id="glos:inteiro" href="#termo:inteiro">inteiro</a></dt>
+<dd>Um tipo que representa números inteiros.</dd>
+
+<dt><a id="glos:ponto flutuante" href="#termo:ponto flutuante">ponto flutuante</a></dt>
+<dd>Um tipo que representa números com partes fracionárias.</dd>
+
+<dt><a id="glos:string" href="#termo:string">string</a></dt>
+<dd>Um tipo que representa sequências de caracteres.</dd>
+
+<dt><a id="glos:linguagem natural" href="#termo:linguagem natural">linguagem natural</a></dt>
+<dd>Qualquer linguagem que as pessoas falam e que se desenvolveu naturalmente.</dd>
+
+<dt><a id="glos:linguagem formal" href="#termo:linguagem formal">linguagem formal</a></dt>
+<dd>Qualquer linguagem que as pessoas criaram com objetivos específicos, como representar ideias matemáticas ou programas de computador; todas as linguagens de programação são linguagens formais.</dd>
+
+<dt><a id="glos:símbolo" href="#termo:símbolo">símbolo</a></dt>
+<dd>Um dos elementos básicos da estrutura sintática de um programa, análogo a uma palavra em linguagem natural.</dd>
+
+<dt><a id="glos:sintaxe" href="#termo:sintaxe">sintaxe</a></dt>
+<dd>As regras que governam a estrutura de um programa.</dd>
+
+<dt><a id="glos:análise" href="#termo:análise">análise</a></dt>
+<dd>Examinar um programa e sua estrutura sintática.</dd>
+
+<dt><a id="glos:bug" href="#termo:bug">bug</a></dt>
+<dd>Um erro em um programa.</dd>
+
+<dt><a id="glos:depuração" href="#termo:depuração">depuração</a></dt>
+<dd>O processo de encontrar e corrigir (depurar) bugs.</dd>
+
+</dl>
+
+## 1.9 - Exercícios
+
+### Exercício 1.1
+
+É uma boa ideia ler este livro em frente a um computador para testar os exemplos durante a leitura.
+
+Sempre que estiver testando um novo recurso, você deve tentar fazer erros. Por exemplo, no programa “Hello, World!”, o que acontece se omitir uma das aspas? E se omitir ambas? E se você soletrar a instrução print de forma errada?
+
+Este tipo de experimento ajuda a lembrar o que foi lido; também ajuda quando você estiver programando, porque assim conhecerá o significado das mensagens de erro. É melhor fazer erros agora e de propósito que depois e acidentalmente.
+
+1. Em uma instrução print, o que acontece se você omitir um dos parênteses ou ambos?
+
+2. Se estiver tentando imprimir uma string, o que acontece se omitir uma das aspas ou ambas?
+
+3. Você pode usar um sinal de menos para fazer um número negativo como -2. O que acontece se puser um sinal de mais antes de um número? E se escrever assim: 2++2?
+
+4. Na notação matemática, zeros à esquerda são aceitáveis, como em 02. O que acontece se você tentar usar isso no Python?
+
+5. O que acontece se você tiver dois valores sem nenhum operador entre eles?
+
+### Exercício 1.2
+
+Inicialize o interpretador do Python e use-o como uma calculadora.
+
+1. Quantos segundos há em 42 minutos e 42 segundos?
+
+2. Quantas milhas há em 10 quilômetros? Dica: uma milha equivale a 1,61 quilômetro.
+
+3. Se você correr 10 quilômetros em 42 minutos e 42 segundos, qual é o seu passo médio (tempo por milha em minutos e segundos)? Qual é a sua velocidade média em milhas por hora?

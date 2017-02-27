@@ -27,8 +27,6 @@ def marcar_listagens(md):
     bloco = []
     saida = []
     for lin in md.split('\n'):
-        if GLOSSARIO_RE.match(lin):
-            break
         if pode_ser_codigo(lin):
             if lin:
                 lin = lin.replace('&gt;', '>')
