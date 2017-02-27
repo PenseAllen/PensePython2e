@@ -238,7 +238,7 @@ while True:
 
     x = y
 
-Para a maior parte de valores de a funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: números mais racionais, como 1/3, e números irracionais, como ![Fórmula – Raiz quadrada de 2.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p80f1.png), não podem ser representados exatamente com um float.
+Para a maior parte de valores de a funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: a maioria dos números racionais, como 1/3, e números irracionais, como ![Fórmula – Raiz quadrada de 2.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p80f1.png), não podem ser representados exatamente com um float.
 
 Em vez de verificar se x e y são exatamente iguais, é mais seguro usar a função integrada abs para calcular o valor absoluto ou magnitude da diferença entre eles:
 
