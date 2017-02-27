@@ -6,39 +6,39 @@ Muitas das funções do Python que usamos, como as matemáticas, produzem valore
 
 A chamada de função gera um valor de retorno, que normalmente atribuímos a uma variável ou usamos como parte de uma expressão.
 
+```python
 e = math.exp(1.0)
-
-height = radius \* math.sin(radians)
+height = radius * math.sin(radians)
+```
 
 As funções que descrevemos, por enquanto, são todas nulas. Resumindo, elas não têm valores de retorno; mais precisamente, o seu valor de retorno é None.
 
 Neste capítulo veremos (finalmente) como escrever funções com resultados. O primeiro exemplo é area, que devolve a área de um círculo com o raio dado:
 
+```python
 def area(radius):
-
-    a = math.pi \* radius\*\*2
-
+    a = math.pi * radius**2
     return a
+```
 
 Já vimos a instrução return, mas em uma função com resultado ela inclui uma expressão. Esta instrução significa: “Volte imediatamente desta função e use a seguinte expressão como valor de retorno”. A expressão pode ser arbitrariamente complicada, então poderíamos ter escrito esta função de forma mais concisa:
 
+```python
 def area(radius):
-
-    return math.pi \* radius\*\*2
+    return math.pi * radius**2
+```
 
 Por outro lado, variáveis temporárias como a, tornam a depuração mais fácil.
 
 Às vezes, é útil ter várias instruções de retorno, uma em cada ramo de uma condicional:
 
-def absolute\_value(x):
-
-    if x &lt; 0:
-
+```python
+def absolute_value(x):
+    if x < 0:
         return -x
-
     else:
-
         return x
+```
 
 Como essas instruções return estão em uma condicional alternativa, apenas uma é executada.
 
@@ -46,21 +46,20 @@ Logo que uma instrução de retorno seja executada, a função termina sem execu
 
 Em uma função com resultado, é uma boa ideia garantir que cada caminho possível pelo programa atinja uma instrução return. Por exemplo:
 
-def absolute\_value(x):
-
-    if x &lt; 0:
-
+```python
+def absolute_value(x):
+    if x < 0:
         return -x
-
-    if x &gt; 0:
-
+    if x > 0:
         return x
+```
 
 Essa função é incorreta porque se x for 0, nenhuma condição é verdade, e a função termina sem chegar a uma instrução return. Se o fluxo de execução chegar ao fim de uma função, o valor de retorno é None, que não é o valor absoluto de 0:
 
-&gt;&gt;&gt; absolute\_value(0)
-
+```python
+>>> absolute_value(0)
 None
+```
 
 A propósito, o Python oferece uma função integrada chamada abs, que calcula valores absolutos.
 
@@ -80,63 +79,56 @@ Nesse caso, as entradas são dois pontos que você pode representar usando quatr
 
 Imediatamente, é possível escrever um rascunho da função:
 
+```python
 def distance(x1, y1, x2, y2):
-
     return 0.0
+```
 
 Claro que esta versão não calcula distâncias; sempre retorna zero. Mas está sintaticamente correta, e pode ser executada, o que significa que você pode testá-la antes de torná-la mais complicada.
 
 Para testar a nova função, chame-a com argumentos de amostra:
 
-&gt;&gt;&gt; distance(1, 2, 4, 6)
-
+```python
+>>> distance(1, 2, 4, 6)
 0.0
+```
 
 Escolhi esses valores para que a distância horizontal seja 3 e a distância vertical, 4; assim, o resultado final é 5, a hipotenusa de um triângulo 3-4-5. Ao testar uma função, é útil saber a resposta certa.
 
 Neste ponto confirmamos que a função está sintaticamente correta, e podemos começar a acrescentar código ao corpo. Um próximo passo razoável é encontrar as diferenças x2 − x1 e y2 − y1. A próxima versão guarda esses valores em variáveis temporárias e os exibe:
 
+```python
 def distance(x1, y1, x2, y2):
-
     dx = x2 - x1
-
     dy = y2 - y1
-
     print('dx is', dx)
-
     print('dy is', dy)
-
     return 0.0
+```
 
 Se a função estiver funcionando, deve exibir dx is 3 e dy is 4. Nesse caso sabemos que a função está recebendo os argumentos corretos e executando o primeiro cálculo acertadamente. Se não, há poucas linhas para verificar.
 
 Depois calculamos a soma dos quadrados de dx e dy:
 
+```python
 def distance(x1, y1, x2, y2):
-
     dx = x2 - x1
-
     dy = y2 - y1
-
-    dsquared = dx\*\*2 + dy\*\*2
-
+    dsquared = dx**2 + dy**2
     print('dsquared is: ', dsquared)
-
     return 0.0
+```
 
 Nesta etapa você executaria o programa mais uma vez e verificaria a saída (que deve ser 25). Finalmente, pode usar math.sqrt para calcular e devolver o resultado:
 
+```python
 def distance(x1, y1, x2, y2):
-
     dx = x2 - x1
-
     dy = y2 - y1
-
-    dsquared = dx\*\*2 + dy\*\*2
-
+    dsquared = dx**2 + dy**2
     result = math.sqrt(dsquared)
-
     return result
+```
 
 Se funcionar corretamente, pronto. Senão, uma ideia é exibir o valor result antes da instrução de retorno.
 
@@ -144,7 +136,9 @@ A versão final da função não exibe nada ao ser executada; apenas retorna um 
 
 Ao começar, você deveria acrescentar apenas uma linha ou duas de código de cada vez. Conforme adquira mais experiência, poderá escrever e depurar parcelas maiores. De qualquer forma, o desenvolvimento incremental pode economizar muito tempo de depuração.
 
+```python
 Os principais aspectos do processo são:
+```
 
 1. Comece com um programa que funcione e faça pequenas alterações incrementais. Se houver um erro em qualquer ponto, será bem mais fácil encontrá-lo.
 
@@ -160,75 +154,79 @@ Como você já deveria esperar a essa altura, é possível chamar uma função d
 
 Suponha que o ponto do centro seja guardado nas variáveis xc e yc e o ponto de perímetro está em xp e yp. O primeiro passo deve ser encontrar o raio do círculo, que é a distância entre os dois pontos. Acabamos de escrever uma função, distance, que faz isto:
 
+```python
 radius = distance(xc, yc, xp, yp)
+```
 
 O próximo passo deve ser encontrar a área de um círculo com aquele raio; acabamos de escrever isso também:
 
+```python
 result = area(radius)
+```
 
 Encapsulando esses passos em uma função, temos:
 
-def circle\_area(xc, yc, xp, yp):
-
+```python
+def circle_area(xc, yc, xp, yp):
     radius = distance(xc, yc, xp, yp)
-
     result = area(radius)
-
     return result
+```
 
 As variáveis temporárias radius e result são úteis para desenvolvimento e depuração, e uma vez que o programa esteja funcionando podemos torná-lo mais conciso compondo chamadas de função:
 
-def circle\_area(xc, yc, xp, yp):
-
+```python
+def circle_area(xc, yc, xp, yp):
     return area(distance(xc, yc, xp, yp))
+```
 
 ## 6.4 - Funções booleanas
 
 As funções podem retornar booleans, o que pode ser conveniente para esconder testes complicados dentro de funções. Por exemplo:
 
-def is\_divisible(x, y):
-
+```python
+def is_divisible(x, y):
     if x % y == 0:
-
         return True
-
     else:
-
         return False
+```
 
 É comum dar nomes de funções booleanas que pareçam perguntas de sim ou não; is\_divisible retorna True ou False para indicar se x é divisível por y.
 
 Aqui está um exemplo:
 
-&gt;&gt;&gt; is\_divisible(6, 4)
-
+```python
+>>> is_divisible(6, 4)
 False
-
-&gt;&gt;&gt; is\_divisible(6, 3)
-
+>>> is_divisible(6, 3)
 True
+```
 
 O resultado do operador == é um booleano, então podemos escrever a função de forma mais concisa, retornando-o diretamente:
 
-def is\_divisible(x, y):
-
+```python
+def is_divisible(x, y):
     return x % y == 0
+```
 
 As funções booleanas muitas vezes são usadas em instruções condicionais:
 
-if is\_divisible(x, y):
-
+```python
+if is_divisible(x, y):
     print('x is divisible by y')
+```
 
 Pode ser tentador escrever algo assim:
 
-if is\_divisible(x, y) == True:
-
+```python
+if is_divisible(x, y) == True:
     print('x is divisible by y')
+```
 
 Mas a comparação extra é desnecessária.
 
-Como um exercício, escreva uma função is\_between(x, y, z) que retorne True, se x ≤ y ≤ z, ou False, se não for o caso.
+Como um exercício, escreva uma função `is_between(x, y, z)` que retorne True, se x ≤ y ≤ z, ou False, se não for o caso.
 
 ## 6.5 - Mais recursividade
 
@@ -238,15 +236,17 @@ Comprovar esta declaração é um exercício nada trivial realizado pela primeir
 
 Para dar uma ideia do que podemos fazer com as ferramentas que aprendeu até agora, avaliaremos algumas funções matemáticas definidas recursivamente. Uma definição recursiva é semelhante a uma definição circular, no sentido de que a definição contém uma referência à coisa que é definida. Uma definição realmente circular não é muito útil:
 
-vorpal:
-
-Um adjetivo usado para descrever algo que é vorpal.
+<dl>
+<dt>vorpal</dt>
+<dd>Adjetivo usado para descrever algo que é vorpal.</dd>
+</dl>
 
 Ver uma definição assim no dicionário pode ser irritante. Por outro lado, se procurar a definição da função de fatorial, denotada pelo símbolo !, você pode encontrar algo assim:
 
-        0! = 1
-
-        n! = n(n − 1)!
+```
+0! = 1
+n! = n·(n − 1)!
+```
 
 Esta definição diz que o fatorial de 0 é 1, e o fatorial de qualquer outro valor, n, é n multiplicado pelo fatorial de n-1.
 
@@ -254,53 +254,53 @@ Então 3! é 3 vezes 2!, que é 2 vezes 1!, que é 1 vez 0!. Juntando tudo, 3! �
 
 Se puder escrever uma definição recursiva de algo, você poderá escrever um programa em Python que a avalie. O primeiro passo deve ser decidir quais parâmetros ela deve ter. Neste caso, deve estar claro que factorial recebe um número inteiro:
 
+```python
 def factorial(n):
+```
 
 Se o argumento for 0, tudo que temos de fazer é retornar 1:
 
+```python
 def factorial(n):
-
     if n == 0:
-
         return 1
+```
 
 Senão, e aí é que fica interessante, temos que fazer uma chamada recursiva para encontrar o fatorial de n-1 e então multiplicá-lo por n:
 
+```python
 def factorial(n):
-
     if n == 0:
-
         return 1
-
     else:
-
         recurse = factorial(n-1)
-
-        result = n \* recurse
-
+        result = n * recurse
         return result
+```
 
 O fluxo de execução deste programa é semelhante ao fluxo de countdown em “Recursividade”, na página 81. Se chamarmos factorial com o valor 3:
 
 Como 3 não é 0, tomamos o segundo ramo e calculamos o fatorial de n-1...
 
-        Como 2 não é 0, tomamos o segundo ramo e calculamos o fatorial de n-1...
+&nbsp;&nbsp;&nbsp;&nbsp;Como 2 não é 0, tomamos o segundo ramo e calculamos o fatorial de n-1...
 
-        Como 1 não é 0, tomamos o segundo ramo e calculamos o fatorial de n-1...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como 1 não é 0, tomamos o segundo ramo e calculamos o fatorial de n-1...
 
-        Como 0 é igual a 0, tomamos o primeiro ramo e voltamos 1 sem fazer mais chamadas recursivas.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como 0 é igual a 0, tomamos o primeiro ramo e devolvemos 1 sem fazer mais chamadas recursivas.
 
-        O valor de retorno, 1, é multiplicado por n, que é 1, e o resultado é retornado.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O valor de retorno, 1, é multiplicado por n, que é 1, e o resultado é devolvido.
 
-        O valor de retorno, 1, é multiplicado por n, que é 2, e o resultado é retornado.
+&nbsp;&nbsp;&nbsp;&nbsp;O valor de retorno, 1, é multiplicado por n, que é 2, e o resultado é devolvido.
 
-O valor de retorno (2) é multiplicado por n, que é 3, e o resultado, 6, torna-se o valor de retorno da chamada de função que começou o processo inteiro.
+O valor devolvido (2) é multiplicado por n, que é 3, e o resultado, 6, torna-se o valor devolvido pela chamada de função que começou o processo inteiro.
 
 A Figura 6.1 mostra como é o diagrama da pilha para esta sequência de chamadas de função.
 
+
 Figura 6.1 – Diagrama da pilha.
 
-Os valores de retorno são mostrados ao serem passados de volta até o alto da pilha. Em cada frame, o valor de retorno é o valor de result, que é o produto de n e recurse.
+
+Os valores devolvidos são mostrados ao serem passados de volta até o alto da pilha. Em cada frame, o valor devolvido é o valor de `result`, que é o produto de `n` e `recurse`.
 
 No último frame, as variáveis locais recurse e result não existem, porque o ramo que os cria não é executado.
 
@@ -318,29 +318,25 @@ Naturalmente, é um pouco estranho supor que a função funcione corretamente qu
 
 ## 6.7 - Mais um exemplo
 
-Depois do factorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição (ver http://en.wikipedia.org/wiki/Fibonacci\_number):
+Depois do factorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição (ver http://en.wikipedia.org/wiki/Fibonacci_number):
 
+```
 fibonacci(0) = 0
-
 fibonacci(1) = 1
-
 fibonacci(n) = fibonacci(n − 1) + fibonacci(n − 2)
+```
 
-Traduzida para o Python, ela fica assim:
+Traduzida para Python, ela fica assim:
 
+```python
 def fibonacci (n):
-
     if n == 0:
-
         return 0
-
     elif n == 1:
-
         return 1
-
     else:
-
         return fibonacci(n-1) + fibonacci(n-2)
+```
 
 Se tentar seguir o fluxo de execução aqui, até para valores razoavelmente pequenos de n, sua cabeça explode. Porém, seguindo o salto de fé, supondo que as duas chamadas recursivas funcionem corretamente, então é claro que vai receber o resultado correto adicionando-as juntas.
 
@@ -348,9 +344,10 @@ Se tentar seguir o fluxo de execução aqui, até para valores razoavelmente peq
 
 O que acontece se chamarmos factorial e usarmos 1.5 como argumento?
 
-&gt;&gt;&gt; factorial(1.5)
-
+```python
+>>> factorial(1.5)
 RuntimeError: Maximum recursion depth exceeded
+```
 
 Parece uma recursividade infinita. No entanto, por que isso acontece? A função tem um caso-base – quando n == 0. Mas se n não é um número inteiro, podemos perder o caso-base e recorrer para sempre.
 
@@ -360,41 +357,30 @@ Temos duas escolhas. Podemos tentar generalizar a função factorial para trabal
 
 Podemos usar a função integrada isinstance para verificar o tipo de argumento. E vamos aproveitar para verificar também se o argumento é positivo:
 
+```python
 def factorial (n):
-
     if not isinstance(n, int):
-
         print('Factorial is only defined for integers.')
-
         return None
-
-    elif n &lt; 0:
-
+    elif n < 0:
         print('Factorial is not defined for negative integers.')
-
         return None
-
     elif n == 0:
-
         return 1
-
     else:
-
-        return n \* factorial(n-1)
+        return n * factorial(n-1)
+```
 
 O primeiro caso-base lida com números não inteiros; o segundo, com números inteiros negativos. Em ambos os casos o programa exibe uma mensagem de erro e retorna None para indicar que algo deu errado:
 
-&gt;&gt;&gt; factorial('fred')
-
+```python
+>>> factorial('fred')
 Factorial is only defined for integers.
-
 None
-
-&gt;&gt;&gt; factorial(-2)
-
+>>> factorial(-2)
 Factorial is not defined for negative integers.
-
 None
+```
 
 Se passarmos por ambas as verificações, sabemos que n é positivo ou zero, então podemos comprovar que a recursividade termina.
 
@@ -420,68 +406,56 @@ Se a função parecer funcionar, veja a chamada da função para ter certeza de 
 
 Acrescentar instruções de exibição no começo e no fim de uma função pode ajudar a tornar o fluxo de execução mais visível. Por exemplo, aqui está uma versão de factorial com instruções de exibição:
 
+```python
 def factorial(n):
-
-    space = ' ' \* (4 \* n)
-
+    space = ' ' * (4 * n)
     print(space, 'factorial', n)
-
     if n == 0:
-
         print(space, 'returning 1')
-
         return 1
-
     else:
-
         recurse = factorial(n-1)
-
-        result = n \* recurse
-
+        result = n * recurse
         print(space, 'returning', result)
-
         return result
+```
 
 space é uma string de caracteres especiais que controla a endentação da saída. Aqui está o resultado de factorial(4):
 
+```
                 factorial 4
-
             factorial 3
-
         factorial 2
-
     factorial 1
-
 factorial 0
-
 returning 1
-
     returning 1
-
         returning 2
-
             returning 6
-
                 returning 24
+```
 
 Se o fluxo de execução parecer confuso a você, este tipo de saída pode ser útil. Leva um tempo para desenvolver um scaffolding eficaz, mas um pouco dele pode economizar muita depuração.
 
 ## 6.10 - Glossário
 
-__variável temporária__<br>
-Uma variável usada para guardar um valor intermediário em um cálculo complexo.
+<dl>
+<dt><a id="glos:variável temporária" href="#termo:variável temporária">variável temporária</a></dt>
+<dd>Uma variável usada para guardar um valor intermediário em um cálculo complexo.</dd>
 
-__código morto__<br>
-A parte de um programa que nunca pode ser executada, muitas vezes porque aparece depois de uma instrução return.
+<dt><a id="glos:código morto" href="#termo:código morto">código morto</a></dt>
+<dd>A parte de um programa que nunca pode ser executada, muitas vezes porque aparece depois de uma instrução return.</dd>
 
-__desenvolvimento incremental__<br>
-Um plano de desenvolvimento de programa para evitar a depuração, que acrescenta e testa poucas linhas de código de cada vez.
+<dt><a id="glos:desenvolvimento incremental" href="#termo:desenvolvimento incremental">desenvolvimento incremental</a></dt>
+<dd>Um plano de desenvolvimento de programa para evitar a depuração, que acrescenta e testa poucas linhas de código de cada vez.</dd>
 
-__scaffolding (código-muleta)__<br>
-O código que se usa durante o desenvolvimento de programa, mas que não faz parte da versão final.
+<dt><a id="glos:scaffolding (código-muleta)" href="#termo:scaffolding (código-muleta)">scaffolding (código-muleta)</a></dt>
+<dd>O código que se usa durante o desenvolvimento de programa, mas que não faz parte da versão final.</dd>
 
-__guardião__<br>
-Um padrão de programação que usa uma instrução condicional para verificar e lidar com circunstâncias que possam causar erros.
+<dt><a id="glos:guardião" href="#termo:guardião">guardião</a></dt>
+<dd>Um padrão de programação que usa uma instrução condicional para verificar e lidar com circunstâncias que possam causar erros.</dd>
+
+</dl>
 
 ## 6.11 - Exercícios
 
@@ -489,37 +463,32 @@ Um padrão de programação que usa uma instrução condicional para verificar e
 
 Desenhe um diagrama da pilha do seguinte programa. O que o programa exibe?
 
+```python
 def b(z):
-
     prod = a(z, z)
-
     print(z, prod)
-
     return prod
 
 def a(x, y):
-
     x = x + 1
-
-    return x \* y
+    return x * y
 
 def c(x, y, z):
-
     total = x + y + z
-
-    square = b(total)\*\*2
-
+    square = b(total)**2
     return square
 
 x = 1
-
 y = x + 1
-
 print(c(x, y+3, x+y))
+```
 
 ### Exercício 6.2
 
-A função de Ackermann, A(m, n), é definida:
+
+A função de Ackermann, A(m, n), é definida assim:
+
+Figura ????
 
 Veja http://en.wikipedia.org/wiki/Ackermann\_function. Escreva uma função denominada ack que avalie a função de Ackermann. Use a sua função para avaliar ack (3, 4), cujo resultado deve ser 125. O que acontece para valores maiores de m e n?
 
@@ -531,25 +500,22 @@ Um palíndromo é uma palavra que se soletra da mesma forma nos dois sentidos, c
 
 As funções seguintes recebem uma string como argumento e retornam as letras iniciais, finais e do meio das palavras:
 
+```python
 def first(word):
-
-    return word\[0\]
-
+    return word[0]
 def last(word):
-
-    return word\[-1\]
-
+    return word[-1]
 def middle(word):
-
-    return word\[1:-1\]
+    return word[1:-1]
+```
 
 Veremos como funcionam no Capítulo 8.
 
-1. Digite essas funções em um arquivo chamado palindrome.py e teste-as. O que acontece se chamar middle com uma string de duas letras? Uma letra? E se a string estiver vazia, escrita com '' e não contiver nenhuma letra?
+1. Digite essas funções em um arquivo chamado palindrome.py e teste-as. O que acontece se chamar middle com uma string de duas letras? Uma letra? E se a string estiver vazia, escrita com `''` e não contiver nenhuma letra?
 
-2. Escreva uma função chamada is\_palindrome que receba uma string como argumento e retorne True se for um palíndromo e False se não for. Lembre-se de que você pode usar a função integrada len para verificar o comprimento de uma string.
+2. Escreva uma função chamada `is_palindrome` que receba uma string como argumento e retorne True se for um palíndromo e False se não for. Lembre-se de que você pode usar a função integrada len para verificar o comprimento de uma string.
 
-Solução: http://thinkpython2.com/code/palindrome\_soln.py.
+Solução: http://thinkpython2.com/code/palindrome_soln.py.
 
 ### Exercício 6.4
 
@@ -564,4 +530,3 @@ Um modo de encontrar o MDC de dois números é observar qual é o resto r quando
 Escreva uma função chamada gcd que receba os parâmetros a e b e devolva o maior divisor comum.
 
 Crédito: Este exercício é baseado em um exemplo do livro de Abelson e Sussman, Structure and Interpretation of Computer Programs (Estrutura e interpretação de programas de computador, MIT Press, 1996).
-
