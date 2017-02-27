@@ -132,13 +132,11 @@ def distance(x1, y1, x2, y2):
 
 Se funcionar corretamente, pronto. Senão, uma ideia é exibir o valor result antes da instrução de retorno.
 
-A versão final da função não exibe nada ao ser executada; apenas retorna um valor. As instruções print que escrevemos são úteis para depuração, mas assim que conferir se a função está funcionando você deve retirá-las. Códigos desse tipo são chamados de scaffolding (código-muleta) porque são úteis para construir o programa, mas não são parte do produto final.
+A versão final da função não exibe nada ao ser executada; apenas retorna um valor. As instruções print que escrevemos são úteis para depuração, mas assim que conferir se a função está funcionando você deve retirá-las. Códigos desse tipo são chamados de scaffolding (andaime) porque são úteis para construir o programa, mas não são parte do produto final.
 
 Ao começar, você deveria acrescentar apenas uma linha ou duas de código de cada vez. Conforme adquira mais experiência, poderá escrever e depurar parcelas maiores. De qualquer forma, o desenvolvimento incremental pode economizar muito tempo de depuração.
 
-```python
 Os principais aspectos do processo são:
-```
 
 1. Comece com um programa que funcione e faça pequenas alterações incrementais. Se houver um erro em qualquer ponto, será bem mais fácil encontrá-lo.
 
@@ -449,7 +447,7 @@ Se o fluxo de execução parecer confuso a você, este tipo de saída pode ser �
 <dt><a id="glos:desenvolvimento incremental" href="#termo:desenvolvimento incremental">desenvolvimento incremental</a></dt>
 <dd>Um plano de desenvolvimento de programa para evitar a depuração, que acrescenta e testa poucas linhas de código de cada vez.</dd>
 
-<dt><a id="glos:scaffolding (código-muleta)" href="#termo:scaffolding (código-muleta)">scaffolding (código-muleta)</a></dt>
+<dt><a id="glos:scaffolding (andaime)" href="#termo:scaffolding (andaime)">scaffolding (andaime)</a></dt>
 <dd>O código que se usa durante o desenvolvimento de programa, mas que não faz parte da versão final.</dd>
 
 <dt><a id="glos:guardião" href="#termo:guardião">guardião</a></dt>
