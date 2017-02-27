@@ -96,7 +96,7 @@ Os operadores +, - e \* executam a adição, a subtração e a multiplicação, 
 42
 >>> 43 - 1
 42
->>> 6 \* 7
+>>> 6 * 7
 42
 O operador / executa a divisão:
 >>> 84 / 2
@@ -108,7 +108,7 @@ Pode ser que você fique intrigado pelo resultado ser 42.0 em vez de 42. Vou exp
 Finalmente, o operador \*\* executa a exponenciação; isto é, eleva um número a uma potência:
 
 ```python
->>> 6**2 + 6
+>>> 6 ** 2 + 6
 42
 ```
 
