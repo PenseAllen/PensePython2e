@@ -21,6 +21,13 @@ Parágrafo 3, "`__main__`, que é um nome especial para o frame na posição mai
 
 "há nenhum número inteiro positivo a, b e c tal que" deveria ser "não existem números inteiros a, b e c tais que"
 
+## Capítulo 6
+
+## seção 6.5 - Mais recursividade
+
+Parágrafo 2: "é conhecido como o Teste de Turing. Para uma exposição mais completa (e exata) do Teste de Turing": o autor está explicando a Tese de Turing, portanto o correto é: "é conhecida como a Tese de Turing. Para uma exposição mais completa (e exata) da Tese de Turing"
+
+
 ## Capítulo 15
 
 ### seção 15.1 - Tipos definidos pelos programadores
