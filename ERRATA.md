@@ -8,6 +8,12 @@ Ante-penúltimo ponto: em vez de "Muito, muito obrigada" deveria ser "Muito, mui
 
 O título desta sessão em inglês é "Using Code Examples". Em português, "Uso do código dos exemplos" seria uma tradução mais fiel. O texto entre parênteses não aparece no PDF da O'Reilly (p. xiii do PDF original).
 
+## Capítulo 3
+
+### seção 3.9 - Diagrama da pilha
+
+Parágrafo 3, "`__main__`, que é um nome especial para o frame na posição mais proeminente"; no original, trata-se do "topmost frame". Seria melhor traduzir como "o frame no topo da pilha" (veja figura 3.1)
+
 ## Capítulo 15
 
 ### seção 15.1 - Tipos definidos pelos programadores

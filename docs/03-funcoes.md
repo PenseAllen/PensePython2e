@@ -6,9 +6,10 @@ No contexto da programação, uma função é uma sequência nomeada de instruç
 
 Já vimos um exemplo de chamada de função:
 
-&gt;&gt;&gt; type(42)
-
-&lt;class 'int'&gt;
+```python
+>>> type(42)
+<class 'int'>
+```
 
 O nome da função é type. A expressão entre parênteses é chamada de argumento da função. Para esta função, o resultado é o tipo do argumento.
 
@@ -16,43 +17,43 @@ O nome da função é type. A expressão entre parênteses é chamada de argumen
 
 O Python oferece funções que convertem valores de um tipo em outro. A função int recebe qualquer valor e o converte em um número inteiro, se for possível, ou declara que há um erro:
 
-&gt;&gt;&gt; int('32')
 
+```python
+>>> int('32')
 32
-
-&gt;&gt;&gt; int('Hello')
-
+>>> int('Hello')
 ValueError: invalid literal for int(): Hello
+```
 
-int pode converter valores de ponto flutuante em números inteiros, mas não faz arredondamentos; ela apenas corta a parte da fração:
+`int` pode converter valores de ponto flutuante em números inteiros, mas não faz arredondamentos; ela apenas corta a parte da fração:
 
-&gt;&gt;&gt; int(3.99999)
 
+```python
+>>> int(3.99999)
 3
-
-&gt;&gt;&gt; int(-2.3)
-
+>>> int(-2.3)
 -2
+```
 
-float converte números inteiros e strings em números de ponto flutuante:
+`float` converte números inteiros e strings em números de ponto flutuante:
 
-&gt;&gt;&gt; float(32)
 
+```python
+>>> float(32)
 32.0
-
-&gt;&gt;&gt; float('3.14159')
-
+>>> float('3.14159')
 3.14159
+```
 
-Finalmente, str converte o argumento em uma string:
+Finalmente, `str` converte o argumento em uma string:
 
-&gt;&gt;&gt; str(32)
 
+```python
+>>> str(32)
 '32'
-
-&gt;&gt;&gt; str(3.14159)
-
+>>> str(3.14159)
 '3.14159'
+```
 
 ## 3.2 - Funções matemáticas
 
@@ -60,43 +61,47 @@ O Python tem um módulo matemático que oferece a maioria das funções matemát
 
 Antes que possamos usar as funções em um módulo, precisamos importá-lo com uma instrução de importação:
 
-&gt;&gt;&gt; import math
+```python
+>>> import math
+```
 
 Esta instrução cria um objeto de módulo chamado math (matemática). Ao se exibir o objeto de módulo, são apresentadas informações sobre ele:
 
-&gt;&gt;&gt; math
-
-&lt;module 'math' (built-in)&gt;
+```python
+>>> math
+<module 'math' (built-in)>
+```
 
 O objeto de módulo contém as funções e variáveis definidas no módulo. Para acessar uma das funções, é preciso especificar o nome do módulo e o nome da função, separados por um ponto. Este formato é chamado de notação de ponto.
 
-&gt;&gt;&gt; ratio = signal\_power / noise\_power
 
-&gt;&gt;&gt; decibels = 10 \* math.log10(ratio)
-
-&gt;&gt;&gt; radians = 0.7
-
-&gt;&gt;&gt; height = math.sin(radians)
+```python
+>>> ratio = signal_power / noise_power
+>>> decibels = 10 * math.log10(ratio)
+>>> radians = 0.7
+>>> height = math.sin(radians)
+```
 
 O primeiro exemplo usa math.log10 para calcular a proporção de sinal e de ruído em decibéis (assumindo que signal\_power e noise\_power tenham sido definidos). O módulo matemático também oferece a função log, que calcula logaritmos de base e.
 
 O segundo exemplo encontra o seno de radians. O nome da variável indica que sin e outras funções trigonométricas (cos, tan etc.) recebem argumentos em radianos. Para converter graus em radianos, divida por 180 e multiplique por π:
 
-&gt;&gt;&gt; degrees = 45
 
-&gt;&gt;&gt; radians = degrees / 180.0 \* math.pi
-
-&gt;&gt;&gt; math.sin(radians)
-
+```python
+>>> degrees = 45
+>>> radians = degrees / 180.0 * math.pi
+>>> math.sin(radians)
 0.707106781187
+```
 
 A expressão math.pi recebe a variável pi do módulo matemático. Seu valor é uma aproximação de ponto flutuante de π, com precisão aproximada de 15 dígitos.
 
 Se souber trigonometria, você pode verificar o resultado anterior comparando-o com a raiz quadrada de 2 dividida por 2:
 
-&gt;&gt;&gt; math.sqrt(2) / 2.0
-
+```python
+>>> math.sqrt(2) / 2.0
 0.707106781187
+```
 
 ## 3.3 - Composição
 
@@ -104,19 +109,20 @@ Por enquanto, falamos sobre os elementos de um programa – variáveis, express�
 
 Uma das características mais úteis das linguagens de programação é a sua capacidade de usar pequenos blocos de montar para compor programas. Por exemplo, o argumento de uma função pode ser qualquer tipo de expressão, inclusive operadores aritméticos:
 
-x = math.sin(degrees / 360.0 \* 2 \* math.pi)
 
+```python
+x = math.sin(degrees / 360.0 * 2 * math.pi)
 E até chamadas de função:
-
 x = math.exp(math.log(x+1))
+```
 
 É possível colocar um valor, uma expressão arbitrária, em quase qualquer lugar. Com uma exceção: o lado esquerdo de uma instrução de atribuição tem que ser um nome de variável. Qualquer outra expressão no lado esquerdo é um erro de sintaxe (veremos exceções a esta regra depois).
 
-&gt;&gt;&gt; minutes = hours \* 60                \# correto
-
-&gt;&gt;&gt; hours \* 60 = minutes                \# errado!
-
+```python
+>>> minutes = hours * 60                # correto
+>>> hours * 60 = minutes                # errado!
 SyntaxError: can't assign to operator
+```
 
 ## 3.4 - Como acrescentar novas funções
 
@@ -124,13 +130,13 @@ Por enquanto, só usamos funções que vêm com o Python, mas também é possív
 
 Aqui está um exemplo:
 
-def print\_lyrics():
-
+```python
+def print_lyrics():
     print("I'm a lumberjack, and I'm okay.")
-
     print("I sleep all night and I work all day.")
+```
 
-def é uma palavra-chave que indica uma definição de função. O nome da função é print\_lyrics. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
+`def` é uma palavra-chave que indica uma definição de função. O nome da função é `print_lyrics`. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
 
 Os parênteses vazios depois do nome indicam que esta função não usa argumentos.
 
@@ -142,81 +148,82 @@ Todas as aspas (simples e duplas) devem ser “aspas retas”, normalmente encon
 
 Se digitar uma definição de função no modo interativo, o interpretador exibe pontos (...) para mostrar que a definição não está completa:
 
-&gt;&gt;&gt; def print\_lyrics():
-
+```python
+>>> def print_lyrics():
 ...     print("I'm a lumberjack, and I'm okay.")
+```
 
 ...     print("I sleep all night and I work all day.")
 
+```python
 ...
+```
 
 Para terminar a função, é preciso inserir uma linha vazia.
 
 A definição de uma função cria um objeto de função, que tem o tipo function:
 
-&gt;&gt;&gt; print(print\_lyrics)
 
-&lt;function print\_lyrics at 0xb7e99e9c&gt;
-
-&gt;&gt;&gt; type(print\_lyrics)
-
-&lt;class 'function'&gt;
+```python
+>>> print(print_lyrics)
+<function print_lyrics at 0xb7e99e9c>
+>>> type(print_lyrics)
+<class 'function'>
+```
 
 A sintaxe para chamar a nova função é a mesma que a das funções integradas:
 
-&gt;&gt;&gt; print\_lyrics()
 
+```python
+>>> print_lyrics()
 I'm a lumberjack, and I'm okay.
-
 I sleep all night and I work all day.
+```
 
-Uma vez que a função tenha sido definida, é possível usá-la dentro de outra função. Por exemplo, para repetir o refrão anterior, podemos escrever uma função chamada repeat\_lyrics:
+Uma vez que a função tenha sido definida, é possível usá-la dentro de outra função. Por exemplo, para repetir o refrão anterior, podemos escrever uma função chamada `repeat_lyrics`:
 
-def repeat\_lyrics():
 
-    print\_lyrics()
+```python
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+```
 
-    print\_lyrics()
+E daí chamar `repeat_lyrics`:
 
-E daí chamar repeat\_lyrics:
-
-&gt;&gt;&gt; repeat\_lyrics()
-
+```python
+>>> repeat_lyrics()
 I'm a lumberjack, and I'm okay.
-
 I sleep all night and I work all day.
-
 I'm a lumberjack, and I'm okay.
-
 I sleep all night and I work all day.
-
 Mas a canção não é bem assim.
+```
 
 ## 3.5 - Uso e definições
 
 Juntando fragmentos de código da seção anterior, o programa inteiro fica assim:
 
-def print\_lyrics():
 
+```python
+def print_lyrics():
     print("I'm a lumberjack, and I'm okay.")
-
     print("I sleep all night and I work all day.")
 
-def repeat\_lyrics():
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
 
-    print\_lyrics()
+repeat_lyrics()
+```
 
-    print\_lyrics()
-
-repeat\_lyrics()
-
-Este programa contém duas definições de função: print\_lyrics e repeat\_lyrics. As definições de função são executadas como outras instruções, mas o efeito é criar objetos de função. As instruções dentro da função não são executadas até que a função seja chamada, e a definição de função não gera nenhuma saída.
+Este programa contém duas definições de função: `print_lyrics` e `repeat_lyrics`. As definições de função são executadas como outras instruções, mas o efeito é criar objetos de função. As instruções dentro da função não são executadas até que a função seja chamada, e a definição de função não gera nenhuma saída.
 
 Como poderíamos esperar, é preciso criar uma função antes de executá-la. Em outras palavras, a definição de função tem que ser executada antes que a função seja chamada.
 
 Como exercício, mova a última linha deste programa para o topo, para que a chamada de função apareça antes das definições. Execute o programa e veja qual é a mensagem de erro que aparece.
 
-Agora mova a chamada de função de volta para baixo e mova a definição de print\_lyrics para depois da definição de repeat\_lyrics. O que acontece quando este programa é executado?
+Agora mova a chamada de função de volta para baixo e mova a definição de `print_lyrics` para depois da definição de `repeat_lyrics`. O que acontece quando este programa é executado?
 
 ## 3.6 - Fluxo de execução
 
@@ -240,89 +247,83 @@ Algumas funções que vimos exigem argumentos. Por exemplo, ao chamar math.sin, 
 
 Dentro da função, os argumentos são atribuídos a variáveis chamadas parâmetros. Aqui está a definição de uma função que precisa de um argumento:
 
-def print\_twice(bruce):
 
+```python
+def print_twice(bruce):
     print(bruce)
-
     print(bruce)
+```
 
 Esta função atribui o argumento a um parâmetro chamado bruce. Quando a função é chamada, ela exibe o valor do parâmetro (seja qual for) duas vezes.
 
 Esta função funciona com qualquer valor que possa ser exibido:
 
-&gt;&gt;&gt; print\_twice('Spam')
-
+```python
+>>> print_twice('Spam')
 Spam
-
 Spam
-
-&gt;&gt;&gt; print\_twice(42)
-
+>>> print_twice(42)
 42
-
 42
-
-&gt;&gt;&gt; print\_twice(math.pi)
-
+>>> print_twice(math.pi)
 3.14159265359
-
 3.14159265359
+```
 
-As mesmas regras de composição usadas para funções integradas também são aplicadas a funções definidas pelos programadores, então podemos usar qualquer tipo de expressão como argumento para print\_twice:
+As mesmas regras de composição usadas para funções integradas também são aplicadas a funções definidas pelos programadores, então podemos usar qualquer tipo de expressão como argumento para `print_twice`:
 
-&gt;&gt;&gt; print\_twice('Spam '\*4)
 
+```python
+>>> print_twice('Spam '*4)
 Spam Spam Spam Spam
-
 Spam Spam Spam Spam
-
-&gt;&gt;&gt; print\_twice(math.cos(math.pi))
-
+>>> print_twice(math.cos(math.pi))
 -1.0
-
 -1.0
+```
 
-O argumento é avaliado antes de a função ser chamada. Então, nos exemplos, as expressões 'Spam '\*4 e math.cos (math.pi) só são avaliadas uma vez.
+O argumento é avaliado antes de a função ser chamada. Então, nos exemplos, as expressões `'Spam * 4` e `math.cos(math.pi)` só são avaliadas uma vez.
 
+
+```python
 Você também pode usar uma variável como argumento:
-
-&gt;&gt;&gt; michael = 'Eric, the half a bee.'
-
-&gt;&gt;&gt; print\_twice(michael)
-
+>>> michael = 'Eric, the half a bee.'
+>>> print_twice(michael)
 Eric, the half a bee.
-
 Eric, the half a bee.
+```
 
-O nome da variável que passamos como argumento (michael) não tem nada a ver com o nome do parâmetro (bruce). Não importa que o valor tenha sido chamado de volta (em quem chama); aqui em print\_twice, chamamos todo mundo de bruce.
+O nome da variável que passamos como argumento (michael) não tem nada a ver com o nome do parâmetro (bruce). Não importa que o valor tenha sido chamado de volta (em quem chama); aqui em `print_twice`, chamamos todo mundo de bruce.
 
 ## 3.8 - As variáveis e os parâmetros são locais
 
 Quando você cria uma variável dentro de uma função, ela é local, ou seja, ela só existe dentro da função. Por exemplo:
 
-def cat\_twice(part1, part2):
 
+```python
+def cat_twice(part1, part2):
     cat = part1 + part2
-
-    print\_twice(cat)
+    print_twice(cat)
+```
 
 Esta função recebe dois argumentos, concatena-os e exibe o resultado duas vezes. Aqui está um exemplo que a usa:
 
-&gt;&gt;&gt; line1 = 'Bing tiddle '
 
-&gt;&gt;&gt; line2 = 'tiddle bang.'
 
-&gt;&gt;&gt; cat\_twice(line1, line2)
-
+```python
+>>> line1 = 'Bing tiddle '
+>>> line2 = 'tiddle bang.'
+>>> cat_twice(line1, line2)
 Bing tiddle tiddle bang.
-
 Bing tiddle tiddle bang.
+```
 
-Quando cat\_twice é encerrada, a variável cat é destruída. Se tentarmos exibi-la, recebemos uma exceção:
+Quando `cat_twice` é encerrada, a variável `cat` é destruída. Se tentarmos exibi-la, recebemos uma exceção:
 
-&gt;&gt;&gt; print(cat)
-
+```python
+>>> print(cat)
 NameError: name 'cat' is not defined
+```
 
 Os parâmetros também são locais. Por exemplo, além de print\_twice, não existe o bruce.
 
@@ -332,31 +333,28 @@ Para monitorar quais variáveis podem ser usadas e onde, é uma boa ideia desenh
 
 Cada função é representada por um frame (quadro). Um frame é uma caixa com o nome de uma função junto a ele e os parâmetros e as variáveis da função dentro dele. O diagrama da pilha para o exemplo anterior é exibido na Figura 3.1.
 
+```python
 Figura 3.1 – Diagrama da pilha.
+```
 
-Os frames são organizados em uma pilha que indica qual função que foi chamada por outra, e assim por diante. Neste exemplo, print\_twice foi chamada por cat\_twice e cat\_twice foi chamada por \_\_main\_\_, que é um nome especial para o frame na posição mais proeminente. Quando você cria uma variável fora de qualquer função, ela pertence a \_\_main\_\_.
+Os frames são organizados em uma pilha que indica qual função que foi chamada por outra, e assim por diante. Neste exemplo, `print_twice` foi chamada por `cat_twice` e `cat_twice` foi chamada por `__main__`, que é um nome especial para o frame na posição mais proeminente. Quando você cria uma variável fora de qualquer função, ela pertence a `__main__`.
 
 Cada parâmetro refere-se ao mesmo valor como seu argumento correspondente. Desta forma, part1 tem o mesmo valor que line1, part2 tem o mesmo valor que line2 e bruce tem o mesmo valor que cat.
 
-Se ocorrer um erro durante uma chamada de função, o Python exibe o nome da função, o nome da função que a chamou e o nome da função que chamou esta função por sua vez, voltando até \_\_ main \_\_.
+Se ocorrer um erro durante uma chamada de função, o Python exibe o nome da função, o nome da função que a chamou e o nome da função que chamou esta função por sua vez, voltando até `__main__`.
 
-Por exemplo, se você tentar acessar cat de dentro de print\_twice, receberá uma mensagem de NameError:
+Por exemplo, se você tentar acessar `cat` de dentro de `print_twice`, receberá uma mensagem de `NameError`:
 
+```python
 Traceback (innermost last):
-
-  File "test.py", line 13, in \_\_main\_\_
-
-    cat\_twice(line1, line2)
-
-  File "test.py", line 5, in cat\_twice
-
-    print\_twice(cat)
-
-  File "test.py", line 9, in print\_twice
-
+  File "test.py", line 13, in __main__
+    cat_twice(line1, line2)
+  File "test.py", line 5, in cat_twice
+    print_twice(cat)
+  File "test.py", line 9, in print_twice
     print(cat)
-
 NameError: name 'cat' is not defined
+```
 
 Esta lista de funções é chamada de traceback. Ela mostra o arquivo do programa em que o erro ocorreu e em que linha, e quais funções estavam sendo executadas no momento. Ele também mostra a linha de código que causou o erro.
 
@@ -368,39 +366,42 @@ Algumas funções que usamos, como as funções matemáticas, devolvem resultado
 
 Quando você chama uma função com resultado, quase sempre quer fazer algo com o resultado; por exemplo, você pode atribui-lo a uma variável ou usá-la como parte de uma expressão:
 
+```python
 x = math.cos(radians)
-
 golden = (math.sqrt(5) + 1) / 2
+```
 
 Quando você chama uma função no modo interativo, o Python exibe o resultado:
 
-&gt;&gt;&gt; math.sqrt(5)
-
+```python
+>>> math.sqrt(5)
 2.2360679774997898
+```
 
 Mas em um script, se você chamar uma função com resultado e mais nada, o valor de retorno é perdido para sempre!
 
+```python
 math.sqrt(5)
+```
 
 Este script calcula a raiz quadrada de 5, mas como não armazena ou exibe o resultado, não é muito útil.
 
 As funções nulas podem exibir algo na tela ou ter algum outro efeito, mas não têm um valor de retorno. Se você atribuir o resultado a uma variável, recebe um valor especial chamado None:
 
-&gt;&gt;&gt; result = print\_twice('Bing')
-
+```python
+>>> result = print_twice('Bing')
 Bing
-
 Bing
-
-&gt;&gt;&gt; print(result)
-
+>>> print(result)
 None
+```
 
-O valor None não é o mesmo que a string 'None'. É um valor especial que tem seu próprio tipo:
+O valor `None` não é o mesmo que a string `'None'`. É um valor especial que tem seu próprio tipo:
 
-&gt;&gt;&gt; print(type(None))
-
-&lt;class 'NoneType'&gt;
+```python
+>>> print(type(None))
+<class 'NoneType'>
+```
 
 As funções que apresentamos por enquanto são todas nulas. Vamos apresentar funções com resultado mais adiante.
 
@@ -430,71 +431,74 @@ Por exemplo, o Linux é um sistema operacional que contém milhões de linhas de
 
 ## 3.13 - Glossário
 
-__função__<br>
-Uma sequência nomeada de declarações que executa alguma operação útil. As funções podem receber argumentos ou não e podem ou não produzir algum resultado.
+<dl>
+<dt><a id="glos:função" href="#termo:função">função</a></dt>
+<dd>Uma sequência nomeada de declarações que executa alguma operação útil. As funções podem receber argumentos ou não e podem ou não produzir algum resultado.</dd>
 
-__definição de função__<br>
-Uma instrução que cria uma função nova, especificando seu nome, parâmetros e as instruções que contém.
+<dt><a id="glos:definição de função" href="#termo:definição de função">definição de função</a></dt>
+<dd>Uma instrução que cria uma função nova, especificando seu nome, parâmetros e as instruções que contém.</dd>
 
-__objeto da função__<br>
-Um valor é criado por uma definição de função. O nome da função é uma variável que se refere a um objeto de função.
+<dt><a id="glos:objeto da função" href="#termo:objeto da função">objeto da função</a></dt>
+<dd>Um valor é criado por uma definição de função. O nome da função é uma variável que se refere a um objeto de função.</dd>
 
-__cabeçalho__<br>
-A primeira linha de uma definição de função.
+<dt><a id="glos:cabeçalho" href="#termo:cabeçalho">cabeçalho</a></dt>
+<dd>A primeira linha de uma definição de função.</dd>
 
-__corpo__<br>
-A sequência de instruções dentro de uma definição de função.
+<dt><a id="glos:corpo" href="#termo:corpo">corpo</a></dt>
+<dd>A sequência de instruções dentro de uma definição de função.</dd>
 
-__parâmetro__<br>
-Um nome usado dentro de uma função para se referir ao valor passado como argumento.
+<dt><a id="glos:parâmetro" href="#termo:parâmetro">parâmetro</a></dt>
+<dd>Um nome usado dentro de uma função para se referir ao valor passado como argumento.</dd>
 
-__chamada de função__<br>
-Uma instrução que executa uma função. É composta pelo nome da função seguido de uma lista de argumentos entre parênteses.
+<dt><a id="glos:chamada de função" href="#termo:chamada de função">chamada de função</a></dt>
+<dd>Uma instrução que executa uma função. É composta pelo nome da função seguido de uma lista de argumentos entre parênteses.</dd>
 
-__argumento__<br>
-Um valor apresentado a uma função quando a função é chamada. Este valor é atribuído ao parâmetro correspondente na função.
+<dt><a id="glos:argumento" href="#termo:argumento">argumento</a></dt>
+<dd>Um valor apresentado a uma função quando a função é chamada. Este valor é atribuído ao parâmetro correspondente na função.</dd>
 
-__variável local__<br>
-Uma variável definida dentro de uma função. Uma variável local só pode ser usada dentro da sua função.
+<dt><a id="glos:variável local" href="#termo:variável local">variável local</a></dt>
+<dd>Uma variável definida dentro de uma função. Uma variável local só pode ser usada dentro da sua função.</dd>
 
-__valor de retorno__<br>
-O resultado de uma função. Se uma chamada de função for usada como uma expressão, o valor de retorno é o valor da expressão.
+<dt><a id="glos:valor de retorno" href="#termo:valor de retorno">valor de retorno</a></dt>
+<dd>O resultado de uma função. Se uma chamada de função for usada como uma expressão, o valor de retorno é o valor da expressão.</dd>
 
-__função com resultado__<br>
-Uma função que devolve um valor.
+<dt><a id="glos:função com resultado" href="#termo:função com resultado">função com resultado</a></dt>
+<dd>Uma função que devolve um valor.</dd>
 
-__função nula__<br>
-Uma função que sempre devolve None.
+<dt><a id="glos:função nula" href="#termo:função nula">função nula</a></dt>
+<dd>Uma função que sempre devolve None.</dd>
 
-__None__<br>
-Um valor especial apresentado por funções nulas.
+<dt><a id="glos:None" href="#termo:None">None</a></dt>
+<dd>Um valor especial apresentado por funções nulas.</dd>
 
-__módulo__<br>
-Um arquivo que contém uma coleção de funções relacionadas e outras definições.
+<dt><a id="glos:módulo" href="#termo:módulo">módulo</a></dt>
+<dd>Um arquivo que contém uma coleção de funções relacionadas e outras definições.</dd>
 
-__instrução de importação__<br>
-Uma instrução que lê um arquivo de módulo e cria um objeto de módulo.
+<dt><a id="glos:instrução de importação" href="#termo:instrução de importação">instrução de importação</a></dt>
+<dd>Uma instrução que lê um arquivo de módulo e cria um objeto de módulo.</dd>
 
-__objeto de módulo__<br>
-Um valor criado por uma instrução import que oferece acesso aos valores definidos em um módulo.
+<dt><a id="glos:objeto de módulo" href="#termo:objeto de módulo">objeto de módulo</a></dt>
+<dd>Um valor criado por uma instrução import que oferece acesso aos valores definidos em um módulo.</dd>
 
-__notação de ponto__<br>
-A sintaxe para chamar uma função em outro módulo especificando o nome do módulo seguido de um ponto e o nome da função.
+<dt><a id="glos:notação de ponto" href="#termo:notação de ponto">notação de ponto</a></dt>
+<dd>A sintaxe para chamar uma função em outro módulo especificando o nome do módulo seguido de um ponto e o nome da função.</dd>
 
-__composição__<br>
-O uso de uma expressão como parte de uma expressão maior ou de uma instrução como parte de uma instrução maior.
+<dt><a id="glos:composição" href="#termo:composição">composição</a></dt>
+<dd>O uso de uma expressão como parte de uma expressão maior ou de uma instrução como parte de uma instrução maior.</dd>
 
-__fluxo de execução__<br>
-A ordem na qual as instruções são executadas.
+<dt><a id="glos:fluxo de execução" href="#termo:fluxo de execução">fluxo de execução</a></dt>
+<dd>A ordem na qual as instruções são executadas.</dd>
 
-__diagrama da pilha__<br>
-Representação gráfica de uma pilha de funções, suas variáveis e os valores a que se referem.
+<dt><a id="glos:diagrama da pilha" href="#termo:diagrama da pilha">diagrama da pilha</a></dt>
+<dd>Representação gráfica de uma pilha de funções, suas variáveis e os valores a que se referem.</dd>
 
-__frame__<br>
-Uma caixa em um diagrama da pilha que representa uma chamada de função. Contém as variáveis locais e os parâmetros da função.
+<dt><a id="glos:frame" href="#termo:frame">frame</a></dt>
+<dd>Uma caixa em um diagrama da pilha que representa uma chamada de função. Contém as variáveis locais e os parâmetros da função.</dd>
 
-__traceback__<br>
-Lista das funções que estão sendo executadas, exibidas quando ocorre uma exceção.
+<dt><a id="glos:traceback" href="#termo:traceback">traceback</a></dt>
+<dd>Lista das funções que estão sendo executadas, exibidas quando ocorre uma exceção.</dd>
+
+</dl>
 
 ## 3.14 - Exercícios
 
@@ -502,45 +506,49 @@ Lista das funções que estão sendo executadas, exibidas quando ocorre uma exce
 
 Escreva uma função chamada right\_justify, que receba uma string chamada s como parâmetro e exiba a string com espaços suficientes à frente para que a última letra da string esteja na coluna 70 da tela:
 
-&gt;&gt;&gt; right\_justify('monty')
-
+```python
+>>> right_justify('monty')
                                                                        monty
+```
 
-Dica: Use concatenação de strings e repetição. Além disso, o Python oferece uma função integrada chamada len, que apresenta o comprimento de uma string, então o valor de len('monty') é 5.
+Dica: Use concatenação de strings e repetição. Além disso, o Python oferece uma função integrada chamada len, que apresenta o comprimento de uma string, então o valor de `len('monty')` é 5.
 
 ### Exercício 3.2
 
 Um objeto de função é um valor que pode ser atribuído a uma variável ou passado como argumento. Por exemplo, do\_twice é uma função que toma um objeto de função como argumento e o chama duas vezes:
 
-def do\_twice(f):
 
+```python
+def do_twice(f):
     f()
-
     f()
+```
 
 Aqui está um exemplo que usa do\_twice para chamar uma função chamada print\_spam duas vezes:
 
-def print\_spam():
 
+```python
+def print_spam():
     print('spam')
+do_twice(print_spam)
+```
 
-do\_twice(print\_spam)
+1. Digite este exemplo em um script e teste-o.
 
-1.        Digite este exemplo em um script e teste-o.
+2. Altere `do_twice` para que receba dois argumentos, um objeto de função e um valor, e chame a função duas vezes, passando o valor como um argumento.
 
-2.        Altere do\_twice para que receba dois argumentos, um objeto de função e um valor, e chame a função duas vezes, passando o valor como um argumento.
+3. Copie a definição de `print_twice` que aparece anteriormente neste capítulo no seu script.
 
-3.        Copie a definição de print\_twice que aparece anteriormente neste capítulo no seu script.
+4. Use a versão alterada de `do_twice` para chamar `print_twice` duas vezes, passando `'spam'` como um argumento.
 
-4.        Use a versão alterada de do\_twice para chamar print\_twice duas vezes, passando 'spam' como um argumento.
+5. Defina uma função nova chamada `do_four` que receba um objeto de função e um valor e chame a função quatro vezes, passando o valor como um parâmetro. Deve haver só duas afirmações no corpo desta função, não quatro.
 
-5.        Defina uma função nova chamada do\_four que receba um objeto de função e um valor e chame a função quatro vezes, passando o valor como um parâmetro. Deve haver só duas afirmações no corpo desta função, não quatro.
+Solução: http://thinkpython2.com/code/do_four.py.
 
-Solução: http://thinkpython2.com/code/do\_four.py.
 
 ### Exercício 3.3
 
-Nota: Este exercício deve ser feito usando-se apenas as instruções e os outros recursos que aprendemos até agora.
+> Nota: Este exercício deve ser feito usando-se apenas as instruções e os outros recursos que aprendemos até agora.
 
 1.        Escreva uma função que desenhe uma grade como a seguinte:
 
@@ -558,20 +566,18 @@ Nota: Este exercício deve ser feito usando-se apenas as instruções e os outro
         + - - - - + - - - - +
 ```
 
-        Dica: para exibir mais de um valor em uma linha, podemos usar uma sequência de valores separados por vírgula:
+> Dica: para exibir mais de um valor em uma linha, podemos usar uma sequência de valores separados por vírgula:
+> ```python
+> print('+', '-')
+> ```
+> Por padrão, print avança para a linha seguinte, mas podemos ignorar esse comportamento e inserir um espaço no fim, desta forma:
+> ```python
+> print('+', end=' ')
+>  print('-')
+>  ```
+> A saída dessas instruções é `+ -`.
+> Uma instrução `print` sem argumento termina a linha atual e vai para a próxima linha.
 
-        print('+', '-')
-
-        Por padrão, print avança para a linha seguinte, mas podemos ignorar esse comportamento e inserir um espaço no fim, desta forma:
-
-        print('+', end=' ')
-
-        print('-')
-
-        A saída dessas instruções é '+ -'.
-
-        Uma instrução print sem argumento termina a linha atual e vai para a próxima linha.
-
-2.        Escreva uma função que desenhe uma grade semelhante com quatro linhas e quatro colunas.
+2. Escreva uma função que desenhe uma grade semelhante com quatro linhas e quatro colunas.
 
 Solução: http://thinkpython2.com/code/grid.py. Crédito: Este exercício é baseado em outro apresentado por Oualline, em Practical C Programming, Third Edition, O’Reilly Media, 1997.

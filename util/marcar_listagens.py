@@ -35,11 +35,11 @@ def marcar_listagens(md):
             if bloco:
                 saida.append('```python')
                 saida.extend(bloco)
-                saida.append('```')
+                saida.append('```\n')
                 bloco = []
             saida.append(lin)
         lin_ant = lin
-    return '\n'.join(saida).replace('\n\n\n', '\n\n')
+    return '\n'.join(saida).replace('\n\n\n', '\n\n').replace('\n\n\n', '\n\n')
 
 
 def main():
