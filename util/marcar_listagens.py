@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-#!/usr/bin/env python3
-
 import re
 
 MAX_LEN_CODIGO = 50
@@ -13,7 +11,13 @@ def pode_ser_codigo(lin):
         return False
     if lin.startswith('#'):
         return False
-    if lin.endswith('<br>'):
+    if lin.startswith('<dt>'):
+        return False
+    if lin.startswith('<dt>'):
+        return False
+    if lin.startswith('<dl>'):
+        return False
+    if lin.startswith('</dl>'):
         return False
     return True
 

@@ -43,33 +43,35 @@ Há duas versões do Python, o Python 2 e o Python 3. Como elas são muito semel
 
 O __interpretador__ do Python é um programa que lê e executa o código Python. Dependendo do seu ambiente, é possível iniciar o interpretador clicando em um ícone, ou digitando python em uma linha de comando. Quando ele iniciar, você deverá ver uma saída como esta:
 
+```python
 Python 3.4.0 (default, Jun 19 2015, 14:20:21)
-
-\[GCC 4.8.2\] on linux
-
+[GCC 4.8.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
-
-&gt;&gt;&gt;
-
+>>>
+```
 As três primeiras linhas contêm informações sobre o interpretador e o sistema operacional em que está sendo executado, portanto podem ser diferentes para você. Mas é preciso conferir se o número da versão, que é 3.4.0 neste exemplo, começa com 3, o que indica que você está executando o Python 3. Se começar com 2, você está executando (adivinhe!) o Python 2.
 
 A última linha é um prompt indicando que o interpretador está pronto para você digitar o código. Se digitar uma linha de código e pressionar Enter, o interpretador exibe o resultado:
 
-&gt;&gt;&gt; 1 + 1
-
+```python
+>>> 1 + 1
 2
-
+```
 Agora você está pronto para começar. Daqui em diante, vou supor que você sabe como inicializar o interpretador do Python e executar o código.
 
 ## 1.3 - O primeiro programa
 
 Tradicionalmente, o primeiro programa que se escreve em uma nova linguagem chama-se “Hello, World!”, porque tudo o que faz é exibir as palavras “Hello, World!” na tela. No Python, ele se parece com isto:
 
-&gt;&gt;&gt; print('Hello, World!')
+```python
+>>> print('Hello, World!')
+```
 
 Este é um exemplo de uma instrução print (instrução de impressão), embora na realidade ela não imprima nada em papel. Ela exibe um resultado na tela. Nesse caso, o resultado são as palavras:
 
+```python
 Hello, World!
+```
 
 As aspas apenas marcam o começo e o fim do texto a ser exibido; elas não aparecem no resultado.
 
@@ -77,7 +79,9 @@ Os parênteses indicam que o print é uma função. Veremos funções no Capítu
 
 No Python 2, a instrução print é ligeiramente diferente; ela não é uma função, portanto não usa parênteses.
 
-&gt;&gt;&gt; print 'Hello, World!'
+```python
+>>> print 'Hello, World!'
+```
 
 Esta distinção fará mais sentido em breve, mas isso é o suficiente para começar.
 
@@ -87,37 +91,33 @@ Depois do “Hello, World”, o próximo passo é a aritmética. O Python tem op
 
 Os operadores +, - e \* executam a adição, a subtração e a multiplicação, como nos seguintes exemplos:
 
-&gt;&gt;&gt; 40 + 2
-
+```python
+>>> 40 + 2
 42
-
-&gt;&gt;&gt; 43 - 1
-
+>>> 43 - 1
 42
-
-&gt;&gt;&gt; 6 \* 7
-
+>>> 6 \* 7
 42
-
 O operador / executa a divisão:
-
-&gt;&gt;&gt; 84 / 2
-
+>>> 84 / 2
 42.0
+```
 
 Pode ser que você fique intrigado pelo resultado ser 42.0 em vez de 42. Vou explicar isso na próxima seção.
 
 Finalmente, o operador \*\* executa a exponenciação; isto é, eleva um número a uma potência:
 
-&gt;&gt;&gt; 6\*\*2 + 6
-
+```python
+>>> 6**2 + 6
 42
+```
 
 Em algumas outras linguagens, o ^ é usado para a exponenciação, mas no Python é um operador bitwise, chamado XOR. Se não tiver familiaridade com operadores bitwise, o resultado o surpreenderá:
 
-&gt;&gt;&gt; 6 ^ 2
-
+```python
+>>> 6 ^ 2
 4
+```
 
 Não abordarei operadores bitwise neste livro, mas você pode ler sobre eles em http://wiki.python.org/moin/BitwiseOperators.
 
@@ -129,17 +129,14 @@ Esses valores pertencem a tipos diferentes: 2 é um número inteiro, 42.0 é um 
 
 Se não tiver certeza sobre qual é o tipo de certo valor, o interpretador pode dizer isso a você:
 
-&gt;&gt;&gt; type(2)
-
-&lt;class 'int'&gt;
-
-&gt;&gt;&gt; type(42.0)
-
-&lt;class 'float'&gt;
-
-&gt;&gt;&gt; type('Hello, World!')
-
-&lt;class 'str'&gt;
+```python
+>>> type(2)
+<class 'int'>
+>>> type(42.0)
+<class 'float'>
+>>> type('Hello, World!')
+<class 'str'>
+```
 
 Nesses resultados, a palavra “class” \[classe\] é usada no sentido de categoria; um tipo é uma categoria de valores.
 
@@ -147,21 +144,21 @@ Como se poderia esperar, números inteiros pertencem ao tipo int, strings perten
 
 E valores como '2' e '42.0'? Parecem números, mas estão entre aspas como se fossem strings:
 
-&gt;&gt;&gt; type('2')
-
-&lt;class 'str'&gt;
-
-&gt;&gt;&gt; type('42.0')
-
-&lt;class 'str'&gt;
+```python
+>>> type('2')
+<class 'str'>
+>>> type('42.0')
+<class 'str'>
+```
 
 Então são strings.
 
 Ao digitar um número inteiro grande, alguns podem usar a notação americana, com vírgulas entre grupos de dígitos, como em 1,000,000. Este não é um número inteiro legítimo no Python e resultará em:
 
-&gt;&gt;&gt; 1,000,000
-
+```python
+>>> 1,000,000
 (1, 0, 0)
+```
 
 O que não é de modo algum o que esperávamos! O Python interpreta 1,000,000 como uma sequência de números inteiros separados por vírgulas. Aprenderemos mais sobre este tipo de sequência mais adiante.
 
@@ -224,101 +221,3 @@ Prepare-se para essas reações, pois isso pode ajudar a lidar com elas. Uma abo
 Seu trabalho é ser um bom gerente: encontrar formas de aproveitar as vantagens e atenuar as desvantagens. E também encontrar formas de usar suas emoções para lidar com o problema sem deixar suas reações interferirem na sua capacidade de trabalho.
 
 Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, útil para muitas atividades além da programação. No fim de cada capítulo há uma seção como esta, com as minhas sugestões para fazer a depuração. Espero que sejam úteis!
-
-## 1.8 - Glossário
-
-<dl>
-<dt><a id="glos:resolução de problemas" href="#termo:resolução de problemas">resolução de problemas</a></dt>
-<dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
-
-<dt><a id="glos:linguagem de alto nível" href="#termo:linguagem de alto nível">linguagem de alto nível</a></dt>
-<dd>Uma linguagem de programação como Python, que foi criada com o intuito de ser fácil para os humanos escreverem e lerem.</dd>
-
-<dt><a id="glos:linguagem de baixo nível" href="#termo:linguagem de baixo nível">linguagem de baixo nível</a></dt>
-<dd>Uma linguagem de programação criada para o computador executar com facilidade; também chamada de “linguagem de máquina” ou “linguagem assembly”.</dd>
-
-<dt><a id="glos:portabilidade" href="#termo:portabilidade">portabilidade</a></dt>
-<dd>A propriedade de um programa de poder ser executado em mais de um tipo de computador.</dd>
-
-<dt><a id="glos:interpretador" href="#termo:interpretador">interpretador</a></dt>
-<dd>Um programa que lê outro programa e o executa.</dd>
-
-<dt><a id="glos:prompt" href="#termo:prompt">prompt</a></dt>
-<dd>Caracteres expostos pelo interpretador para indicar que está pronto para receber entradas do usuário.</dd>
-
-<dt><a id="glos:programa" href="#termo:programa">programa</a></dt>
-<dd>Conjunto de instruções que especificam uma operação de computação.</dd>
-
-<dt><a id="glos:instrução print" href="#termo:instrução print">instrução print</a></dt>
-<dd>Uma instrução que faz o interpretador do Python exibir um valor na tela.</dd>
-
-<dt><a id="glos:operador" href="#termo:operador">operador</a></dt>
-<dd>Um símbolo especial que representa uma operação de computação simples como adição, multiplicação ou concatenação de strings.</dd>
-
-<dt><a id="glos:valor" href="#termo:valor">valor</a></dt>
-<dd>Uma das unidades básicas de dados, como um número ou string, que um programa manipula.</dd>
-
-<dt><a id="glos:tipo" href="#termo:tipo">tipo</a></dt>
-<dd>Uma categoria de valores. Os tipos que vimos por enquanto são números inteiros (tipo int), números de ponto flutuante (tipo float) e strings (tipo str).</dd>
-
-<dt><a id="glos:inteiro" href="#termo:inteiro">inteiro</a></dt>
-<dd>Um tipo que representa números inteiros.</dd>
-
-<dt><a id="glos:ponto flutuante" href="#termo:ponto flutuante">ponto flutuante</a></dt>
-<dd>Um tipo que representa números com partes fracionárias.</dd>
-
-<dt><a id="glos:string" href="#termo:string">string</a></dt>
-<dd>Um tipo que representa sequências de caracteres.</dd>
-
-<dt><a id="glos:linguagem natural" href="#termo:linguagem natural">linguagem natural</a></dt>
-<dd>Qualquer linguagem que as pessoas falam e que se desenvolveu naturalmente.</dd>
-
-<dt><a id="glos:linguagem formal" href="#termo:linguagem formal">linguagem formal</a></dt>
-<dd>Qualquer linguagem que as pessoas criaram com objetivos específicos, como representar ideias matemáticas ou programas de computador; todas as linguagens de programação são linguagens formais.</dd>
-
-<dt><a id="glos:símbolo" href="#termo:símbolo">símbolo</a></dt>
-<dd>Um dos elementos básicos da estrutura sintática de um programa, análogo a uma palavra em linguagem natural.</dd>
-
-<dt><a id="glos:sintaxe" href="#termo:sintaxe">sintaxe</a></dt>
-<dd>As regras que governam a estrutura de um programa.</dd>
-
-<dt><a id="glos:análise" href="#termo:análise">análise</a></dt>
-<dd>Examinar um programa e sua estrutura sintática.</dd>
-
-<dt><a id="glos:bug" href="#termo:bug">bug</a></dt>
-<dd>Um erro em um programa.</dd>
-
-<dt><a id="glos:depuração" href="#termo:depuração">depuração</a></dt>
-<dd>O processo de encontrar e corrigir (depurar) bugs.</dd>
-
-</dl>
-
-## 1.9 - Exercícios
-
-### Exercício 1.1
-
-É uma boa ideia ler este livro em frente a um computador para testar os exemplos durante a leitura.
-
-Sempre que estiver testando um novo recurso, você deve tentar fazer erros. Por exemplo, no programa “Hello, World!”, o que acontece se omitir uma das aspas? E se omitir ambas? E se você soletrar a instrução print de forma errada?
-
-Este tipo de experimento ajuda a lembrar o que foi lido; também ajuda quando você estiver programando, porque assim conhecerá o significado das mensagens de erro. É melhor fazer erros agora e de propósito que depois e acidentalmente.
-
-1. Em uma instrução print, o que acontece se você omitir um dos parênteses ou ambos?
-
-2. Se estiver tentando imprimir uma string, o que acontece se omitir uma das aspas ou ambas?
-
-3. Você pode usar um sinal de menos para fazer um número negativo como -2. O que acontece se puser um sinal de mais antes de um número? E se escrever assim: 2++2?
-
-4. Na notação matemática, zeros à esquerda são aceitáveis, como em 02. O que acontece se você tentar usar isso no Python?
-
-5. O que acontece se você tiver dois valores sem nenhum operador entre eles?
-
-### Exercício 1.2
-
-Inicialize o interpretador do Python e use-o como uma calculadora.
-
-1. Quantos segundos há em 42 minutos e 42 segundos?
-
-2. Quantas milhas há em 10 quilômetros? Dica: uma milha equivale a 1,61 quilômetro.
-
-3. Se você correr 10 quilômetros em 42 minutos e 42 segundos, qual é o seu passo médio (tempo por milha em minutos e segundos)? Qual é a sua velocidade média em milhas por hora?
