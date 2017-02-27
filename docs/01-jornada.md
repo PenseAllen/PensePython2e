@@ -2,7 +2,7 @@
 
 O objetivo deste livro é ensinar a pensar como um cientista da computação. Esta forma de pensar combina algumas das melhores características da matemática, da engenharia e das ciências naturais. Assim como os matemáticos, os cientistas da computação usam linguagens formais para denotar ideias (especificamente operações de computação). Como engenheiros, eles projetam coisas, reunindo componentes em sistemas e avaliando as opções de melhor retorno entre as alternativas à disposição. Como cientistas, observam o comportamento de sistemas complexos, formam hipóteses e testam previsões.
 
-A habilidade específica mais importante de um cientista da computação é a <a id="termo-resol" href="#def-resol">__resolução de problemas__</a>. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
+A habilidade específica mais importante de um cientista da computação é a <a id="termo:resolução de problemas" href="#glos:resolução de problemas">resolução de problemas</a>. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.
 
 Em um nível você aprenderá a programar, uma habilidade útil por si mesma. Em outro nível usará a programação como um meio para um fim. Conforme avançarmos, este fim ficará mais claro.
 
@@ -217,7 +217,7 @@ Os programadores erram. Por um capricho do destino, erros de programação são 
 
 Programar, e especialmente fazer a depuração, às vezes traz emoções fortes. Se tiver dificuldade com certo bug, você pode ficar zangado, desesperado ou constrangido.
 
-Há evidências de que as pessoas respondem naturalmente a computadores como se fossem pessoas. Quando funcionam bem, pensamos neles como parceiros da equipe, e quando são teimosos ou grosseiros, respondemos a eles do mesmo jeito que fazemos com pessoas grosseiras e teimosas (Reeves e Nass, The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places; A equação da mídia: como as pessoas tratam os computadores, a televisão e as novas mídias como se fossem pessoas e lugares reais).
+Há evidências de que as pessoas respondem naturalmente a computadores como se fossem pessoas. Quando funcionam bem, pensamos neles como parceiros da equipe, e quando são teimosos ou grosseiros, respondemos a eles do mesmo jeito que fazemos com pessoas grosseiras e teimosas (Reeves e Nass, [_The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places_](https://en.wikipedia.org/wiki/The_Media_Equation) — _A equação da mídia: como as pessoas tratam os computadores, a televisão e as novas mídias como se fossem pessoas e lugares reais_).
 
 Prepare-se para essas reações, pois isso pode ajudar a lidar com elas. Uma abordagem é pensar no computador como um funcionário com certas vantagens, como velocidade e precisão, e certas desvantagens, como a falta de empatia e a incapacidade de compreender um contexto mais amplo.
 
@@ -228,7 +228,7 @@ Aprender a depurar erros pode ser frustrante, mas é uma habilidade valiosa, út
 ## 1.8 - Glossário
 
 <dl>
-<dt><a id="def-resol" href="#termo-resol">resolução de problemas</a></dt>
+<dt><a id="glos:resolução de problemas" href="#termo:resolução de problemas">resolução de problemas</a></dt>
 <dd>O processo de formular um problema, encontrar uma solução e expressá-la.</dd>
 
 <dt>linguagem de alto nível</dt>
