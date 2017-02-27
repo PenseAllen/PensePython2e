@@ -5,20 +5,14 @@ import re
 MAX_LEN_CODIGO = 50
 GLOSSARIO_RE = re.compile(r'^## [B|\d]\d?\.\d\d? - Glossário$', re.MULTILINE)
 
+PREFIXOS_NAO_CODIGO = '# * <dt> <dd> <dl> </dl>'.split()
 
 def pode_ser_codigo(lin):
     if len(lin) > MAX_LEN_CODIGO:
         return False
-    if lin.startswith('#'):
-        return False
-    if lin.startswith('<dt>'):
-        return False
-    if lin.startswith('<dt>'):
-        return False
-    if lin.startswith('<dl>'):
-        return False
-    if lin.startswith('</dl>'):
-        return False
+    for pre in PREFIXOS_NAO_CODIGO:
+        if lin.startswith(pre):
+            return False
     return True
 
 
@@ -32,6 +26,7 @@ def marcar_listagens(md):
                 lin = lin.replace('&gt;', '>')
                 lin = lin.replace('&lt;', '<')
                 lin = lin.replace(r'\_', '_')
+                lin = lin.replace(r'\#', '#')
                 lin = lin.replace(r'\*', '*')
                 bloco.append(lin)
             else:

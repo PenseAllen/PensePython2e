@@ -6,17 +6,19 @@ Um dos recursos mais eficientes de uma linguagem de programação é a capacidad
 
 Uma instrução de atribuição cria uma nova variável e dá um valor a ela:
 
-&gt;&gt;&gt; message = 'And now for something completely different'
-
-&gt;&gt;&gt; n = 17
-
-&gt;&gt;&gt; pi = 3.141592653589793
+```python
+>>> message = 'And now for something completely different'
+>>> n = 17
+>>> pi = 3.141592653589793
+```
 
 Esse exemplo faz três atribuições. A primeira atribui uma string a uma nova variável chamada message; a segunda dá o número inteiro 17 a n; a terceira atribui o valor (aproximado) de π a pi.
 
 Uma forma comum de representar variáveis por escrito é colocar o nome com uma flecha apontando para o seu valor. Este tipo de número é chamado de diagrama de estado porque mostra o estado no qual cada uma das variáveis está (pense nele como o estado de espírito da variável). A Figura 2.1 mostra o resultado do exemplo anterior.
 
+```python
 Figura 2.1 – Diagrama de estado.
+```
 
 ## 2.2 - Nomes de variáveis
 
@@ -28,21 +30,18 @@ O caractere de sublinhar (\_) pode aparecer em um nome. Muitas vezes é usado em
 
 Se você der um nome ilegal a uma variável, recebe um erro de sintaxe:
 
-&gt;&gt;&gt; 76trombones = 'big parade'
-
+```python
+>>> 76trombones = 'big parade'
 SyntaxError: invalid syntax
-
-&gt;&gt;&gt; more@ = 1000000
-
+>>> more@ = 1000000
 SyntaxError: invalid syntax
-
-&gt;&gt;&gt; class = 'Advanced Theoretical Zymurgy'
-
+>>> class = 'Advanced Theoretical Zymurgy'
 SyntaxError: invalid syntax
-
+```
 `76trombones` é ilegal porque começa com um número. `more@` é ilegal porque contém um caractere ilegal, o `@`. Mas o que há de errado com `class`?
 
 A questão é que class é uma das palavras-chave do Python. O interpretador usa palavras-chave para reconhecer a estrutura do programa e elas não podem ser usadas como nomes de variável.
+
 
 O Python 3 tem estas palavras-chave:
 
@@ -62,25 +61,23 @@ Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvo
 
 Uma expressão é uma combinação de valores, variáveis e operadores. Um valor por si mesmo é considerado uma expressão, assim como uma variável, portanto as expressões seguintes são todas legais:
 
-&gt;&gt;&gt; 42
-
+```python
+>>> 42
 42
-
-&gt;&gt;&gt; n
-
+>>> n
 17
-
-&gt;&gt;&gt; n + 25
-
+>>> n + 25
 42
+```
 
 Quando você digita uma expressão no prompt, o interpretador a avalia, ou seja, ele encontra o valor da expressão. Neste exemplo, o n tem o valor 17 e n + 25 tem o valor 42.
 
 Uma instrução é uma unidade de código que tem um efeito, como criar uma variável ou exibir um valor.
 
-&gt;&gt;&gt; n = 17
-
-&gt;&gt;&gt; print(n)
+```python
+>>> n = 17
+>>> print(n)
+```
 
 A primeira linha é uma instrução de atribuição que dá um valor a n. A segunda linha é uma instrução de exibição que exibe o valor de n.
 
@@ -98,19 +95,20 @@ Como o Python oferece os dois modos, você pode testar pedaços do código no mo
 
 Por exemplo, se estiver usando o Python como uma calculadora, você poderia digitar:
 
-&gt;&gt;&gt; miles = 26.2
-
-&gt;&gt;&gt; miles \* 1.61
-
+```python
+>>> miles = 26.2
+>>> miles * 1.61
 42.182
+```
 
 A primeira linha atribui um valor a miles, mas não tem efeito visível. A segunda linha é uma expressão, então o interpretador a avalia e exibe o resultado. No fim, chega-se ao resultado de que uma maratona tem aproximadamente 42 quilômetros.
 
 Mas se você digitar o mesmo código em um script e executá-lo, não recebe nenhuma saída. Uma expressão, por conta própria, não tem efeito visível no modo script. O Python, na verdade, avalia a expressão, mas não exibe o valor a menos que você especifique:
 
+```python
 miles = 26.2
-
-print(miles \* 1.61)
+print(miles * 1.61)
+```
 
 Este comportamento pode confundir um pouco no início.
 
@@ -118,27 +116,27 @@ Um script normalmente contém uma sequência de instruções. Se houver mais de 
 
 Por exemplo, o script
 
+```python
 print(1)
-
 x = 2
-
 print(x)
-
+```
 produz a saída
 
+```python
 1
-
 2
+```
 
 A instrução de atribuição não produz nenhuma saída.
 
 Para verificar sua compreensão, digite as seguintes instruções no interpretador do Python e veja o que fazem:
 
+```python
 5
-
 x = 5
-
 x + 1
+```
 
 Agora ponha as mesmas instruções em um script e o execute. Qual é a saída? Altere o script transformando cada expressão em uma instrução de exibição e então o execute novamente.
 
@@ -160,19 +158,20 @@ Eu não fico sempre tentando lembrar da precedência de operadores. Se a express
 
 Em geral, não é possível executar operações matemáticas com strings, mesmo se elas parecerem números, então coisas assim são ilegais:
 
-'2'-'1'    'eggs'/'easy'    'third'\*'a charm'
+```python
+'2'-'1'    'eggs'/'easy'    'third'*'a charm'
+```
 
-Mas há duas exceções, + e \*.
+Mas há duas exceções, `+` e `*`.
 
-O operador + executa uma concatenação de strings, ou seja, une as strings pelas extremidades. Por exemplo:
+O operador `+` executa uma concatenação de strings, ou seja, une as strings pelas extremidades. Por exemplo:
 
-&gt;&gt;&gt; first = 'throat'
-
-&gt;&gt;&gt; second = 'warbler'
-
-&gt;&gt;&gt; first + second
-
+```python
+>>> first = 'throat'
+>>> second = 'warbler'
+>>> first + second
 throatwarbler
+```
 
 O operador \* também funciona em strings; ele executa a repetição. Por exemplo, 'Spam'\*3 é 'SpamSpamSpam'. Se um dos valores for uma string, o outro tem de ser um número inteiro.
 
@@ -182,27 +181,34 @@ Este uso de + e \* faz sentido por analogia com a adição e a multiplicação. 
 
 Conforme os programas ficam maiores e mais complicados, eles são mais difíceis de ler. As linguagens formais são densas e muitas vezes é difícil ver um pedaço de código e compreender o que ele faz ou por que faz isso.
 
-Por essa razão, é uma boa ideia acrescentar notas aos seus programas para explicar em linguagem natural o que o programa está fazendo. Essas notas são chamadas de comentários, e começam com o símbolo \#:
+Por essa razão, é uma boa ideia acrescentar notas aos seus programas para explicar em linguagem natural o que o programa está fazendo. Essas notas são chamadas de comentários, e começam com o símbolo `#`:
 
-\# computa a percentagem da hora que passou
 
-percentage = (minute \* 100) / 60
-
+```python
+# computa a percentagem da hora que passou
+percentage = (minute * 100) / 60
+```
 Nesse caso, o comentário aparece sozinho em uma linha. Você também pode pôr comentários no fim das linhas:
 
-percentage = (minute \* 100) / 60    \# percentagem de uma hora
+```python
+percentage = (minute * 100) / 60    # percentagem de uma hora
+```
 
-Tudo do \# ao fim da linha é ignorado – não tem efeito na execução do programa.
+Tudo do `#` ao fim da linha é ignorado – não tem efeito na execução do programa.
 
 Os comentários tornam-se mais úteis quando documentam algo no código que não está óbvio. Podemos supor que o leitor compreenda o que o código faz; assim, é mais útil explicar porque faz o que faz.
 
 Este comentário é redundante em relação ao código, além de inútil:
 
-v = 5    \# atribui 5 a v
+```python
+v = 5    # atribui 5 a v
+```
 
 Este comentário contém informações úteis que não estão no código:
 
-v = 5    \# velocidade em metros/segundo.
+```python
+v = 5    # velocidade em metros/segundo.
+```
 
 Bons nomes de variáveis podem reduzir a necessidade de comentários, mas nomes longos podem tornar expressões complexas difíceis de ler, então é preciso analisar o que vale mais a pena.
 
@@ -210,82 +216,80 @@ Bons nomes de variáveis podem reduzir a necessidade de comentários, mas nomes 
 
 Há três tipos de erros que podem ocorrer em um programa: erros de sintaxe, erros de tempo de execução e erros semânticos. É útil distinguir entre eles para rastreá-los mais rapidamente.
 
-Erro de sintaxe:
+<dl>
+<dt>Erro de sintaxe</dt>
+<dd>A “sintaxe” refere-se à estrutura de um programa e suas respectivas regras. Por exemplo, os parênteses devem vir em pares correspondentes, então (1 + 2) é legal, mas 8) é um erro de sintaxe.</dd>
+<dd>Se houver um erro de sintaxe em algum lugar no seu programa, o Python exibe uma mensagem de erro e para, e não será possível executar o programa. Nas primeiras poucas semanas da sua carreira em programação, você pode passar muito tempo rastreando erros de sintaxe. Ao adquirir experiência, você fará menos erros e os encontrará mais rápido.</dd>
 
-A “sintaxe” refere-se à estrutura de um programa e suas respectivas regras. Por exemplo, os parênteses devem vir em pares correspondentes, então (1 + 2) é legal, mas 8) é um erro de sintaxe.
+<dt>Erro de tempo de execução</dt>
+<dd>O segundo tipo de erro é o erro de tempo de execução, assim chamado porque o erro não aparece até que o programa seja executado. Esses erros também se chamam de exceções porque normalmente indicam que algo excepcional (e ruim) aconteceu.</dd>
+<dd>Os erros de tempo de execução são raros nos programas simples que veremos nos primeiros capítulos, então pode demorar um pouco até você encontrar algum.</dd>
 
-Se houver um erro de sintaxe em algum lugar no seu programa, o Python exibe uma mensagem de erro e para, e não será possível executar o programa. Nas primeiras poucas semanas da sua carreira em programação, você pode passar muito tempo rastreando erros de sintaxe. Ao adquirir experiência, você fará menos erros e os encontrará mais rápido.
-
-Erro de tempo de execução:
-
-O segundo tipo de erro é o erro de tempo de execução, assim chamado porque o erro não aparece até que o programa seja executado. Esses erros também se chamam de exceções porque normalmente indicam que algo excepcional (e ruim) aconteceu.
-
-Os erros de tempo de execução são raros nos programas simples que veremos nos primeiros capítulos, então pode demorar um pouco até você encontrar algum.
-
-Erro semântico:
-
-O terceiro tipo do erro é “semântico”, ou seja, relacionado ao significado. Se houver um erro semântico no seu programa, ele será executado sem gerar mensagens de erro, mas não vai fazer a coisa certa. Vai fazer algo diferente. Especificamente, vai fazer o que você disser para fazer.
-
-Identificar erros semânticos pode ser complicado, porque é preciso trabalhar de trás para a frente, vendo a saída do programa e tentando compreender o que ele está fazendo.
+<dt>Erro semântico</dt>
+<dd>O terceiro tipo do erro é “semântico”, ou seja, relacionado ao significado. Se houver um erro semântico no seu programa, ele será executado sem gerar mensagens de erro, mas não vai fazer a coisa certa. Vai fazer algo diferente. Especificamente, vai fazer o que você disser para fazer.</dd>
+<dd>Identificar erros semânticos pode ser complicado, porque é preciso trabalhar de trás para a frente, vendo a saída do programa e tentando compreender o que ele está fazendo.</dd>
 
 ## 2.9 - Glossário
 
-__variável__<br>
-Um nome que se refere a um valor.
+<dl>
+<dt><a id="glos:variável" href="#termo:variável">variável</a></dt>
+<dd>Um nome que se refere a um valor.</dd>
 
-__atribuição__<br>
-Uma instrução que atribui um valor a uma variável.
+<dt><a id="glos:atribuição" href="#termo:atribuição">atribuição</a></dt>
+<dd>Uma instrução que atribui um valor a uma variável.</dd>
 
-__diagrama de estado__<br>
-Uma representação gráfica de um grupo de variáveis e os valores a que se referem.
+<dt><a id="glos:diagrama de estado" href="#termo:diagrama de estado">diagrama de estado</a></dt>
+<dd>Uma representação gráfica de um grupo de variáveis e os valores a que se referem.</dd>
 
-__palavra-chave__<br>
-Uma palavra reservada, usada para analisar um programa; não é possível usar palavras-chave como if, def e while como nomes de variáveis.
+<dt><a id="glos:palavra-chave" href="#termo:palavra-chave">palavra-chave</a></dt>
+<dd>Uma palavra reservada, usada para analisar um programa; não é possível usar palavras-chave como if, def e while como nomes de variáveis.</dd>
 
-__operando__<br>
-Um dos valores que um operador produz.
+<dt><a id="glos:operando" href="#termo:operando">operando</a></dt>
+<dd>Um dos valores que um operador produz.</dd>
 
-__expressão__<br>
-Uma combinação de variáveis, operadores e valores que representa um resultado único.
+<dt><a id="glos:expressão" href="#termo:expressão">expressão</a></dt>
+<dd>Uma combinação de variáveis, operadores e valores que representa um resultado único.</dd>
 
-__avaliar__<br>
-Simplificar uma expressão executando as operações para produzir um valor único.
+<dt><a id="glos:avaliar" href="#termo:avaliar">avaliar</a></dt>
+<dd>Simplificar uma expressão executando as operações para produzir um valor único.</dd>
 
-__instrução__<br>
-Uma seção do código que representa um comando ou ação. Por enquanto, as instruções que vimos são instruções de atribuições e de exibição.
+<dt><a id="glos:instrução" href="#termo:instrução">instrução</a></dt>
+<dd>Uma seção do código que representa um comando ou ação. Por enquanto, as instruções que vimos são instruções de atribuições e de exibição.</dd>
 
-__executar__<br>
-Executar uma instrução para fazer o que ela diz.
+<dt><a id="glos:executar" href="#termo:executar">executar</a></dt>
+<dd>Executar uma instrução para fazer o que ela diz.</dd>
 
-__modo interativo__<br>
-Um modo de usar o interpretador do Python, digitando o código no prompt.
+<dt><a id="glos:modo interativo" href="#termo:modo interativo">modo interativo</a></dt>
+<dd>Um modo de usar o interpretador do Python, digitando o código no prompt.</dd>
 
-__modo script__<br>
-Um modo de usar o interpretador do Python para ler código em um script e executá-lo.
+<dt><a id="glos:modo script" href="#termo:modo script">modo script</a></dt>
+<dd>Um modo de usar o interpretador do Python para ler código em um script e executá-lo.</dd>
 
-__script__<br>
-Um programa armazenado em um arquivo.
+<dt><a id="glos:script" href="#termo:script">script</a></dt>
+<dd>Um programa armazenado em um arquivo.</dd>
 
-__ordem das operações__<br>
-As regras que governam a ordem na qual as expressões que envolvem vários operadores e operandos são avaliadas.
+<dt><a id="glos:ordem das operações" href="#termo:ordem das operações">ordem das operações</a></dt>
+<dd>As regras que governam a ordem na qual as expressões que envolvem vários operadores e operandos são avaliadas.</dd>
 
-__concatenar__<br>
-Juntar dois operandos pelas extremidades.
+<dt><a id="glos:concatenar" href="#termo:concatenar">concatenar</a></dt>
+<dd>Juntar dois operandos pelas extremidades.</dd>
 
-__comentários__<br>
-Informações em um programa destinadas a outros programadores (ou qualquer pessoa que leia o texto fonte) que não têm efeito sobre a execução do programa.
+<dt><a id="glos:comentários" href="#termo:comentários">comentários</a></dt>
+<dd>Informações em um programa destinadas a outros programadores (ou qualquer pessoa que leia o texto fonte) que não têm efeito sobre a execução do programa.</dd>
 
-__erro de sintaxe__<br>
-Um erro em um programa que torna sua análise impossível (e por isso impossível de interpretar).
+<dt><a id="glos:erro de sintaxe" href="#termo:erro de sintaxe">erro de sintaxe</a></dt>
+<dd>Um erro em um programa que torna sua análise impossível (e por isso impossível de interpretar).</dd>
 
-__exceção__<br>
-Um erro que se descobre quando o programa é executado.
+<dt><a id="glos:exceção" href="#termo:exceção">exceção</a></dt>
+<dd>Um erro que se descobre quando o programa é executado.</dd>
 
-__semântica__<br>
-O significado de um programa.
+<dt><a id="glos:semântica" href="#termo:semântica">semântica</a></dt>
+<dd>O significado de um programa.</dd>
 
-__erro semântico__<br>
-Um erro que faz com que um programa faça algo diferente do que o programador pretendia.
+<dt><a id="glos:erro semântico" href="#termo:erro semântico">erro semântico</a></dt>
+<dd>Um erro que faz com que um programa faça algo diferente do que o programador pretendia.</dd>
+
+</dl>
 
 ## 2.10 - Exercícios
 
@@ -294,21 +298,17 @@ Um erro que faz com que um programa faça algo diferente do que o programador pr
 Repetindo o meu conselho do capítulo anterior, sempre que você aprender um recurso novo, você deve testá-lo no modo interativo e fazer erros de propósito para ver o que acontece.
 
 * Vimos que n = 42 é legal. E 42 = n?
-
 * Ou x = y = 1?
-
 * Em algumas linguagens, cada instrução termina em um ponto e vírgula ;. O que acontece se você puser um ponto e vírgula no fim de uma instrução no Python?
-
 * E se puser um ponto no fim de uma instrução?
-
 * Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece se você tentar fazer o mesmo no Python?
 
 ### Exercício 2.2
 
 Pratique o uso do interpretador do Python como uma calculadora:
 
-1.        O volume de uma esfera com raio r é . Qual é o volume de uma esfera com raio 5?
+1. O volume de uma esfera com raio r é . Qual é o volume de uma esfera com raio 5?
 
-2.        Suponha que o preço de capa de um livro seja R$ 24,95, mas as livrarias recebem um desconto de 40%. O transporte custa R$ 3,00 para o primeiro exemplar e 75 centavos para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias?
+2. Suponha que o preço de capa de um livro seja R$ 24,95, mas as livrarias recebem um desconto de 40%. O transporte custa R$ 3,00 para o primeiro exemplar e 75 centavos para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias?
 
-3.        Se eu sair da minha casa às 6:52 e correr 1 quilômetro a um certo passo (8min15s por quilômetro), então 3 quilômetros a um passo mais rápido (7min12s por quilômetro) e 1 quilômetro no mesmo passo usado em primeiro lugar, que horas chego em casa para o café da manhã?
+3. Se eu sair da minha casa às 6:52 e correr 1 quilômetro a um certo passo (8min15s por quilômetro), então 3 quilômetros a um passo mais rápido (7min12s por quilômetro) e 1 quilômetro no mesmo passo usado em primeiro lugar, que horas chego em casa para o café da manhã?
