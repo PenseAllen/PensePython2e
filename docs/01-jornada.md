@@ -198,6 +198,7 @@ Embora as linguagens formais e naturais tenham muitas características em comum 
 
 Como todos nós crescemos falando linguagens naturais, às vezes é difícil se ajustar a linguagens formais. A diferença entre a linguagem natural e a formal é semelhante à diferença entre poesia e prosa, mas vai além:
 
+<dl>
 <dt>Poesia</dt>
 <dd>As palavras são usadas tanto pelos sons como pelos significados, e o poema inteiro cria um efeito ou resposta emocional. A ambiguidade não é apenas comum, mas muitas vezes proposital.</dd>
 
