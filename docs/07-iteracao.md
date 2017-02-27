@@ -88,11 +88,11 @@ Você até pode ler a instrução while como se fosse uma tradução do inglês.
 
 Mais formalmente, aqui está o fluxo de execução para uma instrução while:
 
-1.        Determine se a condição é verdadeira ou falsa.
+1. Determine se a condição é verdadeira ou falsa.
 
-2.        Se for falsa, saia da instrução while e continue a execução da próxima instrução.
+2. Se for falsa, saia da instrução while e continue a execução da próxima instrução.
 
-3.        Se a condição for verdadeira, execute o corpo e então volte ao passo 1.
+3. Se a condição for verdadeira, execute o corpo e então volte ao passo 1.
 
 Este tipo de fluxo chama-se loop, porque o terceiro passo faz um loop de volta ao topo.
 

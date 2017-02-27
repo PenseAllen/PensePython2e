@@ -370,11 +370,11 @@ Para começar com o óbvio, as strings são mais limitadas que outras sequência
 
 As listas são mais comuns que as tuplas, principalmente porque são mutáveis. Mas há alguns casos em que você pode preferir tuplas:
 
-1.        Em alguns contextos, como em uma instrução return, é sintaticamente mais simples criar uma tupla que uma lista.
+1. Em alguns contextos, como em uma instrução return, é sintaticamente mais simples criar uma tupla que uma lista.
 
-2.        Se quiser usar uma sequência como uma chave de dicionário, é preciso usar um tipo imutável como uma tupla ou string.
+2. Se quiser usar uma sequência como uma chave de dicionário, é preciso usar um tipo imutável como uma tupla ou string.
 
-3.        Se estiver passando uma sequência como um argumento a uma função, usar tuplas reduz o potencial de comportamento inesperado devido a alias.
+3. Se estiver passando uma sequência como um argumento a uma função, usar tuplas reduz o potencial de comportamento inesperado devido a alias.
 
 Como tuplas são imutáveis, elas não fornecem métodos como sort e reverse, que alteram listas existentes. Porém, o Python fornece a função integrada sorted, que recebe qualquer sequência e retorna uma nova lista com os mesmos elementos na ordem classificada, e reversed, que recebe uma sequência e retorna um iterador que atravessa a lista em ordem reversa.
 
@@ -468,7 +468,7 @@ Solução: http://thinkpython2.com/code/most\_frequent.py.
 
 Mais anagramas!
 
-1.        Escreva um programa que leia uma lista de palavras de um arquivo (veja “Leitura de listas de palavras”, na página 133) e imprima todos os conjuntos de palavras que são anagramas.
+1. Escreva um programa que leia uma lista de palavras de um arquivo (veja “Leitura de listas de palavras”, na página 133) e imprima todos os conjuntos de palavras que são anagramas.
 
         Aqui está um exemplo de como a saída pode parecer:
 
@@ -482,9 +482,9 @@ Mais anagramas!
 
         Dica: você pode querer construir um dicionário que mapeie uma coleção de letras a uma lista de palavras que podem ser soletradas com essas letras. A pergunta é: como representar a coleção de letras de forma que possa ser usada como uma chave?
 
-2.        Altere o programa anterior para que exiba a lista mais longa de anagramas primeiro, seguido pela segunda mais longa, e assim por diante.
+2. Altere o programa anterior para que exiba a lista mais longa de anagramas primeiro, seguido pela segunda mais longa, e assim por diante.
 
-3.        No Scrabble, um “bingo” é quando você joga todas as sete peças na sua estante, junto com uma peça no tabuleiro, para formar uma palavra de oito letras. Que coleção de oito letras forma o maior número possível de bingos? Dica: há sete.
+3. No Scrabble, um “bingo” é quando você joga todas as sete peças na sua estante, junto com uma peça no tabuleiro, para formar uma palavra de oito letras. Que coleção de oito letras forma o maior número possível de bingos? Dica: há sete.
 
         Solução: http://thinkpython2.com/code/anagram\_sets.py.
 
@@ -508,13 +508,13 @@ Escreva um programa que encontre todas as palavras que podem ser reduzidas desta
 
 Este exercício é um pouco mais desafiador que a maioria, então aqui estão algumas sugestões:
 
-1.        Você pode querer escrever uma função que receba uma palavra e calcule uma lista de todas as palavras que podem ser formadas retirando uma letra. Esses são os “filhos” da palavra.
+1. Você pode querer escrever uma função que receba uma palavra e calcule uma lista de todas as palavras que podem ser formadas retirando uma letra. Esses são os “filhos” da palavra.
 
-2.        Recursivamente, uma palavra é redutível se algum de seus filhos for redutível. Como caso base, você pode considerar a string vazia redutível.
+2. Recursivamente, uma palavra é redutível se algum de seus filhos for redutível. Como caso base, você pode considerar a string vazia redutível.
 
-3.        A lista de palavras que forneci, words.txt, não contém palavras de uma letra só. Portanto, você pode querer acrescentar “I”, “a”, e a string vazia.
+3. A lista de palavras que forneci, words.txt, não contém palavras de uma letra só. Portanto, você pode querer acrescentar “I”, “a”, e a string vazia.
 
-4.        Para melhorar o desempenho do seu programa, você pode querer memorizar as palavras conhecidas por serem redutíveis.
+4. Para melhorar o desempenho do seu programa, você pode querer memorizar as palavras conhecidas por serem redutíveis.
 
 Solução: http://thinkpython2.com/code/reducible.py.
 

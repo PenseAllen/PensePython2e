@@ -312,13 +312,13 @@ Esse algoritmo funciona, mas não é muito eficiente; cada vez que você escolhe
 
 Uma alternativa é:
 
-1.        Usar keys para conseguir uma lista das palavras no livro.
+1. Usar keys para conseguir uma lista das palavras no livro.
 
-2.        Construir uma lista que contenha a soma cumulativa das frequências das palavras (veja o Exercício 10.2). O último item desta lista é o número total de palavras no livro, n.
+2. Construir uma lista que contenha a soma cumulativa das frequências das palavras (veja o Exercício 10.2). O último item desta lista é o número total de palavras no livro, n.
 
-3.        Escolher um número aleatório de 1 a n. Use uma pesquisa de bisseção (veja o Exercício 10.10) para encontrar o índice onde o número aleatório seria inserido na soma cumulativa.
+3. Escolher um número aleatório de 1 a n. Use uma pesquisa de bisseção (veja o Exercício 10.10) para encontrar o índice onde o número aleatório seria inserido na soma cumulativa.
 
-4.        Usar o índice para encontrar a palavra correspondente na lista de palavras.
+4. Usar o índice para encontrar a palavra correspondente na lista de palavras.
 
 ### Exercício 13.7
 
@@ -366,9 +366,9 @@ Neste exemplo, o comprimento do prefixo é sempre dois, mas você pode fazer a a
 
 Análise de Markov:
 
-1.        Escreva um programa que leia o texto de um arquivo e execute a análise de Markov. O resultado deve ser um dicionário que mapeie prefixos a uma coleção de possíveis sufixos. A coleção pode ser uma lista, tupla ou dicionário; você é que deverá fazer a escolha adequada. Você pode testar seu programa com um comprimento de prefixo 2, mas deve escrever o programa de forma que seja fácil testar outros comprimentos.
+1. Escreva um programa que leia o texto de um arquivo e execute a análise de Markov. O resultado deve ser um dicionário que mapeie prefixos a uma coleção de possíveis sufixos. A coleção pode ser uma lista, tupla ou dicionário; você é que deverá fazer a escolha adequada. Você pode testar seu programa com um comprimento de prefixo 2, mas deve escrever o programa de forma que seja fácil testar outros comprimentos.
 
-2.        Acrescente uma função ao programa anterior para gerar texto aleatório baseado na análise de Markov. Aqui está um exemplo de Emma com o comprimento de prefixo 2:
+2. Acrescente uma função ao programa anterior para gerar texto aleatório baseado na análise de Markov. Aqui está um exemplo de Emma com o comprimento de prefixo 2:
 
         He was very clever, be it sweetness or be angry, ashamed or only amused, at such a stroke. She had never thought of Hannah till you were never meant for me?” “I cannot make speeches, Emma:” he soon cut it all himself.
 
@@ -376,7 +376,7 @@ Análise de Markov:
 
         O que acontece se você aumentar o comprimento dos prefixos? O texto aleatório faz mais sentido?
 
-3.        Uma vez que o seu programa esteja funcionando, você pode querer tentar uma mistura: se combinar o texto de dois ou mais livros, o texto aleatório gerado misturará o vocabulário e frases das fontes de formas  interessantes.
+3. Uma vez que o seu programa esteja funcionando, você pode querer tentar uma mistura: se combinar o texto de dois ou mais livros, o texto aleatório gerado misturará o vocabulário e frases das fontes de formas  interessantes.
 
 Crédito: este estudo de caso é baseado em um exemplo de Kernighan and Pike, The Practice of Programming, Addison-Wesley, 1999.
 

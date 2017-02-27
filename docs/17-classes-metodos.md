@@ -467,11 +467,11 @@ Solução: http://thinkpython2.com/code/Time2\_soln.py.
 
 Este exercício é uma história com moral sobre um dos erros mais comuns e difíceis de encontrar no Python. Escreva uma definição de classe chamada Kangaroo com os seguintes métodos:
 
-1.        Um método \_\_init\_\_ que inicialize um atributo chamado pouch\_contents  em uma lista vazia.
+1. Um método \_\_init\_\_ que inicialize um atributo chamado pouch\_contents  em uma lista vazia.
 
-2.        Um método chamado put\_in\_pouch que receba um objeto de qualquer tipo e o acrescente a pouch\_contents.
+2. Um método chamado put\_in\_pouch que receba um objeto de qualquer tipo e o acrescente a pouch\_contents.
 
-3.        Um método \_\_str\_\_ que retorne uma representação de string do objeto Kangaroo e os conteúdos de pouch (bolsa).
+3. Um método \_\_str\_\_ que retorne uma representação de string do objeto Kangaroo e os conteúdos de pouch (bolsa).
 
 Teste o seu código criando dois objetos Kangaroo, atribuindo-os a variáveis chamadas kanga e roo, e então acrescentando roo ao conteúdo da bolsa de kanga.
 

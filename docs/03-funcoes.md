@@ -550,7 +550,7 @@ Solução: http://thinkpython2.com/code/do_four.py.
 
 > Nota: Este exercício deve ser feito usando-se apenas as instruções e os outros recursos que aprendemos até agora.
 
-1.        Escreva uma função que desenhe uma grade como a seguinte:
+1. Escreva uma função que desenhe uma grade como a seguinte:
 
 ```
         + - - - - + - - - - +

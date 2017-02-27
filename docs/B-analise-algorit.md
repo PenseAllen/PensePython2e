@@ -144,7 +144,7 @@ Leia a página da Wikipédia sobre algoritmos de ordenação em http://en.wikipe
 
 6. Que algoritmo de ordenação a biblioteca C usa? Que algoritmo de ordenação o Python usa? Esses algoritmos são estáveis? Você pode ter que pesquisar no Google para encontrar essas respostas.
 
-7.        Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação O(n log n)?
+7. Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação O(n log n)?
 
 ## B.3 - Análise de algoritmos de busca
 

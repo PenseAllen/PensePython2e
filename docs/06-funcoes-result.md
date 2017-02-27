@@ -146,11 +146,11 @@ Ao começar, você deveria acrescentar apenas uma linha ou duas de código de ca
 
 Os principais aspectos do processo são:
 
-1.        Comece com um programa que funcione e faça pequenas alterações incrementais. Se houver um erro em qualquer ponto, será bem mais fácil encontrá-lo.
+1. Comece com um programa que funcione e faça pequenas alterações incrementais. Se houver um erro em qualquer ponto, será bem mais fácil encontrá-lo.
 
-2.        Use variáveis para guardar valores intermediários, assim poderá exibi-los e verificá-los.
+2. Use variáveis para guardar valores intermediários, assim poderá exibi-los e verificá-los.
 
-3.        Uma vez que o programa esteja funcionando, você pode querer remover uma parte do scaffolding ou consolidar várias instruções em expressões compostas, mas apenas se isso não tornar o programa difícil de ler.
+3. Uma vez que o programa esteja funcionando, você pode querer remover uma parte do scaffolding ou consolidar várias instruções em expressões compostas, mas apenas se isso não tornar o programa difícil de ler.
 
 Como exercício, use o desenvolvimento incremental para escrever uma função chamada hypotenuse, que devolva o comprimento da hipotenusa de um triângulo retângulo dados os comprimentos dos outros dois lados como argumentos. Registre cada etapa do processo de desenvolvimento no decorrer do processo.
 
@@ -545,9 +545,9 @@ def middle(word):
 
 Veremos como funcionam no Capítulo 8.
 
-1.        Digite essas funções em um arquivo chamado palindrome.py e teste-as. O que acontece se chamar middle com uma string de duas letras? Uma letra? E se a string estiver vazia, escrita com '' e não contiver nenhuma letra?
+1. Digite essas funções em um arquivo chamado palindrome.py e teste-as. O que acontece se chamar middle com uma string de duas letras? Uma letra? E se a string estiver vazia, escrita com '' e não contiver nenhuma letra?
 
-2.        Escreva uma função chamada is\_palindrome que receba uma string como argumento e retorne True se for um palíndromo e False se não for. Lembre-se de que você pode usar a função integrada len para verificar o comprimento de uma string.
+2. Escreva uma função chamada is\_palindrome que receba uma string como argumento e retorne True se for um palíndromo e False se não for. Lembre-se de que você pode usar a função integrada len para verificar o comprimento de uma string.
 
 Solução: http://thinkpython2.com/code/palindrome\_soln.py.
 

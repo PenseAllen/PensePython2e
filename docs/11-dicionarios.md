@@ -86,11 +86,11 @@ Para dicionários, o Python usa um algoritmo chamado hashtable (tabela de disper
 
 Suponha que você receba uma string e queira contar quantas vezes cada letra aparece nela. Há vários modos de fazer isso:
 
-1.        Você pode criar 26 variáveis, uma para cada letra do alfabeto. Então pode atravessar a string e, para cada caractere, incrementar o contador correspondente, provavelmente usando uma condicional encadeada.
+1. Você pode criar 26 variáveis, uma para cada letra do alfabeto. Então pode atravessar a string e, para cada caractere, incrementar o contador correspondente, provavelmente usando uma condicional encadeada.
 
-2.        Você pode criar uma lista com 26 elementos. Então pode converter cada caractere em um número (com a função integrada ord), usar o número como índice na lista e incrementar o respectivo contador.
+2. Você pode criar uma lista com 26 elementos. Então pode converter cada caractere em um número (com a função integrada ord), usar o número como índice na lista e incrementar o respectivo contador.
 
-3.        Você pode criar um dicionário com caracteres como chaves e contadores como valores correspondentes. Na primeira vez que visse um caractere, você acrescentaria um item ao dicionário. Depois disso, incrementaria o valor de um item existente.
+3. Você pode criar um dicionário com caracteres como chaves e contadores como valores correspondentes. Na primeira vez que visse um caractere, você acrescentaria um item ao dicionário. Depois disso, incrementaria o valor de um item existente.
 
 Cada uma dessas opções executa o mesmo cálculo, mas o implementa de forma diferente.
 

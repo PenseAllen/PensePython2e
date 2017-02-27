@@ -548,7 +548,7 @@ Esta função deixa a lista original inalterada. Ela é usada assim:
 
 O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas horas de depuração. Aqui estão algumas armadilhas comuns e formas de evitá-las:
 
-1.        A maior parte dos métodos de listas alteram o argumento e retornam None. Isto é o oposto dos métodos de strings, que retornam uma nova string e deixam a original intocada.
+1. A maior parte dos métodos de listas alteram o argumento e retornam None. Isto é o oposto dos métodos de strings, que retornam uma nova string e deixam a original intocada.
 
         Se você está acostumado a escrever código de strings desta forma:
 
@@ -562,7 +562,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
         Antes de usar métodos e operadores de listas, você deve ler a documentação com cuidado e testá-los no modo interativo.
 
-2.        Escolha o termo e fique com ele.
+2. Escolha o termo e fique com ele.
 
         Parte do problema com listas é que há muitas formas de fazer coisas com elas. Por exemplo, para remover um elemento de uma lista você pode usar pop, remove, del ou até uma atribuição de fatia.
 
@@ -586,7 +586,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
         Experimente cada um desses exemplos no modo interativo para conferir se você entendeu o que fazem. Note que apenas o último causa um erro de tempo de execução; os outros três são legais, mas eles fazem a coisa errada.
 
-3.        Faça cópias para evitar o uso de alias.
+3. Faça cópias para evitar o uso de alias.
 
         Se quiser usar um método como sort, que altera o argumento, mas precisa manter a lista original, você pode fazer uma cópia:
 
@@ -766,7 +766,7 @@ Duas palavras “interligam-se” quando, ao tomarmos letras alternadas de cada 
 
 Solução: http://thinkpython2.com/code/interlock.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
 
-1.        Escreva um programa que encontre todos os pares de palavras que se interligam. Dica: não enumere todos os pares!
+1. Escreva um programa que encontre todos os pares de palavras que se interligam. Dica: não enumere todos os pares!
 
-2.        Você pode encontrar palavras que sejam interligadas de três em três; isto é, cada terceira letra forma uma palavra, começando da primeira, segunda ou terceira?
+2. Você pode encontrar palavras que sejam interligadas de três em três; isto é, cada terceira letra forma uma palavra, começando da primeira, segunda ou terceira?
 

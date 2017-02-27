@@ -384,13 +384,13 @@ Transformar um programa como esse – alterando o projeto sem mudar o comportame
 
 Este exemplo sugere um plano de desenvolvimento para projetar objetos e métodos:
 
-1.        Comece escrevendo funções que leiam e criem variáveis globais (quando necessário).
+1. Comece escrevendo funções que leiam e criem variáveis globais (quando necessário).
 
-2.        Uma vez que o programa esteja funcionando, procure associações entre variáveis globais e funções que as usem.
+2. Uma vez que o programa esteja funcionando, procure associações entre variáveis globais e funções que as usem.
 
-3.        Encapsule variáveis relacionadas como atributos de objeto.
+3. Encapsule variáveis relacionadas como atributos de objeto.
 
-4.        Transforme as funções associadas em métodos da nova classe.
+4. Transforme as funções associadas em métodos da nova classe.
 
 Como exercício, baixe o meu código de Markov de http://thinkpython2.com/code/markov.py e siga os passos descritos acima para encapsular as variáveis globais como atributos de uma nova classe chamada Markov.
 
@@ -551,7 +551,7 @@ Cinco cartas em sequência (como definido acima) e com o mesmo naipe.
 
 A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 
-1.        Baixe os seguintes arquivos de http://thinkpython2.com/code:
+1. Baixe os seguintes arquivos de http://thinkpython2.com/code:
 
 Card.py:
 
@@ -561,15 +561,15 @@ PokerHand.py:
 
 Uma implementação incompleta de uma classe que representa uma mão de pôquer e código para testá-la.
 
-2.        Se executar PokerHand.py, você verá que o programa cria mãos de pôquer com 7 cartas e verifica se alguma delas contém um flush. Leia este código com atenção antes de continuar.
+2. Se executar PokerHand.py, você verá que o programa cria mãos de pôquer com 7 cartas e verifica se alguma delas contém um flush. Leia este código com atenção antes de continuar.
 
-3.        Acrescente métodos a PokerHand.py chamados has\_pair, has\_twopair, etc. que retornem True ou False conforme a mão cumpra os critérios em questão. Seu código deve funcionar corretamente para “mãos” que contenham qualquer número de cartas (embora 5 e 7 sejam as quantidades mais comuns).
+3. Acrescente métodos a PokerHand.py chamados has\_pair, has\_twopair, etc. que retornem True ou False conforme a mão cumpra os critérios em questão. Seu código deve funcionar corretamente para “mãos” que contenham qualquer número de cartas (embora 5 e 7 sejam as quantidades mais comuns).
 
-4.        Escreva um método chamado classify que descubra a classificação do valor mais alto para uma mão e estabeleça o atributo label em questão. Por exemplo, uma mão de 7 cartas poderia conter um flush e um par; ela deve ser marcada como “flush”.
+4. Escreva um método chamado classify que descubra a classificação do valor mais alto para uma mão e estabeleça o atributo label em questão. Por exemplo, uma mão de 7 cartas poderia conter um flush e um par; ela deve ser marcada como “flush”.
 
-5.        Quando se convencer de que os seus métodos de classificação estão funcionando, o próximo passo deve ser estimar as probabilidades de várias mãos. Escreva uma função em PokerHand.py que embaralhe cartas, divida-as em mãos, classifique as mãos e conte o número de vezes em que várias classificações aparecem.
+5. Quando se convencer de que os seus métodos de classificação estão funcionando, o próximo passo deve ser estimar as probabilidades de várias mãos. Escreva uma função em PokerHand.py que embaralhe cartas, divida-as em mãos, classifique as mãos e conte o número de vezes em que várias classificações aparecem.
 
-6.        Exiba uma tabela das classificações e suas probabilidades. Execute seu programa com números cada vez maiores de mãos até que os valores de saída convirjam a um grau razoável de exatidão. Compare seus resultados com os valores em http://en.wikipedia.org/wiki/Hand\_rankings.
+6. Exiba uma tabela das classificações e suas probabilidades. Execute seu programa com números cada vez maiores de mãos até que os valores de saída convirjam a um grau razoável de exatidão. Compare seus resultados com os valores em http://en.wikipedia.org/wiki/Hand\_rankings.
 
 Solução: http://thinkpython2.com/code/PokerHandSoln.py.
 

@@ -22,21 +22,21 @@ Se estiver copiando o código de um livro, comece comparando com atenção o seu
 
 Aqui estão algumas formas de evitar os erros de sintaxe mais comuns:
 
-1.        Confira se não está usando uma palavra-chave do Python para um nome de variável.
+1. Confira se não está usando uma palavra-chave do Python para um nome de variável.
 
-2.        Verifique se há dois pontos no fim do cabeçalho de cada instrução composta, incluindo instruções for, while, if e def.
+2. Verifique se há dois pontos no fim do cabeçalho de cada instrução composta, incluindo instruções for, while, if e def.
 
-3.        Confira se as strings no código têm as aspas correspondentes. Verifique se todas as aspas são retas, em vez de curvas.
+3. Confira se as strings no código têm as aspas correspondentes. Verifique se todas as aspas são retas, em vez de curvas.
 
-4.        Se tiver strings com várias linhas com aspas triplas (simples ou duplas), confira se fechou a string adequadamente. Uma string não fechada pode causar um erro de invalid token no fim do seu programa, ou pode tratar a parte seguinte do programa como uma string até chegar à string seguinte. No segundo caso, o programa pode nem produzir uma mensagem de erro!
+4. Se tiver strings com várias linhas com aspas triplas (simples ou duplas), confira se fechou a string adequadamente. Uma string não fechada pode causar um erro de invalid token no fim do seu programa, ou pode tratar a parte seguinte do programa como uma string até chegar à string seguinte. No segundo caso, o programa pode nem produzir uma mensagem de erro!
 
-5.        Um operador inicial aberto – (, { ou \[ – faz o Python continuar até a linha seguinte, como se esta fosse parte da instrução atual. Geralmente, um erro ocorre quase imediatamente na linha seguinte.
+5. Um operador inicial aberto – (, { ou \[ – faz o Python continuar até a linha seguinte, como se esta fosse parte da instrução atual. Geralmente, um erro ocorre quase imediatamente na linha seguinte.
 
-6.        Confira se há o clássico = em vez do == dentro de uma condicional.
+6. Confira se há o clássico = em vez do == dentro de uma condicional.
 
-7.        Verifique a endentação para ter certeza de que está alinhada como deveria. O Python pode lidar com espaços e tabulações, mas, se misturá-los, isso pode causar problemas. A melhor forma de evitar esse problema é usar um editor de texto que identifique o Python e gere endentação consistente.
+7. Verifique a endentação para ter certeza de que está alinhada como deveria. O Python pode lidar com espaços e tabulações, mas, se misturá-los, isso pode causar problemas. A melhor forma de evitar esse problema é usar um editor de texto que identifique o Python e gere endentação consistente.
 
-8.        Se há caracteres não ASCII no código (incluindo strings e comentários), isso pode causar problemas, embora o Python 3 normalmente lide com caracteres não ASCII. Tenha cuidado se colar texto de uma página web ou outra fonte.
+8. Se há caracteres não ASCII no código (incluindo strings e comentários), isso pode causar problemas, embora o Python 3 normalmente lide com caracteres não ASCII. Tenha cuidado se colar texto de uma página web ou outra fonte.
 
 Se nada funcionar, vá para a próxima seção...
 
