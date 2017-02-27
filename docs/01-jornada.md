@@ -12,15 +12,22 @@ Um __programa__ é uma sequência de instruções que especifica como executar u
 
 Os detalhes parecem diferentes em linguagens diferentes, mas algumas instruções básicas aparecem em quase todas as linguagens:
 
-__entrada__<br>Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.
+<dl>
+<dt>entrada</dt>
+<dd>Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.</dd>
 
-__saída__<br>Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.
+<dt>saída</dt>
+<dd>Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.</dd>
 
-__matemática__<br>Executar operações matemáticas básicas como adição e multiplicação.
+<dt>matemática</dt>
+<dd>Executar operações matemáticas básicas como adição e multiplicação.</dd>
 
-__execução condicional__<br>Verificar a existência de certas condições e executar o código adequado.
+<dt>execução condicional</dt>
+<dd>Verificar a existência de certas condições e executar o código adequado.</dd>
 
-__repetição__<br> Executar várias vezes alguma ação, normalmente com algumas variações.
+<dt>repetição</dt>
+<dd>Executar várias vezes alguma ação, normalmente com algumas variações.</dd>
+</dl>
 
 Acredite ou não, isto é basicamente tudo o que é preciso saber. Cada programa que você já usou, complicado ou não, é composto de instruções muito parecidas com essas. Podemos então chegar à conclusão de que programar é o processo de quebrar uma tarefa grande e complexa em subtarefas cada vez menores, até que estas sejam simples o suficiente para serem executadas por uma dessas instruções básicas.
 
@@ -178,25 +185,28 @@ Ao ler uma frase em português ou uma declaração em uma linguagem formal, é p
 
 Embora as linguagens formais e naturais tenham muitas características em comum – símbolos, estrutura e sintaxe – há algumas diferenças:
 
-__ambiguidade__<br>
-As linguagens naturais são cheias de ambiguidade e as pessoas lidam com isso usando pistas contextuais e outras informações. As linguagens formais são criadas para ser quase ou completamente inequívocas, ou seja, qualquer afirmação tem exatamente um significado, independentemente do contexto.
+<dl>
+<dt>ambiguidade</dt>
+<dd>As linguagens naturais são cheias de ambiguidade e as pessoas lidam com isso usando pistas contextuais e outras informações. As linguagens formais são criadas para ser quase ou completamente inequívocas, ou seja, qualquer afirmação tem exatamente um significado, independentemente do contexto.</dd>
 
-__redundância__<br>
-Para compensar a ambiguidade e reduzir equívocos, as linguagens naturais usam muita redundância. Por causa disso, muitas vezes são verborrágicas. As linguagens formais são menos redundantes e mais concisas.
+<dt>redundância</dt>
+<dd>Para compensar a ambiguidade e reduzir equívocos, as linguagens naturais usam muita redundância. Por causa disso, muitas vezes são verborrágicas. As linguagens formais são menos redundantes e mais concisas.</dd>
 
-__literalidade__<br>
-As linguagens naturais são cheias de expressões e metáforas. Se eu digo “Caiu a ficha”, provavelmente não há ficha nenhuma na história, nem nada que tenha caído (esta é uma expressão para dizer que alguém entendeu algo depois de certo período de confusão). As linguagens formais têm significados exatamente iguais ao que expressam.
+<dt>literalidade</dt>
+<dd>As linguagens naturais são cheias de expressões e metáforas. Se eu digo “Caiu a ficha”, provavelmente não há ficha nenhuma na história, nem nada que tenha caído (esta é uma expressão para dizer que alguém entendeu algo depois de certo período de confusão). As linguagens formais têm significados exatamente iguais ao que expressam.</dd>
+</dl>
 
 Como todos nós crescemos falando linguagens naturais, às vezes é difícil se ajustar a linguagens formais. A diferença entre a linguagem natural e a formal é semelhante à diferença entre poesia e prosa, mas vai além:
 
-__Poesia__<br>
-As palavras são usadas tanto pelos sons como pelos significados, e o poema inteiro cria um efeito ou resposta emocional. A ambiguidade não é apenas comum, mas muitas vezes proposital.
+<dt>Poesia</dt>
+<dd>As palavras são usadas tanto pelos sons como pelos significados, e o poema inteiro cria um efeito ou resposta emocional. A ambiguidade não é apenas comum, mas muitas vezes proposital.</dd>
 
-__Prosa__<br>
-O significado literal das palavras é o mais importante e a estrutura contribui para este significado. A prosa é mais acessível à análise que a poesia, mas muitas vezes ainda é ambígua.
+<dt>Prosa</dt>
+<dd>O significado literal das palavras é o mais importante e a estrutura contribui para este significado. A prosa é mais acessível à análise que a poesia, mas muitas vezes ainda é ambígua.</dd>
 
-__Programas__<br>
-A significado de um programa de computador é inequívoco e literal e pode ser entendido inteiramente pela análise dos símbolos e da estrutura.
+<dt>Programas</dt>
+<dd>A significado de um programa de computador é inequívoco e literal e pode ser entendido inteiramente pela análise dos símbolos e da estrutura.</dd>
+</dl>
 
 As linguagens formais são mais densas que as naturais, então exigem mais tempo para a leitura. Além disso, a estrutura é importante, então nem sempre é melhor ler de cima para baixo e da esquerda para a direita. Em vez disso, aprenda a analisar o programa primeiro, identificando os símbolos e interpretando a estrutura. E os detalhes fazem diferença. Pequenos erros em ortografia e pontuação, que podem não importar tanto nas linguagens naturais, podem fazer uma grande diferença em uma língua formal.
 
