@@ -8,7 +8,7 @@ Este livro ensina programação para quem nunca programou, usando Python 3 nos e
 
 > __DICA__: Você pode comprar um exemplar impresso de [__Pense em Python__](https://novatec.com.br/livros/pense-em-python/) no site da [Editora Novatec](https://novatec.com.br/livros/pense-em-python/) ou em livrarias. [ISBN: 978-85-7522-508-0](https://novatec.com.br/livros/pense-em-python/).
 
-[Versão navegável em HTML](https://PenseAllen.github.io/PensePython2/)
+[Versão navegável em HTML](https://PenseAllen.github.io/PensePython2e/)
 
 
 ## Créditos da edição brasileira
