@@ -34,6 +34,7 @@ def marcar_listagens(md):
                 lin = lin.replace('&gt;', '>')
                 lin = lin.replace('&lt;', '<')
                 lin = lin.replace(r'\_', '_')
+                lin = lin.replace(r'\*', '*')
                 bloco.append(lin)
             else:
                 saida.append(lin)
