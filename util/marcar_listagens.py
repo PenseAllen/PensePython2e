@@ -2,9 +2,9 @@
 
 import re
 
-MAX_LEN_CODIGO = 50
-GLOSSARIO_RE = re.compile(r'^## [B|\d]\d?\.\d\d? - Glossário$', re.MULTILINE)
+from glossario_dl import marcar_verbetes
 
+MAX_LEN_CODIGO = 50
 PREFIXOS_NAO_CODIGO = '# * <dt> <dd> <dl> </dl>'.split()
 
 def pode_ser_codigo(lin):
@@ -47,7 +47,7 @@ def main():
     caminho_arq = sys.argv[1]
     with open(caminho_arq, encoding='utf8') as fp:
         md = fp.read()
-    md = marcar_listagens(md)
+    md = marcar_listagens(marcar_verbetes(md))
     with open(caminho_arq.replace('-', 'novo-', 1), 'wt', encoding='utf8') as fp:
         fp.write(md)
 

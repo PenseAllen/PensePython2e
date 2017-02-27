@@ -14,6 +14,13 @@ O título desta sessão em inglês é "Using Code Examples". Em português, "Uso
 
 Parágrafo 3, "`__main__`, que é um nome especial para o frame na posição mais proeminente"; no original, trata-se do "topmost frame". Seria melhor traduzir como "o frame no topo da pilha" (veja figura 3.1)
 
+
+## Capítulo 5
+
+### Exercício 5.2
+
+"há nenhum número inteiro positivo a, b e c tal que" deveria ser "não existem números inteiros a, b e c tais que"
+
 ## Capítulo 15
 
 ### seção 15.1 - Tipos definidos pelos programadores
