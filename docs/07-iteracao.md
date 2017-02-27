@@ -164,6 +164,8 @@ Loops muitas vezes são usados em programas que calculam resultados numéricos, 
 
 Por exemplo, uma forma de calcular raízes quadradas é o método de Newton. Suponha que você queira saber a raiz quadrada de a. Se começar com quase qualquer estimativa, x, é possível calcular uma estimativa melhor com a seguinte fórmula:
 
+![Fórmula – Raiz quadrada pelo método de Newton.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p79f1.png)
+
 Por exemplo, se a for 4 e x for 3:
 
 &gt;&gt;&gt; a = 4
@@ -176,7 +178,7 @@ Por exemplo, se a for 4 e x for 3:
 
 2.16666666667
 
-O resultado é mais próximo à resposta correta ( = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:
+O resultado é mais próximo à resposta correta (![Fórmula – Raiz quadrada de 4.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p79f2.png) = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:
 
 &gt;&gt;&gt; x = y
 
@@ -236,7 +238,7 @@ while True:
 
     x = y
 
-Para a maior parte de valores de a funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: números mais racionais, como 1/3, e números irracionais, como , não podem ser representados exatamente com um float.
+Para a maior parte de valores de a funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: números mais racionais, como 1/3, e números irracionais, como ![Fórmula – Raiz quadrada de 2.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p80f1.png), não podem ser representados exatamente com um float.
 
 Em vez de verificar se x e y são exatamente iguais, é mais seguro usar a função integrada abs para calcular o valor absoluto ou magnitude da diferença entre eles:
 
@@ -358,7 +360,8 @@ Ela deve continuar até que o usuário digite 'done'; então deverá exibir o va
 
 O matemático Srinivasa Ramanujan encontrou uma série infinita que pode ser usada para gerar uma aproximação numérica de 1/π:
 
+![Fórmula – Aproximação de π pela série de Ramanujan.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p83f1.png)
+
 Escreva uma função chamada estimate\_pi que use esta fórmula para computar e devolver uma estimativa de π. Você deve usar o loop while para calcular os termos da adição até que o último termo seja menor que 1e-15 (que é a notação do Python para 10−15). Você pode verificar o resultado comparando-o com math.pi.
 
 Solução: http://thinkpython2.com/code/pi.py.
-

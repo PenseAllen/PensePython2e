@@ -26,3 +26,10 @@ Parágrafo 3, "`__main__`, que é um nome especial para o frame na posição mai
 ### seção 15.1 - Tipos definidos pelos programadores
 
 Parágrafo 2, "(x, y) representa o ponto que está x unidades à direita e y unidades a partir da origem." deveria ser "(x, y) representa o ponto que está x unidades à direita e y unidades acima da origem."
+
+
+## Capítulo 7
+
+### seção 7.5 - Raízes quadradas
+
+Antepenúltimo parágrafo: "números mais racionais, como 1/3" está errado, o correto é "a maioria dos números racionais, como 1/3"

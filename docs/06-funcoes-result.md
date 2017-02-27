@@ -1,6 +1,6 @@
 # Capítulo 6: Funções com resultado
 
-Muitas das funções do Python que usamos, como as matemáticas, produzem valores de retorno. Mas as funções que escrevemos são todas nulas: têm um efeito, como exibir um valor ou mover um turtle, mas não têm um valor de retorno. Neste capítulo você aprenderá a escrever funções com resultados.
+Muitas das funções do Python que usamos, como as matemáticas, produzem valores de retorno. Mas as funções que escrevemos até agora são todas nulas: têm um efeito, como exibir um valor ou mover uma tartaruga, mas não têm um valor de retorno. Neste capítulo você aprenderá a escrever funções com resultados.
 
 ## 6.1 - Valores de retorno
 
@@ -72,6 +72,8 @@ Conforme você escrever funções maiores, pode ser que passe mais tempo as depu
 Para lidar com programas cada vez mais complexos, você pode querer tentar usar um processo chamado de desenvolvimento incremental. A meta do desenvolvimento incremental é evitar longas sessões de depuração, acrescentando e testando pequenas partes do código de cada vez.
 
 Como um exemplo, vamos supor que você queira encontrar a distância entre dois pontos dados pelas coordenadas (x1, y1) e(x2, y2). Pelo teorema de Pitágoras, a distância é:
+
+![Fórmula – Distância entre dois pontos.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p63f1.png)
 
 O primeiro passo é pensar como uma função distance deveria ser no Python. Em outras palavras, quais são as entradas (parâmetros) e qual é a saída (valor de retorno)?
 
