@@ -224,7 +224,7 @@ Uma lista é uma sequência        142
 
 Listas são mutáveis        143
 
-Atravessando uma lista        144
+Percorrendo uma lista        144
 
 Operações com listas        145
 
