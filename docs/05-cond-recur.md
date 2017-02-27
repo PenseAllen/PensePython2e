@@ -266,17 +266,16 @@ Em “Diagrama da pilha”, na página 55, usamos um diagrama da pilha para repr
 
 Cada vez que uma função é chamada, o Python cria um frame para conter as variáveis locais e parâmetros da função. Para uma função recursiva, pode haver mais de um frame na pilha ao mesmo tempo.
 
-A Figura 5.1 mostra um diagrama da pilha para countdown chamado com n = 3.
+A Figura 5.1 mostra um diagrama da pilha para `countdown` chamado com n = 3.
 
-```
-Figura 5.1 – Diagrama da pilha.
-```
+![Figura 5.1 – Diagrama da pilha.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0501.png)
+<br>_Figura 5.1 – Diagrama da pilha._
 
-Como de hábito, o topo da pilha é o frame de \_\_main\_\_. É vazia porque não criamos nenhuma variável em \_\_main\_\_ nem passamos argumentos a ela.
+Como de hábito, o topo da pilha é o frame de `__main__`. Está vazio porque não criamos nenhuma variável em `__main__` nem passamos argumentos a ela.
 
-Os quatro frames do countdown têm valores diferentes para o parâmetro n. O fundo da pilha, onde n=0, é chamado caso-base. Ele não faz uma chamada recursiva, então não há mais frames.
+Os quatro frames do countdown têm valores diferentes para o parâmetro `n`. O fundo da pilha, onde `n = 0`, é chamado caso-base. Ele não faz uma chamada recursiva, então não há mais frames.
 
-Como exercício, desenhe um diagrama da pilha para print\_n chamado com s = 'Hello' e n=2. Então escreva uma função chamada do\_n que tome um objeto de função e um número n como argumentos e que chame a respectiva função n vezes.
+Como exercício, desenhe um diagrama da pilha para `print_n` chamado com `s = 'Hello'` e `n = 2`. Então escreva uma função chamada `do_n` que tome um objeto de função e um número `n` como argumentos e que chame a respectiva função `n` vezes.
 
 ## 5.10 - Recursividade infinita
 
@@ -519,7 +518,8 @@ def draw(t, length, n):
 
 ### Exercício 5.6
 
-Figura 5.2 – Uma curva de Koch.
+![Figura 5.2 – Uma curva de Koch.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0502.png)
+<br>_Figura 5.2 – Uma curva de Koch._
 
 A curva de Koch é um fractal que parece com o da Figura 5.2. Para desenhar uma curva de Koch com o comprimento x, tudo o que você tem que fazer é:
 

@@ -333,9 +333,8 @@ Para monitorar quais variáveis podem ser usadas e onde, é uma boa ideia desenh
 
 Cada função é representada por um frame (quadro). Um frame é uma caixa com o nome de uma função junto a ele e os parâmetros e as variáveis da função dentro dele. O diagrama da pilha para o exemplo anterior é exibido na Figura 3.1.
 
-```python
-Figura 3.1 – Diagrama da pilha.
-```
+![Figura 3.1 – Diagrama da pilha.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0301.png)
+<br>_Figura 3.1 – Diagrama da pilha._
 
 Os frames são organizados em uma pilha que indica qual função que foi chamada por outra, e assim por diante. Neste exemplo, `print_twice` foi chamada por `cat_twice` e `cat_twice` foi chamada por `__main__`, que é um nome especial para o frame na posição mais proeminente. Quando você cria uma variável fora de qualquer função, ela pertence a `__main__`.
 

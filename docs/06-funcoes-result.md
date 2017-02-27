@@ -294,8 +294,8 @@ O valor devolvido (2) é multiplicado por n, que é 3, e o resultado, 6, torna-s
 
 A Figura 6.1 mostra como é o diagrama da pilha para esta sequência de chamadas de função.
 
-
-Figura 6.1 – Diagrama da pilha.
+![Figura 6.1 – Diagrama da pilha para factorial.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0601.png)
+<br>_Figura 6.1 – Diagrama da pilha para factorial._
 
 
 Os valores devolvidos são mostrados ao serem passados de volta até o alto da pilha. Em cada frame, o valor devolvido é o valor de `result`, que é o produto de `n` e `recurse`.

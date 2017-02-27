@@ -386,9 +386,8 @@ Baixe o código deste capítulo no site http://thinkpython2.com/code/polygon.py.
 
 Escreva um conjunto de funções adequadamente geral que possa desenhar flores como as da Figura 4.1.
 
-
-Figura 4.1 – Flores no Turtle.
-
+![Figura 4.1 – Flores de tartaruga.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0401.png)
+<br>_Figura 4.1 – Flores de tartaruga._
 
 Solução: http://thinkpython2.com/code/flower.py, também exige http://thinkpython2.com/code/polygon.py.
 
@@ -396,8 +395,8 @@ Solução: http://thinkpython2.com/code/flower.py, também exige http://thinkpyt
 
 Escreva um conjunto de funções adequadamente geral que possa desenhar formas como as da Figura 4.2.
 
-
-Figura 4.2 – Gráficos de torta no Turtle.
+![Figura 4.2 – Tortas de tartaruga.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0402.png)
+<br>_Figura 4.2 – Tortas de tartaruga._
 
 Solução: http://thinkpython2.com/code/pie.py.
 
