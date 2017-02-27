@@ -376,6 +376,7 @@ join é o contrário de split. Ele toma uma lista de strings e concatena os elem
 
 Nesse caso, o delimitador é um caractere de espaço, então join coloca um espaço entre as palavras. Para concatenar strings sem espaços, você pode usar a string vazia '', como delimitador.
 
+<a id="sec:10.10 - Objetos e valores"></a>
 ## 10.10 - Objetos e valores
 
 Se executarmos essas instruções de atribuição:
@@ -769,4 +770,3 @@ Solução: http://thinkpython2.com/code/interlock.py. Crédito: este exercício 
 1. Escreva um programa que encontre todos os pares de palavras que se interligam. Dica: não enumere todos os pares!
 
 2. Você pode encontrar palavras que sejam interligadas de três em três; isto é, cada terceira letra forma uma palavra, começando da primeira, segunda ou terceira?
-
