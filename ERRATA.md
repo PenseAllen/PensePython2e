@@ -23,9 +23,21 @@ Parágrafo 3, "`__main__`, que é um nome especial para o frame na posição mai
 
 ## Capítulo 6
 
-## seção 6.5 - Mais recursividade
+### seção 6.5 - Mais recursividade
 
 Parágrafo 2: "é conhecido como o Teste de Turing. Para uma exposição mais completa (e exata) do Teste de Turing": o autor está explicando a Tese de Turing, portanto o correto é: "é conhecida como a Tese de Turing. Para uma exposição mais completa (e exata) da Tese de Turing"
+
+## Capítulo 7
+
+### seção 7.5 - Raízes quadradas
+
+Antepenúltimo parágrafo: "números mais racionais, como 1/3" está errado, o correto é "a maioria dos números racionais, como 1/3"
+
+## Capítulo 12
+
+### seção 12.5 - Listas e tuplas
+
+Parágrafo 5: "Se quiser usar operadores de lista e métodos", deveria ser "Se quiser usar operadores e métodos de lista"
 
 
 ## Capítulo 15
@@ -33,10 +45,3 @@ Parágrafo 2: "é conhecido como o Teste de Turing. Para uma exposição mais co
 ### seção 15.1 - Tipos definidos pelos programadores
 
 Parágrafo 2, "(x, y) representa o ponto que está x unidades à direita e y unidades a partir da origem." deveria ser "(x, y) representa o ponto que está x unidades à direita e y unidades acima da origem."
-
-
-## Capítulo 7
-
-### seção 7.5 - Raízes quadradas
-
-Antepenúltimo parágrafo: "números mais racionais, como 1/3" está errado, o correto é "a maioria dos números racionais, como 1/3"
