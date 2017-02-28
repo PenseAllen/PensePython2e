@@ -70,9 +70,9 @@ Este problema é mais comum quando o seu arquivo é composto de funções e clas
 
 Se não for intencional, tenha certeza de que há uma chamada de função no programa, e que o fluxo de execução o alcança (veja “Fluxo da execução” a seguir).
 
-### A.2.2 - Meu programa fica suspenso
+### A.2.2 - Meu programa trava
 
-Se um programa parar e parecer que não está fazendo nada, ele está “suspenso”. Muitas vezes isso significa que está preso em um loop ou recursividade infinita.
+Se um programa parar e parecer que não está fazendo nada, ele está “travado”. Muitas vezes isso significa que está preso em um loop ou recursão infinita.
 
 * Se houver determinado loop que você suspeita ser o problema, acrescente uma instrução print imediatamente antes do loop que diga “entrando no loop”, e outra imediatamente depois que diga “saindo do loop”.
 

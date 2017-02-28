@@ -338,7 +338,7 @@ Usando o Pickle        213
 
 Pipes        214
 
-Módulos de escrita        216
+Escrevendo módulos        216
 
 Depuração        217
 
