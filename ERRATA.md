@@ -42,15 +42,6 @@ Parágrafo 5: "Se quiser usar operadores de lista e métodos", deveria ser "Se q
 
 ## Capítulo 14
 
-## 14.2 - Leitura e escrita
-
-Parágrafo 2: "é preciso abri-lo com o modo `'wt'`", porém em Python 3 o modo correto para escrever arquivos texto é `'wt'`. Esta mudança precisa ser feita também no código logo após este parágrago, que fica assim:
-
-```python
->>> fout = open('output.txt', 'wt')
-```
-
-Nota: este erro existe também no original e eu (@ramalho) já o reportei no site da O'Reilly.
 
 ## 14.5 - Captura de exceções
 
@@ -80,3 +71,11 @@ Parágrafo 2, "(x, y) representa o ponto que está x unidades à direita e y uni
 ### 18.11 - Glossário
 
 A definição do termo __multiplicidade__ está confusa. Em vez de "quantas referências dela são instâncias de outra classe." é melhor "quantas referências a instâncias da outra classe podem existir."
+
+## Capítulo 19
+
+### 19.3 - Expressões geradoras
+
+Parágrafo 4, a exceção mencionada está como "StopException", mas o correto é "StopIteration".
+
+Nota: este erro existe também no original e eu (@ramalho) já o reportei no site da O'Reilly.
