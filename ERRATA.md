@@ -74,3 +74,9 @@ O título desta seção no original é "Writing modules"; no contexto, a traduç
 ### 15.1 - Tipos definidos pelos programadores
 
 Parágrafo 2, "(x, y) representa o ponto que está x unidades à direita e y unidades a partir da origem." deveria ser "(x, y) representa o ponto que está x unidades à direita e y unidades acima da origem."
+
+## Capítulo 18
+
+### 18.11 - Glossário
+
+A definição do termo __multiplicidade__ está confusa. Em vez de "quantas referências dela são instâncias de outra classe." é melhor "quantas referências a instâncias da outra classe podem existir."

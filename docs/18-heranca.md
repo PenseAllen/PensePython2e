@@ -68,12 +68,12 @@ Para exibir objetos Card de uma forma que as pessoas possam ler com facilidade, 
 
     def __str__(self):
         return '%s of %s' % (Card.rank_names[self.rank],
-
                              Card.suit_names[self.suit])
+```
 
-Variáveis como suit_names e rank_names, que são definidas dentro de uma classe, mas fora de qualquer método, chamam-se atributos de classe porque são associadas com o objeto de classe Card.
+Variáveis como `suit_names` e `rank_names`, que são definidas dentro de uma classe, mas fora de qualquer método, chamam-se atributos de classe porque são associadas com o objeto de classe Card.
 
-Este termo as distingue de variáveis como suit e rank, chamadas de atributos de instância porque são associados com determinada instância.
+Este termo as distingue de variáveis como `suit` e `rank`, chamadas de atributos de instância porque são associados com determinada instância.
 
 Ambos os tipos de atributo são acessados usando a notação de ponto. Por exemplo, em `__str__`, `self` é um objeto `Card`, e `self.rank` é o seu valor. De forma semelhante, Card é um objeto de classe, e `Card.rank_names` é uma lista de strings associadas à essa classe.
 
@@ -278,6 +278,7 @@ Um próximo passo natural seria encapsular este código em um método chamado `m
 
 ```python
 # dentro da classe Deck:
+
     def move_cards(self, hand, num):
         for i in range(num):
             hand.add_card(self.pop_card())
@@ -314,7 +315,7 @@ A flecha com um triângulo oco representa uma relação IS-A; nesse caso, indica
 
 A ponta de flecha padrão representa uma relação HAS-A; nesse caso, um Deck tem referências a objetos Card.
 
-Uma estrela (`*`) perto da ponta de flecha é uma multiplicidade; ela indica quantos Cards um Deck tem. Uma multiplicidade pode ser um número simples como 52, um intervalo como 5..7 ou uma estrela, que indica que um Deck pode ter qualquer número de Cards.
+A estrela __*__  perto da ponta de flecha indica a multiplicidade; ela indica quantos Cards um Deck tem. Uma multiplicidade pode ser um número simples como 52, um intervalo como 5..7 ou uma estrela, que indica que um Deck pode ter qualquer número de Cards.
 
 Não há nenhuma dependência neste diagrama. Elas normalmente apareceriam com uma flecha tracejada. Ou, se houver muitas dependências, às vezes elas são omitidas.
 
@@ -344,7 +345,7 @@ class Markov:
         self.prefix = ()
 ```
 
-Em seguida, transformamos as funções em métodos. Por exemplo, aqui está process\_word:
+Em seguida, transformamos as funções em métodos. Por exemplo, aqui está process_word:
 
 ```python
 def process_word(self, word, order=2):
@@ -434,10 +435,10 @@ Se violar esta regra, o que se chama de “princípio de substituição de Lisko
 <dd>Nova classe criada por herança de uma classe existente; também chamada de “subclasse”.</dd>
 
 <dt><a id="glos:relação IS-A" href="#termo:relação IS-A">relação IS-A</a></dt>
-<dd>Relação entre uma classe-filho e sua classe-pai.</dd>
+<dd>Relação entre uma classe-filho e sua classe-pai. Também chamada de herança.</dd>
 
 <dt><a id="glos:relação HAS-A" href="#termo:relação HAS-A">relação HAS-A</a></dt>
-<dd>Relação entre duas classes onde as instâncias de uma classe contêm referências a instâncias da outra.</dd>
+<dd>Relação entre duas classes onde as instâncias de uma classe contêm referências a instâncias da outra. Também chamada de composição.</dd>
 
 <dt><a id="glos:dependência" href="#termo:dependência">dependência</a></dt>
 <dd>Relação entre duas classes onde as instâncias de uma classe usam instâncias de outra classe, mas não as guardam como atributos.</dd>
@@ -446,7 +447,7 @@ Se violar esta regra, o que se chama de “princípio de substituição de Lisko
 <dd>Diagrama que mostra as classes em um programa e as relações entre elas.</dd>
 
 <dt><a id="glos:multiplicidade" href="#termo:multiplicidade">multiplicidade</a></dt>
-<dd>Notação em um diagrama de classe que mostra, para uma relação HAS-A, quantas referências dela são instâncias de outra classe.</dd>
+<dd>Notação em um diagrama de classe que mostra, para uma relação HAS-A, quantas referências a instâncias da outra classe podem existir.</dd>
 
 <dt><a id="glos:encapsulamento de dados" href="#termo:encapsulamento de dados">encapsulamento de dados</a></dt>
 <dd>Plano de desenvolvimento de programa que envolve um protótipo usando variáveis globais e uma versão final que transforma as variáveis globais em atributos de instância.</dd>
