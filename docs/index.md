@@ -38,7 +38,7 @@ Este livro ensina programação para quem nunca programou, usando [Python 3](htt
 
 * [Apêndice A: Depuração](A-depuracao.md)
 * [Apêndice B: Análise de algoritmos](B-analise-algorit.md)
-
+* [Colofão / Sobre o Autor](C-colofao-autor.md)
 
 ## Créditos da edição brasileira
 

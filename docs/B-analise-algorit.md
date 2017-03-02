@@ -286,54 +286,40 @@ Você pode baixar minha implementação de HashMap em http://thinkpython2.com/co
 
 ## B.5 - Glossário
 
-__análise de algoritmos__<br>
-Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.
+<dl>
+<dt><a id="glos:análise de algoritmos" href="#termo:análise de algoritmos">análise de algoritmos</a></dt>
+<dd>Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.</dd>
 
-__modelo de máquina__<br>
-Representação simplificada de um computador usada para descrever algoritmos.
+<dt><a id="glos:modelo de máquina" href="#termo:modelo de máquina">modelo de máquina</a></dt>
+<dd>Representação simplificada de um computador usada para descrever algoritmos.</dd>
 
-__pior caso__<br>
-Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).
+<dt><a id="glos:pior caso" href="#termo:pior caso">pior caso</a></dt>
+<dd>Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).</dd>
 
-__termo principal__<br>
-Em um polinômio, o termo com o expoente mais alto.
+<dt><a id="glos:termo principal" href="#termo:termo principal">termo principal</a></dt>
+<dd>Em um polinômio, o termo com o expoente mais alto.</dd>
 
-__ponto de desvio__<br>
-Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.
+<dt><a id="glos:ponto de desvio" href="#termo:ponto de desvio">ponto de desvio</a></dt>
+<dd>Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.</dd>
 
-__ordem de crescimento__<br>
-Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.
+<dt><a id="glos:ordem de crescimento" href="#termo:ordem de crescimento">ordem de crescimento</a></dt>
+<dd>Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.</dd>
 
-__notação Grande-O (Big-Oh notation)__<br>
-Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.
+<dt><a id="glos:notação Grande-O (Big-Oh notation)" href="#termo:notação Grande-O (Big-Oh notation)">notação Grande-O (Big-Oh notation)</a></dt>
+<dd>Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.</dd>
 
-__linear__<br>
-Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.
+<dt><a id="glos:linear" href="#termo:linear">linear</a></dt>
+<dd>Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.</dd>
 
-__quadrático__<br>
-Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.
+<dt><a id="glos:quadrático" href="#termo:quadrático">quadrático</a></dt>
+<dd>Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.</dd>
 
-__busca__<br>
-Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.
+<dt><a id="glos:busca" href="#termo:busca">busca</a></dt>
+<dd>Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.</dd>
 
-__hashtable__<br>
-Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.
-
-## B.6 - Sobre o autor
-
-Allen Downey é professor de Ciência da Computação no Olin College of Engineering. Ele já ensinou no Wellesley College, Colby College e na U.C. Berkeley. É doutor em Ciência da Computação pela U.C. Berkeley e mestre e graduado pelo MIT.
-
-## Colofão
-
-O animal na capa de Pense em Python é um papagaio-da-carolina, também conhecido como periquito-da-carolina (Conuropsis carolinensis). Este papagaio habitava o sudeste dos Estados Unidos e foi o único papagaio continental a habitar regiões acima do norte do México. Um dia, vivia no norte, em locais tão distantes quanto Nova Iorque e os Grandes Lagos, embora fosse encontrado principalmente na região da Flórida às Carolinas.
-
-O papagaio-da-carolina era quase todo verde com a cabeça amarela e, na maturidade, tinha uma coloração laranja na testa e na face. Seu tamanho médio variava de 31 a 33 cm. Tinha uma voz alta, ruidosa e palrava constantemente enquanto se alimentava. Habitava troncos de árvores ocos perto de brejos e barrancos. O papagaio-da-carolina era um animal muito gregário, que vivia em pequenos grupos os quais podiam chegar a várias centenas quando se alimentavam.
-
-Infelizmente, essas áreas de alimentação muitas vezes eram as plantações de agricultores, que disparavam nos pássaros para mantê-los longe das plantas. A natureza social dos pássaros fazia com que eles voassem ao resgate de qualquer papagaio ferido, permitindo aos agricultores derrubar bandos inteiros de cada vez. Além disso, suas penas eram usadas para embelezar chapéus de senhoras, e alguns papagaios eram mantidos como mascotes. Uma combinação desses fatores levou o papagaio-da-carolina a tornar-se raro no fim dos anos 1800, e as doenças de aves domésticas podem ter contribuído para diminuir seu número. Pelos anos 1920, a espécie estava extinta.
-
-Hoje, há mais de 700 espécimes de papagaios-da-carolina conservados em museus no mundo inteiro.
-
-Muitos dos animais nas capas de livros da O’Reilly estão em perigo de extinção; todos eles são importantes para o mundo. Para saber mais sobre como você pode ajudar, acesse animals.oreilly.com. A imagem da capa é do livro Johnson’s Natural History.
+<dt><a id="glos:hashtable" href="#termo:hashtable">hashtable</a></dt>
+<dd>Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.</dd>
+</dl>
 
 [1] popen foi descartado, ou seja, devemos parar de usá-lo e começar a usar o módulo subprocess. Entretanto, para casos simples, eu considero subprocess mais complicado que o necessário. Então vou continuar usando popen até que o removam.
 
