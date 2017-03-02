@@ -168,26 +168,25 @@ Para explicar como hashtables funcionam e por que o seu desempenho é tão bom, 
 
 Uso o Python para demonstrar essas implementações, mas, na vida real, eu não escreveria um código como esse no Python; bastaria usar um dicionário! Assim, para o resto deste capítulo, você tem que supor que os dicionários não existem e que quer implementar uma estrutura de dados que faça o mapa de chaves a valores. As operações que precisa implementar são:
 
-```python
-add(k, v):
-```
+<dl>
+<dt>add(k, v)</dt>
+<dd>Insere um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, `d`, essa operação é escrita `d[k] = v`.</dd>
 
-Insere um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, `d`, essa operação é escrita `d[k] = v`.
-
-```python
-get(k):
-```
-
-Procura e retorna o valor que corresponde à chave k. Com um dicionário de Python, d, esta operação é escrita `d[k]` ou `d.get(k)`.
+<dt>get(k)</dt>
+<dd>Procura e devolve o valor que corresponde à chave k. Com um dicionário de Python, `d`, esta operação é escrita `d[k]` ou `d.get(k)`.</dd>
+</dl>
 
 Por enquanto, vou supor que cada chave só apareça uma vez. A implementação mais simples desta interface usa uma lista de tuplas, onde cada tupla é um par chave-valor:
 
 ```python
 class LinearMap:
+
     def __init__(self):
-        self.items = \[\]
+        self.items = []
+
     def add(self, k, v):
         self.items.append((k, v))
+
     def get(self, k):
         for key, val in self.items:
             if key == k:
@@ -195,31 +194,37 @@ class LinearMap:
         raise KeyError
 ```
 
-add acrescenta uma tupla chave-valor à lista de itens, o que tem tempo constante.
+`add` acrescenta uma tupla chave-valor à lista de itens, o que tem tempo constante.
 
-get usa um loop for para buscar na lista: se encontrar a chave-alvo, retorna o valor correspondente; do contrário, exibe um KeyError. Então get é linear.
+`get` usa um loop for para buscar na lista: se encontrar a chave-alvo, retorna o valor correspondente; do contrário, exibe um KeyError. Então get é linear.
 
-Uma alternativa é manter uma lista ordenada por chaves. Assim, get poderia usar uma busca por bisseção, que é O(log n). Porém, inserir um novo item no meio de uma lista é linear, então isso pode não ser a melhor opção. Há outras estruturas de dados que podem implementar add e get em tempo logarítmico, mas isso não é tão bom como tempo constante, então vamos continuar.
+Uma alternativa é manter uma lista ordenada por chaves. Assim, get poderia usar uma busca por bisseção, que é O(log n). Porém, inserir um novo item no meio de uma lista é linear, então isso pode não ser a melhor opção. Há outras estruturas de dados que podem implementar `add` e `get` em tempo logarítmico, mas isso não é tão bom como tempo constante, então vamos continuar.
 
-Uma forma de melhorar LinearMap é quebrar a lista de pares chave-valor em listas menores. Aqui está uma implementação chamada BetterMap, que é uma lista de cem LinearMaps. Como veremos em um segundo, a ordem de crescimento para get ainda é linear, mas BetterMap é um passo no caminho em direção a hashtables:
+Uma forma de melhorar `LinearMap` é quebrar a lista de pares chave-valor em listas menores. Aqui está uma implementação chamada `BetterMap`, que é uma lista de cem LinearMaps. Como veremos em um segundo, a ordem de crescimento para get ainda é linear, mas `BetterMap` é um passo no caminho em direção a hashtables:
 
 ```python
 class BetterMap:
+
     def __init__(self, n=100):
-        self.maps = \[\]
+        self.maps = []
         for i in range(n):
             self.maps.append(LinearMap())
+
     def find_map(self, k):
         index = hash(k) % len(self.maps)
-        return self.maps\[index\]
+        return self.maps[index]
+
     def add(self, k, v):
         m = self.find_map(k)
         m.add(k, v)
+
     def get(self, k):
         m = self.find_map(k)
         return m.get(k)
-__init__ cria uma lista de n LinearMaps.
+
 ```
+
+`__init__` cria uma lista de n LinearMaps.
 
 `find_map` é usada por add e get para saber em qual mapa o novo item deve ir ou em qual mapa fazer a busca.
 
@@ -227,11 +232,11 @@ __init__ cria uma lista de n LinearMaps.
 
 Objetos hashable considerados equivalentes retornam o mesmo valor hash, mas o oposto não é necessariamente verdade: dois objetos com valores diferentes podem retornar o mesmo valor hash.
 
-`find_map` usa o operador módulo para manter os valores hash no intervalo de 0 a len(self.maps), então o resultado é um índice legal na lista. Naturalmente, isso significa que muitos valores hash diferentes serão reunidos no mesmo índice. Entretanto, se a função hash dispersar as coisas de forma consistente (que é o que as funções hash foram projetadas para fazer), então esperamos ter n/100 itens por LinearMap.
+`find_map` usa o operador módulo para manter os valores hash no intervalo de 0 a len(self.maps), então o resultado é um índice legal na lista. Naturalmente, isso significa que muitos valores hash diferentes serão reunidos no mesmo índice. Entretanto, se a função hash dispersar as coisas de forma consistente (que é o que as funções hash foram projetadas para fazer), então esperamos ter n/100 itens por `LinearMap`.
 
-Como o tempo de execução de LinearMap.get é proporcional ao número de itens, esperamos que BetterMap seja aproximadamente cem vezes mais rápido que LinearMap. A ordem de crescimento ainda é linear, mas o coeficiente principal é menor. Isto é bom, mas não tão bom quanto uma hashtable.
+Como o tempo de execução de `LinearMap.get` é proporcional ao número de itens, esperamos que `BetterMap` seja aproximadamente cem vezes mais rápido que `LinearMap`. A ordem de crescimento ainda é linear, mas o coeficiente principal é menor. Isto é bom, mas não tão bom quanto uma hashtable.
 
-Aqui (finalmente) está a ideia crucial que faz hashtables serem rápidas: se puder limitar o comprimento máximo de LinearMaps, LinearMap.get é de tempo constante. Tudo o que você precisa fazer é rastrear o número de itens e quando o número de itens por LinearMap exceder o limite, alterar o tamanho da hashtable acrescentando LinearMaps.
+Aqui (finalmente) está a ideia crucial que faz hashtables serem rápidas: se puder limitar o comprimento máximo de LinearMaps, `LinearMap.get` é de tempo constante. Tudo o que você precisa fazer é rastrear o número de itens e quando o número de itens por `LinearMap` exceder o limite, alterar o tamanho da hashtable acrescentando LinearMaps.
 
 Aqui está uma implementação de uma hashtable:
 
@@ -255,13 +260,13 @@ class HashMap:
         self.maps = new_maps
 ```
 
-Cada HashMap contém um BetterMap; `__init__` inicia com apenas dois LinearMaps e inicializa num, que monitora o número de itens.
+Cada `HashMap` contém um `BetterMap`; `__init__` inicia com apenas dois LinearMaps e inicializa num, que monitora o número de itens.
 
-get apenas despacha para BetterMap. O verdadeiro trabalho acontece em add, que verifica o número de itens e o tamanho de BetterMap: se forem iguais, o número médio de itens por LinearMap é um, então resize é chamada.
+get apenas despacha para `BetterMap`. O verdadeiro trabalho acontece em add, que verifica o número de itens e o tamanho de `BetterMap`: se forem iguais, o número médio de itens por `LinearMap` é um, então resize é chamada.
 
-resize faz um novo BetterMap duas vezes maior que o anterior, e então “redispersa” os itens do mapa antigo no novo.
+resize faz um novo `BetterMap` duas vezes maior que o anterior, e então “redispersa” os itens do mapa antigo no novo.
 
-A redispersão é necessária porque alterar o número de LinearMaps muda o denominador do operador módulo em `find_map`. Isso significa que alguns objetos que costumavam ser dispersos no mesmo LinearMap serão separados (que é o que queríamos, certo?).
+A redispersão é necessária porque alterar o número de LinearMaps muda o denominador do operador módulo em `find_map`. Isso significa que alguns objetos que costumavam ser dispersos no mesmo `LinearMap` serão separados (que é o que queríamos, certo?).
 
 A redispersão é linear, então resize é linear, o que pode parecer ruim, já que prometi que add seria de tempo constante. Entretanto, lembre-se de que não temos que alterar o tamanho a cada vez, então add normalmente é de tempo constante e só ocasionalmente linear. O volume total de trabalho para executar add n vezes é proporcional a n, então o tempo médio de cada add é de tempo constante!
 
@@ -282,7 +287,7 @@ O trabalho extra de redispersão aparece como uma sequência de torres cada vez 
 
 Uma característica importante deste algoritmo é que quando alteramos o tamanho da HashTable, ela cresce geometricamente; isto é, multiplicamos o tamanho por uma constante. Se você aumentar o tamanho aritmeticamente – somando um número fixo de cada vez – o tempo médio por add é linear.
 
-Você pode baixar minha implementação de HashMap em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
+Você pode baixar minha implementação de `HashMap` em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
 
 ## B.5 - Glossário
 
