@@ -47,7 +47,8 @@ def main():
     caminho_arq = sys.argv[1]
     with open(caminho_arq, encoding='utf8') as fp:
         md = fp.read()
-    md = marcar_listagens(marcar_verbetes(md))
+    #md = marcar_verbetes(md)
+    md = marcar_listagens(md)
     with open(caminho_arq.replace('-', 'list-', 1), 'wt', encoding='utf8') as fp:
         fp.write(md)
 

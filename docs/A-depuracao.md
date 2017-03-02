@@ -30,9 +30,9 @@ Aqui estão algumas formas de evitar os erros de sintaxe mais comuns:
 
 4. Se tiver strings com várias linhas com aspas triplas (simples ou duplas), confira se fechou a string adequadamente. Uma string não fechada pode causar um erro de invalid token no fim do seu programa, ou pode tratar a parte seguinte do programa como uma string até chegar à string seguinte. No segundo caso, o programa pode nem produzir uma mensagem de erro!
 
-5. Um operador inicial aberto – (, { ou \[ – faz o Python continuar até a linha seguinte, como se esta fosse parte da instrução atual. Geralmente, um erro ocorre quase imediatamente na linha seguinte.
+5. Um operador inicial aberto – `(`, `{` ou `[` – faz o Python continuar até a linha seguinte, como se esta fosse parte da instrução atual. Geralmente, um erro ocorre quase imediatamente na linha seguinte.
 
-6. Confira se há o clássico = em vez do == dentro de uma condicional.
+6. Confira se há o clássico `=` em vez do `==` dentro de uma condicional.
 
 7. Verifique a endentação para ter certeza de que está alinhada como deveria. O Python pode lidar com espaços e tabulações, mas, se misturá-los, isso pode causar problemas. A melhor forma de evitar esse problema é usar um editor de texto que identifique o Python e gere endentação consistente.
 
@@ -75,46 +75,41 @@ Se não for intencional, tenha certeza de que há uma chamada de função no pro
 Se um programa parar e parecer que não está fazendo nada, ele está “travado”. Muitas vezes isso significa que está preso em um loop ou recursão infinita.
 
 * Se houver determinado loop que você suspeita ser o problema, acrescente uma instrução print imediatamente antes do loop que diga “entrando no loop”, e outra imediatamente depois que diga “saindo do loop”.
-
-        Execute o programa. Se receber a primeira mensagem e a segunda não, você tem um loop infinito. Vá à seção “Loop infinito” mais adiante.
+<br><br>Execute o programa. Se receber a primeira mensagem e a segunda não, você tem um loop infinito. Vá à seção “Loop infinito” mais adiante.
 
 * Na maior parte do tempo, a recursividade infinita fará com que o programa seja executado durante algum tempo e então gere um erro “RuntimeError: Maximum recursion depth exceeded”. Se isso acontecer, vá à seção “Recursividade infinita” mais adiante.
-
-        Se não estiver recebendo este erro, mas suspeita que há um problema com um método ou função recursiva, você ainda pode usar as técnicas da seção “Recursividade infinita”.
+<br><br>Se não estiver recebendo este erro, mas suspeita que há um problema com um método ou função recursiva, você ainda pode usar as técnicas da seção “Recursividade infinita”.
 
 * Se nenhum desses passos funcionar, comece a testar outros loops e outras funções e métodos recursivos.
 
 * Se isso não funcionar, então é possível que você não entenda o fluxo de execução do seu programa. Vá à seção “Fluxo de execução” mais adiante.
 
-Loop infinito
+#### Loop infinito
 
 Se você acha que há um loop infinito e talvez saiba qual loop está causando o problema, acrescente uma instrução print no fim do loop que exiba os valores das variáveis na condição e o valor da condição.
 
 Por exemplo:
 
-while x &gt; 0 and y &lt; 0 :
-
-    \# faz algo com x
-
-    \# faz algo com y
-
+```python
+while x > 0 and y < 0 :
+    # faz algo com x
+    # faz algo com y
     print('x: ', x)
-
     print('y: ', y)
-
-    print("condition: ", (x &gt; 0 and y &lt; 0))
+    print("condition: ", (x > 0 and y < 0))
+```
 
 Agora, quando executar o programa, você verá três linhas de saída para cada vez que o programa passar pelo loop. Na última vez que passar pelo loop, a condição deve ser False. Se o loop continuar, você poderá ver os valores de x e y, e compreender porque não estão sendo atualizados corretamente.
 
-Recursividade infinita
+#### Recursividade infinita
 
-Na maioria das vezes, a recursividade infinita faz o programa rodar durante algum tempo e então produzir um erro de Maximum recursion depth exceeded.
+Na maioria das vezes, a recursividade infinita faz o programa rodar durante algum tempo e então produzir um erro de "Maximum recursion depth exceeded".
 
 Se suspeitar que uma função está causando recursividade infinita, confira se há um caso-base. Deve haver alguma condição que faz a função retornar sem fazer uma invocação recursiva. Do contrário, você terá que repensar o algoritmo e identificar um caso-base.
 
 Se houver um caso-base, mas o programa não parece alcançá-lo, acrescente uma instrução print no início da função para exibir os parâmetros. Agora, quando executar o programa, você verá algumas linhas de saída cada vez que a função for invocada, e verá os valores dos parâmetros. Se os parâmetros não estiverem se movendo em direção ao caso-base, você terá algumas ideias sobre a razão disso.
 
-Fluxo de execução
+#### Fluxo de execução
 
 Se não tiver certeza de como o fluxo de execução está se movendo pelo seu programa, acrescente instruções print ao começo de cada função com uma mensagem como “entrada na função foo”, onde foo é o nome da função.
 
@@ -128,11 +123,11 @@ O traceback identifica a função que está rodando atualmente, e a função que
 
 O primeiro passo é examinar o lugar no programa onde o erro ocorreu e ver se consegue compreender o que aconteceu. Esses são alguns dos erros de tempo de execução mais comuns:
 
-NameError:
+#### NameError
 
 Você está tentando usar uma variável que não existe no ambiente atual. Confira se o nome está escrito corretamente e de forma consistente. E lembre-se de que as variáveis locais são locais; você não pode se referir a elas a partir do exterior da função onde são definidas.
 
-TypeError:
+#### TypeError
 
 Há várias causas possíveis:
 
@@ -142,11 +137,11 @@ Há várias causas possíveis:
 
 * Você está passando o número incorreto de argumentos a uma função. Para métodos, olhe para a definição do método e verifique se o primeiro parâmetro é self. Então olhe para a invocação do método; confira se está invocando o método a um objeto com o tipo correto e fornecendo os outros argumentos corretamente.
 
-KeyError:
+#### KeyError
 
 Você está tentando acessar um elemento de um dicionário usando uma chave que o dicionário não contém. Se as chaves forem strings, lembre-se de que letras maiúsculas são diferentes de minúsculas.
 
-AttributeError:
+#### AttributeError
 
 Você está tentando acessar um atributo ou método que não existe. Verifique a ortografia! Você pode usar a função integrada vars para listar os atributos que existem mesmo.
 
@@ -154,7 +149,7 @@ Se um AttributeError indicar que um objeto é do tipo NoneType, fica subentendid
 
 Pode ser que o objeto seja none porque você se esqueceu de retornar um valor de uma função; se chegar ao fim de uma função sem chegar a uma instrução return, ela retorna None. Outra causa comum é usar o resultado de um método de lista, como sort, que retorne None.
 
-IndexError:
+#### IndexError
 
 O índice que você está usando para acessar uma lista, string ou tupla é maior que o seu comprimento menos um. Imediatamente antes do local do erro, acrescente uma instrução print para exibir o valor do índice e o comprimento do array. O array é do tamanho certo? O índice tem o valor certo?
 
@@ -204,27 +199,32 @@ Escrever expressões complexas é ótimo enquanto são legíveis, mas elas podem
 
 Por exemplo:
 
-self.hands\[i\].addCard(self.hands\[self.findNeighbor(i)\].popCard())
-
+```python
+self.hands[i].addCard(self.hands[self.findNeighbor(i)].popCard())
+```
 A expressão pode ser reescrita assim:
 
+```python
 neighbor = self.findNeighbor(i)
-
-pickedCard = self.hands\[neighbor\].popCard()
-
-self.hands\[i\].addCard(pickedCard)
+pickedCard = self.hands[neighbor].popCard()
+self.hands[i].addCard(pickedCard)
+```
 
 A versão explícita é mais fácil de ler porque os nomes das variáveis oferecem documentação adicional, e é mais fácil de depurar porque você pode verificar os tipos das variáveis intermediárias e exibir seus valores.
 
 Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão ![Fórmula – x / (2 * pi) em notação matemática.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/p242f1.png) para o Python, poderia escrever:
 
-y = x / 2 \* math.pi
+```python
+y = x / 2 * math.pi
+```
 
 Isso não está correto porque a multiplicação e a divisão têm a mesma precedência e são avaliadas da esquerda para a direita. Então, é assim que essa expressão é calculada: xπ/2.
 
 Uma boa forma de depurar expressões é acrescentar parênteses para tornar a ordem da avaliação explícita:
 
-y = x / (2 \* math.pi)
+```python
+y = x / (2 * math.pi)
+```
 
 Sempre que não tiver certeza sobre a ordem da avaliação, use parênteses. Além de o programa ficar correto (quanto à execução do que era pretendido), ele também será mais legível para outras pessoas que não memorizaram a ordem de operações.
 
@@ -232,13 +232,16 @@ Sempre que não tiver certeza sobre a ordem da avaliação, use parênteses. Al�
 
 Se tiver uma instrução return com uma expressão complexa, não há possibilidade de exibir o resultado antes do retorno. Novamente, você pode usar uma variável temporária. Por exemplo, em vez de:
 
-return self.hands\[i\].removeMatches()
+```python
+return self.hands[i].removeMatches()
+```
 
 você poderia escrever:
 
-count = self.hands\[i\].removeMatches()
-
+```python
+count = self.hands[i].removeMatches()
 return count
+```
 
 Agora você tem a oportunidade de exibir o valor de count antes do retorno.
 
