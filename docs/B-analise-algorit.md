@@ -2,13 +2,13 @@
 
 Este apêndice é um excerto editado de Think Complexity, por Allen B. Downey, também publicado pela O’Reilly Media (2012). Depois de ler este livro aqui, pode ser uma boa ideia lê-lo também.
 
-Análise de algoritmos é um ramo da Ciência da Computação que estuda o desempenho de algoritmos, especialmente suas exigências de tempo de execução e requisitos de espaço. Veja http://en.wikipedia.org/wiki/Analysis\_of\_algorithms.
+Análise de algoritmos é um ramo da Ciência da Computação que estuda o desempenho de algoritmos, especialmente suas exigências de tempo de execução e requisitos de espaço. Veja http://en.wikipedia.org/wiki/Analysis_of_algorithms.
 
 A meta prática da análise de algoritmos é prever o desempenho de algoritmos diferentes para guiar decisões de projeto.
 
 Durante a campanha presidencial dos Estados Unidos de 2008, pediram ao candidato Barack Obama para fazer uma entrevista de emprego improvisada quando visitou a Google. O diretor executivo, Eric Schmidt, brincou, pedindo a ele “a forma mais eficiente de classificar um milhão de números inteiros de 32 bits”. Aparentemente, Obama tinha sido alertado porque respondeu na hora: “Creio que a ordenação por bolha (bubble sort) não seria a escolha certa”. Veja http://bit.ly/1MpIwTf.
 
-Isso é verdade: a ordenação por bolha é conceitualmente simples, mas lenta para grandes conjuntos de dados. A resposta que Schmidt procurava provavelmente é “ordenação radix” (radix sort) (http://en.wikipedia.org/wiki/Radix\_sort)[2].
+Isso é verdade: a ordenação por bolha é conceitualmente simples, mas lenta para grandes conjuntos de dados. A resposta que Schmidt procurava provavelmente é “ordenação radix” (radix sort) (http://en.wikipedia.org/wiki/Radix_sort)[2].
 
 A meta da análise de algoritmos é fazer comparações significativas entre algoritmos, mas há alguns problemas:
 
@@ -40,7 +40,7 @@ Ao chegar em n=10, o algoritmo A parece bem ruim; ele é quase dez vezes mais lo
 
 A razão fundamental é que para grandes valores de n, qualquer função que contenha um termo n2 será mais rápida que uma função cujo termo principal seja n. O termo principal é o que tem o expoente mais alto.
 
-Para o algoritmo A, o termo principal tem um grande coeficiente, 100, que é a razão de B ser melhor que A para um valor pequeno de n. Entretanto, apesar dos coeficientes, sempre haverá algum valor de n em que an2 &gt; bn, para valores de a e b.
+Para o algoritmo A, o termo principal tem um grande coeficiente, 100, que é a razão de B ser melhor que A para um valor pequeno de n. Entretanto, apesar dos coeficientes, sempre haverá algum valor de n em que an2 > bn, para valores de a e b.
 
 O mesmo argumento se aplica aos termos que não são principais. Mesmo se o tempo de execução do algoritmo A fosse n+1000000, ainda seria melhor que o algoritmo B para um valor suficientemente grande de n.
 
@@ -68,7 +68,7 @@ Para os termos logarítmicos, a base do logaritmo não importa; a alteração de
 
 ### Exercício B.1
 
-Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em http://en.wikipedia.org/wiki/Big\_O\_notation e responda às seguintes perguntas:
+Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em http://en.wikipedia.org/wiki/Big_O_notation e responda às seguintes perguntas:
 
 1. Qual é a ordem de crescimento de n3 + n2? E de 1000000n3 + n2? Ou de n3 + 1000000n2?
 
@@ -94,11 +94,11 @@ Operações de indexação – ler ou escrever elementos em uma sequência ou di
 
 Um loop for que atravesse uma sequência ou dicionário é normalmente linear, desde que todas as operações no corpo do loop sejam de tempo constante. Por exemplo, somar os elementos de uma lista é linear:
 
+```python
 total = 0
-
 for x in t:
-
     total += x
+```
 
 A função integrada sum também é linear porque faz a mesma coisa, mas tende a ser mais rápida porque é uma implementação mais eficiente; na linguagem da análise algorítmica, tem um coeficiente principal menor.
 
@@ -168,35 +168,32 @@ Para explicar como hashtables funcionam e por que o seu desempenho é tão bom, 
 
 Uso o Python para demonstrar essas implementações, mas, na vida real, eu não escreveria um código como esse no Python; bastaria usar um dicionário! Assim, para o resto deste capítulo, você tem que supor que os dicionários não existem e que quer implementar uma estrutura de dados que faça o mapa de chaves a valores. As operações que precisa implementar são:
 
+```python
 add(k, v):
+```
 
-Adiciona um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, d, essa operação é escrita d\[k\] = v.
+Insere um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, `d`, essa operação é escrita `d[k] = v`.
 
+```python
 get(k):
+```
 
-Procura e retorna o valor que corresponde à chave k. Com um dicionário de Python, d, esta operação é escrita d \[k\] ou d.get(k).
+Procura e retorna o valor que corresponde à chave k. Com um dicionário de Python, d, esta operação é escrita `d[k]` ou `d.get(k)`.
 
 Por enquanto, vou supor que cada chave só apareça uma vez. A implementação mais simples desta interface usa uma lista de tuplas, onde cada tupla é um par chave-valor:
 
+```python
 class LinearMap:
-
-    def \_\_init\_\_(self):
-
+    def __init__(self):
         self.items = \[\]
-
     def add(self, k, v):
-
         self.items.append((k, v))
-
     def get(self, k):
-
         for key, val in self.items:
-
             if key == k:
-
                 return val
-
         raise KeyError
+```
 
 add acrescenta uma tupla chave-valor à lista de itens, o que tem tempo constante.
 
@@ -206,43 +203,31 @@ Uma alternativa é manter uma lista ordenada por chaves. Assim, get poderia usar
 
 Uma forma de melhorar LinearMap é quebrar a lista de pares chave-valor em listas menores. Aqui está uma implementação chamada BetterMap, que é uma lista de cem LinearMaps. Como veremos em um segundo, a ordem de crescimento para get ainda é linear, mas BetterMap é um passo no caminho em direção a hashtables:
 
+```python
 class BetterMap:
-
-    def \_\_init\_\_(self, n=100):
-
+    def __init__(self, n=100):
         self.maps = \[\]
-
         for i in range(n):
-
             self.maps.append(LinearMap())
-
-    def find\_map(self, k):
-
+    def find_map(self, k):
         index = hash(k) % len(self.maps)
-
         return self.maps\[index\]
-
     def add(self, k, v):
-
-        m = self.find\_map(k)
-
+        m = self.find_map(k)
         m.add(k, v)
-
     def get(self, k):
-
-        m = self.find\_map(k)
-
+        m = self.find_map(k)
         return m.get(k)
+__init__ cria uma lista de n LinearMaps.
+```
 
-\_\_init\_\_ cria uma lista de n LinearMaps.
+`find_map` é usada por add e get para saber em qual mapa o novo item deve ir ou em qual mapa fazer a busca.
 
-find\_map é usada por add e get para saber em qual mapa o novo item deve ir ou em qual mapa fazer a busca.
-
-find\_map usa a função integrada hash, que recebe quase qualquer objeto do Python e retorna um número inteiro. Uma limitação desta implementação é que ela só funciona com chaves hashable. Tipos mutáveis como listas e dicionários não são hashable.
+`find_map` usa a função integrada hash, que recebe quase qualquer objeto do Python e retorna um número inteiro. Uma limitação desta implementação é que ela só funciona com chaves hashable. Tipos mutáveis como listas e dicionários não são hashable.
 
 Objetos hashable considerados equivalentes retornam o mesmo valor hash, mas o oposto não é necessariamente verdade: dois objetos com valores diferentes podem retornar o mesmo valor hash.
 
-find\_map usa o operador módulo para manter os valores hash no intervalo de 0 a len(self.maps), então o resultado é um índice legal na lista. Naturalmente, isso significa que muitos valores hash diferentes serão reunidos no mesmo índice. Entretanto, se a função hash dispersar as coisas de forma consistente (que é o que as funções hash foram projetadas para fazer), então esperamos ter n/100 itens por LinearMap.
+`find_map` usa o operador módulo para manter os valores hash no intervalo de 0 a len(self.maps), então o resultado é um índice legal na lista. Naturalmente, isso significa que muitos valores hash diferentes serão reunidos no mesmo índice. Entretanto, se a função hash dispersar as coisas de forma consistente (que é o que as funções hash foram projetadas para fazer), então esperamos ter n/100 itens por LinearMap.
 
 Como o tempo de execução de LinearMap.get é proporcional ao número de itens, esperamos que BetterMap seja aproximadamente cem vezes mais rápido que LinearMap. A ordem de crescimento ainda é linear, mas o coeficiente principal é menor. Isto é bom, mas não tão bom quanto uma hashtable.
 
@@ -250,63 +235,50 @@ Aqui (finalmente) está a ideia crucial que faz hashtables serem rápidas: se pu
 
 Aqui está uma implementação de uma hashtable:
 
+```python
 class HashMap:
-
-    def \_\_init\_\_(self):
-
+    def __init__(self):
         self.maps = BetterMap(2)
-
         self.num = 0
-
     def get(self, k):
-
         return self.maps.get(k)
-
     def add(self, k, v):
-
         if self.num == len(self.maps.maps):
-
             self.resize()
-
         self.maps.add(k, v)
-
         self.num += 1
-
     def resize(self):
-
-        new\_maps = BetterMap(self.num \* 2)
-
+        new_maps = BetterMap(self.num * 2)
         for m in self.maps.maps:
-
             for k, v in m.items:
+                new_maps.add(k, v)
+        self.maps = new_maps
+```
 
-                new\_maps.add(k, v)
-
-        self.maps = new\_maps
-
-Cada HashMap contém um BetterMap; \_\_init\_\_ inicia com apenas dois LinearMaps e inicializa num, que monitora o número de itens.
+Cada HashMap contém um BetterMap; `__init__` inicia com apenas dois LinearMaps e inicializa num, que monitora o número de itens.
 
 get apenas despacha para BetterMap. O verdadeiro trabalho acontece em add, que verifica o número de itens e o tamanho de BetterMap: se forem iguais, o número médio de itens por LinearMap é um, então resize é chamada.
 
 resize faz um novo BetterMap duas vezes maior que o anterior, e então “redispersa” os itens do mapa antigo no novo.
 
-A redispersão é necessária porque alterar o número de LinearMaps muda o denominador do operador módulo em find\_map. Isso significa que alguns objetos que costumavam ser dispersos no mesmo LinearMap serão separados (que é o que queríamos, certo?).
+A redispersão é necessária porque alterar o número de LinearMaps muda o denominador do operador módulo em `find_map`. Isso significa que alguns objetos que costumavam ser dispersos no mesmo LinearMap serão separados (que é o que queríamos, certo?).
 
 A redispersão é linear, então resize é linear, o que pode parecer ruim, já que prometi que add seria de tempo constante. Entretanto, lembre-se de que não temos que alterar o tamanho a cada vez, então add normalmente é de tempo constante e só ocasionalmente linear. O volume total de trabalho para executar add n vezes é proporcional a n, então o tempo médio de cada add é de tempo constante!
 
-Para ver como isso funciona, pense em começar com uma HashTable vazia e adicione uma sequência de itens. Começamos com dois LinearMaps, então as duas primeiras adições são rápidas (não é necessário alterar o tamanho). Digamos que elas tomem uma unidade do trabalho cada uma. A próxima adição exige uma alteração de tamanho, então temos de redispersar os dois primeiros itens (vamos chamar isso de mais duas unidades de trabalho) e então acrescentar o terceiro item (mais uma unidade). Acrescentar o próximo item custa uma unidade, então o total, por enquanto, é de seis unidades de trabalho para quatro itens.
+Para ver como isso funciona, pense como seria começar com uma HashTable vazia e inserir uma série de itens. Começamos com dois LinearMaps, então as duas primeiras inserções são rápidas (não é necessário alterar o tamanho). Digamos que elas tomem uma unidade do trabalho cada uma. A próxima inserção exige uma alteração de tamanho, então temos de redispersar os dois primeiros itens (vamos chamar isso de mais duas unidades de trabalho) e então acrescentar o terceiro item (mais uma unidade). Acrescentar o próximo item custa uma unidade, então o total, por enquanto, é de seis unidades de trabalho para quatro itens.
 
-O próximo add custa cinco unidades, mas os três seguintes são só uma unidade cada um, então o total é de 14 unidades para as primeiras oito adições.
+O próximo add custa cinco unidades, mas os três seguintes são só uma unidade cada um, então o total é de 14 unidades para as primeiras oito inserções.
 
-O próximo add custa nove unidades, mas então podemos adicionar mais sete antes da próxima alteração de tamanho, então o total é de 30 unidades para as primeiras 16 adições.
+O próximo add custa nove unidades, mas então podemos inserir mais sete antes da próxima alteração de tamanho, então o total é de 30 unidades para as primeiras 16 inserções.
 
-Depois de 32 adições, o custo total é de 62 unidades, e espero que você esteja começando a ver um padrão. Depois de n adições, nas quais n é uma potência de dois, o custo total é de 2n-2 unidades, então o trabalho médio por adição é um pouco menos de duas unidades. Quando n é uma potência de dois, esse é o melhor caso; para outros valores de n, o trabalho médio é um pouco maior, mas isso não é importante. O importante é que seja O(1).
+Depois de 32 inserções, o custo total é de 62 unidades, e espero que você esteja começando a ver um padrão. Depois de n inserções, nas quais n é uma potência de dois, o custo total é de 2n-2 unidades, então o trabalho médio por inserção é um pouco menos de duas unidades. Quando n é uma potência de dois, esse é o melhor caso; para outros valores de n, o trabalho médio é um pouco maior, mas isso não é importante. O importante é que seja O(1).
 
-A Figura 21.1 mostra graficamente como isso funciona. Cada bloco representa uma unidade de trabalho. As colunas mostram o trabalho total para cada adição na ordem da esquerda para a direita: os primeiros dois adds custam uma unidade, o terceiro custa três unidades etc.
+A Figura 21.1 mostra graficamente como isso funciona. Cada bloco representa uma unidade de trabalho. As colunas mostram o trabalho total para cada inserção na ordem da esquerda para a direita: os primeiros dois adds custam uma unidade, o terceiro custa três unidades etc.
 
-Figura 21.1 – O custo de adições em uma hashtable.
+![Figura B.1 – O custo de inserções em uma hashtable.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_2101.png)
+<br>_Figura B.1 – O custo de inserções em uma hashtable._
 
-O trabalho extra de redispersão aparece como uma sequência de torres cada vez mais altas com um aumento de espaço entre elas. Agora, se derrubar as torres, espalhando o custo de alterar o tamanho por todas as adições, poderá ver graficamente que o custo total depois de n adições é de 2n − 2.
+O trabalho extra de redispersão aparece como uma sequência de torres cada vez mais altas com um aumento de espaço entre elas. Agora, se derrubar as torres, espalhando o custo de alterar o tamanho por todas as inserções, poderá ver graficamente que o custo total depois de n inserções é de 2n − 2.
 
 Uma característica importante deste algoritmo é que quando alteramos o tamanho da HashTable, ela cresce geometricamente; isto é, multiplicamos o tamanho por uma constante. Se você aumentar o tamanho aritmeticamente – somando um número fixo de cada vez – o tempo médio por add é linear.
 
@@ -351,7 +323,7 @@ Estrutura de dados que representa uma coleção de pares chave-valor e executa b
 
 Allen Downey é professor de Ciência da Computação no Olin College of Engineering. Ele já ensinou no Wellesley College, Colby College e na U.C. Berkeley. É doutor em Ciência da Computação pela U.C. Berkeley e mestre e graduado pelo MIT.
 
-Colofão
+## Colofão
 
 O animal na capa de Pense em Python é um papagaio-da-carolina, também conhecido como periquito-da-carolina (Conuropsis carolinensis). Este papagaio habitava o sudeste dos Estados Unidos e foi o único papagaio continental a habitar regiões acima do norte do México. Um dia, vivia no norte, em locais tão distantes quanto Nova Iorque e os Grandes Lagos, embora fosse encontrado principalmente na região da Flórida às Carolinas.
 
