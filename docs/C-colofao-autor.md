@@ -1,6 +1,6 @@
 # Colofão
 
-<a href="https://novatec.com.br/livros/pense-em-python/"><img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;"></a>
+<a href="https://novatec.com.br/livros/pense-em-python/"><img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython332x461.png" align="right" style="margin-left: 30px;"></a>
 
 O animal na capa de Pense em Python é um papagaio-da-carolina, também conhecido como periquito-da-carolina (Conuropsis carolinensis). Este papagaio habitava o sudeste dos Estados Unidos e foi o único papagaio continental a habitar regiões acima do norte do México. Um dia, vivia no norte, em locais tão distantes quanto Nova Iorque e os Grandes Lagos, embora fosse encontrado principalmente na região da Flórida às Carolinas.
 
