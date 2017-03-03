@@ -19,11 +19,12 @@ def _fix_images_url(files, tmp_dir):
     """
     makedirs(tmp_dir)
     fixed_files = []
+    fixed_path = path.relpath(_project_path())
     for fp in files:
         file_name = path.split(fp)[1]
         output = path.join(tmp_dir, file_name)
         with open(fp) as input_file:
-            fixed_str = input_file.read().replace('https://github.com/PenseAllen/PensePython2e/raw/master/', '../')
+            fixed_str = input_file.read().replace('https://github.com/PenseAllen/PensePython2e/raw/master', fixed_path)
             with open(output, 'w') as output_file:
                 output_file.write(fixed_str)
             fixed_files.append(output)
@@ -51,7 +52,6 @@ def main():
     # Remove arquivos temporários
     rmtree(tmp_dir)
     print('Gerado epub em', output)
-
 
 
 if __name__ == '__main__':
