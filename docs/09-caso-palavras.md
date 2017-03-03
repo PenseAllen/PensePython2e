@@ -88,7 +88,7 @@ Escreva uma função chamada `is_abecedarian` que retorne `True` se as letras nu
 
 ## 9.3 - Busca
 
-Todos os exercícios na seção anterior têm algo em comum; eles podem ser resolvidos com o modelo de busca que vimos em “Buscando”, na página 123. O exemplo mais simples é:
+Todos os exercícios na seção anterior têm algo em comum; eles podem ser resolvidos com o modelo de busca que vimos em [Buscando](./08-strings.md#86---buscando). O exemplo mais simples é:
 
 ```python
 def has_no_e(word):
