@@ -46,9 +46,9 @@ Esta edição de _Pense em Python_ tem as seguintes novidades:
 
 * Acrescentei algumas seções e mais detalhes sobre a web, para ajudar os principiantes a executar o Python em um navegador, e não ter que lidar com a instalação do programa até que seja necessário.
 
-* Para “Módulo turtle” na página 63 troquei meu próprio pacote gráfico turtle, chamado Swampy, para um módulo Python mais padronizado, turtle, que é mais fácil de instalar e mais eficiente.
+* Para [“Módulo turtle”](./04-caso-interface.md#42---módulo-turtle) troquei meu próprio pacote gráfico turtle, chamado Swampy, para um módulo Python mais padronizado, turtle, que é mais fácil de instalar e mais eficiente.
 
-* Acrescentei um novo capítulo chamado “Extra”, que introduz alguns recursos adicionais do Python, não estritamente necessários, mas às vezes práticos.
+* Acrescentei um novo capítulo chamado [“Extra”](./19-extra.md), que introduz alguns recursos adicionais do Python, não estritamente necessários, mas às vezes práticos.
 
 Espero que goste de trabalhar com este livro, e que ele o ajude a aprender a programar e pensar, pelo menos um pouquinho, como um cientista da computação.
 
@@ -81,7 +81,7 @@ Exibe textos que devem ser substituídos por valores fornecidos pelos usuários 
 
 ## Uso do código dos exemplos (de acordo com a política da O'Reilly)
 
-Há material suplementar (exemplos de código, exercícios etc.) disponível para baixar em http://www.greenteapress.com/thinkpython2/code.
+Há material suplementar (exemplos de código, exercícios etc.) disponível para baixar em [http://www.greenteapress.com/thinkpython2/code](http://www.greenteapress.com/thinkpython2/code).
 
 Este livro serve para ajudar você a fazer o que precisa. Em geral, se o livro oferece exemplos de código, você pode usá-los nos seus programas e documentação. Não é preciso entrar em contato conosco para pedir permissão, a menos que esteja reproduzindo uma porção significativa do código. Por exemplo, escrever um programa que use vários pedaços de código deste livro não exige permissão. Vender ou distribuir um CD-ROM de exemplos dos livros da O’Reilly exige permissão. Responder a uma pergunta citando este livro e reproduzindo exemplos de código não exige permissão. Incorporar uma quantidade significativa de exemplos de código deste livro na documentação do seu produto exige permissão.
 
@@ -97,13 +97,13 @@ Temos uma página web para este livro na qual incluímos erratas, exemplos e qua
 
 * Página da edição em português
 
-        http://www.novatec.com.br/catalogo/7522508-pense-em-python
+        [http://www.novatec.com.br/catalogo/7522508-pense-em-python](http://www.novatec.com.br/catalogo/7522508-pense-em-python)
 
 * Página da edição original em inglês
 
-        http://bit.ly/think-python_2E
+        [http://bit.ly/think-python_2E](http://bit.ly/think-python_2E)
 
-Para obter mais informações sobre os livros da Novatec, acesse nosso site em http://www.novatec.com.br.
+Para obter mais informações sobre os livros da Novatec, acesse nosso site em [http://www.novatec.com.br](http://www.novatec.com.br).
 
 
 ## Agradecimentos
