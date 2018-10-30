@@ -30,7 +30,7 @@ O caractere de sublinhar (\_) pode aparecer em um nome. Muitas vezes é usado em
 
 Se você der um nome ilegal a uma variável, recebe um erro de sintaxe:
 
-```
+```python
 >>> 76trombones = 'big parade'
 SyntaxError: invalid syntax
 >>> more@ = 1000000
