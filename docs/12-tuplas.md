@@ -395,7 +395,7 @@ Como tuplas são imutáveis, elas não fornecem métodos como `sort` e `reverse`
 
 As listas, os dicionários e as tuplas são exemplos de estruturas de dados; neste capítulo estamos começando a ver estruturas de dados compostas, como as listas de tuplas ou dicionários que contêm tuplas como chaves e listas como valores. As estruturas de dados compostas são úteis, mas são propensas ao que chamo de erros de forma; isto é, erros causados quando uma estrutura de dados tem o tipo, tamanho ou estrutura incorretos. Por exemplo, se você estiver esperando uma lista com um número inteiro e eu der apenas o número inteiro (não em uma lista), não vai funcionar.
 
-Para ajudar a depurar esses tipos de erro, escrevi um módulo chamado `structshape`, que fornece uma função, também chamada `structshape`, que recebe qualquer tipo de estrutura de dados como argumento e retorna uma string, que resume sua forma. Você pode baixá-la em http://thinkpython2.com/code/structshape.py.
+Para ajudar a depurar esses tipos de erro, escrevi um módulo chamado `structshape`, que fornece uma função, também chamada `structshape`, que recebe qualquer tipo de estrutura de dados como argumento e retorna uma string, que resume sua forma. Você pode baixá-la em https://github.com/AllenDowney/ThinkPython2/raw/master/code/structshape.py.
 
 Aqui está o resultado de uma lista simples:
 
@@ -475,7 +475,7 @@ Se estiver com problemas para monitorar suas estruturas de dados, o `structshape
 
 Escreva uma função chamada `most_frequent` que receba uma string e exiba as letras em ordem decrescente de frequência. Encontre amostras de texto de vários idiomas diferentes e veja como a frequência das letras varia entre os idiomas. Compare seus resultados com as tabelas em http://en.wikipedia.org/wiki/Letter_frequencies.
 
-Solução: http://thinkpython2.com/code/most_frequent.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/most_frequent.py.
 
 ### Exercício 12.2
 
@@ -498,13 +498,13 @@ Mais anagramas!
 
 3. No Scrabble, um “bingo” é quando você joga todas as sete peças na sua estante, junto com uma peça no tabuleiro, para formar uma palavra de oito letras. Que coleção de oito letras forma o maior número possível de bingos? Dica: há sete.
 
-Solução: http://thinkpython2.com/code/anagram_sets.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/anagram_sets.py.
 
 ### Exercício 12.3
 
 Duas palavras formam um “par de metátese” se você puder transformar uma na outra trocando duas letras, por exemplo, “converse” e “conserve”. Escreva um programa que descubra todos os pares de metátese no dicionário. Dica: não teste todos os pares de palavras e não teste todas as trocas possíveis.
 
-Solução: http://thinkpython2.com/code/metathesis.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/metathesis.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
 
 ### Exercício 12.4
 
@@ -528,4 +528,4 @@ Este exercício é um pouco mais desafiador que a maioria, então aqui estão al
 
 4. Para melhorar o desempenho do seu programa, você pode querer memorizar as palavras conhecidas por serem redutíveis.
 
-Solução: http://thinkpython2.com/code/reducible.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/reducible.py.

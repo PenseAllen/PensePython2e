@@ -542,7 +542,7 @@ do_twice(print_spam)
 
 5. Defina uma função nova chamada `do_four` que receba um objeto de função e um valor e chame a função quatro vezes, passando o valor como um parâmetro. Deve haver só duas afirmações no corpo desta função, não quatro.
 
-Solução: http://thinkpython2.com/code/do_four.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/do_four.py.
 
 
 ### Exercício 3.3
@@ -579,4 +579,5 @@ Solução: http://thinkpython2.com/code/do_four.py.
 
 2. Escreva uma função que desenhe uma grade semelhante com quatro linhas e quatro colunas.
 
-Solução: http://thinkpython2.com/code/grid.py. Crédito: Este exercício é baseado em outro apresentado por Oualline, em Practical C Programming, Third Edition, O’Reilly Media, 1997.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/grid.py.
+Crédito: Este exercício é baseado em outro apresentado por Oualline, em Practical C Programming, Third Edition, O’Reilly Media, 1997.

@@ -318,7 +318,7 @@ A nova lista, que estamos chamando de t, também é adicionada ao dicionário. E
 defaultdict(<class 'list'>, {'new key': ['new value']})
 ```
 
-Se estiver fazendo um dicionário de listas, você pode escrever um código mais simples usando defaultdict. Na minha solução para o Exercício 12.2, que você pode ver em http://thinkpython2.com/code/anagram\_sets.py, faço um dicionário que mapeia uma string organizada de letras a uma lista de palavras que pode ser soletrada com essas letras. Por exemplo, 'opst' mapeia para a lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
+Se estiver fazendo um dicionário de listas, você pode escrever um código mais simples usando defaultdict. Na minha solução para o Exercício 12.2, que você pode ver em https://github.com/AllenDowney/ThinkPython2/raw/master/code/anagram\_sets.py, faço um dicionário que mapeia uma string organizada de letras a uma lista de palavras que pode ser soletrada com essas letras. Por exemplo, 'opst' mapeia para a lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
 
 Aqui está o código original:
 
@@ -361,7 +361,7 @@ def all_anagrams(filename):
     return d
 ```
 
-A minha solução para o Exercício 18.3, que você pode baixar em http://thinkpython2.com/code/PokerHandSoln.py, usa setdefault na função `has_straightflush`. O problema dessa solução é criar um objeto Hand cada vez que passa pelo loop, seja ele necessário ou não. Como exercício, reescreva-a usando um defaultdict.
+A minha solução para o Exercício 18.3, que você pode baixar em https://github.com/AllenDowney/ThinkPython2/raw/master/code/PokerHandSoln.py, usa setdefault na função `has_straightflush`. O problema dessa solução é criar um objeto Hand cada vez que passa pelo loop, seja ele necessário ou não. Como exercício, reescreva-a usando um defaultdict.
 
 ## 19.8 - Tuplas nomeadas
 

@@ -4,7 +4,7 @@ Este capítulo apresenta o segundo estudo de caso que envolve solucionar quebra-
 
 ## 9.1 - Leitura de listas de palavras
 
-Para os exercícios deste capítulo vamos usar uma lista de palavras em inglês. Há muitas listas de palavras disponíveis na internet, mas a mais conveniente ao nosso propósito é uma das listas de palavras disponibilizadas em domínio público por Grady Ward como parte do projeto lexical Moby (ver http://wikipedia.org/wiki/Moby\_Project). É uma lista de 113.809 palavras cruzadas oficiais; isto é, as palavras que se consideram válidas em quebra-cabeças de palavras cruzadas e outros jogos de palavras. Na coleção Moby, o nome do arquivo é 113809of.fic; você pode baixar uma cópia, com um nome mais simples como words.txt, de http://thinkpython2.com/code/words.txt.
+Para os exercícios deste capítulo vamos usar uma lista de palavras em inglês. Há muitas listas de palavras disponíveis na internet, mas a mais conveniente ao nosso propósito é uma das listas de palavras disponibilizadas em domínio público por Grady Ward como parte do projeto lexical Moby (ver http://wikipedia.org/wiki/Moby\_Project). É uma lista de 113.809 palavras cruzadas oficiais; isto é, as palavras que se consideram válidas em quebra-cabeças de palavras cruzadas e outros jogos de palavras. Na coleção Moby, o nome do arquivo é 113809of.fic; você pode baixar uma cópia, com um nome mais simples como words.txt, de https://github.com/AllenDowney/ThinkPython2/raw/master/code/words.txt.
 
 Este arquivo está em texto simples, então você pode abri-lo com um editor de texto, mas também pode lê-lo no Python. A função integrada open recebe o nome do arquivo como um parâmetro e retorna um objeto de arquivo que você pode usar para ler o arquivo.
 
@@ -255,7 +255,7 @@ Dê uma palavra com três letras duplas consecutivas. Vou dar exemplos de palavr
 
 Escreva um programa que a encontre.
 
-Solução: http://thinkpython2.com/code/cartalk1.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/cartalk1.py.
 
 ### Exercício 9.8
 
@@ -271,7 +271,7 @@ Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/con
 
 Escreva um programa Python que teste todos os números de seis dígitos e imprima qualquer número que satisfaça essas condições.
 
-Solução: http://thinkpython2.com/code/cartalk2.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/cartalk2.py.
 
 ### Exercício 9.9
 

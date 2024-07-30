@@ -287,7 +287,7 @@ O trabalho extra de redispersão aparece como uma sequência de torres cada vez 
 
 Uma característica importante deste algoritmo é que quando alteramos o tamanho da HashTable, ela cresce geometricamente; isto é, multiplicamos o tamanho por uma constante. Se você aumentar o tamanho aritmeticamente – somando um número fixo de cada vez – o tempo médio por add é linear.
 
-Você pode baixar minha implementação de `HashMap` em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
+Você pode baixar minha implementação de `HashMap` em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
 
 ## B.5 - Glossário
 

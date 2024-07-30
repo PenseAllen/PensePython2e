@@ -170,7 +170,7 @@ def walk(dirname):
 
 `os.path.join` recebe um diretório e um nome de arquivo e os une em um caminho completo.
 
-O módulo `os` fornece uma função chamada `walk`, que é semelhante, só que mais versátil. Como exercício, leia a documentação e use-a para exibir os nomes dos arquivos em um diretório dado e seus subdiretórios. Você pode baixar minha solução em http://thinkpython2.com/code/walk.py.
+O módulo `os` fornece uma função chamada `walk`, que é semelhante, só que mais versátil. Como exercício, leia a documentação e use-a para exibir os nomes dos arquivos em um diretório dado e seus subdiretórios. Você pode baixar minha solução em https://github.com/AllenDowney/ThinkPython2/raw/master/code/walk.py.
 
 ## 14.5 - Captura de exceções
 
@@ -479,15 +479,15 @@ Escreva uma função chamada sed que receba como argumentos uma string-padrão, 
 
 Se ocorrer um erro durante a abertura, leitura, escrita ou fechamento dos arquivos, seu programa deve capturar a exceção, exibir uma mensagem de erro e encerrar.
 
-Solução: http://thinkpython2.com/code/sed.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/sed.py.
 
 ### Exercício 14.2
 
-Se você baixar minha solução do Exercício 12.2 em http://thinkpython2.com/code/anagram_sets.py, verá que ela cria um dicionário que mapeia uma string ordenada de letras à lista de palavras que podem ser soletradas com aquelas letras. Por exemplo, `'opst'` mapeia à lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
+Se você baixar minha solução do Exercício 12.2 em https://github.com/AllenDowney/ThinkPython2/raw/master/code/anagram_sets.py, verá que ela cria um dicionário que mapeia uma string ordenada de letras à lista de palavras que podem ser soletradas com aquelas letras. Por exemplo, `'opst'` mapeia à lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
 
 Escreva um módulo que importe `anagram_sets` e forneça duas novas funções: `store_anagrams` deve guardar o dicionário de anagramas em uma “prateleira” (objeto criado pelo módulo `sheve`); `read_anagrams` deve procurar uma palavra e devolver uma lista dos seus anagramas.
 
-Solução: http://thinkpython2.com/code/anagram_db.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/anagram_db.py.
 
 ### Exercício 14.3
 
@@ -499,4 +499,4 @@ Em uma grande coleção de arquivos MP3 pode haver mais de uma cópia da mesma m
 
 3. Para conferir o resultado, você pode usar o comando Unix `diff`.
 
-Solução: http://thinkpython2.com/code/find\_duplicates.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/find\_duplicates.py.

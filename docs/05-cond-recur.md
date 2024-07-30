@@ -543,6 +543,6 @@ A exceção é se x for menor que 3: neste caso, você pode desenhar apenas uma 
 
 2. Escreva uma função chamada snowflake que desenhe três curvas de Koch para fazer o traçado de um floco de neve.
 
-        Solução: http://thinkpython2.com/code/koch.py.
+        Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/koch.py.
 
 3. A curva de Koch pode ser generalizada de vários modos. Veja exemplos em http://en.wikipedia.org/wiki/Koch\_snowflake e implemente o seu favorito.

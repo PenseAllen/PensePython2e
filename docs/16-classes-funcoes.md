@@ -2,7 +2,7 @@
 
 Agora que sabemos como criar tipos, o próximo passo deve ser escrever funções que recebam objetos definidos pelo programador como parâmetros e os retornem como resultados. Neste capítulo também vou apresentar o “estilo funcional de programação” e dois novos planos de desenvolvimento de programas.
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py. As soluções para os exercícios estão em http://thinkpython2.com/code/Time1\_soln.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time1.py. As soluções para os exercícios estão em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time1\_soln.py.
 
 ## 16.1 - Time
 
@@ -238,7 +238,7 @@ Instruções assert são úteis porque distinguem o código que lida com condiç
 
 ## 16.7 - Exercícios
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Time1_soln.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time1.py; as soluções para os exercícios estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time1_soln.py.
 
 ### Exercício 16.1
 

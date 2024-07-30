@@ -4,7 +4,7 @@ O termo mais associado com a programação orientada a objeto é herança. A her
 
 Se você não joga pôquer, pode ler sobre ele em http://en.wikipedia.org/wiki/Poker, mas não é necessário; vou dizer tudo o que precisa saber para os exercícios.
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Card.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Card.py.
 
 ## 18.1 - Objetos Card
 
@@ -327,7 +327,7 @@ Os capítulos anteriores demonstram um plano de desenvolvimento que poderíamos 
 
 Mas, às vezes, é menos óbvio quais objetos você precisa e como eles devem interagir. Nesse caso é necessário um plano de desenvolvimento diferente. Da mesma forma em que descobrimos interfaces de função por encapsulamento e generalização, podemos descobrir interfaces de classe por encapsulamento de dados.
 
-A análise de Markov, de “Análise de Markov”, na página 200, apresenta um bom exemplo. Se baixar o meu código em http://thinkpython2.com/code/markov.py, você vai ver que ele usa duas variáveis globais – suffix\_map e prefix – que são lidas e escritas a partir de várias funções.
+A análise de Markov, de “Análise de Markov”, na página 200, apresenta um bom exemplo. Se baixar o meu código em https://github.com/AllenDowney/ThinkPython2/raw/master/code/markov.py, você vai ver que ele usa duas variáveis globais – suffix\_map e prefix – que são lidas e escritas a partir de várias funções.
 
 ```python
 suffix_map = {}
@@ -373,9 +373,9 @@ Este exemplo sugere um plano de desenvolvimento para projetar objetos e métodos
 
 4. Transforme as funções associadas em métodos da nova classe.
 
-Como exercício, baixe o meu código de Markov de http://thinkpython2.com/code/markov.py e siga os passos descritos acima para encapsular as variáveis globais como atributos de uma nova classe chamada Markov.
+Como exercício, baixe o meu código de Markov de https://github.com/AllenDowney/ThinkPython2/raw/master/code/markov.py e siga os passos descritos acima para encapsular as variáveis globais como atributos de uma nova classe chamada Markov.
 
-Solução: http://thinkpython2.com/code/Markov.py (observe o M maiúsculo).
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/markov2.py (observe o 2 no nome do arquivo).
 
 ## 18.10 - Depuração
 
@@ -519,11 +519,11 @@ A seguir, as mãos possíveis no pôquer, em ordem crescente de valor e ordem de
 
 A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 
-1. Baixe os seguintes arquivos de http://thinkpython2.com/code:
+1. Baixe os seguintes arquivos:
 
- * `Card.py`: Versão completa das classes Card, Deck e Hand deste capítulo.
+ * [`Card.py`](https://github.com/AllenDowney/ThinkPython2/raw/master/code/Card.py): Versão completa das classes Card, Deck e Hand deste capítulo.
 
- * `PokerHand.py`: Uma implementação incompleta de uma classe que representa uma mão de pôquer e código para testá-la.
+ * [`PokerHand.py`](https://github.com/AllenDowney/ThinkPython2/raw/master/code/PokerHand.py): Uma implementação incompleta de uma classe que representa uma mão de pôquer e código para testá-la.
 
 2. Se executar PokerHand.py, você verá que o programa cria mãos de pôquer com 7 cartas e verifica se alguma delas contém um flush. Leia este código com atenção antes de continuar.
 
@@ -535,4 +535,4 @@ A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 
 6. Exiba uma tabela das classificações e suas probabilidades. Execute seu programa com números cada vez maiores de mãos até que os valores de saída convirjam a um grau razoável de exatidão. Compare seus resultados com os valores em http://en.wikipedia.org/wiki/Hand_rankings.
 
-Solução: http://thinkpython2.com/code/PokerHandSoln.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/PokerHandSoln.py.

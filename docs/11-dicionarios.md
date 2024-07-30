@@ -504,13 +504,13 @@ Se fez o Exercício 10.10, você pode comparar a velocidade desta implementaçã
 
 Leia a documentação do método de dicionário setdefault e use-o para escrever uma versão mais concisa de invert\_dict.
 
-Solução: http://thinkpython2.com/code/invert_dict.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/invert_dict.py.
 
 ### Exercício 11.3
 
 Memorize a função de Ackermann do Exercício 6.2 e veja se a memorização permite avaliar a função com argumentos maiores. Dica: não.
 
-Solução: http://thinkpython2.com/code/ackermann_memo.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/ackermann_memo.py.
 
 ### Exercício 11.4
 
@@ -518,7 +518,7 @@ Se fez o Exercício 10.7, você já tem uma função chamada has\_duplicates, qu
 
 Use um dicionário para escrever uma versão mais rápida e simples de has\_duplicates.
 
-Solução: http://thinkpython2.com/code/has_duplicates.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/has_duplicates.py.
 
 ### Exercício 11.5
 
@@ -526,7 +526,7 @@ Duas palavras são “pares rotacionados” se for possível rotacionar um deles
 
 Escreva um programa que leia uma lista de palavras e encontre todos os pares rotacionados.
 
-Solução: http://thinkpython2.com/code/rotate_pairs.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/rotate_pairs.py.
 
 ### Exercício 11.6
 
@@ -540,8 +540,8 @@ Mas há pelo menos uma palavra que Dan e eu conhecemos, que produz dois homófon
 
 Você pode usar o dicionário do Exercício 11.1 para verificar se uma string está na lista de palavras.
 
-Para verificar se duas palavras são homófonas, você pode usar o Dicionário de pronúncia CMU. Ele pode ser baixado em http://www.speech.cs.cmu.edu/cgi-bin/cmudict ou em http://thinkpython2.com/code/c06d. Você também pode baixar http://thinkpy thon2.com/code/pronounce.py, que tem uma função chamada `read_dictionary`, que lê o dicionário de pronúncia e retorna um dicionário de Python que mapeia cada palavra a uma string que descreve sua pronúncia primária.
+Para verificar se duas palavras são homófonas, você pode usar o Dicionário de pronúncia CMU. Ele pode ser baixado em http://www.speech.cs.cmu.edu/cgi-bin/cmudict ou em https://github.com/AllenDowney/ThinkPython2/raw/master/code/c06d. Você também pode baixar http://thinkpy thon2.com/code/pronounce.py, que tem uma função chamada `read_dictionary`, que lê o dicionário de pronúncia e retorna um dicionário de Python que mapeia cada palavra a uma string que descreve sua pronúncia primária.
 
 Escreva um programa que liste todas as palavras que resolvem o quebra-cabeça.
 
-Solução: http://thinkpython2.com/code/homophone.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/homophone.py.

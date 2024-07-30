@@ -639,7 +639,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
 ## 10.15 - Exercícios
 
-Você pode baixar as soluções para estes exercícios em http://thinkpython2.com/code/list\_exercises.py.
+Você pode baixar as soluções para estes exercícios em https://github.com/AllenDowney/ThinkPython2/raw/master/code/list\_exercises.py.
 
 ### Exercício 10.1
 
@@ -707,13 +707,13 @@ Este exercício pertence ao assim chamado Paradoxo de aniversário, sobre o qual
 
 Se há 23 alunos na sua sala, quais são as chances de dois deles fazerem aniversário no mesmo dia? Você pode estimar esta probabilidade gerando amostras aleatórias de 23 dias de aniversário e verificando as correspondências. Dica: você pode gerar aniversários aleatórios com a função randint no módulo random.
 
-Se quiser, você pode baixar minha solução em http://thinkpython2.com/code/birthday.py.
+Se quiser, você pode baixar minha solução em https://github.com/AllenDowney/ThinkPython2/raw/master/code/birthday.py.
 
 ### Exercício 10.9
 
 Escreva uma função que leia o arquivo words.txt e construa uma lista com um elemento por palavra. Escreva duas versões desta função, uma usando o método append e outra usando a expressão `t = t + [x]`. Qual leva mais tempo para ser executada? Por quê?
 
-Solução: http://thinkpython2.com/code/wordlist.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/wordlist.py.
 
 
 ### Exercício 10.10
@@ -728,19 +728,19 @@ Escreva uma função chamada in\_bisect que receba uma lista ordenada, um valor-
 
 Ou você pode ler a documentação do módulo bisect e usá-lo!
 
-Solução: http://thinkpython2.com/code/inlist.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/inlist.py.
 
 ### Exercício 10.11
 
 Duas palavras são um “par inverso” se uma for o contrário da outra. Escreva um programa que encontre todos os pares inversos na lista de palavras.
 
-Solução: http://thinkpython2.com/code/reverse_pair.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/reverse_pair.py.
 
 ### Exercício 10.12
 
 Duas palavras “interligam-se” quando, ao tomarmos letras alternadas de cada uma, formamos uma palavra nova. Por exemplo, “shoe” e “cold” interligam-se para formar “schooled”.
 
-Solução: http://thinkpython2.com/code/interlock.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/interlock.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
 
 1. Escreva um programa que encontre todos os pares de palavras que se interligam. Dica: não enumere todos os pares!
 

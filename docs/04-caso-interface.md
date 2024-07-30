@@ -6,7 +6,7 @@ Ele apresenta o módulo turtle, que permite criar imagens usando [_turtle graphi
 
 Se já tiver instalado o Python no seu computador, você poderá executar os exemplos. Caso não, agora é uma boa hora para instalar. Publiquei instruções no site http://tinyurl.com/thinkpython2e.
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/polygon.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/polygon.py.
 
 ## 4.1 - Módulo turtle
 
@@ -376,7 +376,7 @@ Se as precondições forem satisfeitas e as pós-condições não forem, o probl
 
 ### Exercício 4.1
 
-Baixe o código deste capítulo no site http://thinkpython2.com/code/polygon.py.
+Baixe o código deste capítulo no site https://github.com/AllenDowney/ThinkPython2/raw/master/code/polygon.py.
 
 1. Desenhe um diagrama da pilha que mostre o estado do programa enquanto executa circle (bob, radius). Você pode fazer a aritmética à mão ou acrescentar instruções print ao código.
 
@@ -389,7 +389,7 @@ Escreva um conjunto de funções adequadamente geral que possa desenhar flores c
 ![Figura 4.1 – Flores de tartaruga.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0401.png)
 <br>_Figura 4.1 – Flores de tartaruga._
 
-Solução: http://thinkpython2.com/code/flower.py, também exige http://thinkpython2.com/code/polygon.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/flower.py, também exige https://github.com/AllenDowney/ThinkPython2/raw/master/code/polygon.py.
 
 ### Exercício 4.3
 
@@ -398,16 +398,16 @@ Escreva um conjunto de funções adequadamente geral que possa desenhar formas c
 ![Figura 4.2 – Tortas de tartaruga.](https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0402.png)
 <br>_Figura 4.2 – Tortas de tartaruga._
 
-Solução: http://thinkpython2.com/code/pie.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/pie.py.
 
 
 ### Exercício 4.4
 
 As letras do alfabeto podem ser construídas a partir de um número moderado de elementos básicos, como linhas verticais e horizontais e algumas curvas. Crie um alfabeto que possa ser desenhado com um número mínimo de elementos básicos e então escreva funções que desenhem as letras.
 
-Você deve escrever uma função para cada letra, com os nomes draw\_a, draw\_b etc., e colocar suas funções em um arquivo chamado letters.py. Você pode baixar uma “máquina de escrever de turtle” no site http://thinkpython2.com/code/typewriter.py para ajudar a testar o seu código.
+Você deve escrever uma função para cada letra, com os nomes draw\_a, draw\_b etc., e colocar suas funções em um arquivo chamado letters.py. Você pode baixar uma “máquina de escrever de turtle” no site https://github.com/AllenDowney/ThinkPython2/raw/master/code/typewriter.py para ajudar a testar o seu código.
 
-Você pode ver uma solução no site http://thinkpython2.com/code/letters.py; ela também exige http://thinkpython2.com/code/polygon.py.
+Você pode ver uma solução no site https://github.com/AllenDowney/ThinkPython2/raw/master/code/letters.py; ela também exige https://github.com/AllenDowney/ThinkPython2/raw/master/code/polygon.py.
 
 ### Exercício 4.5
 

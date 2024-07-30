@@ -96,7 +96,7 @@ sua função deve retornar 'a' com a probabilidade de 2/3 e 'b' com a probabilid
 
 ## 13.3 - Histograma de palavras
 
-É uma boa ideia tentar fazer os exercícios anteriores antes de continuar. Você pode baixar minha solução em http://thinkpython2.com/code/analyze_book1.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
+É uma boa ideia tentar fazer os exercícios anteriores antes de continuar. Você pode baixar minha solução em https://github.com/AllenDowney/ThinkPython2/raw/master/code/analyze_book1.py. Também vai precisar de https://github.com/AllenDowney/ThinkPython2/raw/master/code/emma.txt.
 
 Aqui está um programa que lê um arquivo e constrói um histograma das palavras no arquivo:
 
@@ -271,7 +271,7 @@ O Python fornece uma estrutura de dados chamada `set`, que fornece muitas opera�
 
 Escreva um programa que use a subtração de conjuntos para encontrar palavras no livro que não estão na lista de palavras.
 
-Solução: http://thinkpython2.com/code/analyze_book2.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/analyze_book2.py.
 
 ## 13.7 - Palavras aleatórias
 
@@ -303,7 +303,7 @@ Uma alternativa é:
 
 Escreva um programa que use este algoritmo para escolher uma palavra aleatória do livro.
 
-Solução: http://thinkpython2.com/code/analyze_book3.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/analyze_book3.py.
 
 ## 13.8 - Análise de Markov
 
@@ -356,7 +356,7 @@ __c)__ Uma vez que o seu programa esteja funcionando, você pode querer tentar u
 
 Crédito: este estudo de caso é baseado em um exemplo de Kernighan and Pike, The Practice of Programming, Addison-Wesley, 1999.
 
-É uma boa ideia tentar fazer este exercício antes de continuar; depois você pode baixar a minha solução em http://thinkpython2.com/code/markov.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
+É uma boa ideia tentar fazer este exercício antes de continuar; depois você pode baixar a minha solução em https://github.com/AllenDowney/ThinkPython2/raw/master/code/markov.py. Também vai precisar de https://github.com/AllenDowney/ThinkPython2/raw/master/code/emma.txt.
 
 ## 13.9 - Estruturas de dados
 
@@ -484,4 +484,4 @@ Se você traçar o log de f contra o log de r, terá uma linha reta com uma elev
 
 Escreva um programa que leia um texto em um arquivo, conte as frequências das palavras e exiba uma linha para cada palavra, em ordem descendente da frequência, com log de f e log de r. Use o programa gráfico de sua escolha para traçar os resultados e verifique se formam uma linha reta. Você pode estimar o valor de s?
 
-Solução: http://thinkpython2.com/code/zipf.py. Para executar a minha solução, você vai precisar do módulo de gráficos `matplotlib`. Se você instalou o Anaconda, já tem o `matplotlib`; se não tiver, é preciso instalá-lo.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/zipf.py. Para executar a minha solução, você vai precisar do módulo de gráficos `matplotlib`. Se você instalou o Anaconda, já tem o `matplotlib`; se não tiver, é preciso instalá-lo.

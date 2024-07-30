@@ -2,7 +2,7 @@
 
 Embora estejamos usando alguns recursos de orientação a objeto do Python, os programas dos dois últimos capítulos não são realmente orientados a objeto, porque não representam as relações entre os tipos definidos pelo programador e as funções que os produzem. O próximo passo é transformar essas funções em métodos que tornem as relações claras.
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time2.py e as soluções para os exercícios estão em http://thinkpython2.com/code/Point2_soln.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time2.py e as soluções para os exercícios estão em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Point2_soln.py.
 
 ## 17.1 - Recursos de orientação a objeto
 
@@ -448,9 +448,9 @@ A função integrada getattr recebe um objeto e um nome de atributo (como uma st
 
 ### Exercício 17.1
 
-Baixe o código deste capítulo em http://thinkpython2.com/code/Time2.py. Altere os atributos de Time para que um número inteiro único represente os segundos decorridos desde a meia-noite. Então altere os métodos (e a função int\_to\_time) para funcionar com a nova implementação. Você não deve modificar o código de teste em main. Ao terminar, a saída deve ser a mesma que antes.
+Baixe o código deste capítulo em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time2.py. Altere os atributos de Time para que um número inteiro único represente os segundos decorridos desde a meia-noite. Então altere os métodos (e a função int\_to\_time) para funcionar com a nova implementação. Você não deve modificar o código de teste em main. Ao terminar, a saída deve ser a mesma que antes.
 
-Solução: http://thinkpython2.com/code/Time2_soln.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/Time2_soln.py.
 
 ### Exercício 17.2
 
@@ -464,6 +464,6 @@ Este exercício é uma história com moral sobre um dos erros mais comuns e dif�
 
 Teste o seu código criando dois objetos Kangaroo, atribuindo-os a variáveis chamadas kanga e roo, e então acrescentando roo ao conteúdo da bolsa de kanga.
 
-Baixe http://thinkpython2.com/code/BadKangaroo.py. Ele contém uma solução para o problema anterior com um defeito bem grande e bem feio. Encontre e corrija o defeito.
+Baixe https://github.com/AllenDowney/ThinkPython2/raw/master/code/BadKangaroo.py. Ele contém uma solução para o problema anterior com um defeito bem grande e bem feio. Encontre e corrija o defeito.
 
-Se não conseguir achar a solução, você pode baixar http://thinkpython2.com/code/GoodKangaroo.py, que explica o problema e demonstra uma solução.
+Se não conseguir achar a solução, você pode baixar https://github.com/AllenDowney/ThinkPython2/raw/master/code/GoodKangaroo.py, que explica o problema e demonstra uma solução.

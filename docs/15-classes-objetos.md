@@ -2,7 +2,7 @@
 
 A esta altura você já sabe como usar funções para organizar código e tipos integrados para organizar dados. O próximo passo é aprender “programação orientada a objeto”, que usa tipos definidos pelos programadores para organizar tanto o código quanto os dados. A programação orientada a objeto é um tópico abrangente; será preciso passar por alguns capítulos para abordar o tema.
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Point1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Point1_soln.py.
+Os exemplos de código deste capítulo estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Point1.py; as soluções para os exercícios estão disponíveis em https://github.com/AllenDowney/ThinkPython2/raw/master/code/Point1_soln.py.
 
 ## 15.1 - Tipos definidos pelos programadores
 
@@ -364,7 +364,7 @@ Essa abordagem pode facilitar a escrita de funções que atuam com tipos diferen
 
 5. Escreva uma função denominada `rect_circle_overlap`, que tome um `Circle` e um Rectangle e retorne `True`, se algum dos cantos do retângulo cair dentro do círculo. Ou, em uma versão mais desafiadora, retorne `True` se alguma parte do retângulo cair dentro do círculo.
 
-Solução: http://thinkpython2.com/code/Circle.py.
+Solução: https://github.com/AllenDowney/ThinkPython2/raw/master/code/Circle.py.
 
 ### Exercício 15.2
 
